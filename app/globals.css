@@ -239,6 +239,67 @@ section[id] { scroll-margin-top:84px; }
 .office-table .featured { background:rgba(220,233,119,.09); }
 .office-table .featured strong,.office-table .featured a { color:var(--lime); }
 
+/* 농막 아랫밭 나방노린채 살포 기록 */
+.spray-page { --spray:#355a35; --spray-dark:#1d3522; --spray-gold:#dfb85f; }
+.spray-hero { min-height:680px; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:7vw; padding:105px max(30px,calc((100vw - 1180px)/2)) 105px; color:white; background:radial-gradient(circle at 84% 16%,rgba(223,184,95,.3),transparent 27%),linear-gradient(135deg,#172b1d,#294e31 65%,#59653a); }
+.spray-hero h1 { margin:0; font-size:clamp(50px,6vw,80px); line-height:1.07; letter-spacing:-.055em; }
+.spray-hero h1 em { color:#e5c474; font-style:normal; }
+.spray-hero .breadcrumb { color:#c7d7c8; }
+.spray-hero .kicker { color:#dfc271; }
+.spray-dose-card { padding:32px; border:1px solid rgba(255,255,255,.19); border-radius:26px; background:rgba(255,255,255,.09); box-shadow:0 28px 80px rgba(0,0,0,.22); backdrop-filter:blur(14px); }
+.spray-dose-card > small { color:#d7e1d4; font-weight:800; }
+.spray-dose-card > strong { display:block; margin:18px 0 28px; font-family:Georgia,serif; font-size:84px; line-height:.9; }
+.spray-dose-card > strong em { margin-left:6px; color:#e5c474; font-family:Arial,sans-serif; font-size:25px; font-style:normal; }
+.spray-dose-card dl { margin:0; }
+.spray-dose-card dl div { display:flex; justify-content:space-between; padding:14px 0; border-top:1px solid rgba(255,255,255,.14); }
+.spray-dose-card dt { color:#bacab9; }
+.spray-dose-card dd { margin:0; font-weight:900; }
+.spray-summary-strip { position:relative; z-index:5; max-width:1180px; display:grid; grid-template-columns:repeat(4,1fr); margin:-38px auto 0; overflow:hidden; border-radius:18px; background:white; box-shadow:0 18px 50px rgba(30,60,35,.14); }
+.spray-summary-strip > div { display:flex; gap:14px; padding:23px; border-right:1px solid var(--line); }
+.spray-summary-strip > div:last-child { border-right:0; }
+.spray-summary-strip > div > span { color:#72915f; font-size:10px; font-weight:900; }
+.spray-summary-strip p { display:grid; gap:5px; margin:0; }
+.spray-summary-strip small { color:var(--muted); }
+.spray-summary-strip b { font-size:14px; }
+.spray-record-layout { display:grid; grid-template-columns:1.2fr .8fr; gap:24px; }
+.spray-table-card { border-top:2px solid var(--ink); }
+.spray-table-card > div { display:grid; grid-template-columns:160px 1fr; gap:24px; padding:20px 5px; border-bottom:1px solid var(--line); }
+.spray-table-card span { color:var(--muted); font-size:13px; }
+.spray-table-card strong { font-size:15px; }
+.spray-note-card { padding:35px; border-radius:5px 24px 24px; color:white; background:var(--spray-dark); }
+.spray-note-card > small { color:#e5c474; font-weight:900; }
+.spray-note-card h3 { margin:25px 0 15px; font-size:31px; line-height:1.35; }
+.spray-note-card p { color:#bfd0c0; line-height:1.8; }
+.spray-note-card > div { display:flex; align-items:center; gap:12px; margin-top:28px; padding-top:23px; border-top:1px solid rgba(255,255,255,.15); }
+.spray-note-card > div b,.spray-note-card > div strong { font-size:25px; }
+.spray-note-card > div span { color:#a8bba9; }
+.spray-note-card > div strong { margin-left:auto; color:#e5c474; }
+.spray-photo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.spray-photo-grid button { padding:0 0 17px; overflow:hidden; border:1px solid var(--line); border-radius:17px; background:white; cursor:zoom-in; text-align:left; }
+.spray-photo-grid button > div { position:relative; overflow:hidden; }
+.spray-photo-grid img { width:100%; height:240px; display:block; object-fit:cover; transition:transform .25s; }
+.spray-photo-grid button:hover img { transform:scale(1.025); }
+.spray-photo-grid button > div span { position:absolute; right:12px; bottom:12px; padding:7px 10px; border-radius:999px; color:white; background:rgba(20,42,25,.83); font-size:10px; font-weight:800; }
+.spray-photo-grid button > small,.spray-photo-grid button > strong { display:block; margin:13px 16px 0; }
+.spray-photo-grid button > small { color:#6f8e62; font-size:10px; font-weight:900; }
+.spray-photo-grid button > strong { margin-top:6px; }
+.spray-check-section { display:grid; grid-template-columns:.75fr 1.25fr; gap:70px; padding:95px max(30px,calc((100vw - 1180px)/2)); color:white; background:var(--spray-dark); }
+.spray-check-section > div > p { margin:0 0 16px; color:#e5c474; font-size:11px; font-weight:900; letter-spacing:.18em; }
+.spray-check-section h2 { margin:0; font-size:clamp(34px,4vw,51px); line-height:1.2; }
+.spray-check-section ul { margin:0; padding:0; list-style:none; }
+.spray-check-section li { display:flex; gap:20px; padding:20px 0; border-bottom:1px solid rgba(255,255,255,.14); }
+.spray-check-section li > span { color:#e5c474; font-size:11px; font-weight:900; }
+.spray-check-section li b { font-size:17px; }
+.spray-check-section li p { margin:7px 0 0; color:#b7c8b8; line-height:1.7; }
+.spray-modal { position:fixed; inset:0; z-index:100; display:grid; place-items:center; padding:32px; background:rgba(7,15,9,.92); }
+.spray-modal > button { position:absolute; top:18px; right:26px; border:0; color:white; background:transparent; font-size:46px; cursor:pointer; }
+.spray-modal figure { max-width:95vw; max-height:90vh; margin:0; }
+.spray-modal img { max-width:95vw; max-height:84vh; display:block; object-fit:contain; }
+.spray-modal figcaption { padding-top:12px; color:white; text-align:center; }
+
+@media(max-width:800px){.spray-hero,.spray-record-layout,.spray-check-section{grid-template-columns:1fr}.spray-summary-strip{grid-template-columns:1fr 1fr;margin:-24px 20px 0}.spray-summary-strip>div:nth-child(2){border-right:0}.spray-photo-grid{grid-template-columns:1fr 1fr}.spray-check-section{gap:35px}.spray-table-card>div{grid-template-columns:110px 1fr}}
+@media(max-width:520px){.spray-hero{padding-top:70px}.spray-summary-strip,.spray-photo-grid{grid-template-columns:1fr}.spray-summary-strip>div{border-right:0}.spray-photo-grid img{height:220px}.spray-modal{padding:16px}}
+
 /* 웅도리 성토·경계침범 사건 */
 .ungdo-page { --case:#2f2923; --case2:#514233; --case-accent:#d69b45; --case-red:#a84232; --case-paper:#f6f1e8; }
 .ungdo-hero { min-height:700px; display:grid; grid-template-columns:1.18fr .82fr; align-items:center; gap:7vw; padding:102px max(30px,calc((100vw - 1180px)/2)) 98px; background:radial-gradient(circle at 84% 15%,rgba(214,155,69,.32),transparent 27%),linear-gradient(135deg,#241f1b,#3b3028 65%,#604a35); color:white; }
