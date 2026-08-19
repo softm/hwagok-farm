@@ -12,6 +12,7 @@ const photos = [
 ];
 
 export default function SprayRecordPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const [selected, setSelected] = useState<(typeof photos)[number] | null>(null);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function SprayRecordPage() {
 
       <section className="spray-hero">
         <div>
-          <p className="breadcrumb"><a href="/">화곡농장</a><span>›</span>방제 기록</p>
+          <p className="breadcrumb"><a href={`${basePath}/`}>화곡농장</a><span>›</span>방제 기록</p>
           <p className="kicker">FIELD LOG · 2026. 08. 13.</p>
           <h1>농막 아랫밭<br /><em>나방노린채 살포</em></h1>
           <p className="hero-description">들깨밭에 오전 7시부터 살충제를 살포한 작업 기록입니다. 20L 분무기 2통에 약제를 각 10mL씩 사용했습니다.</p>
@@ -63,7 +64,7 @@ export default function SprayRecordPage() {
       <section className="content-section tint" id="photos">
         <div className="section-title"><p>FIELD PHOTOS</p><h2>약제와 살포 현장</h2><span>사진을 누르면 원본 크기의 레이어 화면으로 확인할 수 있습니다.</span></div>
         <div className="spray-photo-grid">
-          {photos.map((photo) => <button type="button" key={photo.src} onClick={() => setSelected(photo)}><div><img src={photo.src} alt={photo.title} /><span>확대 보기</span></div><small>{photo.group}</small><strong>{photo.title}</strong></button>)}
+          {photos.map((photo) => <button type="button" key={photo.src} onClick={() => setSelected(photo)}><div><img src={`${basePath}${photo.src}`} alt={photo.title} /><span>확대 보기</span></div><small>{photo.group}</small><strong>{photo.title}</strong></button>)}
         </div>
       </section>
 
@@ -72,10 +73,10 @@ export default function SprayRecordPage() {
         <ul><li><span>01</span><div><b>살포 후 강우</b><p>약제가 마르기 전 비가 왔는지 기록</p></div></li><li><span>02</span><div><b>방제 효과</b><p>해충 감소 여부와 확인 날짜 기록</p></div></li><li><span>03</span><div><b>약해 유무</b><p>잎 변색·말림 등 이상 여부 확인</p></div></li><li><span>04</span><div><b>안전사용기준</b><p>다음 살포 전 라벨의 사용 시기와 횟수 재확인</p></div></li></ul>
       </section>
 
-      <section className="download-banner"><div><p>ORIGINAL ARCHIVE</p><h2>정리 문서와 사진 내려받기</h2><span>Markdown · HTML · 원본 사진 5장이 들어 있습니다.</span></div><a href="/downloads/20260813-hwagok-spray-record.zip" download>ZIP 다운로드</a></section>
+      <section className="download-banner"><div><p>ORIGINAL ARCHIVE</p><h2>정리 문서 내려받기</h2><span>Markdown · HTML 문서가 들어 있습니다. 현장 사진은 위 갤러리에서 원본으로 볼 수 있습니다.</span></div><a href={`${basePath}/downloads/20260813-hwagok-spray-record.zip`} download>ZIP 다운로드</a></section>
       <footer className="site-footer"><b>화곡농장 · 방제 작업 기록</b><span>2026년 8월 13일 농막 아랫밭</span></footer>
 
-      {selected && <div className="spray-modal" role="dialog" aria-modal="true" aria-label={selected.title} onClick={() => setSelected(null)}><button type="button" aria-label="닫기" onClick={() => setSelected(null)}>×</button><figure onClick={(event) => event.stopPropagation()}><img src={selected.src} alt={selected.title} /><figcaption>{selected.title}</figcaption></figure></div>}
+      {selected && <div className="spray-modal" role="dialog" aria-modal="true" aria-label={selected.title} onClick={() => setSelected(null)}><button type="button" aria-label="닫기" onClick={() => setSelected(null)}>×</button><figure onClick={(event) => event.stopPropagation()}><img src={`${basePath}${selected.src}`} alt={selected.title} /><figcaption>{selected.title}</figcaption></figure></div>}
     </main>
   );
 }
