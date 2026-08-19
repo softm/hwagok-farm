@@ -1,75 +1,10 @@
 import { ProjectNav } from "./project-nav";
 
-const chats = [
-  {
-    href: "/white-clover",
-    number: "01",
-    label: "재배·파종",
-    title: "화이트클로버 파종계획",
-    description: "엄나무밭 약 622평에 종자 2kg을 저밀도로 도입하는 살포구역, 황토 배합, 현장 작업안입니다.",
-    facts: ["종자 2kg", "1kg / 300평", "황토 40kg"],
-  },
-  {
-    href: "/farm-machine-rental",
-    number: "02",
-    label: "농기계·행정",
-    title: "서산시 농기계 임대·운반 서비스",
-    description: "대산읍 북부분소를 기준으로 임대 조건, 준비서류, 운반 절차와 파종 장비를 정리했습니다.",
-    facts: ["북부분소", "041-681-1006", "파종 장비"],
-  },
+const projects=[
+  {id:"hwagok",number:"01",label:"농업·현장",title:"화곡농장",location:"충남 서산시 대산읍 화곡리",description:"재배계획, 농기계 임대, 방제·관수·수확 기록을 채팅별 페이지로 누적하는 농장 프로젝트입니다.",tone:"green",pages:[{href:"/white-clover",title:"화이트클로버 파종계획",meta:"종자 2kg · 황토 배합 · 살포구역"},{href:"/farm-machine-rental",title:"서산시 농기계 임대·운반 서비스",meta:"북부분소 · 준비서류 · 파종 장비"},{href:"/spray-record-20260813",title:"농막 아랫밭 나방노린채 살포",meta:"2026. 8. 13. 오전 7시 · 20L 2통 · 약제 20mL"}]},
+  {id:"ungdo",number:"02",label:"토지·민원",title:"웅도 프로젝트",location:"충남 서산시 대산읍 웅도리",description:"토지 현황, 경계·성토 문제와 당사자·행정기관 통화 내용을 주제별로 관리하는 프로젝트입니다.",tone:"brown",pages:[{href:"https://ungdo.softm.chatgpt.site",title:"웅도 프로젝트 홈",meta:"채팅별 기록을 모은 프로젝트 허브"},{href:"https://ungdo-land-records.softm.chatgpt.site",title:"웅도리 토지 현황 기록",meta:"63-1·66·40-23·40-25 관련 자료"}]},
+  {id:"baksok",number:"03",label:"음식점·경영",title:"서해박속낙지",location:"경기도 광명시 오리로 1034-1",description:"매장 운영, 설비, 세무·매출, 휴업 안내와 식재료 관련 기록을 모으는 음식점 프로젝트입니다.",tone:"navy",pages:[{href:"https://seohae-baksok-nakji.softm.chatgpt.site",title:"서해박속낙지 프로젝트 홈",meta:"운영자료 · 분석 페이지 · 프로젝트 기록"},{href:"https://seohae-baksok-nakji.softm.chatgpt.site/tax-analysis",title:"세무 및 매출 분석",meta:"2022~2026 부가세 · 2025 연매출 · 실제 소득 확인"}]},
+  {id:"travel",number:"04",label:"가족·여행",title:"가족여행",location:"용인 · 경주 · 이천",description:"가족 일정, 숙박, 관광지, 식사와 이동 동선을 실제 여행 순서에 맞춰 정리하는 프로젝트입니다.",tone:"blue",pages:[{href:"https://gyeongju-trip-map.softm.chatgpt.site",title:"용인·경주·이천 2박 3일 가족여행",meta:"일정 · 동선 · 숙박 · 관광지"}]},
 ];
 
-export default function Home() {
-  return (
-    <main className="site-page">
-      <ProjectNav />
-      <section className="hub-hero">
-        <div className="hub-hero-copy">
-          <p className="kicker">PROJECT HUB · 충남 서산시 대산읍</p>
-          <h1>화곡농장의 모든 작업을<br /><em>한곳에서 관리합니다.</em></h1>
-          <p>프로젝트당 하나의 웹사이트를 사용하고, 각 채팅 작업은 하위 페이지로 계속 추가합니다. 지도·보고서·현장 실행안을 공통 메뉴에서 바로 찾을 수 있습니다.</p>
-          <a className="primary-button" href="#chats">채팅별 페이지 보기</a>
-        </div>
-        <aside className="hub-status" aria-label="프로젝트 현황">
-          <span className="status-label">화곡농장 프로젝트</span>
-          <strong>2</strong><b>현재 등록된 채팅 페이지</b>
-          <div><span>최근 갱신</span><b>2026. 8. 19.</b></div>
-          <div><span>기준 지역</span><b>서산시 대산읍 화곡리</b></div>
-          <div><span>배포 방식</span><b>프로젝트 중앙화</b></div>
-        </aside>
-      </section>
-
-      <section className="hub-section" id="chats">
-        <div className="section-title">
-          <p>PROJECT CHATS</p>
-          <h2>채팅별 웹사이트</h2>
-          <span>아래 작업은 모두 화곡농장 프로젝트의 하위 페이지입니다.</span>
-        </div>
-        <div className="chat-grid">
-          {chats.map((chat) => (
-            <a className="chat-card" href={chat.href} key={chat.href}>
-              <div className="chat-card-top"><span>{chat.number}</span><small>{chat.label}</small></div>
-              <h3>{chat.title}</h3>
-              <p>{chat.description}</p>
-              <ul>{chat.facts.map((fact) => <li key={fact}>{fact}</li>)}</ul>
-              <b className="chat-card-link">페이지 열기 <span>→</span></b>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section className="structure-section">
-        <div>
-          <p>GLOBAL DEPLOYMENT RULE</p>
-          <h2>앞으로도 같은 구조로 누적됩니다.</h2>
-        </div>
-        <ol>
-          <li><span>01</span><div><b>프로젝트당 사이트 1개</b><p>화곡농장은 이 프로젝트 사이트를 계속 사용합니다.</p></div></li>
-          <li><span>02</span><div><b>채팅당 하위 페이지 1개</b><p>새 작업은 독립된 경로와 메뉴 항목으로 추가합니다.</p></div></li>
-          <li><span>03</span><div><b>자료는 레이어로 확인</b><p>이미지·문서·영상은 목록에서 누르면 확대해 볼 수 있게 구성합니다.</p></div></li>
-        </ol>
-      </section>
-      <footer className="site-footer"><b>화곡농장 프로젝트</b><span>프로젝트 홈 · 채팅별 하위 페이지 · 중앙화 배포</span></footer>
-    </main>
-  );
-}
+export default function Home(){const pageCount=projects.reduce((sum,p)=>sum+p.pages.length,0);return <main className="site-page global-hub-page"><ProjectNav/><section className="global-hero"><div className="global-hero-copy"><p className="kicker">SOFTM PROJECT HUB · CENTRALIZED DEPLOYMENT</p><h1>모든 프로젝트와 채팅을<br/><em>한곳에서 찾습니다.</em></h1><p>프로젝트별로 묶고, 각 대화에서 만든 웹사이트는 해당 프로젝트 아래에 계속 추가합니다. 새 주소를 따로 기억할 필요 없이 이 메인에서 찾아갑니다.</p><a className="primary-button" href="#projects">프로젝트 메뉴 보기</a></div><aside className="global-status"><span>중앙 프로젝트 허브</span><div className="global-status-main"><strong>{projects.length}</strong><p>등록된 프로젝트</p></div><dl><div><dt>연결된 채팅 페이지</dt><dd>{pageCount}개</dd></div><div><dt>메인 도메인</dt><dd>hwagok.softm.chatgpt.site</dd></div><div><dt>최근 갱신</dt><dd>2026. 8. 19.</dd></div></dl></aside></section><section className="project-index" id="projects"><div className="section-title"><p>PROJECT DIRECTORY</p><h2>프로젝트별 채팅 페이지</h2><span>각 프로젝트 카드 안에서 해당 채팅의 배포 페이지를 바로 열 수 있습니다.</span></div><div className="project-grid">{projects.map(p=><article className={`project-card tone-${p.tone}`} id={p.id} key={p.id}><div className="project-card-head"><span>{p.number}</span><small>{p.label}</small></div><div className="project-card-title"><h3>{p.title}</h3><b>{p.pages.length}개 페이지</b></div><p className="project-location">{p.location}</p><p className="project-description">{p.description}</p><div className="project-page-list">{p.pages.map((page,i)=><a href={page.href} key={page.href}><span>{String(i+1).padStart(2,"0")}</span><div><strong>{page.title}</strong><small>{page.meta}</small></div><b>↗</b></a>)}</div></article>)}</div></section><section className="central-rule-section"><div><p>GLOBAL DEPLOYMENT RULE</p><h2>앞으로 “웹사이트 배포”는<br/>이 구조로 누적합니다.</h2></div><ol><li><span>01</span><div><b>메인에서 프로젝트 선택</b><p>모든 프로젝트는 이 중앙 허브의 메뉴에 등록합니다.</p></div></li><li><span>02</span><div><b>프로젝트 안에 채팅 페이지 등록</b><p>새로운 대화에서 배포한 사이트는 해당 프로젝트 카드 아래에 추가합니다.</p></div></li><li><span>03</span><div><b>자료는 페이지 안에서 레이어로 확인</b><p>이미지·영상·PDF·문서는 가능한 경우 팝업으로 크게 볼 수 있게 구성합니다.</p></div></li><li><span>04</span><div><b>기존 주소도 중앙에서 연결</b><p>이미 따로 배포된 사이트를 없애지 않고 중앙 메뉴에서 찾아갈 수 있게 유지합니다.</p></div></li></ol></section><footer className="site-footer"><b>softm 프로젝트 허브</b><span>전체 프로젝트 · 채팅별 배포 페이지 · 중앙화 관리</span></footer></main>}
