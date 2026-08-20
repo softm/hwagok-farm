@@ -86,6 +86,13 @@ const chats = [
     description: "냉동고 전용 10SQ 전선 약 20m를 연결하고 누전차단기를 40A로 증설한 작업 기록입니다.",
     meta: ["10SQ 20m", "누전차단기 40A", "냉동고 전용"],
   },
+  {
+    href: "/farm-awning-repair-20260711",
+    kind: "시설·행정",
+    title: "2026-07-11 농막 차양막 시정조치",
+    description: "지면까지 내려온 차양막 지지구조를 농막 본체의 대각선 보강 방식으로 수정한 전후 기록입니다.",
+    meta: ["지면 기둥 개선", "대각선 보강", "전후 사진 8장"],
+  },
 ];
 
 export default function Home() {
@@ -134,13 +141,13 @@ export default function Home() {
         <ol>
           <li><span>01</span><div><b>화곡농장 전용 홈</b><p>화곡농장과 직접 관련된 채팅별 공개 페이지만 누적합니다.</p></div></li>
           <li><span>02</span><div><b>전체 프로젝트는 상위 인덱스</b><p>다른 프로젝트는 화곡농장 안에 나열하지 않고 전체 프로젝트 페이지에서 선택합니다.</p></div></li>
-          <li><span>03</span><div><b>공개·비공개는 같은 프로젝트끼리</b><p>비공개 사이트가 배포되면 화곡농장 공개 사이트와 같은 프로젝트 안에서만 연결합니다.</p></div></li>
+          <li><span>03</span><div><b>공개·비공개는 같은 프로젝트끼리</b><p><a href="https://hwagok.softm.chatgpt.site/#hwagok">화곡농장 비공개 사이트</a>와 이 공개 사이트를 서로 연결합니다.</p></div></li>
         </ol>
       </section>
 
       <footer className="site-footer">
         <b>화곡농장 프로젝트</b>
-        <div><a href="https://softm.github.io/projects/">전체 프로젝트</a><a href="#chats">채팅별 페이지</a></div>
+        <div><a href="https://softm.github.io/projects/">전체 프로젝트</a><a href="https://hwagok.softm.chatgpt.site/#hwagok">비공개 사이트</a><a href="#chats">채팅별 페이지</a></div>
       </footer>
     </main>
   );
