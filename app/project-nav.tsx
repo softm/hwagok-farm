@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type Current = "perilla" | "cctv" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "sprinkler" | "fertilizer" | "freezer";
+type Current = "perilla" | "cctv" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "sprinkler" | "fertilizer" | "freezer" | "awning";
 
 const chats = [
   { id: "perilla" as Current, href: "/perilla-sowing-after-rain", kind: "재배·파종", title: "12mm 강우 후 늦파종 들깨 파종", meta: "비가 그친 뒤 흙 상태·깊이·복토" },
@@ -13,6 +13,7 @@ const chats = [
   { id: "sprinkler" as Current, href: "/sprinkler-thread-20260820", kind: "관수·부품", title: "스프링클러 나사 규격", meta: "1/2″·3/4″·수나사 외경 비교" },
   { id: "fertilizer" as Current, href: "/fertilizer-plan", kind: "재배·시비", title: "들깨·열무 밑거름 시비계획", meta: "4개 필지·맞춤18호 5포·비료 비교" },
   { id: "freezer" as Current, href: "/freezer-electric-20260711", kind: "시설·전기", title: "2026-07-11 냉동고 전기 증설", meta: "10SQ 20m·누전차단기 40A" },
+  { id: "awning" as Current, href: "/farm-awning-repair-20260711", kind: "시설·행정", title: "2026-07-11 농막 차양막 시정조치", meta: "지면 기둥 개선·대각선 보강·사진 8장" },
 ];
 
 export function ProjectNav({ current }: { current?: Current }) {
@@ -22,12 +23,18 @@ export function ProjectNav({ current }: { current?: Current }) {
       <nav>
         <a href="https://softm.github.io/projects/">전체 프로젝트</a>
         <Link className={current ? "" : "active"} href="/">화곡농장 홈</Link>
+        <a href="https://hwagok.softm.chatgpt.site/#hwagok">비공개 사이트</a>
         <details className="chat-switcher">
           <summary><span>채팅별 페이지</span><b>{chats.length}개</b></summary>
           <div className="chat-menu-panel">
             <p><small>화곡농장 프로젝트</small><strong>채팅별 웹사이트</strong></p>
             {chats.map((chat) => (
-              <Link className={current === chat.id ? "current" : ""} href={chat.href} key={chat.id}>
+              <Link
+                aria-current={current === chat.id ? "page" : undefined}
+                className={current === chat.id ? "current" : ""}
+                href={chat.href}
+                key={chat.id}
+              >
                 <small>{current === chat.id ? "현재 페이지" : chat.kind}</small>
                 <strong>{chat.title}</strong>
                 <span>{chat.meta}</span>
