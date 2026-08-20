@@ -1,2 +1,2 @@
 :HL["/hwagok-farm/_next/static/chunks/0u5og3lh6gc8h.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"shade-net-20260807","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"bO4glK5CqXRhrzqIW-bnU"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"shade-net-20260807","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"_ExJwRvBT6QqtDjmljJ1A"}
