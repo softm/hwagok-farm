@@ -1,4 +1,4 @@
-:HL["/hwagok-farm/_next/static/chunks/0irxq7z6pi-d2.css","style"]
+:HL["/hwagok-farm/_next/static/chunks/0u5og3lh6gc8h.css","style"]
 :HL["/farm-awning-repair-20260711/20260711_095409.jpg","image"]
 :HL["/farm-awning-repair-20260711/20260711_095427.jpg","image"]
 :HL["/farm-awning-repair-20260711/20260711_095445.jpg","image"]
@@ -7,4 +7,4 @@
 :HL["/farm-awning-repair-20260711/20260711_184024.jpg","image"]
 :HL["/farm-awning-repair-20260711/20260711_184037.jpg","image"]
 :HL["/farm-awning-repair-20260711/20260711_184106.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"farm-awning-repair-20260711","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"s10RQZWbzs2hxiNbDTeFB"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"farm-awning-repair-20260711","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"bO4glK5CqXRhrzqIW-bnU"}
