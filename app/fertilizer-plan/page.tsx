@@ -19,7 +19,7 @@ const products = [
 export default function FertilizerPlanPage() {
   return (
     <main className="site-page detail-page fertilizer-page">
-      <ProjectNav />
+      <ProjectNav current="fertilizer" />
       <section className="detail-hero">
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>들깨·열무 밑거름 계획</b></p>
