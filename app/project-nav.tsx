@@ -1,10 +1,11 @@
 import Link from "next/link";
 
-type Current = "perilla" | "cctv" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "sprinkler" | "fertilizer" | "freezer";
+type Current = "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "sprinkler" | "fertilizer" | "freezer";
 
 const chats = [
   { id: "perilla" as Current, href: "/perilla-sowing-after-rain", kind: "재배·파종", title: "12mm 강우 후 늦파종 들깨 파종", meta: "비가 그친 뒤 흙 상태·깊이·복토" },
   { id: "cctv" as Current, href: "/cctv-internet-20260821", kind: "통신·CCTV", title: "농막·하우스 CCTV 인터넷 연결", meta: "핫스팟·Extender N3·Tapo 모델 비교" },
+  { id: "shade" as Current, href: "/shade-net-20260807", kind: "시설·차양", title: "6평 농막 그늘막 예상 설치", meta: "긴 면 7.3m·세로 1.8~1.9m·권장 규격" },
   { id: "clover" as Current, href: "/white-clover", kind: "재배·파종", title: "화이트클로버 파종계획", meta: "1kg 종자·황토 배합·살포구역" },
   { id: "machine" as Current, href: "/farm-machine-rental", kind: "농기계·행정", title: "서산시 농기계 임대·운반 서비스", meta: "북부분소·준비서류·파종 장비" },
   { id: "moskill" as Current, href: "/moskill-20260527", kind: "방제·작업기록", title: "2026-05-27 모스킬 잎벌레 방제", meta: "오후 2:30 살포·약 50L·강우 18시" },

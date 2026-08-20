@@ -17,6 +17,13 @@ const chats = [
     meta: ["핫스팟", "Extender N3", "Tapo 모델 비교"],
   },
   {
+    href: "/shade-net-20260807",
+    kind: "시설·차양",
+    title: "6평 농막 그늘막 예상 설치",
+    description: "농막 차양막 하단에서 난간 상단까지 설치할 쉐이드네트의 예상 위치와 바닥 기준 치수를 사진으로 추정했습니다.",
+    meta: ["긴 면 약 7.3m", "세로 1.8~1.9m", "권장 2×8m·2×5m"],
+  },
+  {
     href: "/white-clover",
     kind: "재배·파종",
     title: "화이트클로버 파종계획",
