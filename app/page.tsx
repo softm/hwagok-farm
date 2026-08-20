@@ -1,10 +1,133 @@
+import Link from "next/link";
 import { ProjectNav } from "./project-nav";
 
-const projects=[
-  {id:"hwagok",number:"01",label:"농업·현장",title:"화곡농장",location:"충남 서산시 대산읍 화곡리",description:"재배계획, 농기계 임대, 방제·관수·수확 기록을 채팅별 페이지로 누적하는 농장 프로젝트입니다.",tone:"green",pages:[{href:"/freezer-electric-20260711",title:"2026-07-11 냉동고 전기 증설",meta:"10SQ 20m · 누전차단기 40A · 다경당숙"},{href:"/white-clover",title:"화이트클로버 파종계획",meta:"종자 2kg · 황토 배합 · 살포구역"},{href:"/farm-machine-rental",title:"서산시 농기계 임대·운반 서비스",meta:"북부분소 · 준비서류 · 파종 장비"},{href:"/moskill-20260527",title:"2026-05-27 모스킬 잎벌레 방제",meta:"박밭 3개 두둑 · 약 50L · 살포 3시간 30분 후 강우"},{href:"/spray-record-20260813",title:"농막 아랫밭 나방노린채 살포",meta:"2026. 8. 13. 오전 7시 · 20L 2통 · 약제 20mL"},{href:"/20260811-gourd-harvest/",title:"2026-08-11 박 수확 기록",meta:"약 50통 수확 · 사진 53장 · 재배지 전경"},{href:"/sprinkler-thread-20260820",title:"스프링클러 나사 규격",meta:"1/2″·3/4″·1″ 수나사 외경 비교"},{href:"/fertilizer-plan",title:"들깨·열무 밑거름 시비계획",meta:"4개 필지 · 맞춤18호 5포 · 비황골드·명품비료 비교"},{href:"/cctv-internet-20260821",title:"농막·하우스 CCTV 인터넷 연결",meta:"핫스팟 · Extender N3 · 유심/라우터 · Tapo 모델 비교"}]},
-  {id:"ungdo",number:"02",label:"토지·민원",title:"웅도 프로젝트",location:"충남 서산시 대산읍 웅도리",description:"토지 현황, 경계·성토 문제와 당사자·행정기관 통화 내용을 주제별로 관리하는 프로젝트입니다.",tone:"brown",pages:[{href:"https://ungdo.softm.chatgpt.site",title:"웅도 프로젝트 홈",meta:"채팅별 기록을 모은 프로젝트 허브"},{href:"https://ungdo-land-records.softm.chatgpt.site",title:"웅도리 토지 현황 기록",meta:"63-1·66·40-23·40-25 관련 자료"}]},
-  {id:"baksok",number:"03",label:"음식점·경영",title:"서해박속낙지",location:"경기도 광명시 오리로 1034-1",description:"매장 운영, 설비, 세무·매출, 휴업 안내와 식재료 관련 기록을 모으는 음식점 프로젝트입니다.",tone:"navy",pages:[{href:"https://seohae-baksok-nakji.softm.chatgpt.site",title:"서해박속낙지 프로젝트 홈",meta:"운영자료 · 분석 페이지 · 프로젝트 기록"},{href:"https://seohae-baksok-nakji.softm.chatgpt.site/tax-analysis",title:"세무 및 매출 분석",meta:"2022~2026 부가세 · 2025 연매출 · 실제 소득 확인"}]},
-  {id:"travel",number:"04",label:"가족·여행",title:"가족여행",location:"용인 · 경주 · 이천",description:"가족 일정, 숙박, 관광지, 식사와 이동 동선을 실제 여행 순서에 맞춰 정리하는 프로젝트입니다.",tone:"blue",pages:[{href:"https://gyeongju-trip-map.softm.chatgpt.site",title:"용인·경주·이천 2박 3일 가족여행",meta:"일정 · 동선 · 숙박 · 관광지"}]},
+const chats = [
+  {
+    href: "/perilla-sowing-after-rain",
+    kind: "재배·파종",
+    title: "12mm 강우 후 늦파종 들깨 파종",
+    description: "비가 그친 뒤 두둑의 흙 상태를 확인하고 늦파종 들깨 종자를 얕게 심는 시점과 방법을 정리했습니다.",
+    meta: ["강수량 12mm", "파종 깊이 0.5~1cm", "표면 물기 확인"],
+  },
+  {
+    href: "/cctv-internet-20260821",
+    kind: "통신·CCTV",
+    title: "농막·하우스 CCTV 인터넷 연결",
+    description: "핫스팟, Extender N3, 유심·라우터와 Tapo 모델을 비교해 농막 CCTV 연결 방식을 정리했습니다.",
+    meta: ["핫스팟", "Extender N3", "Tapo 모델 비교"],
+  },
+  {
+    href: "/white-clover",
+    kind: "재배·파종",
+    title: "화이트클로버 파종계획",
+    description: "1kg 종자 기준 300평, 황토 배합과 살포 구역을 중심으로 정리한 파종 계획입니다.",
+    meta: ["화이트클로버", "황토 배합", "파종 구역"],
+  },
+  {
+    href: "/farm-machine-rental",
+    kind: "농기계·행정",
+    title: "서산시 농기계 임대·운반 서비스",
+    description: "북부분소 이용 절차와 준비서류, 파종 장비 및 운반 서비스 정보를 정리했습니다.",
+    meta: ["북부분소", "준비서류", "파종 장비"],
+  },
+  {
+    href: "/moskill-20260527",
+    kind: "방제·작업기록",
+    title: "2026-05-27 모스킬 잎벌레 방제",
+    description: "박밭 3개 두둑에 모스킬 약 50L를 살포하고 약 3시간 30분 뒤 비가 내린 현장 기록입니다.",
+    meta: ["박밭 3개 두둑", "약 50L", "강우 전 3시간 30분"],
+  },
+  {
+    href: "/spray-record-20260813",
+    kind: "방제·작업기록",
+    title: "농막 아랫밭 나방노린채 살포",
+    description: "2026년 8월 13일 오전 7시, 농막 아랫밭에 20L 두 통을 살포한 현장 기록입니다.",
+    meta: ["오전 7시", "20L 2통", "약제 10mL/통"],
+  },
+  {
+    href: "/20260811-gourd-harvest/",
+    kind: "수확·작업기록",
+    title: "2026-08-11 박 수확 기록",
+    description: "화곡농장에서 박 약 50통을 수확한 작업 과정과 현장 사진을 모았습니다.",
+    meta: ["박 약 50통", "사진 53장", "재배지 전경"],
+  },
+  {
+    href: "/sprinkler-thread-20260820",
+    kind: "관수·부품",
+    title: "스프링클러 나사 규격",
+    description: "1/2인치와 3/4인치 배관 나사의 호칭과 실제 수나사 외경을 비교했습니다.",
+    meta: ["1/2인치", "3/4인치", "수나사 외경"],
+  },
+  {
+    href: "/fertilizer-plan",
+    kind: "재배·시비",
+    title: "들깨·열무 밑거름 시비계획",
+    description: "4개 필지 1,641.3㎡의 작목 배치와 맞춤18호 살포량, 비황골드·명품비료의 역할을 정리했습니다.",
+    meta: ["4개 필지", "맞춤18호 5포", "비료 비교"],
+  },
+  {
+    href: "/freezer-electric-20260711",
+    kind: "시설·전기",
+    title: "2026-07-11 냉동고 전기 증설",
+    description: "냉동고 전용 10SQ 전선 약 20m를 연결하고 누전차단기를 40A로 증설한 작업 기록입니다.",
+    meta: ["10SQ 20m", "누전차단기 40A", "냉동고 전용"],
+  },
 ];
 
-export default function Home(){const pageCount=projects.reduce((sum,p)=>sum+p.pages.length,0);const basePath=process.env.NEXT_PUBLIC_BASE_PATH??"";return <main className="site-page global-hub-page"><ProjectNav/><section className="global-hero"><div className="global-hero-copy"><p className="kicker">SOFTM PROJECT HUB · CENTRALIZED DEPLOYMENT</p><h1>모든 프로젝트와 채팅을<br/><em>한곳에서 찾습니다.</em></h1><p>프로젝트별로 묶고, 각 대화에서 만든 웹사이트는 해당 프로젝트 아래에 계속 추가합니다. 새 주소를 따로 기억할 필요 없이 이 메인에서 찾아갑니다.</p><a className="primary-button" href="#projects">프로젝트 메뉴 보기</a></div><aside className="global-status"><span>중앙 프로젝트 허브</span><div className="global-status-main"><strong>{projects.length}</strong><p>등록된 프로젝트</p></div><dl><div><dt>연결된 채팅 페이지</dt><dd>{pageCount}개</dd></div><div><dt>메인 도메인</dt><dd>hwagok.softm.chatgpt.site</dd></div><div><dt>최근 갱신</dt><dd>2026. 8. 21.</dd></div></dl></aside></section><section className="project-index" id="projects"><div className="section-title"><p>PROJECT DIRECTORY</p><h2>프로젝트별 채팅 페이지</h2><span>각 프로젝트 카드 안에서 해당 채팅의 배포 페이지를 바로 열 수 있습니다.</span></div><div className="project-grid">{projects.map(p=><article className={`project-card tone-${p.tone}`} id={p.id} key={p.id}><div className="project-card-head"><span>{p.number}</span><small>{p.label}</small></div><div className="project-card-title"><h3>{p.title}</h3><b>{p.pages.length}개 페이지</b></div><p className="project-location">{p.location}</p><p className="project-description">{p.description}</p><div className="project-page-list">{p.pages.map((page,i)=><a href={page.href.startsWith("/")?`${basePath}${page.href}`:page.href} key={page.href}><span>{String(i+1).padStart(2,"0")}</span><div><strong>{page.title}</strong><small>{page.meta}</small></div><b>↗</b></a>)}</div></article>)}</div></section><section className="central-rule-section"><div><p>GLOBAL DEPLOYMENT RULE</p><h2>앞으로 “웹사이트 배포”는<br/>이 구조로 누적합니다.</h2></div><ol><li><span>01</span><div><b>메인에서 프로젝트 선택</b><p>모든 프로젝트는 이 중앙 허브의 메뉴에 등록합니다.</p></div></li><li><span>02</span><div><b>프로젝트 안에 채팅 페이지 등록</b><p>새로운 대화에서 배포한 사이트는 해당 프로젝트 카드 아래에 추가합니다.</p></div></li><li><span>03</span><div><b>자료는 페이지 안에서 레이어로 확인</b><p>이미지·영상·PDF·문서는 가능한 경우 팝업으로 크게 볼 수 있게 구성합니다.</p></div></li><li><span>04</span><div><b>기존 주소도 중앙에서 연결</b><p>이미 따로 배포된 사이트를 없애지 않고 중앙 메뉴에서 찾아갈 수 있게 유지합니다.</p></div></li></ol></section><footer className="site-footer"><b>softm 프로젝트 허브</b><span>전체 프로젝트 · 채팅별 배포 페이지 · 중앙화 관리</span></footer></main>}
+export default function Home() {
+  return (
+    <main className="site-page">
+      <ProjectNav />
+
+      <section className="hub-hero">
+        <div className="hub-hero-copy">
+          <p className="kicker">HWAGOK FARM · CHAT ARCHIVE</p>
+          <h1>화곡농장의 기록을<br /><em>채팅별로 모읍니다.</em></h1>
+          <p>재배 계획부터 농기계, 방제, 관수와 수확까지 화곡농장에 해당하는 공개 기록만 이 프로젝트 안에서 관리합니다.</p>
+          <a className="primary-button" href="#chats">채팅별 페이지 보기</a>
+        </div>
+        <aside className="hub-status">
+          <span className="status-label">화곡농장 프로젝트</span>
+          <strong>{chats.length}</strong>
+          <b>공개 채팅 페이지</b>
+          <div><span>프로젝트</span><b>화곡농장</b></div>
+          <div><span>위치</span><b>충남 서산시 대산읍 화곡리</b></div>
+          <div><span>최근 추가</span><b>2026. 8. 21.</b></div>
+        </aside>
+      </section>
+
+      <section className="hub-section" id="chats">
+        <div className="section-title">
+          <p>HWAGOK FARM PAGES</p>
+          <h2>화곡농장 채팅별 페이지</h2>
+          <span>다른 프로젝트는 섞지 않고 화곡농장에 해당하는 배포 페이지만 표시합니다.</span>
+        </div>
+        <div className="chat-grid">
+          {chats.map((chat, index) => (
+            <article className="chat-card" key={chat.href}>
+              <div className="chat-card-top"><span>{String(index + 1).padStart(2, "0")}</span><small>{chat.kind}</small></div>
+              <h3>{chat.title}</h3>
+              <p>{chat.description}</p>
+              <ul>{chat.meta.map((item) => <li key={item}>{item}</li>)}</ul>
+              <Link className="chat-card-link" href={chat.href}><b>페이지 열기</b><span>↗</span></Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="structure-section">
+        <div><p>PROJECT BOUNDARY</p><h2>한 프로젝트에는<br />그 프로젝트의 기록만</h2></div>
+        <ol>
+          <li><span>01</span><div><b>화곡농장 전용 홈</b><p>화곡농장과 직접 관련된 채팅별 공개 페이지만 누적합니다.</p></div></li>
+          <li><span>02</span><div><b>전체 프로젝트는 상위 인덱스</b><p>다른 프로젝트는 화곡농장 안에 나열하지 않고 전체 프로젝트 페이지에서 선택합니다.</p></div></li>
+          <li><span>03</span><div><b>공개·비공개는 같은 프로젝트끼리</b><p>비공개 사이트가 배포되면 화곡농장 공개 사이트와 같은 프로젝트 안에서만 연결합니다.</p></div></li>
+        </ol>
+      </section>
+
+      <footer className="site-footer">
+        <b>화곡농장 프로젝트</b>
+        <div><a href="https://softm.github.io/projects/">전체 프로젝트</a><a href="#chats">채팅별 페이지</a></div>
+      </footer>
+    </main>
+  );
+}
