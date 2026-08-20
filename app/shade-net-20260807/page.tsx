@@ -20,7 +20,7 @@ export default function ShadeNetPage() {
 
   return (
     <main className="site-page detail-page">
-      <ProjectNav />
+      <ProjectNav current="shade" />
 
       <section className="detail-hero" id="top">
         <div>
