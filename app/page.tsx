@@ -3,6 +3,13 @@ import { ProjectNav } from "./project-nav";
 
 const chats = [
   {
+    href: "/perilla-transplant-20260830",
+    kind: "재배·작업기록",
+    title: "2026-08-30 663-1·667-35 들깨 정식",
+    description: "들깨 모종 3판을 화곡리 663-1·667-35번지에 정식하고 고추대·줄로 구획을 표시한 뒤 관수했으며, 다음 날 농관원 현장확인 예정까지 정리했습니다.",
+    meta: ["들깨 모종 3판", "663-1·667-35", "농관원 현장확인"],
+  },
+  {
     href: "/perilla-sowing-after-rain",
     kind: "재배·파종",
     title: "12mm 강우 후 늦파종 들깨 파종",
@@ -120,7 +127,7 @@ export default function Home() {
           <b>공개 채팅 페이지</b>
           <div><span>프로젝트</span><b>화곡농장</b></div>
           <div><span>위치</span><b>충남 서산시 대산읍 화곡리</b></div>
-          <div><span>최근 추가</span><b>2026. 8. 21.</b></div>
+          <div><span>최근 추가</span><b>2026. 8. 31.</b></div>
         </aside>
       </section>
 
