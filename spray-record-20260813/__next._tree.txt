@@ -1,2 +1,2 @@
 :HL["/hwagok-farm/_next/static/chunks/04-b-~yaunebm.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"spray-record-20260813","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"bnFZ6pwHmN_VdNWxgzkOy"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"spray-record-20260813","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"dRZnLAov9XjKTfRnwSNsT"}
