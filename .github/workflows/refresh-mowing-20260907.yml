@@ -1,37 +1,77 @@
-name: Refresh mowing gallery archive
+name: Verify public mowing record
+
+# The one-time import is complete. Keep a read-only publication smoke check.
 on:
-  push:
+  workflow_run:
+    workflows: ['Deploy GitHub Pages']
+    types: [completed]
     branches: [main]
-    paths: ['.github/workflows/refresh-mowing-20260907.yml']
+  workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: verify-public-mowing-record
+  cancel-in-progress: true
+
 jobs:
-  refresh:
+  verify:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch verified public correction bundle
-        run: |
-          curl --fail --location --retry 2 --max-time 120 'https://at.adobe.com/RQCupKcIOW8iLX1B' -o /tmp/mowing-gallery-fix.zip
-          echo '763796ff7e78c107310e4488e5416b8308c04162e0c22199126174196fce876d  /tmp/mowing-gallery-fix.zip' | sha256sum --check
-      - name: Update only stylesheet and matching user archive
+        with:
+          ref: main
+      - name: Check public page, downloads, photos and project links
         shell: python
         run: |
+          import hashlib, json, time
           from pathlib import Path
-          import zipfile
-          target = Path('public/mowing-20260907')
-          with zipfile.ZipFile('/tmp/mowing-gallery-fix.zip') as z:
-              assert set(z.namelist()) == {'styles.css', '20260907_화곡농장_벌초작업_공개.zip'}
-              assert z.testzip() is None
-              for name in z.namelist():
-                  (target/name).write_bytes(z.read(name))
-          assert '.photo img{display:block;width:100%;height:auto;' in (target/'styles.css').read_text()
-      - name: Commit matching page and ZIP
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/mowing-20260907/styles.css public/mowing-20260907/*.zip
-          if ! git diff --cached --quiet; then
-            git commit -m 'fix: preserve landscape gallery image ratio and refresh publication ZIP'
-            git push origin HEAD:main
-          fi
+          from urllib.request import Request, urlopen
+          from urllib.parse import quote
+          root = Path('public/mowing-20260907')
+          base = 'https://softm.github.io/hwagok-farm/mowing-20260907/'
+          home_url = 'https://softm.github.io/hwagok-farm/'
+          index_url = 'https://softm.github.io/projects/projects.json'
+          files = ['index.html','record.md','styles.css','gallery.js','manifest.json','images/01-slope.jpg','images/02-path.jpg','images/03-field.jpg','20260907_화곡농장_벌초작업_공개.zip']
+          def read(url):
+              req = Request(url, headers={'User-Agent':'Hwagok-Farm-Publication-Check','Cache-Control':'no-cache'})
+              with urlopen(req, timeout=25) as response:
+                  assert response.status == 200, (url, response.status)
+                  return response.read()
+          for attempt in range(12):
+              try:
+                  stamp = '?publication-check=' + str(int(time.time()))
+                  page = read(base + stamp).decode('utf-8')
+                  assert '벌초 작업 기록' in page and '08:30' in page and '17:00' in page
+                  css = read(base+'styles.css'+stamp).decode('utf-8')
+                  assert '.photo img{display:block;width:100%;height:auto;' in css
+                  verified = []
+                  for name in files:
+                      remote = read(base + quote(name, safe='/') + stamp)
+                      expected = (root/name).read_bytes()
+                      assert hashlib.sha256(remote).digest() == hashlib.sha256(expected).digest(), name+' differs from source'
+                      verified.append({'file':name,'http_status':200,'bytes':len(remote),'sha256_matches':True})
+                  home = read(home_url + stamp).decode('utf-8')
+                  assert '/hwagok-farm/mowing-20260907/' in home
+                  assert '2026-09-07 화곡농장 벌초 작업 기록' in home
+                  config = json.loads(read(index_url + stamp))
+                  project = next(p for p in config['projects'] if p['repo']=='hwagok-farm')
+                  assert project['homeUrl'] == home_url
+                  assert project['pageCount'] >= 16
+                  report = {'status':'success','public_url':base,'public_page_http':200,'files':verified,'farm_home_link':True,'projects_home_link':True,'projects_page_count':project['pageCount'],'projects_latest_title':project['latestTitle']}
+                  print(json.dumps(report, ensure_ascii=False, indent=2))
+                  Path('publication-check.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
+                  break
+              except Exception as error:
+                  print(f'Attempt {attempt+1}/12: {error}', flush=True)
+                  if attempt == 11:
+                      raise
+                  time.sleep(10)
+      - name: Save verification report
+        uses: actions/upload-artifact@v4
+        with:
+          name: mowing-publication-check
+          path: publication-check.json
