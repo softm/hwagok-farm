@@ -3,6 +3,13 @@ import { ProjectNav } from "./project-nav";
 
 const chats = [
   {
+    href: "/mowing-20260907/",
+    kind: "벌초·작업기록",
+    title: "2026-09-07 화곡농장 벌초 작업 기록",
+    description: "08:30부터 17:00까지의 벌초·풀베기 기록입니다. 휴게시간 차감 전 8시간 30분이며, 현장 사진 3장과 MD·HTML·ZIP을 함께 정리했습니다.",
+    meta: ["08:30~17:00", "휴게시간 차감 전 8시간 30분", "현장 사진 3장"],
+  },
+  {
     href: "/perilla-transplant-20260830",
     kind: "재배·작업기록",
     title: "2026-08-30 663-1·667-35 들깨 정식",
@@ -127,7 +134,7 @@ export default function Home() {
           <b>공개 채팅 페이지</b>
           <div><span>프로젝트</span><b>화곡농장</b></div>
           <div><span>위치</span><b>충남 서산시 대산읍 화곡리</b></div>
-          <div><span>최근 추가</span><b>2026. 8. 31.</b></div>
+          <div><span>최근 추가</span><b>2026. 9. 7.</b></div>
         </aside>
       </section>
 
@@ -155,13 +162,13 @@ export default function Home() {
         <ol>
           <li><span>01</span><div><b>화곡농장 전용 홈</b><p>화곡농장과 직접 관련된 채팅별 공개 페이지만 누적합니다.</p></div></li>
           <li><span>02</span><div><b>전체 프로젝트는 상위 인덱스</b><p>다른 프로젝트는 화곡농장 안에 나열하지 않고 전체 프로젝트 페이지에서 선택합니다.</p></div></li>
-          <li><span>03</span><div><b>공개·비공개는 같은 프로젝트끼리</b><p><a href="https://hwagok.softm.chatgpt.site/#hwagok">화곡농장 비공개 사이트</a>와 이 공개 사이트를 서로 연결합니다.</p></div></li>
+          <li><span>03</span><div><b>공개·비공개는 같은 프로젝트끼리</b><p><a href="https://hwagok-farm-private.vercel.app/">화곡농장 비공개 사이트</a>와 이 공개 사이트를 서로 연결합니다.</p></div></li>
         </ol>
       </section>
 
       <footer className="site-footer">
         <b>화곡농장 프로젝트</b>
-        <div><a href="https://softm.github.io/projects/">전체 프로젝트</a><a href="https://hwagok.softm.chatgpt.site/#hwagok">비공개 사이트</a><a href="#chats">채팅별 페이지</a></div>
+        <div><a href="https://softm.github.io/projects/">전체 프로젝트</a><a href="https://hwagok-farm-private.vercel.app/">비공개 사이트</a><a href="#chats">채팅별 페이지</a></div>
       </footer>
     </main>
   );

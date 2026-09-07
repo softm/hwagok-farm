@@ -1,8 +1,10 @@
 import Link from "next/link";
 
-type Current = "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
+type Current = "perillaTransplant" | "mowing" | "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
 
 const chats = [
+  { id: "mowing" as Current, href: "/mowing-20260907/", kind: "벌초·작업기록", title: "2026-09-07 화곡농장 벌초 작업 기록", meta: "08:30~17:00·현장 사진 3장·MD·HTML·ZIP" },
+  { id: "perillaTransplant" as Current, href: "/perilla-transplant-20260830", kind: "재배·작업기록", title: "2026-08-30 663-1·667-35 들깨 정식", meta: "들깨 모종 3판·구획 표시·농관원 현장확인" },
   { id: "perilla" as Current, href: "/perilla-sowing-after-rain", kind: "재배·파종", title: "12mm 강우 후 늦파종 들깨 파종", meta: "비가 그친 뒤 흙 상태·깊이·복토" },
   { id: "cctv" as Current, href: "/cctv-internet-20260821", kind: "통신·CCTV", title: "농막·하우스 CCTV 인터넷 연결", meta: "핫스팟·Extender N3·Tapo 모델 비교" },
   { id: "shade" as Current, href: "/shade-net-20260807", kind: "시설·차양", title: "6평 농막 그늘막 예상 설치", meta: "긴 면 7.3m·세로 1.8~1.9m·권장 규격" },
@@ -26,7 +28,7 @@ export function ProjectNav({ current }: { current?: Current }) {
       <nav>
         <a href="https://softm.github.io/projects/">전체 프로젝트</a>
         <Link className={current ? "" : "active"} href="/">화곡농장 홈</Link>
-        <a href="https://hwagok.softm.chatgpt.site/#hwagok">비공개 사이트</a>
+        <a href="https://hwagok-farm-private.vercel.app/">비공개 사이트</a>
         <details className="chat-switcher">
           <summary><span>채팅별 페이지</span><b>{chats.length}개</b></summary>
           <div className="chat-menu-panel">
