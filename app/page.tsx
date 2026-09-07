@@ -3,6 +3,13 @@ import { ProjectNav } from "./project-nav";
 
 const chats = [
   {
+    href: "/irrigation-20260905",
+    kind: "관수·작업기록",
+    title: "2026-09-05 화이트클로버 자동급수",
+    description: "하우스 앞밭 화이트클로버 파종 후 자동급수 타이머와 스프링클러를 설치하고 2시간마다 1분 급수로 설정한 기록입니다.",
+    meta: ["2시간 간격", "1회 1분", "현장 사진 13장"],
+  },
+  {
     href: "/mowing-20260907/",
     kind: "벌초·작업기록",
     title: "2026-09-07 화곡농장 벌초 작업 기록",
