@@ -1,10 +1,11 @@
 import Link from "next/link";
 
-type Current = "irrigation" | "perillaTransplant" | "mowing" | "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
+type Current = "irrigation" | "mowing20260826" | "perillaTransplant" | "mowing" | "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
 
 const chats = [
   { id: "irrigation" as Current, href: "/irrigation-20260905", kind: "관수·작업기록", title: "2026-09-05 화이트클로버 자동급수", meta: "2시간 간격·1회 1분·현장 사진 13장" },
   { id: "mowing" as Current, href: "/mowing-20260907/", kind: "벌초·작업기록", title: "2026-09-07 화곡농장 벌초 작업 기록", meta: "08:30~17:00·현장 사진 3장·MD·HTML·ZIP" },
+  { id: "mowing20260826" as Current, href: "/mowing-20260826/", kind: "벌초·작업기록", title: "2026-08-26 화곡농장 벌초 작업 기록", meta: "07:00~14:00·35만 원·사진 6장·영상 1개" },
   { id: "perillaTransplant" as Current, href: "/perilla-transplant-20260830", kind: "재배·작업기록", title: "2026-08-30 663-1·667-35 들깨 정식", meta: "들깨 모종 3판·구획 표시·농관원 현장확인" },
   { id: "perilla" as Current, href: "/perilla-sowing-after-rain", kind: "재배·파종", title: "12mm 강우 후 늦파종 들깨 파종", meta: "비가 그친 뒤 흙 상태·깊이·복토" },
   { id: "cctv" as Current, href: "/cctv-internet-20260821", kind: "통신·CCTV", title: "농막·하우스 CCTV 인터넷 연결", meta: "핫스팟·Extender N3·Tapo 모델 비교" },
