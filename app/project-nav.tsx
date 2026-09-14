@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type Current = "irrigation" | "mowing20260826" | "perillaTransplant" | "mowing" | "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
+type Current = "irrigation" | "mowing20260826" | "perillaTransplant" | "mowing" | "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "dangol" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
 
 const chats = [
   { id: "irrigation" as Current, href: "/irrigation-20260905", kind: "관수·작업기록", title: "2026-09-05 화이트클로버 자동급수", meta: "2시간 간격·1회 1분·현장 사진 13장" },
@@ -14,6 +14,7 @@ const chats = [
   { id: "machine" as Current, href: "/farm-machine-rental", kind: "농기계·행정", title: "서산시 농기계 임대·운반 서비스", meta: "북부분소·준비서류·파종 장비" },
   { id: "moskill" as Current, href: "/moskill-20260527", kind: "방제·작업기록", title: "2026-05-27 모스킬 잎벌레 방제", meta: "오후 2:30 살포·약 50L·강우 18시" },
   { id: "spray" as Current, href: "/spray-record-20260813", kind: "방제·작업기록", title: "농막 아랫밭 나방노린채 살포", meta: "오전 7시·20L 2통·약제 10mL/통" },
+  { id: "dangol" as Current, href: "/dangol-spray-20260811", kind: "방제·작업기록", title: "2026-08-11 단골 들깨밭 살포", meta: "농막 아래 농지·20L 2통·차폐갓 선택살포" },
   { id: "harvest" as Current, href: "/20260811-gourd-harvest/", kind: "수확·작업기록", title: "2026-08-11 박 수확 기록", meta: "약 50통·사진 53장·재배지 전경" },
   { id: "onion" as Current, href: "/onion-purchase-20260811", kind: "구매·보관", title: "2026-08-11 양파 구입·저온창고 보관", meta: "구매비 453,000원·약 37망 참고·저온창고" },
   { id: "onionSource" as Current, href: "/onion-sourcing-20260810", kind: "구매·거래처", title: "2026-08-10 양파 구매처 조사", meta: "15kg×30망·총 450kg·가격 및 회신 현황" },
@@ -36,12 +37,7 @@ export function ProjectNav({ current }: { current?: Current }) {
           <div className="chat-menu-panel">
             <p><small>화곡농장 프로젝트</small><strong>채팅별 웹사이트</strong></p>
             {chats.map((chat) => (
-              <Link
-                aria-current={current === chat.id ? "page" : undefined}
-                className={current === chat.id ? "current" : ""}
-                href={chat.href}
-                key={chat.id}
-              >
+              <Link aria-current={current === chat.id ? "page" : undefined} className={current === chat.id ? "current" : ""} href={chat.href} key={chat.id}>
                 <small>{current === chat.id ? "현재 페이지" : chat.kind}</small>
                 <strong>{chat.title}</strong>
                 <span>{chat.meta}</span>
