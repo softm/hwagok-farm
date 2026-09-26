@@ -249,9 +249,10 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "fertilizer-plan",
     "kind": "재배·시비",
-    "title": "들깨·열무 밑거름 시비계획",
+    "title": "2026-07-05 들깨·열무 밑거름 시비계획",
     "description": "4개 필지 밑거름 시비 계획입니다.",
     "meta": [
+      "2026-07-05",
       "4개 필지",
       "맞춤18호 5포"
     ],
