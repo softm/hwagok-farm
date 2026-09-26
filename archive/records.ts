@@ -1,6 +1,20 @@
 export type ArchiveRecord = {slug:string;kind:string;title:string;description:string;meta:string[];legacyPath:string;assets:null|{md?:string;html?:string;zip?:string};assetStatus:string};
 export const archiveRecords: ArchiveRecord[] = [
   {
+    "slug": "fan-gearbox-repair-20260914",
+    "kind": "시설·장비수리",
+    "title": "2026-09-14 타이거킹 공업용 선풍기 회전기어박스 주문",
+    "description": "화곡농장 공업용 선풍기 TKF-30 S,P의 파손된 좌우 회전 기어박스를 확인하고 교체용 부품을 주문한 기록입니다.",
+    "meta": [
+      "TKF-30 S,P · 30인치 · 310W",
+      "기어박스 하우징 파손",
+      "현장 사진 8장 · 부품 1개 주문"
+    ],
+    "legacyPath": "/fan-gearbox-repair-20260914/",
+    "assets": {"md":"/archive/fan-gearbox-repair-20260914/record.md","html":"/archive/fan-gearbox-repair-20260914/record.html"},
+    "assetStatus": "text-and-photos-archived"
+  },
+  {
     "slug": "farm-machine-rental-20260924",
     "kind": "농기계·작업기록",
     "title": "2026-09-24 북부 농업기계 임대사업소 관리기 임대·출고",
