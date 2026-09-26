@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ProjectNav } from "../project-nav";
 
 const fields = [
@@ -8,6 +9,12 @@ const fields = [
   { lot: "667-3", area: "372㎡", pyeong: "112.5평", crop: "들깨", fertilizer: "20kg", bags: "1포" },
   { lot: "아래 밭", area: "420.3㎡", pyeong: "127.1평", crop: "들깨", fertilizer: "25kg", bags: "1.25포" },
   { lot: "667-4", area: "290㎡", pyeong: "87.7평", crop: "열무", fertilizer: "25kg", bags: "1.25포" },
+];
+
+const photos = [
+  {src:"/assets/product-info.png", alt:"비료 제품 정보 원본 사진", caption:"비료 제품·포대 표기 확인 자료"},
+  {src:"/assets/target-area.png", alt:"화곡농장 작업 대상 구역 지도", caption:"화곡농장 작업 대상 구역"},
+  {src:"/assets/seed-zones.png", alt:"화곡농장 구역 계획 지도", caption:"농장 구역 계획 참고자료"},
 ];
 
 const products = [
