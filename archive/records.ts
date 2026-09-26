@@ -11,8 +11,8 @@ export const archiveRecords: ArchiveRecord[] = [
       "사진 18장·영상 2개 원본 보유"
     ],
     "legacyPath": "/farm-machine-rental-20260924/",
-    "assets": null,
-    "assetStatus": "legacy-assets-audit-pending"
+    "assets": {"md":"/archive/farm-machine-rental-20260924/record.md","html":"/archive/farm-machine-rental-20260924/record.html"},
+    "assetStatus": "text-archived-media-upload-pending"
   },
   {
     "slug": "deodeok-harvest-20260923",
