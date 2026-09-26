@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-type Current = "irrigation" | "mowing20260826" | "perillaTransplant" | "mowing" | "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "dangol" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
+type Current = "machineVisit" | "irrigation" | "mowing20260826" | "perillaTransplant" | "mowing" | "perilla" | "cctv" | "shade" | "clover" | "machine" | "moskill" | "spray" | "dangol" | "harvest" | "onion" | "onionSource" | "sprinkler" | "fertilizer" | "freezer" | "awning";
 
-const chats = [
+const chats = [\n  { id: "machineVisit" as Current, href: "/farm-machine-rental-20260924", kind: "농기계·작업기록", title: "2026-09-24 관리기 임대·출고", meta: "북부사업소·아세아 관리기·운송·현장 하차" },\n
   { id: "irrigation" as Current, href: "/irrigation-20260905", kind: "관수·작업기록", title: "2026-09-05 화이트클로버 자동급수", meta: "2시간 간격·1회 1분·현장 사진 13장" },
   { id: "mowing" as Current, href: "/mowing-20260907/", kind: "벌초·작업기록", title: "2026-09-07 화곡농장 벌초 작업 기록", meta: "08:30~17:00·현장 사진 3장·MD·HTML·ZIP" },
   { id: "mowing20260826" as Current, href: "/mowing-20260826/", kind: "벌초·작업기록", title: "2026-08-26 화곡농장 벌초 작업 기록", meta: "07:00~14:00·35만 원·사진 6장·영상 1개" },
