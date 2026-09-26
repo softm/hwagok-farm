@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/prepare-engine-stop.mjs",
+    "prebuild": "node scripts/prepare-engine-stop.mjs && python3 scripts/prepare-cultivator-manual-start.py",
     "build": "next build",
     "start": "next start"
   },
