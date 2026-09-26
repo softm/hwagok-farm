@@ -1,46 +1,36 @@
 import Link from "next/link";
 import { ProjectNav } from "../project-nav";
 
-const offices = [
-  ["본소","인지면 무학재1길 99","041-669-5951"],
-  ["중부","성연면 생동사동길 21","041-662-3315"],
-  ["동부","운산면 홍안벌로 501","041-688-7766"],
-  ["북부","대산읍 대산1로 70","041-681-1006"],
-];
+const photos = [
+"1000066165.jpg","1000066167.jpg","1000066168.jpg","1000066169.jpg","1000066170.jpg","1000066171.jpg","1000066172.jpg","1000066173.jpg","1000066174.jpg",
+"1000066175.jpg","1000066176.jpg","1000066177.jpg","1000066178.jpg","1000066180.jpg","1000066192.jpg","1000066193.jpg","1000066195.jpg","1000066196.jpg"];
+const videos=["1000066166.mp4","1000066179.mp4"];
+const bp=process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const img=(n:string)=>bp+"/archive/farm-machine-rental-20260924/assets/"+n;
 
-export default function MachineRentalVisitPage(){
-  return <main className="site-page detail-page machine-page">
-    <ProjectNav current="machineVisit" />
-    <section className="detail-hero machine-hero"><div>
-      <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>관리기 임대·출고 기록</b></p>
-      <p className="kicker">2026. 9. 24. · 서산시농업기술센터 북부 농업기계 임대사업소</p>
-      <h1>아세아 관리기<br/><em>임대·출고·운송 기록</em></h1>
-      <p className="hero-description">북부 농업기계 임대사업소를 방문해 이용조건을 확인하고 아세아 관리기를 출고한 뒤, 농업기술센터 차량으로 운송해 현장에서 크레인으로 하차한 기록입니다.</p>
-      <div className="hero-actions"><a className="primary-button" href="tel:0416811006">북부사업소 전화</a><Link className="outline-button" href="/farm-machine-rental">기존 임대 안내</Link></div>
-    </div><aside className="metric-card machine-card"><small>현장 기록</small><h2>2026-09-24</h2><dl>
-      <div><dt>사업소</dt><dd>북부 · 대산</dd></div><div><dt>장비</dt><dd>아세아 관리기</dd></div><div><dt>임대</dt><dd>1농가 1대 · 3일 이내</dd></div><div><dt>운송</dt><dd>농업기술센터 차량</dd></div>
-    </dl></aside></section>
+export default function Page(){return <main className="site-page detail-page machine-page">
+<ProjectNav current="machineVisit"/>
+<section className="detail-hero machine-hero"><div><p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>2026-09-24 관리기 임대·출고</b></p><p className="kicker">2026. 9. 24. · 서산시농업기술센터 북부 농업기계 임대사업소</p><h1>관리기 임대부터<br/><em>화곡농장 현장 하차까지</em></h1><p className="hero-description">사업소 방문, 이용안내 확인, 아세아 관리기 실물·조작부 확인, 출고, 운송차량 적재, 크레인 하차까지 실제 현장 자료를 순서대로 정리한 작업 기록입니다.</p></div>
+<aside className="metric-card machine-card"><small>현장 아카이브</small><h2>2026-09-24</h2><dl><div><dt>사진</dt><dd>18장</dd></div><div><dt>영상</dt><dd>2개</dd></div><div><dt>장비</dt><dd>아세아 관리기</dd></div><div><dt>사업소</dt><dd>북부 · 대산</dd></div></dl></aside></section>
 
-    <section className="quick-strip machine-strip"><div><span>01</span><p><b>경영체</b>등록증 제출</p></div><div><span>02</span><p><b>안전보험</b>NH 가입증명서</p></div><div><span>03</span><p><b>출고</b>안전교육 실시</p></div><div><span>04</span><p><b>반납</b>세척·연료 보충</p></div></section>
+<section className="content-section"><div className="section-title"><p>01 · VISIT</p><h2>북부 농업기계 임대사업소 방문</h2><span>대산읍 대산1로 70 · 041-681-1006</span></div>
+<div className="data-cards three"><article><h3>이용 대상</h3><p>관내 농업인. 농업경영체등록증 제출.</p></article><article><h3>임대기간</h3><p>1농가당 1대 원칙, 사용기간 3일 이내.</p></article><article><h3>출고 조건</h3><p>출고 전 안전교육. 자주형 농기계·작업기는 농업인 NH안전보험 가입증명서 확인.</p></article></div>
+<div className="info-note"><b>반납:</b> 장비 세척 및 연료 보충. 타인 재임대 금지. 안내문상 고장·파손 시 수리·배상 책임이 명시되어 있습니다.</div></section>
 
-    <section className="content-section"><div className="section-title"><p>RENTAL RULES</p><h2>현장에서 확인한 이용조건</h2><span>2026-09-24 사업소 안내문을 기준으로 정리했습니다.</span></div>
-      <div className="data-cards three"><article><h3>임대 대상·서류</h3><p>관내 농업인 대상이며 농업경영체등록증 제출이 필요합니다. 자주형 농기계·작업기 사용자는 농업인 NH안전보험 가입 증명서를 제출하도록 안내되어 있습니다.</p></article>
-      <article><h3>기간·교육</h3><p>1농가당 1대 임대 원칙이며 사용기간은 3일 이내입니다. 장비 출고 시 안전교육을 실시하고 농업용 굴착기 사용자는 면허증을 제출합니다.</p></article>
-      <article><h3>반납·책임</h3><p>사용 후 세척하고 연료를 보충해 반납합니다. 출고 후 고장·파손은 안내문상 사용자 수리·배상 책임이 명시되어 있습니다.</p></article></div>
-    </section>
+<section className="content-section tint"><div className="section-title"><p>02 · MACHINE</p><h2>아세아 관리기 실물 확인</h2><span>엔진, 배터리, 로터리 작업부, 조향 핸들 및 각종 조작 레버를 현장에서 확인했습니다.</span></div>
+<div className="process-grid"><article><span>01</span><div><h3>장비 확인</h3><p>임대사업소 보관 장비 중 사용할 관리기를 확인했습니다.</p></div></article><article><span>02</span><div><h3>조작 설명</h3><p>담당자에게 장비 취급과 조작에 관한 현장 설명을 받았습니다.</p></div></article><article><span>03</span><div><h3>로터리 확인</h3><p>관리기 후방 로터리 작업부와 연결 상태를 사진으로 기록했습니다.</p></div></article><article><span>04</span><div><h3>출고 준비</h3><p>운송 전 장비 상태와 구성품을 확인했습니다.</p></div></article></div></section>
 
-    <section className="content-section tint"><div className="section-title"><p>FIELD LOG</p><h2>관리기 출고부터 현장 하차까지</h2></div>
-      <div className="process-grid"><article><span>01</span><div><h3>사업소 방문</h3><p>북부 농업기계 임대사업소에서 이용조건과 준비서류를 확인했습니다.</p></div></article>
-      <article><span>02</span><div><h3>관리기 확인</h3><p>사업소 내부에서 아세아 관리기의 엔진·배터리·로터리 작업부·조작 레버를 확인하고 취급 설명을 받았습니다.</p></div></article>
-      <article><span>03</span><div><h3>출고·운송</h3><p>관리기를 농업기술센터 크레인 장착 화물차에 적재해 현장으로 운송했습니다.</p></div></article>
-      <article><span>04</span><div><h3>현장 하차</h3><p>현장에서 크레인을 이용해 관리기를 하차하고 장비 상태와 조작 상태를 확인했습니다.</p></div></article></div>
-      <div className="info-note"><b>자료 보유:</b> 이 기록의 원본 정리본에는 현장 사진 18장과 동영상 2개가 포함되어 있습니다. 공개 저장소에는 현재 텍스트 기록을 우선 반영했습니다.</div>
-    </section>
+<section className="content-section"><div className="section-title"><p>03 · TRANSPORT</p><h2>운송차량 적재 및 현장 하차</h2></div><p>관리기는 농업기술센터 크레인 장착 화물차로 운송됐으며, 현장 도착 후 크레인을 이용해 하차했습니다. 하차 후 도로에서 장비 상태와 조작 상태를 다시 확인했습니다.</p></section>
 
-    <section className="content-section dark-section"><div className="section-title light"><p>CONTACT</p><h2>서산시 농업기계 임대사업소</h2></div>
-      <div className="office-table" role="table">{offices.map(([n,a,p])=><div className={n==="북부"?"featured":""} role="row" key={n}><strong>{n}</strong><span>{a}</span><a href={"tel:"+p.replaceAll("-","")}>{p}</a></div>)}</div>
-      <div className="info-note"><b>현장 수기 메모:</b> 대산농협 · 041-660-9900 · 7916. 메모의 용도는 원기록만 보존하고 별도 확정하지 않았습니다.</div>
-    </section>
-    <footer className="site-footer"><b>화곡농장 · 2026-09-24 관리기 임대·출고</b><div><Link href="/">프로젝트 홈</Link><a href="https://softm.github.io/projects/">전체 프로젝트</a></div></footer>
-  </main>
-}
+<section className="content-section tint"><div className="section-title"><p>04 · PHOTO ARCHIVE</p><h2>현장 사진 18장</h2><span>채팅에 첨부된 원본 파일명을 유지했습니다.</span></div>
+<div className="archive-media-grid">{photos.map((p,i)=><figure key={p}><img src={img(p)} alt={"2026-09-24 관리기 임대 현장 사진 "+(i+1)}/><figcaption>{String(i+1).padStart(2,"0")} · {p}</figcaption></figure>)}</div></section>
+
+<section className="content-section"><div className="section-title"><p>05 · VIDEO ARCHIVE</p><h2>현장 동영상 2개</h2></div>
+<div className="archive-video-grid">{videos.map((v,i)=><figure key={v}><video controls preload="metadata"><source src={img(v)} type="video/mp4"/></video><figcaption>영상 {i+1} · {v}</figcaption></figure>)}</div></section>
+
+<section className="content-section dark-section"><div className="section-title light"><p>06 · CONTACT & RETURN</p><h2>연락처와 반납 체크</h2></div>
+<div className="contact-layout"><article><small>북부 농업기계 임대사업소</small><h3>대산읍 대산1로 70</h3><a href="tel:0416811006">041-681-1006</a></article><article><h3>반납 전</h3><ul><li>관리기 세척</li><li>연료 보충</li><li>파손·이상 유무 확인</li><li>약속한 기간 내 반납</li></ul></article></div>
+<div className="info-note"><b>현장 수기 메모:</b> 대산농협 · 041-660-9900 · 7916. 정확한 용도는 자료만으로 확정하지 않고 원기록 그대로 보존합니다.</div></section>
+
+<section className="content-section"><div className="section-title"><p>07 · SOURCE FILES</p><h2>정리 원본</h2></div><div className="hero-actions"><a className="primary-button" href={bp+"/archive/farm-machine-rental-20260924/record.html"}>HTML 정리본</a><a className="outline-button" href={bp+"/archive/farm-machine-rental-20260924/record.md"}>Markdown 원본</a></div></section>
+<footer className="site-footer"><b>화곡농장 · 관리기 임대·출고 기록</b><div><Link href="/">프로젝트 홈</Link><a href="https://softm.github.io/projects/">전체 프로젝트</a></div></footer></main>}
