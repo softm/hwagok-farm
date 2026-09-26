@@ -1,0 +1,10 @@
+{
+  "slug": "cultivator-manual-start-20260922",
+  "sourceCommit": "7f51e187bae38356e457e45bc1f1d553d5a24d69",
+  "buildStatus": "success",
+  "staticImageCount": 10,
+  "imageType": "web-optimized derivatives",
+  "html": "record.html",
+  "markdown": "record.md",
+  "zip": "manual-start-20260922-web.zip"
+}
