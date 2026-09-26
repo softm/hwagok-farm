@@ -19,6 +19,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Import verified deodeok archive bundle when present
+        if: ${{ hashFiles('deodeok-20260923-complete.zip') != '' }}
+        run: |
+          python3 scripts/import-deodeok-bundle.py
+          git add public/archive/deodeok-harvest-20260923 archive/records.ts
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Archive verified deodeok originals, documents and ZIP'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -31,6 +46,22 @@ jobs:
 
       - name: Build static site
         run: npm run build
+
+      - name: Verify imported archive is present in static output
+        if: ${{ hashFiles('public/archive/deodeok-harvest-20260923/import-receipt.json') != '' }}
+        run: |
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path('out/archive/deodeok-harvest-20260923')
+          record=json.loads((root/'record.json').read_text())
+          for item in record['media']:
+              data=(root/item['file']).read_bytes()
+              assert hashlib.sha256(data).hexdigest()==item['sha256'],item['file']
+          assert (root/'bundle.zip').is_file()
+          assert (root/'record.html').is_file()
+          print('Static output includes 7 original photos, 3 original videos, HTML, MD and ZIP.')
+          PY
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
