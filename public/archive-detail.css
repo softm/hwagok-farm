@@ -1,0 +1,95 @@
+/* Compact archive details. Homes, authentication and standalone applications are untouched. */
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)){--record-ink:#172b24;--record-muted:#586a62;--record-line:#dce4df;--record-accent:#236347;scroll-padding-top:16px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) body{margin:0;background:#fff;color:var(--record-ink);font:16px/1.7 Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) *,html:is([data-record-detail],:has(.detail-page),:has(.record-page)) *::before,html:is([data-record-detail],:has(.detail-page),:has(.record-page)) *::after{box-sizing:border-box}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) main{min-width:0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.detail-page,.record-page,main[data-record-page]){max-width:1280px;margin:0 auto;padding:0 28px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.detail-hero,.record-header){display:block;min-height:0;height:auto;margin:0;padding:24px 0 20px;background:none;color:var(--record-ink);overflow:visible;border-bottom:1px solid var(--record-line)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) h1{max-width:none;margin:6px 0 10px;font-size:clamp(24px,2.4vw,32px);line-height:1.4;font-weight:750;letter-spacing:-.035em;word-break:keep-all;overflow-wrap:anywhere;color:var(--record-ink)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) h1 :is(em,strong){color:inherit;font:inherit}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) h1 br{display:none}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-date{display:block;margin-bottom:4px;font-size:13px;font-weight:500;color:var(--record-muted);letter-spacing:0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .breadcrumb{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:13px;line-height:1.6;color:var(--record-muted)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .breadcrumb a{color:var(--record-accent);text-decoration:underline;text-underline-offset:3px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.hero-description,.record-lead){max-width:90ch;margin:8px 0 0;color:var(--record-muted);font-size:16px;line-height:1.75;word-break:keep-all}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .kicker{margin:6px 0;color:var(--record-muted);font-size:13px;font-weight:500;line-height:1.5;letter-spacing:0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .metric-card{max-width:none;margin:16px 0 0;padding:12px 16px;border:1px solid var(--record-line);border-radius:8px;background:#f6f9f7;color:var(--record-ink);box-shadow:none}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .metric-card :is(small,dt){color:var(--record-muted)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .metric-card>strong{display:inline-block;margin:4px 12px 4px 0;font-size:23px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .metric-card h2{margin:2px 0 8px;font-size:18px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .metric-card dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:4px 24px;margin:0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .metric-card dl>div{display:flex;gap:12px;justify-content:space-between;padding:5px 0;border:0;font-size:14px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .metric-card dd{margin:0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.content-section,.content-section.tint,.content-section.dark-section,.record-section){max-width:none;margin:0;padding:24px 0;background:none;color:var(--record-ink);border-bottom:1px solid var(--record-line)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .section-title{margin:0 0 14px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .section-title>p{display:none}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.section-title h2,.record-section>h2){margin:0 0 8px;color:var(--record-ink);font-size:21px;line-height:1.4;letter-spacing:-.025em}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.section-title>span,.section-title.light>span){max-width:90ch;color:var(--record-muted);font-size:15px;line-height:1.7}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.content-section,.record-section)>p{margin:10px 0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.data-cards,.step-grid,.workflow-grid,.equipment-grid,.contact-layout,.record-columns){gap:12px;margin-top:12px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.data-cards article,.step-grid article,.equipment-grid article,.contact-layout article,.notice-card,.formula-card){min-height:0;height:auto;padding:14px 16px;border-radius:8px;box-shadow:none}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .data-cards article>strong{font-size:23px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.data-cards,.step-grid,.workflow-grid,.process-grid,.record-columns) h3{margin:0 0 5px;font-size:16px;line-height:1.5}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.data-cards,.step-grid,.workflow-grid,.process-grid) p{margin:0;font-size:15px;line-height:1.7}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-columns p{margin:8px 0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:12px;padding:0;border:0;background:none}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .process-grid article{display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;gap:10px;min-height:0;height:auto;padding:12px 14px;border:1px solid var(--record-line);border-radius:8px;background:#fff}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .process-grid article>span{flex:0 0 auto;font-size:12px;line-height:24px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.equipment-grid article>p,.equipment-grid h3){min-height:0;margin:8px 0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.info-note,.warning-note,.dark-note){margin:14px 0 0;padding:10px 14px;border-radius:4px;font-size:14px;line-height:1.75}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .dark-note{color:var(--record-ink);background:#f2f6f3}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .quick-strip{position:static;max-width:none;margin:12px 0;border:1px solid var(--record-line);border-radius:8px;box-shadow:none}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .quick-strip>div{padding:12px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.archive-media-grid,.media-grid,.photo-grid,.gallery-grid,.record-gallery){display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;align-items:start}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.archive-media-grid,.media-grid,.photo-grid,.gallery-grid,.record-gallery)>:is(figure,button,a,div){min-width:0;margin:0;padding:0;overflow:hidden;border:1px solid var(--record-line);border-radius:8px;background:#f7f9f7}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.archive-media-grid,.media-grid,.photo-grid,.gallery-grid,.record-gallery) img{display:block;width:100%;height:auto;aspect-ratio:4 / 3;max-height:320px;object-fit:contain;background:#f0f3f1}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.archive-media-grid,.media-grid,.photo-grid,.gallery-grid,.record-gallery) :is(figcaption,.caption){margin:0;padding:8px 10px;background:#fff;color:var(--record-muted);font-size:13px;line-height:1.55}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .media-grid span{padding:8px 10px;font-size:13px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) img[data-record-zoom]{cursor:zoom-in}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) img[data-record-zoom]:focus-visible{outline:3px solid var(--record-accent);outline-offset:-3px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) video{display:block;max-width:100%;height:auto;max-height:65vh}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) audio{max-width:100%}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(table,.table-wrap,.table-scroll){max-width:100%;overflow-x:auto}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) table{display:block;border-collapse:collapse;font-size:15px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(th,td){padding:10px 12px;vertical-align:top}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 24px;margin:8px 0 0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-specs>div{display:grid;grid-template-columns:90px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--record-line)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-specs dt{color:var(--record-muted);font-size:14px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-specs dd{margin:0;font-size:15px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-columns{display:grid;grid-template-columns:1fr 1fr}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-columns>div{min-width:0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-toc{display:flex;gap:6px 18px;flex-wrap:wrap;align-items:center;padding:10px 0;margin:0;border-bottom:1px solid var(--record-line);font-size:13px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-toc a{color:var(--record-accent);text-decoration:underline;text-underline-offset:3px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-toc b{font-size:13px;color:var(--record-muted)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.hero-actions,.record-actions){display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.primary-button,.outline-button,.download-banner>a){min-height:40px;margin:0;padding:8px 13px;border:1px solid var(--record-line);border-radius:6px;background:#f5f8f6;color:var(--record-accent);font-size:14px;font-weight:600;white-space:normal;text-align:center}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .download-banner{padding:18px 0;background:none;color:var(--record-ink)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .download-banner h2{font-size:20px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .site-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin:0;padding:20px 0;background:none;color:var(--record-muted);font-size:13px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .site-footer>div{display:flex;flex-wrap:wrap;gap:16px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .qa-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;border-color:var(--record-line)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .qa-grid article{padding:12px 0;border-color:var(--record-line)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .qa-grid h3{color:var(--record-accent)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .qa-grid p{color:var(--record-muted)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) details.record-reference{margin:16px 0;padding:12px 14px;border:1px solid var(--record-line);border-radius:8px;font-size:14px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) details.record-reference summary{cursor:pointer;font-weight:600}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-viewer{width:min(1120px,96vw);max-width:96vw;max-height:94dvh;padding:12px;border:0;border-radius:10px;background:#17211d;color:white}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-viewer::backdrop{background:rgba(0,0,0,.8)}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-viewer img{display:block;width:100%;height:auto;max-height:73dvh;object-fit:contain;margin:12px 0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-viewer-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-viewer button,html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-viewer a{padding:8px 12px;min-height:44px;border:1px solid #5c6b64;border-radius:6px;background:#25382f;color:white;cursor:pointer;font:inherit;font-size:14px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-viewer p{margin:8px 0 0;color:#e8eee9;font-size:14px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(a,button,summary):focus-visible{outline:3px solid #257b54;outline-offset:3px}
+@media(min-width:1180px){html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.archive-media-grid,.record-gallery){grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:700px){
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.detail-page,.record-page,main[data-record-page]){padding:0 16px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.detail-hero,.record-header){padding:18px 0 16px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.content-section,.content-section.tint,.content-section.dark-section,.record-section){padding:20px 0}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.record-columns,.data-cards.three,.data-cards.four,.mix-layout,.eligibility-layout,.contact-layout,.equipment-grid,.workflow-grid,.step-grid,.quick-strip,.process-grid){grid-template-columns:1fr}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.archive-media-grid,.media-grid,.photo-grid,.gallery-grid,.record-gallery){grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .call-script{grid-template-columns:1fr;gap:12px;padding:16px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .download-banner{align-items:flex-start;flex-direction:column;gap:12px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .check-list span{grid-template-columns:1fr;gap:4px}
+html:is([data-record-detail],:has(.detail-page),:has(.record-page)) .record-toc{gap:8px 14px}}
+@media(prefers-reduced-motion:reduce){html:is([data-record-detail],:has(.detail-page),:has(.record-page)){scroll-behavior:auto}}
+@media print{html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(.record-toc,.record-viewer,.site-footer){display:none}html:is([data-record-detail],:has(.detail-page),:has(.record-page)) :is(figure,.record-section,.record-reference){break-inside:avoid}}
