@@ -1,0 +1,33 @@
+name: Verify compact archive details
+on:
+  push:
+    branches: [verify/compact-detail-20260930]
+  workflow_run:
+    workflows: [Deploy GitHub Pages]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live-browser-check:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test runtime
+        run: |
+          python -m pip install playwright==1.57.0
+          python -m playwright install chromium --with-deps
+      - name: Verify production titles, galleries and mobile layout
+        run: python scripts/verify-detail-live.py
+      - name: Preserve screenshots and measured results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: detail-ui-verification
+          path: detail-ui-verification/
+          if-no-files-found: warn
