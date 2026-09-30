@@ -1,0 +1,43 @@
+name: Deploy static GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: github-pages-deploy
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - name: Assemble static site
+        run: |
+          rm -rf site
+          mkdir site
+          cp -a public/. site/
+          cp index.html archive-static.css archive-static.js site/
+          touch site/.nojekyll
+          python3 - <<'PY'
+          from pathlib import Path
+          import shutil
+          root=Path('site')
+          # Existing standalone HTML archives are promoted to their chat URLs.
+          promotions={
+            'fan-gearbox-repair-20260914':'archive/fan-gearbox-repair-20260914/record.html',
+            'farm-machine-rental-20260924':'archive/farm-machine-rental-20260924/record.html',
+            'deodeok-harvest-20260923':'archive/deodeok-harvest-20260923/index.html',
+          }
+          for slug,src in promotions.items():
+              dst=root/slug/'index.html'; dst.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(root/src,dst)
+          PY
+      - name: Publish static files
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./site
+          keep_files: true
