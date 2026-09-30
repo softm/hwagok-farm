@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Read-only production checks: canonical titles, compact layout and original fan images."""
+"""Read-only production verification of titles, media and responsive layout."""
 import json, time, urllib.request
 from pathlib import Path
+from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
 BASE='https://softm.github.io/hwagok-farm'
 ART=Path('detail-ui-verification'); ART.mkdir(exist_ok=True)
@@ -17,7 +18,7 @@ try:
             if report.get('version')=='20260930-compact-detail-v1' and report.get('staticVerification'):break
         except Exception:pass
         time.sleep(10)
-    else:raise AssertionError('New production title/layout report was not published')
+    else:raise AssertionError('Current production title report not published')
     result['staticVerification']=report['staticVerification']
     result['mediaUnchanged']=report['mediaUnchanged']
     records=report['records']
@@ -52,11 +53,38 @@ try:
             page.screenshot(path=str(ART/f'fan-{width}.png'),full_page=True)
             m['decodedImages']=len(decoded);result['responsive'].append(m)
         page.goto('https://softm.github.io/projects/hwagok-farm/',wait_until='networkidle')
-        anchor=page.locator('a[href*="fan-gearbox-repair-20260914"]').first
-        card=anchor.locator('xpath=ancestor::article[1]')
-        list_title=clean(card.locator('h3').inner_text())
-        assert list_title==fan['title'],(list_title,fan['title'])
-        result['listAndDetailTitle']=list_title
+        page.wait_for_selector('article.record-card.public')
+        items=page.locator('article.record-card.public').evaluate_all('''rows=>rows.map(r=>({url:r.dataset.record,date:r.dataset.authoredDate||'',name:r.querySelector('h3').innerText}))''')
+        comparisons=[]
+        for item in items:
+            parts=urlsplit(item['url']).path.rstrip('/').split('/')
+            slug=parts[-2] if parts[-1]=='record.html' else parts[-1]
+            record=next((r for r in records if r['slug']==slug),None)
+            assert record is not None,('Unmapped public list record',slug)
+            full=(item['date'] or '작성일 미확인')+' '+clean(item['name'])
+            comparisons.append({'slug':slug,'listDate':item['date'],'listName':clean(item['name']),'detailTitle':record['title'],'matched':full==record['title']})
+        result['listAndDetailTitles']=comparisons
+        assert len(comparisons)==23 and all(x['matched'] for x in comparisons),comparisons
+        page.set_viewport_size({'width':1440,'height':1000})
+        page.screenshot(path=str(ART/'farm-list-titles.png'),full_page=True)
+        deodeok=next(r for r in records if r['slug']=='deodeok-harvest-20260923')
+        full_url=BASE+'/archive/deodeok-harvest-20260923/record.html'
+        page.goto(full_url,wait_until='networkidle')
+        assert clean(page.locator('h1').first.inner_text())==deodeok['title']
+        images=page.evaluate('''async()=>{const images=[...document.querySelectorAll('img[src*="images/"]')];images.forEach(i=>i.loading='eager');await Promise.all(images.map(i=>i.decode()));return [...new Map(images.map(i=>[i.currentSrc,{src:i.currentSrc,width:i.naturalWidth,height:i.naturalHeight}])).values()]}''')
+        assert len(images)==7 and all(i['width']>0 for i in images),images
+        assert page.locator('video').count()==3
+        playback=[]
+        for index in range(3):
+            video=page.locator('video').nth(index)
+            video.scroll_into_view_if_needed()
+            video.evaluate('(v)=>{v.muted=true;return v.play()}')
+            page.wait_for_function('(i)=>document.querySelectorAll("video")[i].currentTime>0.15',arg=index,timeout=15000)
+            playback.append(video.evaluate('(v)=>({src:v.currentSrc,currentTime:v.currentTime,duration:v.duration,error:v.error?.code||null})'))
+            video.evaluate('(v)=>v.pause()')
+        page.evaluate('scrollTo(0,0)')
+        page.screenshot(path=str(ART/'deodeok-title-and-media.png'),full_page=True)
+        result['deodeokMedia']={'url':full_url,'title':deodeok['title'],'decodedOriginalImages':len(images),'playedVideos':len(playback),'videos':playback}
         browser.close()
     result['success']=True
 except Exception as e:
