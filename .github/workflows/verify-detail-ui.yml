@@ -2,11 +2,15 @@ name: Verify compact archive details
 on:
   push:
     branches: [verify/compact-detail-20260930]
+  workflow_run:
+    workflows: [Deploy GitHub Pages]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   live-browser-check:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
