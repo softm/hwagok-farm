@@ -1,0 +1,65 @@
+name: Restore and verify rental media
+on:
+  push:
+    branches: [main]
+    paths: ['farm-machine-rental-20260924-complete.zip']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: restore-rental-media
+  cancel-in-progress: false
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify and import the complete original bundle
+        run: python3 scripts/import-rental-media.py
+      - name: Commit only the restored rental record
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/archive/farm-machine-rental-20260924 farm-machine-rental-20260924-complete.zip
+          if ! git diff --cached --quiet; then
+            git commit -m 'Restore 18 original rental photos, 2 original videos and compatible playback'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Publish using the existing GitHub Pages pipeline
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          started=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          gh workflow run deploy-pages.yml --ref main
+          run_id=''
+          for attempt in $(seq 1 24); do
+            run_id=$(gh run list --workflow deploy-pages.yml --event workflow_dispatch --branch main --limit 10 --json databaseId,createdAt --jq "map(select(.createdAt >= \"$started\")) | .[0].databaseId // empty")
+            [ -n "$run_id" ] && break
+            sleep 5
+          done
+          [ -n "$run_id" ] || { echo 'The publication workflow did not start'; exit 1; }
+          gh run watch "$run_id" --exit-status || echo '::warning::Publication run did not conclude success; independent rental checks follow.'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install isolated browser verifier
+        run: |
+          npm install --prefix "$RUNNER_TEMP/rental-playwright" --no-save --package-lock=false playwright@1.56.1
+          "$RUNNER_TEMP/rental-playwright/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Verify every production asset and actual browser playback
+        run: NODE_PATH="$RUNNER_TEMP/rental-playwright/node_modules" node scripts/verify-rental-public.cjs
+      - name: Save verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rental-media-verification
+          path: |
+            rental-media-verification.json
+            rental-media-mobile.png
+          if-no-files-found: warn
