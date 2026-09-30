@@ -10,7 +10,7 @@ const bp=process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function Page(){return <main className="site-page detail-page machine-page">
 <ProjectNav current="machineVisit"/>
-<section className="detail-hero machine-hero"><div><p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>2026-09-24 관리기 임대·출고</b></p><p className="kicker">2026. 9. 24. · 서산시농업기술센터 북부 농업기계 임대사업소</p><h1 style={{wordBreak:"keep-all"}}>관리기 임대부터<br/><em>화곡농장 현장 하차까지</em></h1><p className="hero-description">사업소 방문, 이용안내 확인, 아세아 관리기 실물·조작부 확인, 출고, 운송차량 적재, 크레인 하차까지 실제 현장 자료를 순서대로 정리한 작업 기록입니다.</p></div>
+<section className="detail-hero machine-hero"><div><p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>2026-09-24 관리기 임대·출고</b></p><p className="kicker">2026. 9. 24. · 서산시농업기술센터 북부 농업기계 임대사업소</p><h1 style={{wordBreak:"keep-all"}}>{"작성일 미확인 관리기 임대·출고"}</h1><p className="hero-description">사업소 방문, 이용안내 확인, 아세아 관리기 실물·조작부 확인, 출고, 운송차량 적재, 크레인 하차까지 실제 현장 자료를 순서대로 정리한 작업 기록입니다.</p></div>
 <aside className="metric-card machine-card"><small>현장 아카이브</small><h2>2026-09-24</h2><dl><div><dt>사진</dt><dd>18장</dd></div><div><dt>영상</dt><dd>2개</dd></div><div><dt>장비</dt><dd>아세아 관리기</dd></div><div><dt>사업소</dt><dd>북부 · 대산</dd></div></dl></aside></section>
 
 <section className="content-section"><div className="section-title"><p>01 · VISIT</p><h2>북부 농업기계 임대사업소 방문</h2><span>대산읍 대산1로 70 · 041-681-1006</span></div>

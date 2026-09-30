@@ -17,7 +17,7 @@ export default function Page() {
   return <main className="site-page detail-page record-page" data-record-page>
     <header className="record-header">
       <nav className="breadcrumb" aria-label="현재 위치"><a href="https://softm.github.io/projects/hwagok-farm/">화곡농장</a><span>›</span><span>시설·장비수리</span></nav>
-      <h1>선풍기 기어박스 수리 안내</h1>
+      <h1>{"2026-09-06 선풍기 기어박스 수리 안내"}</h1>
       <p className="record-lead">타이거킹 TKF-30 S,P의 좌우 회전 불량을 점검하고 교체용 기어박스 1개를 주문한 기록입니다.</p>
       <p className="kicker">현장 점검 2026. 9. 6. · 부품 주문 2026. 9. 14.</p>
     </header>

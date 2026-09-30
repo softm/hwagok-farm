@@ -16,7 +16,7 @@ export default function SprinklerThreadPage() {
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>스프링클러 나사 규격</b></p>
           <p className="kicker">2026. 8. 20. · 스프링클러 연결부 규격 확인</p>
-          <h1>1/2인치는 12.7mm가 아니라<br /><em>수나사 외경 약 20.9mm</em>입니다.</h1>
+          <h1>{"작성일 미확인 스프링클러 나사 규격"}</h1>
           <p className="hero-description">스프링클러 상품의 1/2″, 3/4″ 배관 나사와 판매자가 적어놓은 2.0cm·2.5cm 표기를 서로 대응시켜 정리했습니다. 배관의 인치 표기는 실제 나사 바깥지름을 그대로 뜻하지 않는 호칭 규격입니다.</p>
         </div>
         <aside className="metric-card">

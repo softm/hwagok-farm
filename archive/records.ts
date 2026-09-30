@@ -3,7 +3,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "fan-gearbox-repair-20260914",
     "kind": "시설·장비수리",
-    "title": "2026-09-14 타이거킹 공업용 선풍기 회전기어박스 주문",
+    "title": "2026-09-06 선풍기 기어박스 수리 안내",
     "description": "화곡농장 공업용 선풍기 TKF-30 S,P의 파손된 좌우 회전 기어박스를 확인하고 교체용 부품을 주문한 기록입니다.",
     "meta": [
       "TKF-30 S,P · 30인치 · 310W",
@@ -20,7 +20,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "farm-machine-rental-20260924",
     "kind": "농기계·작업기록",
-    "title": "2026-09-24 북부 농업기계 임대사업소 관리기 임대·출고",
+    "title": "작성일 미확인 관리기 임대·출고",
     "description": "북부 농업기계 임대사업소에서 아세아 관리기를 확인·출고하고 농업기술센터 차량으로 운송해 현장에서 하차한 기록입니다.",
     "meta": [
       "아세아 관리기",
@@ -37,7 +37,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "deodeok-harvest-20260923",
     "kind": "수확·채종",
-    "title": "2026-09-23 화곡농장 더덕 수확 및 더덕 씨앗 채취",
+    "title": "2026-09-24 화곡농장 더덕수확과 씨앗채취",
     "description": "채취한 삭과, 12시대 뿌리 굴취 현장, 13시대 수확물의 원본 사진 7장과 영상 3개를 함께 보존한 기록입니다.",
     "meta": [
       "사진 원본 7장",
@@ -55,7 +55,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "irrigation-20260905",
     "kind": "관수·작업기록",
-    "title": "2026-09-05 화이트클로버 자동급수",
+    "title": "작성일 미확인 화이트클로버 자동급수",
     "description": "하우스 앞밭 화이트클로버 파종 후 자동급수 타이머와 스프링클러를 설치하고 2시간마다 1분 급수로 설정한 기록입니다.",
     "meta": [
       "2시간 간격",
@@ -69,7 +69,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "mowing-20260907",
     "kind": "벌초·작업기록",
-    "title": "2026-09-07 화곡농장 벌초 작업 기록",
+    "title": "작성일 미확인 벌초",
     "description": "08:30부터 17:00까지의 벌초·풀베기 기록입니다.",
     "meta": [
       "08:30~17:00",
@@ -83,7 +83,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "mowing-20260826",
     "kind": "벌초·작업기록",
-    "title": "2026-08-26 화곡농장 벌초 작업 기록",
+    "title": "작성일 미확인 벌초",
     "description": "오전 7시부터 오후 2시까지 벌초한 기록입니다.",
     "meta": [
       "07:00~14:00",
@@ -97,7 +97,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "perilla-transplant-20260830",
     "kind": "재배·작업기록",
-    "title": "2026-08-30 663-1·667-35 들깨 정식",
+    "title": "작성일 미확인 들깨 정식",
     "description": "들깨 모종 3판을 정식하고 구획을 표시한 기록입니다.",
     "meta": [
       "들깨 모종 3판",
@@ -124,7 +124,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "cctv-internet-20260821",
     "kind": "통신·CCTV",
-    "title": "농막·하우스 CCTV 인터넷 연결",
+    "title": "작성일 미확인 CCTV 인터넷 연결",
     "description": "농막 CCTV 연결 방식을 정리했습니다.",
     "meta": [
       "핫스팟",
@@ -138,7 +138,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "shade-net-20260807",
     "kind": "시설·차양",
-    "title": "6평 농막 그늘막 예상 설치",
+    "title": "작성일 미확인 농막 그늘막",
     "description": "농막 쉐이드네트 설치 계획 기록입니다.",
     "meta": [
       "긴 면 약 7.3m",
@@ -151,7 +151,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "white-clover",
     "kind": "재배·파종",
-    "title": "화이트클로버 파종계획",
+    "title": "작성일 미확인 화이트클로버 파종계획",
     "description": "화이트클로버 파종 계획입니다.",
     "meta": [
       "1kg 종자",
@@ -165,7 +165,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "farm-machine-rental",
     "kind": "농기계·행정",
-    "title": "서산시 농기계 임대·운반 서비스",
+    "title": "작성일 미확인 농기계 임대·운반 서비스",
     "description": "북부분소 이용 절차와 준비서류 기록입니다.",
     "meta": [
       "북부분소",
@@ -179,7 +179,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "moskill-20260527",
     "kind": "방제·작업기록",
-    "title": "2026-05-27 모스킬 잎벌레 방제",
+    "title": "작성일 미확인 모스킬 방제",
     "description": "박밭 모스킬 방제 기록입니다.",
     "meta": [
       "박밭 3개 두둑",
@@ -192,7 +192,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "spray-record-20260813",
     "kind": "방제·작업기록",
-    "title": "농막 아랫밭 나방노린채 살포",
+    "title": "작성일 미확인 농막 아랫밭 방제",
     "description": "농막 아랫밭 방제 기록입니다.",
     "meta": [
       "오전 7시",
@@ -205,7 +205,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "dangol-spray-20260811",
     "kind": "방제·작업기록",
-    "title": "2026-08-11 단골 들깨밭 살포",
+    "title": "작성일 미확인 단골 들깨밭 살포",
     "description": "들깨밭 단골 살포 기록입니다.",
     "meta": [
       "20L × 2통",
@@ -218,7 +218,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "20260811-gourd-harvest",
     "kind": "수확·작업기록",
-    "title": "2026-08-11 박 수확 기록",
+    "title": "작성일 미확인 박 수확 · 사진 53장",
     "description": "화곡농장에서 박을 수확한 기록입니다.",
     "meta": [
       "박 약 50통",
@@ -231,7 +231,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "onion-purchase-20260811",
     "kind": "구매·보관",
-    "title": "2026-08-11 양파 구입·저온창고 보관",
+    "title": "작성일 미확인 양파 구입·저온창고 보관",
     "description": "양파 구입 및 저온창고 보관 기록입니다.",
     "meta": [
       "구매비 453,000원",
@@ -244,7 +244,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "onion-sourcing-20260810",
     "kind": "구매·거래처",
-    "title": "2026-08-10 양파 구매처 조사",
+    "title": "작성일 미확인 양파 구매처 조사",
     "description": "서산 지역 양파 구매처 조사 기록입니다.",
     "meta": [
       "15kg × 30망",
@@ -257,7 +257,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "sprinkler-thread-20260820",
     "kind": "관수·부품",
-    "title": "스프링클러 나사 규격",
+    "title": "작성일 미확인 스프링클러 나사 규격",
     "description": "스프링클러 배관 나사 규격 기록입니다.",
     "meta": [
       "1/2인치",
@@ -270,7 +270,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "fertilizer-plan",
     "kind": "재배·시비",
-    "title": "2026-07-05 들깨·열무 밑거름 시비계획",
+    "title": "2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법",
     "description": "4개 필지 밑거름 시비 계획입니다.",
     "meta": [
       "2026-07-05",
@@ -284,7 +284,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "freezer-electric-20260711",
     "kind": "시설·전기",
-    "title": "2026-07-11 냉동고 전기 증설",
+    "title": "작성일 미확인 냉동고 전기 증설",
     "description": "냉동고 전기 증설 기록입니다.",
     "meta": [
       "10SQ 20m",
@@ -297,7 +297,7 @@ export const archiveRecords: ArchiveRecord[] = [
   {
     "slug": "farm-awning-repair-20260711",
     "kind": "시설·행정",
-    "title": "2026-07-11 농막 차양막 시정조치",
+    "title": "작성일 미확인 농막 차양막 시정조치",
     "description": "농막 차양막 시정조치 기록입니다.",
     "meta": [
       "대각선 보강",

@@ -31,7 +31,7 @@ export default function FertilizerPlanPage() {
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>들깨·열무 밑거름 계획</b></p>
           <p className="kicker">2026. 7. 5. · 화곡농장 · 4개 필지 · 밑거름 살포</p>
-          <h1>들깨·열무<br />밑거름 시비 계획</h1>
+          <h1>{"2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법"}</h1>
           <p className="hero-description">화곡리 667-34, 667-3, 667-4와 아래 밭 총 1,641.3㎡(약 496.5평)의 작목 배치와 맞춤18호 살포량, 비황골드·명품비료의 역할, 트랙터 로터리 전 작업순서를 정리한 현장용 페이지입니다.</p>
         </div>
         <aside className="metric-card">

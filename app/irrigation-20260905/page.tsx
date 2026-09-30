@@ -36,7 +36,7 @@ export default function IrrigationPage() {
         <div>
           <p className="breadcrumb"><a href={`${basePath}/`}>화곡농장</a><span>›</span>관수·작업기록</p>
           <p className="kicker">WHITE CLOVER IRRIGATION · 2026. 09. 05.</p>
-          <h1>하우스 앞밭<br /><em>화이트클로버 자동급수</em></h1>
+          <h1>{"작성일 미확인 화이트클로버 자동급수"}</h1>
           <p className="hero-description">화이트클로버 파종 직후 표토의 수분을 유지하기 위해 수도 4구 분배기, Ehico 자동급수 타이머, 호스와 회전식 스프링클러를 설치한 기록입니다.</p>
           <div className="hero-actions"><a className="primary-button" href="#record">설정 기록 보기</a><a className="outline-button" href="#photos">현장 사진 보기</a></div>
         </div>

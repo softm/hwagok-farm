@@ -36,7 +36,7 @@ export default function WhiteCloverPage() {
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>화이트클로버 파종계획</b></p>
           <p className="kicker">2026. 8. 18. · 충남 서산</p>
-          <h1>엄나무밭<br />화이트클로버 파종계획</h1>
+          <h1>{"작성일 미확인 화이트클로버 파종계획"}</h1>
           <p className="hero-description">파란 표시구역 약 622평을 종자 2kg으로 저밀도 도입하고, 마른 황토를 이용해 손으로 균일하게 흩어뿌리는 현장 실행안입니다.</p>
           <div className="hero-actions"><a className="primary-button" href="#zones">살포구역 보기</a><a className="outline-button" href="https://hwagok.softm.chatgpt.site/downloads/hwagok-white-clover-report.zip" download>전체 보고서 ZIP</a></div>
         </div>

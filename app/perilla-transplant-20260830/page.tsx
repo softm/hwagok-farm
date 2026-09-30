@@ -37,7 +37,7 @@ export default function PerillaTransplantPage() {
         <div>
           <p className="breadcrumb"><a href={`${basePath}/`}>화곡농장</a><span>›</span>재배·작업기록</p>
           <p className="kicker">PERILLA TRANSPLANT LOG · 2026. 08. 30–31.</p>
-          <h1>663-1·667-35<br /><em>들깨 정식 기록</em></h1>
+          <h1>{"작성일 미확인 들깨 정식"}</h1>
           <p className="hero-description">당숙모에게 받은 들깨 모종 3판을 대산읍 화곡리 663-1·667-35번지에 정식하고, 고추대와 줄로 재배 구역을 표시한 뒤 관수한 현장 기록입니다. 8월 31일 농산물품질관리원에 연락했고 같은 날 현장 확인 예정입니다.</p>
           <div className="hero-actions"><a className="primary-button" href="#record">작업 기록 보기</a><a className="outline-button" href="#photos">현장 사진 보기</a></div>
         </div>

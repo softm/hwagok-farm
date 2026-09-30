@@ -9,7 +9,7 @@ export default function DangolSprayPage() {
         <div>
           <p className="breadcrumb"><a href={`${basePath}/`}>화곡농장</a><span>›</span>방제 기록</p>
           <p className="kicker">FIELD LOG · 2026. 08. 11.</p>
-          <h1>농막 아래 들깨밭<br /><em>단골 제초제 살포</em></h1>
+          <h1>{"작성일 미확인 단골 들깨밭 살포"}</h1>
           <p className="hero-description">농막 아래 농지의 들깨 포기 사이와 고랑 잡초를 대상으로 차폐갓을 사용해 선택 살포한 작업 기록입니다.</p>
           <div className="hero-actions"><a className="primary-button" href="#record">작업 기록 보기</a><a className="outline-button" href="#label">라벨 기준 보기</a></div>
         </div>

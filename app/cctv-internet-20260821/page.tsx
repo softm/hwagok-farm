@@ -33,7 +33,7 @@ export default function CctvInternetPage() {
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>농막·하우스 CCTV 인터넷 연결</b></p>
           <p className="kicker">2026. 8. 21. · LTE 핫스팟·유심·CCTV 연결 검토</p>
-          <h1>유선 인터넷이 안 되는 농막은<br /><em>핫스팟으로 먼저 연결하고</em> 라우터로 안정화합니다.</h1>
+          <h1>{"작성일 미확인 CCTV 인터넷 연결"}</h1>
           <p className="hero-description">농막에는 기존 CCTV가 있으나 인터넷이 없어 실시간 확인이 어렵고, 하우스 냉동고 전원 차단 사고 이후 냉동고·컨트롤박스 상태 확인용 CCTV 구성이 필요합니다. 현재는 SKT 데이터함께쓰기 유심과 남는 핸드폰 핫스팟을 이용한 임시 인터넷 구성이 가장 현실적입니다.</p>
         </div>
         <aside className="metric-card">

@@ -9,7 +9,7 @@ export default function MoskillRecordPage(){
       <div>
         <p className="breadcrumb"><a href="/">화곡농장</a><span>›</span>방제 기록</p>
         <p className="kicker">FIELD LOG · 2026. 05. 27.</p>
-        <h1>박밭 잎벌레 피해<br/><em>모스킬 방제 기록</em></h1>
+        <h1>{"작성일 미확인 모스킬 방제"}</h1>
         <p className="hero-description">박 유묘에 잎벌레류가 대량 발생해 모스킬(브로플라닐라이드 액상수화제)을 살포한 기록입니다. 오후 2시 30분경 살포를 시작했고 오후 6시경 비가 내리기 시작했습니다.</p>
         <div className="hero-actions"><a className="primary-button" href="#record">방제 기록 보기</a><a className="outline-button" href="#effect">방제 효과 보기</a></div>
       </div>

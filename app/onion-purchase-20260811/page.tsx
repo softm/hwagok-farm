@@ -28,7 +28,7 @@ export default function OnionPurchasePage() {
         <div>
           <p className="breadcrumb"><a href={`${basePath}/`}>화곡농장</a><span>›</span>구매·보관 기록</p>
           <p className="kicker">PURCHASE & STORAGE LOG · 2026. 08. 11.</p>
-          <h1>양파 구입 및<br /><em>저온창고 보관</em></h1>
+          <h1>{"작성일 미확인 양파 구입·저온창고 보관"}</h1>
           <p className="hero-description">서산태안농협 하나로마트와 대산농협 하나로마트에서 양파를 구입해 차량으로 운반하고, 화곡농장 저온창고에 보관한 기록입니다.</p>
           <div className="hero-actions"><a className="primary-button" href="#record">구입 내역 보기</a><a className="outline-button" href="#photos">증빙 사진 보기</a></div>
         </div>

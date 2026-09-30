@@ -26,7 +26,7 @@ export default function ShadeNetPage() {
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>농막 그늘막 예상 설치</b></p>
           <p className="kicker">2026. 8. 7. · 6평 농막 · 바닥 기준 사진 추정</p>
-          <h1>차양막 하단에서 난간까지<br/><em>그늘막 설치 크기</em>를 잡았습니다.</h1>
+          <h1>{"작성일 미확인 농막 그늘막"}</h1>
           <p className="hero-description">첨부 사진을 기준으로 긴 면과 짧은 면의 예상 설치 폭, 데크 바닥에서 차양막·난간까지의 높이, 구매할 쉐이드네트 규격을 정리했습니다. 아래 수치는 실측 전 구매 규격을 잡기 위한 개략치입니다.</p>
         </div>
         <aside className="metric-card">

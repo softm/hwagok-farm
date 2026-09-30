@@ -31,7 +31,7 @@ export default function FarmMachineRentalPage() {
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>농기계 임대·운반 서비스</b></p>
           <p className="kicker">2026. 8. 18. · 충남 서산시 대산읍 화곡리</p>
-          <h1>농기계는 빌리고,<br /><em>밭까지 운반</em>받으세요.</h1>
+          <h1>{"작성일 미확인 농기계 임대·운반 서비스"}</h1>
           <p className="hero-description">화곡농장의 화이트클로버 파종 준비에 맞춰 임대 대상, 준비서류, 추천 장비와 연락처를 한곳에 정리했습니다.</p>
           <div className="hero-actions"><a className="primary-button" href="tel:0416811006">북부분소 전화하기</a><a className="outline-button" href="https://seosan.amlend.kr/" target="_blank" rel="noreferrer">공식 임대 사이트</a></div>
           <p className="updated">확인 기준일 2026. 8. 18. · 예약 시 현행 조건 재확인</p>

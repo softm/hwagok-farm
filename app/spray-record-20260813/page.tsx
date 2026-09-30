@@ -29,7 +29,7 @@ export default function SprayRecordPage() {
         <div>
           <p className="breadcrumb"><a href={`${basePath}/`}>화곡농장</a><span>›</span>방제 기록</p>
           <p className="kicker">FIELD LOG · 2026. 08. 13.</p>
-          <h1>농막 아랫밭<br /><em>나방노린채 살포</em></h1>
+          <h1>{"작성일 미확인 농막 아랫밭 방제"}</h1>
           <p className="hero-description">들깨밭에 오전 7시부터 살충제를 살포한 작업 기록입니다. 20L 분무기 2통에 약제를 각 10mL씩 사용했습니다.</p>
           <div className="hero-actions"><a className="primary-button" href="#record">작업 기록 보기</a><a className="outline-button" href="#photos">현장 사진 보기</a></div>
         </div>

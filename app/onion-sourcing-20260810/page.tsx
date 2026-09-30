@@ -73,7 +73,7 @@ export default function OnionSourcingPage() {
         <div>
           <p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span>구매·거래처 조사</p>
           <p className="kicker">ONION SOURCING LOG · 2026. 08. 10.</p>
-          <h1>양파 30망<br /><em>구매처 조사</em></h1>
+          <h1>{"작성일 미확인 양파 구매처 조사"}</h1>
           <p className="hero-description">기존 예정 거래가 취소된 뒤 식당용 국산 양파를 급히 확보하기 위해 서산 지역 농가·농협·유통업체에 문의한 결과를 정리했습니다.</p>
           <div className="hero-actions"><a className="primary-button" href="#prices">가격 비교</a><a className="outline-button" href="#contacts">문의 현황</a></div>
         </div>
