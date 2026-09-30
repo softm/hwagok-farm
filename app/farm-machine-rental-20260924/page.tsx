@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { ProjectNav } from "../project-nav";
+import { RentalPhotoArchive, RentalVideoArchive } from "./media-archive";
 
 const photos = [
 "1000066165.jpg","1000066167.jpg","1000066168.jpg","1000066169.jpg","1000066170.jpg","1000066171.jpg","1000066172.jpg","1000066173.jpg","1000066174.jpg",
 "1000066175.jpg","1000066176.jpg","1000066177.jpg","1000066178.jpg","1000066180.jpg","1000066192.jpg","1000066193.jpg","1000066195.jpg","1000066196.jpg"];
 const videos=["1000066166.mp4","1000066179.mp4"];
 const bp=process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-const img=(n:string)=>bp+"/archive/farm-machine-rental-20260924/assets/"+n;
 
 export default function Page(){return <main className="site-page detail-page machine-page">
 <ProjectNav current="machineVisit"/>
-<section className="detail-hero machine-hero"><div><p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>2026-09-24 관리기 임대·출고</b></p><p className="kicker">2026. 9. 24. · 서산시농업기술센터 북부 농업기계 임대사업소</p><h1>관리기 임대부터<br/><em>화곡농장 현장 하차까지</em></h1><p className="hero-description">사업소 방문, 이용안내 확인, 아세아 관리기 실물·조작부 확인, 출고, 운송차량 적재, 크레인 하차까지 실제 현장 자료를 순서대로 정리한 작업 기록입니다.</p></div>
+<section className="detail-hero machine-hero"><div><p className="breadcrumb"><Link href="/">화곡농장</Link><span>›</span><b>2026-09-24 관리기 임대·출고</b></p><p className="kicker">2026. 9. 24. · 서산시농업기술센터 북부 농업기계 임대사업소</p><h1 style={{wordBreak:"keep-all"}}>관리기 임대부터<br/><em>화곡농장 현장 하차까지</em></h1><p className="hero-description">사업소 방문, 이용안내 확인, 아세아 관리기 실물·조작부 확인, 출고, 운송차량 적재, 크레인 하차까지 실제 현장 자료를 순서대로 정리한 작업 기록입니다.</p></div>
 <aside className="metric-card machine-card"><small>현장 아카이브</small><h2>2026-09-24</h2><dl><div><dt>사진</dt><dd>18장</dd></div><div><dt>영상</dt><dd>2개</dd></div><div><dt>장비</dt><dd>아세아 관리기</dd></div><div><dt>사업소</dt><dd>북부 · 대산</dd></div></dl></aside></section>
 
 <section className="content-section"><div className="section-title"><p>01 · VISIT</p><h2>북부 농업기계 임대사업소 방문</h2><span>대산읍 대산1로 70 · 041-681-1006</span></div>
@@ -23,10 +23,10 @@ export default function Page(){return <main className="site-page detail-page mac
 <section className="content-section"><div className="section-title"><p>03 · TRANSPORT</p><h2>운송차량 적재 및 현장 하차</h2></div><p>관리기는 농업기술센터 크레인 장착 화물차로 운송됐으며, 현장 도착 후 크레인을 이용해 하차했습니다. 하차 후 도로에서 장비 상태와 조작 상태를 다시 확인했습니다.</p></section>
 
 <section className="content-section tint"><div className="section-title"><p>04 · PHOTO ARCHIVE</p><h2>현장 사진 18장</h2><span>채팅에 첨부된 원본 파일명을 유지했습니다.</span></div>
-<div className="archive-media-grid">{photos.map((p,i)=><figure key={p}><img src={img(p)} alt={"2026-09-24 관리기 임대 현장 사진 "+(i+1)}/><figcaption>{String(i+1).padStart(2,"0")} · {p}</figcaption></figure>)}</div></section>
+<RentalPhotoArchive photos={photos} basePath={bp}/></section>
 
 <section className="content-section"><div className="section-title"><p>05 · VIDEO ARCHIVE</p><h2>현장 동영상 2개</h2></div>
-<div className="archive-video-grid">{videos.map((v,i)=><figure key={v}><video controls preload="metadata"><source src={img(v)} type="video/mp4"/></video><figcaption>영상 {i+1} · {v}</figcaption></figure>)}</div></section>
+<RentalVideoArchive videos={videos} basePath={bp}/></section>
 
 <section className="content-section dark-section"><div className="section-title light"><p>06 · CONTACT & RETURN</p><h2>연락처와 반납 체크</h2></div>
 <div className="contact-layout"><article><small>북부 농업기계 임대사업소</small><h3>대산읍 대산1로 70</h3><a href="tel:0416811006">041-681-1006</a></article><article><h3>반납 전</h3><ul><li>관리기 세척</li><li>연료 보충</li><li>파손·이상 유무 확인</li><li>약속한 기간 내 반납</li></ul></article></div>
