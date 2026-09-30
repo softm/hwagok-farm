@@ -7,4 +7,4 @@
 :HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/03-20260906_085443.jpg","image"]
 :HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/04-20260906_085534.jpg","image"]
 :HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/05-20260906_085538.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"fan-gearbox-repair-20260914","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"j6DNfseynUbvTP6d0H_8I"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"fan-gearbox-repair-20260914","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ygPYzKvXRCPLrZnsj5tnr"}
