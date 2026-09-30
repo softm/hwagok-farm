@@ -11,7 +11,10 @@ export const archiveRecords: ArchiveRecord[] = [
       "현장 사진 8장 · 부품 1개 주문"
     ],
     "legacyPath": "/fan-gearbox-repair-20260914/",
-    "assets": {"md":"/archive/fan-gearbox-repair-20260914/record.md","html":"/archive/fan-gearbox-repair-20260914/record.html"},
+    "assets": {
+      "md": "/archive/fan-gearbox-repair-20260914/record.md",
+      "html": "/archive/fan-gearbox-repair-20260914/record.html"
+    },
     "assetStatus": "text-and-photos-archived"
   },
   {
@@ -25,25 +28,29 @@ export const archiveRecords: ArchiveRecord[] = [
       "사진 18장·영상 2개 원본 보유"
     ],
     "legacyPath": "/farm-machine-rental-20260924/",
-    "assets": {"md":"/archive/farm-machine-rental-20260924/record.md","html":"/archive/farm-machine-rental-20260924/record.html"},
+    "assets": {
+      "md": "/archive/farm-machine-rental-20260924/record.md",
+      "html": "/archive/farm-machine-rental-20260924/record.html"
+    },
     "assetStatus": "text-archived-media-upload-pending"
   },
   {
     "slug": "deodeok-harvest-20260923",
     "kind": "수확·채종",
     "title": "2026-09-23 화곡농장 더덕 수확 및 더덕 씨앗 채취",
-    "description": "화곡농장에서 더덕 뿌리를 굴취하고 더덕 열매(삭과)를 채취한 작업 기록입니다.",
+    "description": "채취한 삭과, 12시대 뿌리 굴취 현장, 13시대 수확물의 원본 사진 7장과 영상 3개를 함께 보존한 기록입니다.",
     "meta": [
-      "더덕 수확",
-      "더덕 씨앗·삭과 채취",
-      "사진 7장·영상 3개 원본 기록"
+      "사진 원본 7장",
+      "영상 원본 3개 · 재생용 3개",
+      "MD · HTML · ZIP · 체크섬"
     ],
     "legacyPath": "/deodeok-harvest-20260923/",
     "assets": {
       "md": "/archive/deodeok-harvest-20260923/record.md",
-      "html": "/archive/deodeok-harvest-20260923/record.html"
+      "html": "/archive/deodeok-harvest-20260923/record.html",
+      "zip": "/archive/deodeok-harvest-20260923/bundle.zip"
     },
-    "assetStatus": "text-archived-media-pending"
+    "assetStatus": "complete"
   },
   {
     "slug": "irrigation-20260905",
