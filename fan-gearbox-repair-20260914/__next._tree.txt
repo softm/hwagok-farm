@@ -1,10 +1,2 @@
-:HL["/hwagok-farm/_next/static/chunks/0ft2os-_xgp-9.css","style"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/01-1000064667.jpg","image"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/01-20260906_085436.jpg","image"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/02-1000064668.jpg","image"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/02-20260906_085439.jpg","image"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/03-1000064669.jpg","image"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/03-20260906_085443.jpg","image"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/04-20260906_085534.jpg","image"]
-:HL["/hwagok-farm/archive/fan-gearbox-repair-20260914/assets/05-20260906_085538.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"fan-gearbox-repair-20260914","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"BxUkgCGrvW6JP_jO4FZ-5"}
+:HL["/hwagok-farm/_next/static/chunks/0ngiefvm7071o.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"fan-gearbox-repair-20260914","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ab5-0fopDenMvkqG1ut1Z"}
