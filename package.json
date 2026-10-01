@@ -1,1 +1,0 @@
-{"name":"hwagok-farm-static-archive","version":"2.0.0","private":true,"description":"Static HTML/CSS/Vanilla JS archive. No Next.js, React or TypeScript runtime/build dependency.","scripts":{"build":"echo 'Static archive: no build step'"},"dependencies":{},"devDependencies":{}}
