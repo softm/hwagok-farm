@@ -1,8 +1,0 @@
-name: Legacy Next.js deploy disabled
-on:
-  workflow_dispatch:
-jobs:
-  notice:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Legacy Next.js/TypeScript deployment is disabled. Use deploy-static-pages.yml."
