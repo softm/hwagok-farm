@@ -1,1 +1,203 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>아카이브 재정비 중</title></head><body><main><h1>아카이브 초기화 완료</h1><p>기존 배포 내용을 비우고 새 기준으로 다시 등록합니다.</p></main></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>화곡농장 · 채팅 아카이브</title>
+<meta name="description" content="화곡농장 재배·방제·관수·수확·농기계 채팅 기록 아카이브">
+<link rel="stylesheet" href="./archive-static.css">
+<script src="./archive-static.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div><a href="https://softm.github.io/projects/">전체 프로젝트</a><strong>화곡농장</strong></div></header>
+<main class="wrap">
+<section class="intro"><p class="eyebrow">HWAGOK FARM · ARCHIVE</p><h1>화곡농장 채팅 아카이브</h1><p>각 채팅 기록을 독립적인 일반 HTML 페이지로 연결합니다. 기존 본문·사진·영상·문서 원본은 유지합니다.</p></section>
+<section class="controls" aria-label="목록 제어"><input id="q" type="search" placeholder="제목·분류·내용 검색"><select id="sort"><option value="date-desc">최근순</option><option value="date-asc">오래된순</option><option value="title">제목순</option></select><div><button data-view="cards">카드</button><button data-view="list">목록</button></div></section>
+<section><div class="section-head"><h2>공개 기록</h2><span id="count"></span></div><div id="records" class="records cards"></div></section>
+<section class="access"><h2>저장소와 비공개 기록</h2><p><a href="https://github.com/softm/hwagok-farm">GitHub 공개 저장소</a> · <a href="https://github.com/softm/hwagok-farm-private">GitHub 비공개 저장소</a> · <a href="https://hwagok-farm-private.vercel.app/">비공개 사이트 인증</a></p></section>
+</main>
+<footer class="wrap footer"><a href="https://softm.github.io/projects/hwagok-farm/">화곡농장 프로젝트 목차</a><a href="https://softm.github.io/projects/">전체 프로젝트</a></footer>
+<script type="application/json" id="archive-data">[
+  {
+    "date": "2026-09-24",
+    "title": "관리기 임대·출고",
+    "kind": "농기계·작업기록",
+    "desc": "북부 농업기계 임대사업소 방문, 관리기 출고·운송·하차 기록.",
+    "url": "farm-machine-rental-20260924/"
+  },
+  {
+    "date": "2026-09-24",
+    "title": "화곡농장 더덕수확과 씨앗채취",
+    "kind": "수확·채종",
+    "desc": "더덕 뿌리 굴취와 삭과 채취. 사진 7장·영상 3개 원본 보존.",
+    "url": "archive/deodeok-harvest-20260923/"
+  },
+  {
+    "date": "2026-09-22",
+    "title": "관리기 수동시동",
+    "kind": "농기계·사용법",
+    "desc": "아세아 관리기 수동시동 절차와 초크 조작 기록.",
+    "url": "archive/cultivator-manual-start-20260922/"
+  },
+  {
+    "date": "2026-09-22",
+    "title": "관리기 엔진정지",
+    "kind": "농기계·사용법",
+    "desc": "아세아 관리기 엔진 정지 절차 기록.",
+    "url": "archive/asea-engine-stop-20260922/"
+  },
+  {
+    "date": "2026-09-07",
+    "title": "벌초 작업 기록",
+    "kind": "벌초·작업기록",
+    "desc": "08:30~17:00 벌초 작업 기록과 현장 사진.",
+    "url": "mowing-20260907/"
+  },
+  {
+    "date": "2026-09-06",
+    "title": "선풍기 기어박스 수리 안내",
+    "kind": "시설·장비수리",
+    "desc": "TKF-30 S,P 회전 기어박스 파손 점검 및 교체 부품 주문 기록.",
+    "url": "fan-gearbox-repair-20260914/"
+  },
+  {
+    "date": "2026-09-05",
+    "title": "화이트클로버 자동급수",
+    "kind": "관수·작업기록",
+    "desc": "파종 후 자동급수 타이머와 스프링클러 설정 기록.",
+    "url": "irrigation-20260905/"
+  },
+  {
+    "date": "2026-08-31",
+    "title": "들깨 정식",
+    "kind": "재배·작업기록",
+    "desc": "들깨 모종 3판 정식과 663-1·667-35 구획 기록.",
+    "url": "perilla-transplant-20260830/"
+  },
+  {
+    "date": "2026-08-26",
+    "title": "벌초 작업 기록",
+    "kind": "벌초·작업기록",
+    "desc": "07:00~14:00 벌초 작업과 사진·영상 기록.",
+    "url": "mowing-20260826/"
+  },
+  {
+    "date": "2026-08-21",
+    "title": "CCTV 인터넷 연결",
+    "kind": "통신·CCTV",
+    "desc": "농막·하우스 CCTV의 핫스팟·Extender·라우터 연결 검토.",
+    "url": "cctv-internet-20260821/"
+  },
+  {
+    "date": "2026-08-20",
+    "title": "스프링클러 나사 규격",
+    "kind": "관수·부품",
+    "desc": "1/2·3/4인치 배관 나사 규격과 연결 부품 정리.",
+    "url": "sprinkler-thread-20260820/"
+  },
+  {
+    "date": "2026-08-18",
+    "title": "농기계 임대·운반 서비스",
+    "kind": "농기계·행정",
+    "desc": "북부분소 이용 절차, 준비서류와 파종 장비 검토.",
+    "url": "farm-machine-rental/"
+  },
+  {
+    "date": "2026-08-18",
+    "title": "화이트클로버 파종계획",
+    "kind": "재배·파종",
+    "desc": "종자·황토 배합과 구역별 파종 실행계획.",
+    "url": "white-clover/"
+  },
+  {
+    "date": "2026-08-13",
+    "title": "농막 아랫밭 방제",
+    "kind": "방제·작업기록",
+    "desc": "들깨밭 나방노린채 20L 2통 살포 기록.",
+    "url": "spray-record-20260813/"
+  },
+  {
+    "date": "2026-08-11",
+    "title": "단골 들깨밭 살포",
+    "kind": "방제·작업기록",
+    "desc": "농막 아래 들깨밭 단골 20L × 2통 살포 기록.",
+    "url": "dangol-spray-20260811/"
+  },
+  {
+    "date": "2026-08-11",
+    "title": "박 수확 · 사진 53장",
+    "kind": "수확·작업기록",
+    "desc": "화곡농장 박 수확 현장 사진 기록.",
+    "url": "20260811-gourd-harvest/"
+  },
+  {
+    "date": "2026-08-11",
+    "title": "양파 구입·저온창고 보관",
+    "kind": "구매·보관",
+    "desc": "양파 구입 및 저온창고 보관 기록.",
+    "url": "onion-purchase-20260811/"
+  },
+  {
+    "date": "2026-08-10",
+    "title": "양파 구매처 조사",
+    "kind": "구매·거래처",
+    "desc": "서산 지역 양파 구매처 조사 기록.",
+    "url": "onion-sourcing-20260810/"
+  },
+  {
+    "date": "2026-08-07",
+    "title": "농막 그늘막",
+    "kind": "시설·차양",
+    "desc": "농막 쉐이드네트 설치 계획.",
+    "url": "shade-net-20260807/"
+  },
+  {
+    "date": "2026-07-11",
+    "title": "냉동고 전기 증설 작업 기록",
+    "kind": "시설·전기",
+    "desc": "10SQ 전선 약 20m, 누전차단기 40A 증설과 냉동고·저온창고 제어반 배선 기록. 사진 10장.",
+    "url": "freezer-electric-20260711/"
+  },
+  {
+    "date": "2026-07-11",
+    "title": "농막 차양막 거치대 대각선 보강 수리",
+    "kind": "시설·수리",
+    "desc": "농막 차양막 거치대 대각선 보강 전후 작업 기록. 사진 8장.",
+    "url": "farm-awning-repair-20260711/"
+  },
+  {
+    "date": "2026-07-05",
+    "title": "들깨·열무 밑거름 시비 계획",
+    "kind": "재배·시비",
+    "desc": "4개 필지 1,641.3㎡의 맞춤18호 등 밑거름 시비 계획. 사진 4장.",
+    "url": "fertilizer-plan/"
+  },
+  {
+    "date": "2026-07-02",
+    "title": "냉동고 4마력 컴프레서 교체 수리 (7/1~2)",
+    "kind": "시설·냉동고 수리",
+    "desc": "일등공조 방문, 4마력 냉동용 컴프레서 교체와 R-22 계통 수리 기록. 사진 33장·영상 기록.",
+    "url": "freezer-compressor-20260701-02/"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "감자밭 가장자리 카랑 제초제 살포",
+    "kind": "제초·작업기록",
+    "desc": "감자밭 가장자리 잡초에 카랑 액제를 살포한 작업 기록. 사진 6장.",
+    "url": "karang-herbicide-20260701/"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "엄마 무밭 예초기 작업 및 타랑 제초제 살포",
+    "kind": "제초·작업기록",
+    "desc": "예초기 작업 후 타랑 제초제를 살포한 기록. 사진 9장·영상 1개.",
+    "url": "weeding-tarang-20260605/"
+  },
+  {
+    "date": "2026-05-27",
+    "title": "모스킬 방제 기록",
+    "kind": "방제·작업기록",
+    "desc": "박밭 오이잎벌레 방제와 모스킬 살포 기록. 사진 10장.",
+    "url": "moskill-20260527/"
+  }
+]</script>
+</body></html>
