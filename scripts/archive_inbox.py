@@ -175,7 +175,13 @@ def build(item: Path, root: Path):
     raise ValueError('Existing matching record '+oldpath.name+': requires canonical reconciliation; no duplicate written')
   target=records/slug
   if target.exists(): raise ValueError('Canonical record already exists; preserve it and retain changed input: '+slug)
-  draft=stage/'record';draft.mkdir();shutil.copytree(source,draft/'source')
+  draft=stage/'record';draft.mkdir()
+  # Preserve the extracted ZIP/folder tree at the record root so the original
+  # HTML keeps its relative image/media/style/script references.
+  for p in entries(source):
+   rel=p.relative_to(source); dst=draft/rel; dst.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(p,dst)
+  # Keep a source mirror as provenance while the root tree remains directly deployable.
+  shutil.copytree(source,draft/'source')
   metadata=render(source,draft,meta,date,slug)
   jwrite(draft/'archive.json',metadata)
   files=inventory(draft);verify_files(draft,files)
