@@ -57,6 +57,16 @@ jobs:
           rm -rf site
           mkdir site
           if [ -d public ]; then cp -a public/. site/; fi
+          python3 - <<'PY'
+          import json, shutil
+          from pathlib import Path
+          cfg=Path('.archive-public-excludes.json')
+          data=json.loads(cfg.read_text(encoding='utf-8')) if cfg.is_file() else {'records':[]}
+          for slug in data.get('records',[]):
+              target=Path('site/records')/slug
+              if target.exists():
+                  shutil.rmtree(target)
+          PY
           cp index.html archive-static.css archive-static.js site/
           touch site/.nojekyll
       - uses: actions/upload-artifact@v4
