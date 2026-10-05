@@ -4,7 +4,8 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from archive_inbox import build, build_batch, digest, fingerprint, inventory, jwrite, relpath, unpack, verify_files
 from archive_completion import check_cleanup
 PNG=base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jH+YAAAAASUVORK5CYII=')
-DOC='# 작업 기록\n\n첫 번째 상세 문단입니다.\n\n## 상세 작업\n\n누락되면 안 되는 마지막 문단입니다.\n\n![사진](사진.png)\n'\nHTML='<html><head><title>작업 기록</title></head><body><h1>작업 기록</h1><p>첫 번째 상세 문단입니다.</p><p>누락되면 안 되는 마지막 문단입니다.</p><img src="사진.png"></body></html>'
+DOC='# 작업 기록\n\n첫 번째 상세 문단입니다.\n\n## 상세 작업\n\n누락되면 안 되는 마지막 문단입니다.\n\n![사진](사진.png)\n'
+HTML='<html><head><title>작업 기록</title></head><body><h1>작업 기록</h1><p>첫 번째 상세 문단입니다.</p><p>누락되면 안 되는 마지막 문단입니다.</p><img src="사진.png"></body></html>'
 CHECKS=['detail','service-home','central-home','top-index','media','original-bytes','source-directory-links','title-parity']
 
 class InboxTests(unittest.TestCase):
