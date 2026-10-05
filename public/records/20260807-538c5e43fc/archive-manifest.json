@@ -122,6 +122,6 @@
       "sha256": "aa99ee6e65fbdafb38d6dd81c8a89077d8cb3568023c70cadcd3737cbe4d3da2"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20260807_화곡농장_농막_그늘막_예상설치_정리_이미지포함.html"
 }

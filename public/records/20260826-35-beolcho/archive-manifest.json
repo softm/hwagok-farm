@@ -52,6 +52,6 @@
       "sha256": "7ca3f3f3636ac1254baf516c80cdb6c5d86d20493655d08c321ad90fbad68735"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20260826_벌초_작업기록.html"
 }

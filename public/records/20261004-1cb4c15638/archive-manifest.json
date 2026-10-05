@@ -42,6 +42,6 @@
       "sha256": "8fe12d3114204084272244771bb52b669587e037837da2f869b3f716e529a7ab"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20261004_화곡농장_분무기_편사호스_사진정리.html"
 }

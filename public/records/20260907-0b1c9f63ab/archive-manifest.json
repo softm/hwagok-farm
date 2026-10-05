@@ -107,6 +107,6 @@
       "sha256": "ce7c6e126c3bdf73f981a000ddf329d5a63e5c3a120c2620fe3c40546a66ba02"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20260905_화곡농장_하우스앞밭_화이트클로버_자동급수.html"
 }

@@ -122,6 +122,6 @@
       "sha256": "895f37b697904a45b7271ff66ed6bf14e63c52199cfb974847bc9abbc05354ba"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20260831_화곡농장_663-1_667-35_들깨정식_농관원현장확인.html"
 }

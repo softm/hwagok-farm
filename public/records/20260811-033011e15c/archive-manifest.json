@@ -547,6 +547,6 @@
       "sha256": "53a91431f0b0e19da7e269b3aeb9b09f045433900ea8ba059f17782c4e8992a1"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20260811_화곡농장_박수확_작업정리.html"
 }

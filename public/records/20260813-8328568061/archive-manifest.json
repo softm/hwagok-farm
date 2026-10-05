@@ -117,6 +117,6 @@
       "sha256": "73083958ac837d9ab4aeda1af873a8fd00dff24f57499da8af744bcc61830846"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20260813_화곡농장_제초제_구입_보유_사용정리.html"
 }

@@ -27,6 +27,6 @@
       "sha256": "63aa8b49c0c3680ee5cd721946ed570932f92c891effda98f45bb1d4c4194984"
     }
   ],
-  "entryPolicy": "html-first-v1",
+  "entryPolicy": "html-exact-v2",
   "entrySource": "20260904_화곡농장_농지증여_경영체정리.html"
 }
