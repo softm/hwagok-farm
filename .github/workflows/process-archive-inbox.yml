@@ -22,8 +22,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Process ZIP and folder inbox
+      - name: Build archive records from ZIP and folder inbox
         run: python3 scripts/process-archive-inbox.py
+      - name: Guard inbox until downstream verification
+        run: |
+          echo "Inputs in zip/ are intentionally retained."
+          echo "Cleanup is allowed only after deploy -> live-verify -> central index sync -> final-verify."
       - name: Commit processed archives
         run: |
           set -euo pipefail
@@ -34,5 +38,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/records index.html zip
-          git commit -m "archive: process inbox"
+          git commit -m "archive: build inbox records (retain inputs pending verification)"
           git push
