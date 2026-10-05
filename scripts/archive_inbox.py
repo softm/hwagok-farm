@@ -128,70 +128,20 @@ def metadata_for(root: Path):
 
 def render(root: Path, destination: Path, meta, date, slug):
  chosen=choose_entry(root,meta)
- if chosen.suffix.lower()=='.md':
-  doc=subprocess.run(['pandoc','--from=markdown','--to=html5','--standalone',str(chosen)],check=True,capture_output=True,text=True).stdout
- else: doc=chosen.read_text(encoding='utf-8-sig')
+ # Canonical rule: deploy the selected source HTML byte-for-byte as index.html.
+ # Do not rebuild it from Markdown and do not inject archive UI into it.
+ shutil.copy2(chosen,destination/'index.html')
+ doc=chosen.read_text(encoding='utf-8-sig')
  soup=BeautifulSoup(doc,'html.parser')
- if not soup.html:
-  soup=BeautifulSoup('<!doctype html><html lang="ko"><head></head><body>'+doc+'</body></html>','html.parser')
- if not soup.head: soup.html.insert(0,soup.new_tag('head'))
- if not soup.body: raise ValueError('Narrative HTML body missing')
  h1=soup.find('h1')
- title=str(meta.get('title') or (h1.get_text(' ',strip=True) if h1 else '') or '')
- if not title: raise ValueError('Narrative has no title; supply archive.json title')
+ title=str(meta.get('title') or (h1.get_text(' ',strip=True) if h1 else '') or chosen.stem)
  source_title=re.sub(r'\s+',' ',title).strip()
- title=re.sub(r'^\d{4}[-_.]?\d{2}[-_.]?\d{2}(?:\s*[~–-]\s*(?:\d{4}-?\d{2}-?\d{2}|\d{4}|\d{2}))?[\s_·:-]*','',source_title).strip()
+ title=re.sub(r'^\d{4}[-_.]?\d{2}[-_.]?\d{2}(?:\s*[~–-]\s*(?:\d{4}-?\d{2}-?\d{2}|\d{4}|\d{2}))?[\s_·:-]*','',source_title).strip() or source_title
  canonical=date+' '+title
- if not h1:
-  h1=soup.new_tag('h1');soup.body.insert(0,h1)
- h1.string=canonical
- if meta.get('dateEnd'):
-  date_range=soup.new_tag('p');date_range.string='기록 기간: '+date+' ~ '+meta['dateEnd'];h1.insert_after(date_range)
- if soup.title: soup.title.string=canonical
- else:
-  t=soup.new_tag('title');t.string=canonical;soup.head.append(t)
- for base in soup.find_all('base'): base.decompose()
- parent=chosen.relative_to(root).parent.as_posix()
- base=soup.new_tag('base',href='./source/'+('' if parent=='.' else quote(parent,safe='/')+'/'))
- soup.head.insert(0,base)
  canonical_url=HOME+'records/'+quote(slug,safe='')+'/'
- for old in soup.find_all('link',rel='canonical'): old.decompose()
- soup.head.append(soup.new_tag('link',rel='canonical',href=canonical_url))
- if not soup.find('meta',attrs={'name':'viewport'}): soup.head.append(soup.new_tag('meta',attrs={'name':'viewport','content':'width=device-width,initial-scale=1'}))
- # Preserve original narrative and media bytes. Add a compact source inventory.
- style=soup.new_tag('style');style.string='body{max-width:1120px;margin:auto;padding:16px;line-height:1.65}h1{font-size:1.65rem;line-height:1.35}img,video{max-width:100%;height:auto}.archive-sources{overflow-wrap:anywhere}.archive-media{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.archive-media figure{margin:0}'
- soup.head.append(style)
- section=soup.new_tag('section',attrs={'class':'archive-sources'}); heading=soup.new_tag('h2');heading.string='원본 자료';section.append(heading)
- gallery=soup.new_tag('div',attrs={'class':'archive-media'});section.append(gallery)
- listing=soup.new_tag('ul');section.append(listing)
- referenced=set()
- for tag in soup.find_all(['img','video','audio','source']):
-  val=tag.get('src')
-  if val and not urlsplit(val).scheme and not val.startswith('/'):
-   referenced.add((chosen.parent/unquote(urlsplit(val).path)).resolve())
- for p in entries(root):
-  link=canonical_url+'source/'+quote(p.relative_to(root).as_posix(),safe='/')
-  li=soup.new_tag('li');a=soup.new_tag('a',href=link);a.string=p.relative_to(root).as_posix();li.append(a);listing.append(li)
-  ext=p.suffix.lower()
-  if p.resolve() not in referenced and ext in IMAGES|VIDEOS|AUDIO:
-   fig=soup.new_tag('figure')
-   if ext in IMAGES: tag=soup.new_tag('img',src=link,alt=p.name,loading='lazy')
-   else: tag=soup.new_tag('video' if ext in VIDEOS else 'audio',src=link,controls='',preload='metadata')
-   fig.append(tag);gallery.append(fig)
- nav=soup.new_tag('p')
- for label,url in [('화곡농장 기록 홈',HOME),('중앙 프로젝트 홈',CENTRAL),(slug,'https://github.com/'+REPO+'/tree/main/public/records/'+quote(slug,safe=''))]:
-  a=soup.new_tag('a',href=url);a.string=label;nav.append(a);nav.append(' · ')
- soup.body.insert(0,nav);soup.body.append(section)
- (destination/'index.html').write_text(str(soup),encoding='utf-8')
- parsed=BeautifulSoup(str(soup),'html.parser')
- for tag in parsed.find_all(['a','img','video','audio','source']):
-  key='href' if tag.name=='a' else 'src'; val=tag.get(key)
-  if val and not urlsplit(val).scheme and not val.startswith(('/','#')):
-   tag[key]='source/'+('' if parent=='.' else parent+'/')+val
- parsed.find('base').decompose()
- md=subprocess.run(['pandoc','--from=html','--to=gfm'],input=str(parsed),check=True,capture_output=True,text=True).stdout
+ md=subprocess.run(['pandoc','--from=html','--to=gfm'],input=doc,check=True,capture_output=True,text=True).stdout
  (destination/'summary.md').write_text(md,encoding='utf-8')
- return {'id':str(meta.get('id') or slug),'slug':slug,'sourceTitle':source_title,'dateEnd':meta.get('dateEnd'),'date':date,'title':canonical,'userTitle':title,'category':meta.get('category','아카이브'),'summary':meta.get('summary',''),'visibility':'public','url':canonical_url,'repoUrl':'https://github.com/'+REPO+'/tree/main/public/records/'+quote(slug,safe=''),'directory':slug,'recordPath':'public/records/'+slug,'authoredAt':date,'dateSource':'user-specified'}
+ return {'id':str(meta.get('id') or slug),'slug':slug,'sourceTitle':source_title,'dateEnd':meta.get('dateEnd'),'date':date,'title':canonical,'userTitle':title,'category':meta.get('category','아카이브'),'summary':meta.get('summary',''),'visibility':'public','url':canonical_url,'repoUrl':'https://github.com/'+REPO+'/tree/main/public/records/'+quote(slug,safe=''),'directory':slug,'recordPath':'public/records/'+slug,'authoredAt':date,'dateSource':'user-specified','entrySource':chosen.relative_to(root).as_posix(),'entryPolicy':'html-exact-v2'}
 
 def verify_files(target: Path, files):
  if not files: raise ValueError('Empty file proof')
