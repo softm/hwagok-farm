@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "repo": "hwagok-farm-private",
+  "project": "hwagok-farm",
+  "visibility": "private",
+  "centralRevision": "52574af45cb7f04b389b12ef954d6fdba9d74f4e",
+  "checkedAt": "2026-09-30T10:55:47.414Z",
+  "applied": true,
+  "registeredProjects": 13,
+  "registeredRows": 4,
+  "sourceResolved": 4,
+  "changedFiles": [
+    "records/20260812-nh-farm-safety-insurance/record.md",
+    "app/records/20260812-nh-farm-safety-insurance/page.tsx",
+    "app/records/20260905-radish-sowing/page.tsx",
+    "app/fertilizer-plan-20260914/page.tsx",
+    "app/pesticide-consultation/page.tsx"
+  ],
+  "mediaFilesChecked": 0,
+  "mediaUnchanged": true,
+  "results": [
+    {
+      "url": "https://hwagok-farm-private.vercel.app/records/20260812-nh-farm-safety-insurance/",
+      "name": "농업인 안전보험 가입정보",
+      "title": "2026-08-12 농업인 안전보험 가입정보",
+      "date": "2026-08-12",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "records/20260812-nh-farm-safety-insurance/record.md",
+          "state": "title-corrected",
+          "before": "2026-08-12 농업인NH안전보험 가입 기록",
+          "after": "2026-08-12 농업인 안전보험 가입정보"
+        },
+        {
+          "file": "app/records/20260812-nh-farm-safety-insurance/page.tsx",
+          "state": "title-corrected",
+          "before": "농업인NH안전보험 가입 기록",
+          "after": "2026-08-12 농업인 안전보험 가입정보"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "records/20260812-nh-farm-safety-insurance",
+      "slug": "20260812-nh-farm-safety-insurance"
+    },
+    {
+      "url": "https://hwagok-farm-private.vercel.app/records/20260905-radish-sowing/",
+      "name": "파종 작업 기록",
+      "title": "작성일 미확인 파종 작업 기록",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/records/20260905-radish-sowing/page.tsx",
+          "state": "title-corrected",
+          "before": "열무·무 파종 기록",
+          "after": "작성일 미확인 파종 작업 기록"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "records/20260905-radish-sowing",
+      "slug": "20260905-radish-sowing"
+    },
+    {
+      "url": "https://hwagok-farm-private.vercel.app/fertilizer-plan-20260914/",
+      "name": "비료 사용 계획",
+      "title": "작성일 미확인 비료 사용 계획",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/fertilizer-plan-20260914/page.tsx",
+          "state": "title-corrected",
+          "before": "들깨·열무 밑거름 시비 계획",
+          "after": "작성일 미확인 비료 사용 계획"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "fertilizer-plan-20260914",
+      "slug": "fertilizer-plan-20260914"
+    },
+    {
+      "url": "https://hwagok-farm-private.vercel.app/pesticide-consultation/",
+      "name": "방제 상담 기록",
+      "title": "작성일 미확인 방제 상담 기록",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/pesticide-consultation/page.tsx",
+          "state": "title-corrected",
+          "before": "제초제 상담 및 들깨밭·농로 잡초관리",
+          "after": "작성일 미확인 방제 상담 기록"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "pesticide-consultation",
+      "slug": "pesticide-consultation"
+    }
+  ]
+}

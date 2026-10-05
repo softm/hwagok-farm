@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "source": "20260831_화곡농장_663-1_667-35_들깨정식_농관원현장확인",
+  "inputSha256": null,
+  "date": "2026-08-31",
+  "title": "화곡농장 663-1 667-35 들깨정식 농관원현장확인",
+  "slug": "20260831-663-1-667-35",
+  "files": [
+    {
+      "path": "20260831_화곡농장_663-1_667-35_들깨정식_농관원현장확인.html",
+      "size": 7789,
+      "sha256": "1d45aec5f33bff29574439646b983edb1042daec91b88519bc0cc514500845f1"
+    },
+    {
+      "path": "20260831_화곡농장_663-1_667-35_들깨정식_농관원현장확인.md",
+      "size": 3140,
+      "sha256": "c05c5299c71404f411fe9d8be4adc9acc3eee6268366193d8cf372eb4c730d73"
+    },
+    {
+      "path": "README.txt",
+      "size": 156,
+      "sha256": "185087ed3849d06face7af88b0851b3573efb693c1908b0e2e68c2e0ad8be874"
+    },
+    {
+      "path": "assets/images/1000064289.jpg",
+      "size": 484616,
+      "sha256": "f719f3745b67582533106f8628461da4285d5b8912306fd97411e6cf35a02dc4"
+    },
+    {
+      "path": "assets/images/1000064314.jpg",
+      "size": 298557,
+      "sha256": "9c50ec1134becf92ec2a75a03bab1d2c9017ceaba2dcd963ff92d8442c986395"
+    },
+    {
+      "path": "assets/images/1000064332.jpg",
+      "size": 482244,
+      "sha256": "4872751173af3b09a6e81405fb8d7724b46d3014adf21270676ddf1f6784c21c"
+    },
+    {
+      "path": "assets/images/1000064340.jpg",
+      "size": 317294,
+      "sha256": "f05ec41b6fbd7a38165d2c03028d6dfcbfc917ea0699f18842ca4ec7bbe6d211"
+    },
+    {
+      "path": "assets/images/1000064344.jpg",
+      "size": 466429,
+      "sha256": "b05ee79ce9f9716d77fb13f516480c8c9d5d0c37fcfa8346043fc2bc71d019fb"
+    },
+    {
+      "path": "assets/thumbs/1000064285.jpg",
+      "size": 50510,
+      "sha256": "86c5bd0637e6a3f927b7089d720850e5799ecf21e6488f6cc4f535fe31cff1ef"
+    },
+    {
+      "path": "assets/thumbs/1000064289.jpg",
+      "size": 88442,
+      "sha256": "21313433558a329b86b2fef41e4494e290f27dbbf37342e05791205b6b02b80d"
+    },
+    {
+      "path": "assets/thumbs/1000064301.jpg",
+      "size": 50721,
+      "sha256": "5f5e4c0953a04c83e7b9a2c13b5e4b7647de505294104928f8cb79c1b6ae5fde"
+    },
+    {
+      "path": "assets/thumbs/1000064314.jpg",
+      "size": 69763,
+      "sha256": "5573a030e5be4ee0e69df2b2104800c7982a3f16c78b334a68d1b71ae8ec1329"
+    },
+    {
+      "path": "assets/thumbs/1000064328.jpg",
+      "size": 72700,
+      "sha256": "2a9ec9cd3875b0bd758b2c64c7a85a94f7a4d2e3f85a405c278ce546ae001954"
+    },
+    {
+      "path": "assets/thumbs/1000064331.jpg",
+      "size": 66064,
+      "sha256": "109be96e7a13e02c628684e4795a38909658e2dd9133df9141158684db124076"
+    },
+    {
+      "path": "assets/thumbs/1000064332.jpg",
+      "size": 79374,
+      "sha256": "07ebda22f54b275f89647dca907bd6d4f4d6e9492c557f10a8f3fb459dc78e50"
+    },
+    {
+      "path": "assets/thumbs/1000064340.jpg",
+      "size": 54502,
+      "sha256": "258a537b6b97a1959cd1fd7f2e30559a604b18a6d40a38ad692217dd28f758b8"
+    },
+    {
+      "path": "assets/thumbs/1000064341.jpg",
+      "size": 32052,
+      "sha256": "2704bbdf1dc658f4a60c4649209c432181cb61b060f0b645bce4b90e33618320"
+    },
+    {
+      "path": "assets/thumbs/1000064344.jpg",
+      "size": 90512,
+      "sha256": "973ebe28562b86a98dca2ad390fa5c685d34bbd252b6cbe521993451b5033c10"
+    },
+    {
+      "path": "assets/videos/1000064285.mp4",
+      "size": 23443218,
+      "sha256": "dffe74387850d295f60637b44ac1898437ab8361f720505fa81c23bd44e7b781"
+    },
+    {
+      "path": "assets/videos/1000064301.mp4",
+      "size": 14678820,
+      "sha256": "766262543ad6d03d04c065d4298b132cabdd891549f7d1ee3ebe6c87dfdfaf03"
+    },
+    {
+      "path": "assets/videos/1000064328.mp4",
+      "size": 21267355,
+      "sha256": "43400ea1e26f27fca91106e4c1cb8cd4d19cd09b198b8816925db817f5f8d725"
+    },
+    {
+      "path": "assets/videos/1000064331.mp4",
+      "size": 20533783,
+      "sha256": "d326fc9862f0fc28cee3df82fdec4cf6c1d38edc13c23ec26cd21e5df347a62d"
+    },
+    {
+      "path": "assets/videos/1000064341.mp4",
+      "size": 17949958,
+      "sha256": "895f37b697904a45b7271ff66ed6bf14e63c52199cfb974847bc9abbc05354ba"
+    }
+  ]
+}

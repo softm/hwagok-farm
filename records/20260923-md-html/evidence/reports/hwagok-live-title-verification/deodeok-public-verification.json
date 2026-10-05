@@ -1,0 +1,385 @@
+{
+  "projectHomeHttp": 200,
+  "projectHomeUrl": "https://softm.github.io/projects/hwagok-farm/",
+  "archivePageHttp": 200,
+  "documentMatchesBuild": true,
+  "globalIndexHttp": 200,
+  "globalIndexArchiveLink": true,
+  "mediaImported": true,
+  "verifiedOriginalImages": 7,
+  "verifiedOriginalVideos": 3,
+  "verifiedFiles": [
+    {
+      "path": "record.html",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "record.md",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "record.json",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "checksums.sha256",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "bundle.zip",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "images/20260923_124711.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "videos/20260923_124713.mp4",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "playback/20260923_124713_h264.mp4",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "posters/20260923_124713.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "videos/20260923_124725.mp4",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "playback/20260923_124725_h264.mp4",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "posters/20260923_124725.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "images/20260923_124728.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "images/20260923_124729.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "images/20260923_135437.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "videos/20260923_135439.mp4",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "playback/20260923_135439_h264.mp4",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "posters/20260923_135439.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "images/20260923_135441.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "images/20260923_135442.jpg",
+      "http": 200,
+      "sha256Matches": true
+    },
+    {
+      "path": "images/20260923_135445.jpg",
+      "http": 200,
+      "sha256Matches": true
+    }
+  ],
+  "status": "public-documents-and-media-verified",
+  "liveTitles": {
+    "checked": 26,
+    "matched": 26,
+    "results": [
+      {
+        "slug": "cultivator-manual-start-20260922",
+        "url": "https://softm.github.io/hwagok-farm/archive/cultivator-manual-start-20260922/record.html",
+        "finalUrl": "https://softm.github.io/hwagok-farm/archive/cultivator-manual-start-20260922/record.html",
+        "expected": "2026-09-22 관리기 수동시동",
+        "actual": [
+          "2026-09-22 관리기 수동시동"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "fan-gearbox-repair-20260914",
+        "url": "https://softm.github.io/hwagok-farm/fan-gearbox-repair-20260914/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/fan-gearbox-repair-20260914/",
+        "expected": "2026-09-06 선풍기 기어박스 수리 안내",
+        "actual": [
+          "2026-09-06 선풍기 기어박스 수리 안내"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "farm-machine-rental-20260924",
+        "url": "https://softm.github.io/hwagok-farm/farm-machine-rental-20260924/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/farm-machine-rental-20260924/",
+        "expected": "작성일 미확인 관리기 임대·출고",
+        "actual": [
+          "작성일 미확인 관리기 임대·출고"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "asea-engine-stop-20260922",
+        "url": "https://softm.github.io/hwagok-farm/archive/asea-engine-stop-20260922/record.html",
+        "finalUrl": "https://softm.github.io/hwagok-farm/archive/asea-engine-stop-20260922/record.html",
+        "expected": "2026-09-22 관리기 엔진정지",
+        "actual": [
+          "2026-09-22 관리기 엔진정지"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "deodeok-harvest-20260923",
+        "url": "https://softm.github.io/hwagok-farm/deodeok-harvest-20260923/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/deodeok-harvest-20260923/",
+        "expected": "2026-09-24 화곡농장 더덕수확과 씨앗채취",
+        "actual": [
+          "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "irrigation-20260905",
+        "url": "https://softm.github.io/hwagok-farm/irrigation-20260905/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/irrigation-20260905/",
+        "expected": "작성일 미확인 화이트클로버 자동급수",
+        "actual": [
+          "작성일 미확인 화이트클로버 자동급수"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "mowing-20260907",
+        "url": "https://softm.github.io/hwagok-farm/mowing-20260907/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/mowing-20260907/",
+        "expected": "작성일 미확인 벌초",
+        "actual": [
+          "작성일 미확인 벌초"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "mowing-20260826",
+        "url": "https://softm.github.io/hwagok-farm/mowing-20260826/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/mowing-20260826/",
+        "expected": "작성일 미확인 벌초",
+        "actual": [
+          "작성일 미확인 벌초"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "perilla-transplant-20260830",
+        "url": "https://softm.github.io/hwagok-farm/perilla-transplant-20260830/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/perilla-transplant-20260830/",
+        "expected": "작성일 미확인 들깨 정식",
+        "actual": [
+          "작성일 미확인 들깨 정식"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "perilla-sowing-after-rain",
+        "url": "https://softm.github.io/hwagok-farm/perilla-sowing-after-rain/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/perilla-sowing-after-rain/",
+        "expected": "작성일 미확인 12mm 강우 후 늦파종 들깨 파종",
+        "actual": [
+          "작성일 미확인 12mm 강우 후 늦파종 들깨 파종"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "cctv-internet-20260821",
+        "url": "https://softm.github.io/hwagok-farm/cctv-internet-20260821/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/cctv-internet-20260821/",
+        "expected": "작성일 미확인 CCTV 인터넷 연결",
+        "actual": [
+          "작성일 미확인 CCTV 인터넷 연결"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "shade-net-20260807",
+        "url": "https://softm.github.io/hwagok-farm/shade-net-20260807/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/shade-net-20260807/",
+        "expected": "작성일 미확인 농막 그늘막",
+        "actual": [
+          "작성일 미확인 농막 그늘막"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "white-clover",
+        "url": "https://softm.github.io/hwagok-farm/white-clover/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/white-clover/",
+        "expected": "작성일 미확인 화이트클로버 파종계획",
+        "actual": [
+          "작성일 미확인 화이트클로버 파종계획"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "farm-machine-rental",
+        "url": "https://softm.github.io/hwagok-farm/farm-machine-rental/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/farm-machine-rental/",
+        "expected": "작성일 미확인 농기계 임대·운반 서비스",
+        "actual": [
+          "작성일 미확인 농기계 임대·운반 서비스"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "moskill-20260527",
+        "url": "https://softm.github.io/hwagok-farm/moskill-20260527/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/moskill-20260527/",
+        "expected": "작성일 미확인 모스킬 방제",
+        "actual": [
+          "작성일 미확인 모스킬 방제"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "spray-record-20260813",
+        "url": "https://softm.github.io/hwagok-farm/spray-record-20260813/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/spray-record-20260813/",
+        "expected": "작성일 미확인 농막 아랫밭 방제",
+        "actual": [
+          "작성일 미확인 농막 아랫밭 방제"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "dangol-spray-20260811",
+        "url": "https://softm.github.io/hwagok-farm/dangol-spray-20260811/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/dangol-spray-20260811/",
+        "expected": "작성일 미확인 단골 들깨밭 살포",
+        "actual": [
+          "작성일 미확인 단골 들깨밭 살포"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "20260811-gourd-harvest",
+        "url": "https://softm.github.io/hwagok-farm/20260811-gourd-harvest/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/20260811-gourd-harvest/",
+        "expected": "작성일 미확인 박 수확 · 사진 53장",
+        "actual": [
+          "작성일 미확인 박 수확 · 사진 53장"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "onion-purchase-20260811",
+        "url": "https://softm.github.io/hwagok-farm/onion-purchase-20260811/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/onion-purchase-20260811/",
+        "expected": "작성일 미확인 양파 구입·저온창고 보관",
+        "actual": [
+          "작성일 미확인 양파 구입·저온창고 보관"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "onion-sourcing-20260810",
+        "url": "https://softm.github.io/hwagok-farm/onion-sourcing-20260810/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/onion-sourcing-20260810/",
+        "expected": "작성일 미확인 양파 구매처 조사",
+        "actual": [
+          "작성일 미확인 양파 구매처 조사"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "sprinkler-thread-20260820",
+        "url": "https://softm.github.io/hwagok-farm/sprinkler-thread-20260820/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/sprinkler-thread-20260820/",
+        "expected": "작성일 미확인 스프링클러 나사 규격",
+        "actual": [
+          "작성일 미확인 스프링클러 나사 규격"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "fertilizer-plan",
+        "url": "https://softm.github.io/hwagok-farm/fertilizer-plan/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/fertilizer-plan/",
+        "expected": "2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법",
+        "actual": [
+          "2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "freezer-electric-20260711",
+        "url": "https://softm.github.io/hwagok-farm/freezer-electric-20260711/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/freezer-electric-20260711/",
+        "expected": "작성일 미확인 냉동고 전기 증설",
+        "actual": [
+          "작성일 미확인 냉동고 전기 증설"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "farm-awning-repair-20260711",
+        "url": "https://softm.github.io/hwagok-farm/farm-awning-repair-20260711/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/farm-awning-repair-20260711/",
+        "expected": "작성일 미확인 농막 차양막 시정조치",
+        "actual": [
+          "작성일 미확인 농막 차양막 시정조치"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "deodeok-harvest-20260923",
+        "url": "https://softm.github.io/hwagok-farm/archive/deodeok-harvest-20260923/",
+        "finalUrl": "https://softm.github.io/hwagok-farm/deodeok-harvest-20260923/",
+        "expected": "2026-09-24 화곡농장 더덕수확과 씨앗채취",
+        "actual": [
+          "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+        ],
+        "matched": true
+      },
+      {
+        "slug": "deodeok-harvest-20260923",
+        "url": "https://softm.github.io/hwagok-farm/archive/deodeok-harvest-20260923/record.html",
+        "finalUrl": "https://softm.github.io/hwagok-farm/archive/deodeok-harvest-20260923/record.html",
+        "expected": "2026-09-24 화곡농장 더덕수확과 씨앗채취",
+        "actual": [
+          "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+        ],
+        "matched": true
+      }
+    ]
+  }
+}

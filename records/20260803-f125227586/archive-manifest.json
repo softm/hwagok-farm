@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "source": "20260803_나리온_미니컷쏘_구매기록.zip",
+  "inputSha256": "3dd88ba80fc2de4a3fe8b55346825b6a946c02936d30383183a6357e308bff50",
+  "date": "2026-08-03",
+  "title": "나리온 미니컷쏘 구매기록",
+  "slug": "20260803-f125227586",
+  "files": [
+    {
+      "path": "20260803_나리온_미니컷쏘_구매기록.html",
+      "size": 18329,
+      "sha256": "6606b39d206ce27e9cbcfabb0514f3c4e286ef0cf4f70cfef1e517f417925b3e"
+    },
+    {
+      "path": "20260803_나리온_미니컷쏘_구매기록.md",
+      "size": 11101,
+      "sha256": "0569eab9e6b8f7c3409532dac6fdcf65fe6cb36b5117f5fbbbc5d4d205f7383a"
+    },
+    {
+      "path": "images/01_제품사양.png",
+      "size": 278324,
+      "sha256": "5f7869b9b185efde7e6ca4b31a0b6d6472a38f5de93e110c92dd287f58c830d1"
+    },
+    {
+      "path": "images/02_주문상세.png",
+      "size": 363426,
+      "sha256": "49dfa1703b0abc53926cac03a8100b85fd692d2e8994fb58d5935586e03c44af"
+    },
+    {
+      "path": "images/03_기본구성품.png",
+      "size": 467968,
+      "sha256": "74074d733a42bb1f72d281bebf528f37f4fe4d279291c672d3a9f5c78082309b"
+    },
+    {
+      "path": "images/04_제품소개.png",
+      "size": 980978,
+      "sha256": "1c21d1ab4a5fd9f2185627d4894b0b6575aab058282e5b51fa07fd3c02ea543a"
+    },
+    {
+      "path": "images/05_날길이90mm.png",
+      "size": 495104,
+      "sha256": "f0772ce38396b70249359727a69e3d4d7be5f6f7ae62ccf5916a5a1da329024f"
+    },
+    {
+      "path": "images/06_수령_케이스전체.jpg",
+      "size": 341789,
+      "sha256": "b3f6902099f5ea39594df31aa92f26d43d17c6a5ad388e1a8afe37fad078cc4f"
+    },
+    {
+      "path": "images/07_수령_상자측면1.jpg",
+      "size": 241467,
+      "sha256": "af1e949314b9db72ab2bd3b3e4627641db67358efc62cc67ed0e50aefa4b1d0b"
+    },
+    {
+      "path": "images/08_수령_제품상자1.jpg",
+      "size": 221887,
+      "sha256": "d265547675e29510b0ae9cf9128b075c15cbac15641e0b4a451d8c713dd4c9ba"
+    },
+    {
+      "path": "images/09_수령_상자측면2.jpg",
+      "size": 195906,
+      "sha256": "03e196b704f79a9c948bf985df1690d8b928707e4c86801d9bedaea40bbcc75a"
+    },
+    {
+      "path": "images/10_수령_제품상자2.jpg",
+      "size": 219924,
+      "sha256": "ef11d2fc7a0b3b8cda461d95ebba4f7d9aff3bb930281efe7ad89c3678c05730"
+    },
+    {
+      "path": "images/11_보호구_파우치.jpg",
+      "size": 248100,
+      "sha256": "ac742c65b30b4871d8949a6584f00b4702d12f42d20ecc928e3f5b2c2f735089"
+    },
+    {
+      "path": "images/12_본체_배터리_톱날.jpg",
+      "size": 288815,
+      "sha256": "1c64d7c61b73197a365be8af3bc5c6c499bb625821a1d37c711e3a2e0d3dcf01"
+    },
+    {
+      "path": "images/13_톱날6개.jpg",
+      "size": 243357,
+      "sha256": "b7fcf77d84ca5bd6857a21805600db2f62633e044e1b6bcb6deb75e128dc6671"
+    },
+    {
+      "path": "images/14_설명서_표지.jpg",
+      "size": 158765,
+      "sha256": "e1258a7f54718734a7890ac6b171615245badebe1cb7340d88df4a828f6972cf"
+    },
+    {
+      "path": "images/15_설명서_기본사용.jpg",
+      "size": 158975,
+      "sha256": "d4c14c8ebb706507bee560037064084fd17af6c76c5c87b262358af54e7122ab"
+    },
+    {
+      "path": "images/16_설명서_톱날충전.jpg",
+      "size": 148521,
+      "sha256": "e6b2a981636d621804de09149bef6a83a8e56bf5de283c33108fd49dd37ef81e"
+    }
+  ]
+}

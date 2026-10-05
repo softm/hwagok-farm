@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": "20260906_아래_들깨밭_정리.zip",
+  "inputSha256": "068a7de4db8895a6cfc8e248dbcdd6f4834735783caf0cc4d3ab367b29f29741",
+  "date": "2026-09-06",
+  "title": "아래 들깨밭 정리",
+  "slug": "20260906-e349fd9a74",
+  "files": [
+    {
+      "path": ".openai/hosting.json",
+      "size": 29,
+      "sha256": "ce387ca4b9d698f3acd67757354c56bcfb253cb8355817efd1993be606c16406"
+    },
+    {
+      "path": "20260906_아래_들깨밭.md",
+      "size": 1728,
+      "sha256": "fa6880d080448aa83231336ca5dde3305c3b72cec2fbe50b3ac1beae3d999758"
+    },
+    {
+      "path": "index.html",
+      "size": 4925,
+      "sha256": "cd2cfa21961e1d3b0c759f6dad39cfcbba91f5acce0e0219eaa51d66464480ed"
+    },
+    {
+      "path": "media/01-20260906_101742.jpg",
+      "size": 562250,
+      "sha256": "2f2eebc38249241eeaac2bc564c4a33b7ec2057344d002bd7c52c2bfd30c13d9"
+    },
+    {
+      "path": "media/02-20260906_101759.jpg",
+      "size": 489969,
+      "sha256": "c23e21004b610e7f607d38dd64138fe52b0b9a2855469fd72dc24d523ec7ee17"
+    },
+    {
+      "path": "media/03-20260906_101801.jpg",
+      "size": 447705,
+      "sha256": "237fe505047382783c9878b3dc66a6b33baf6d86354f34c881bb42621fecf3e3"
+    },
+    {
+      "path": "media/04-20260906_101809.jpg",
+      "size": 518632,
+      "sha256": "62c4cc7d77a1131f0d71e20cdcf9549b9b18d6d37787ac0618dbc1a7e4010c49"
+    },
+    {
+      "path": "media/20260906_101744.mp4",
+      "size": 14262515,
+      "sha256": "85391b360ec3c2715af3f754ef7dfb39549b1d0fc2ff5e63e596f0ede1d2a513"
+    },
+    {
+      "path": "media/20260906_101804.mp4",
+      "size": 4818506,
+      "sha256": "428b97900f813a6c49b32f3206b7a0fe8a992e124932e0fe874e1399ebc7c508"
+    }
+  ]
+}

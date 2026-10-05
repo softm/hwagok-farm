@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "source": "20261004_화곡농장_분무기_편사호스_사진정리.zip",
+  "inputSha256": "1ff876143a2ab9cd4e1190a4bd141ebd7cb37b3f36018a3facabfcdcfdab30fa",
+  "date": "2026-10-04",
+  "title": "화곡농장 분무기 편사호스 사진정리",
+  "slug": "20261004-1cb4c15638",
+  "files": [
+    {
+      "path": "20261004_화곡농장_분무기_편사호스_사진정리.html",
+      "size": 5996,
+      "sha256": "ec38f96986b69fbf2405c1cd1304f8e6dd3936ed5815bac6dd16c810cd30320c"
+    },
+    {
+      "path": "20261004_화곡농장_분무기_편사호스_사진정리.md",
+      "size": 3933,
+      "sha256": "efff3e27195b95554aa640c58006929ccd78864de9142b20908002bbfbb01b36"
+    },
+    {
+      "path": "images/01_TOTAL_20V_16L_충전식분무기.jpg",
+      "size": 241168,
+      "sha256": "f9195a39a73faff5a352286331b9649cd8aaf71e0d61b0ff24270725cd10967f"
+    },
+    {
+      "path": "images/02_TOTAL_5L_수동분무기_본체.jpg",
+      "size": 214474,
+      "sha256": "61ba1ffcde6bc413910f445b0d0efbc4042ae41b2bdd2890e6499a0e60dd654c"
+    },
+    {
+      "path": "images/03_TOTAL_5L_수동분무기_포장.jpg",
+      "size": 219920,
+      "sha256": "79be79f8833d8b264a0bab719d101c9f3991327f687f6e813aacb2837d666ce3"
+    },
+    {
+      "path": "images/04_HONGIL_청색_편사호스.jpg",
+      "size": 334986,
+      "sha256": "c33d405db72398e43949c720a2dbd309d0008b5e376fd9a59965c545eef78d60"
+    },
+    {
+      "path": "images/05_HONGIL_투명_편사호스.jpg",
+      "size": 332905,
+      "sha256": "8fe12d3114204084272244771bb52b669587e037837da2f869b3f716e529a7ab"
+    }
+  ]
+}

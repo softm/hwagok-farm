@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "source": "20260711_농막_차양막_거치대_대각선보강_수리.zip",
+  "inputSha256": "f6a2e4d20a1a4e69358d25139799d5bc70ba33cc5ae8f2959b80ab9f20abee39",
+  "date": "2026-07-11",
+  "title": "농막 차양막 거치대 대각선보강 수리",
+  "slug": "20260711-19bcb05ed0",
+  "files": [
+    {
+      "path": "20260711_095409.jpg",
+      "size": 313821,
+      "sha256": "a0fe6420bf8a84df63eafc1b989994260a1e6e29caa728ffb1c05ac12c967794"
+    },
+    {
+      "path": "20260711_095427.jpg",
+      "size": 434303,
+      "sha256": "1470a4d18b40ec0ba95300d63ef880954da2ebaa4c38ef92315a6a6b1f24b76e"
+    },
+    {
+      "path": "20260711_095445.jpg",
+      "size": 362315,
+      "sha256": "d5ff130386d8f8c50c3248bce7bd5e288bd58c04df13b1757188a3bd06cf3a32"
+    },
+    {
+      "path": "20260711_095508.jpg",
+      "size": 305383,
+      "sha256": "e60e2a09fb43892ca3f91ffa1b063b570e6d609387f77418880cb3f45d14f89e"
+    },
+    {
+      "path": "20260711_184008.jpg",
+      "size": 270574,
+      "sha256": "450e81674cc148adfbcfc556e03ce47f272e5ea0b0810fbd20fb1a62c416d028"
+    },
+    {
+      "path": "20260711_184024.jpg",
+      "size": 298101,
+      "sha256": "72e759dc938e72aa5e1ff3e445b0071d59f4a7a91d6f9bf23b0547098bd69f30"
+    },
+    {
+      "path": "20260711_184037.jpg",
+      "size": 294272,
+      "sha256": "445a3453d2d7e8e84eef878711233da46a1640e57493a28a08e843f4acc4820c"
+    },
+    {
+      "path": "20260711_184106.jpg",
+      "size": 347951,
+      "sha256": "3208f18b029e2aa22e933767051117e1dbe970436817e6f6b4bf48e5bfa4d0c1"
+    },
+    {
+      "path": "20260711_농막_차양막_거치대_대각선보강_수리.md",
+      "size": 1274,
+      "sha256": "0126df4ec4c3f3c8c96ba6e46319b89d11d820bfd8139a3729c4600a88a124e9"
+    },
+    {
+      "path": "thumbs/20260711_095409.jpg",
+      "size": 13373,
+      "sha256": "b9eb1dc88a2a4b9d884966e297d6c4e125da4b2c6385ede6f4e6a7d37d4a43b8"
+    },
+    {
+      "path": "thumbs/20260711_095427.jpg",
+      "size": 14191,
+      "sha256": "1452259f74589c33275e8b8c65a4eb80c72e41602b150ad6e4bd9b44cb336564"
+    },
+    {
+      "path": "thumbs/20260711_095445.jpg",
+      "size": 13438,
+      "sha256": "1fa47b4dd80345c0ff6fcba76fb6438f3303bb5824aa29869e41f5d171478524"
+    },
+    {
+      "path": "thumbs/20260711_095508.jpg",
+      "size": 12261,
+      "sha256": "f81364164a1fe6999a495d98c4e3d4bfea829e4c24d40cf14f0fee43fccea48e"
+    },
+    {
+      "path": "thumbs/20260711_184008.jpg",
+      "size": 11405,
+      "sha256": "8240298b05f6d5e2b185021eb00e5feb2d8319dfeeff3b8b1f226ac6281963ff"
+    },
+    {
+      "path": "thumbs/20260711_184024.jpg",
+      "size": 12165,
+      "sha256": "2d80a8a65b70fa48dc09e9afa1c810f174fbcb3989c8046479e3daae06acfdb7"
+    },
+    {
+      "path": "thumbs/20260711_184037.jpg",
+      "size": 12234,
+      "sha256": "d4e690a163a7d788b026c24c10faa6c914c4481cb9a4fcc9e26440b13a83bba6"
+    },
+    {
+      "path": "thumbs/20260711_184106.jpg",
+      "size": 12367,
+      "sha256": "d777ec7ed9297a323c9c68fc5819746c5ec76770674618f799ba4c1a1d56b3d4"
+    }
+  ]
+}

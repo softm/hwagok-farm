@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>농막·하우스 CCTV 인터넷 연결 정리</title>
+<style>
+:root {
+  --bg:#f5f7f2; --card:#fff; --text:#172117; --muted:#687268; --accent:#27845b; --line:#dfe6dc;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.65; }
+header { padding:48px 24px 28px; background:linear-gradient(135deg,#123c2a,#2d8b5b); color:white; }
+header .wrap, main { max-width:1100px; margin:0 auto; }
+h1 { margin:0; font-size:clamp(30px,5vw,54px); letter-spacing:-.04em; line-height:1.12; }
+.subtitle { margin-top:16px; color:#dff3e7; font-size:18px; }
+main { padding:28px 20px 80px; }
+section { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:26px; margin:18px 0; box-shadow:0 10px 30px rgba(22,45,28,.06); }
+h2 { margin:0 0 14px; font-size:26px; letter-spacing:-.03em; }
+h3 { margin:22px 0 10px; }
+table { width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; }
+th, td { border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+th { background:#eef5ee; }
+pre { background:#0f241a; color:#dff3e7; padding:16px; border-radius:14px; overflow:auto; }
+code { background:#eef5ee; padding:.1em .35em; border-radius:6px; }
+.note { border-left:5px solid var(--accent); padding:14px 16px; background:#f1f8f3; border-radius:12px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; }
+.card { padding:18px; border:1px solid var(--line); border-radius:16px; background:#fbfdfb; }
+footer { text-align:center; color:var(--muted); padding:30px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>농막·하우스 CCTV 인터넷 연결 정리</h1><p class="subtitle">농막·하우스 인터넷, 핸드폰 핫스팟, 랜선 CCTV, Tapo 모델 비교 정리</p></div></header>
+<main>
+<section><h2>핵심 결론</h2>
+<div class="grid">
+<div class="card"><b>임시 구성</b><p>남는 핸드폰 핫스팟 + CCTV 연결이 가장 현실적이다.</p></div>
+<div class="card"><b>랜선 CCTV</b><p>ipTIME Extender N3로 핫스팟 Wi‑Fi를 LAN으로 변환한다.</p></div>
+<div class="card"><b>장기 구성</b><p>LTE 라우터 + UPS + 온도센서 조합이 안정적이다.</p></div>
+</div></section>
+<section><h2>1. 현재 문제</h2>
+<table><tr><th>구분</th><th>내용</th></tr>
+<tr><td>농막</td><td>CCTV는 설치되어 있으나 인터넷이 없어 실시간 확인 불가</td></tr>
+<tr><td>하우스</td><td>냉동고 전원 차단 사고 발생, 식재료 손상</td></tr>
+<tr><td>필요 기능</td><td>냉동고/컨트롤박스 온도 확인, 출입 확인, 원격 보기</td></tr>
+<tr><td>인터넷 조건</td><td>유선 인터넷 설치는 현재 불가능한 것으로 판단</td></tr>
+</table></section>
+<section><h2>2. 랜선 전용 CCTV 연결 구성</h2>
+<pre>데이터함께쓰기 유심 들어간 핸드폰
+        ↓
+핸드폰 핫스팟 Wi‑Fi
+        ↓
+ipTIME Extender N3
+        ↓
+랜선
+        ↓
+랜선 전용 CCTV / DVR / NVR</pre>
+<table><tr><th>장비</th><th>역할</th></tr>
+<tr><td>남는 핸드폰</td><td>데이터함께쓰기 유심 장착, 핫스팟 제공</td></tr>
+<tr><td>ipTIME Extender N3</td><td>핫스팟 Wi‑Fi를 받아 LAN 포트로 변환</td></tr>
+<tr><td>랜선</td><td>Extender N3와 CCTV 연결</td></tr>
+<tr><td>UPS</td><td>정전 대비</td></tr>
+</table></section>
+<section><h2>3. DDNS 주의사항</h2>
+<p class="note">핸드폰 핫스팟은 통신사 NAT 뒤에 있기 때문에 DDNS/포트포워딩 직접 접속은 거의 어렵다. 제조사 앱/P2P 방식이면 가능성이 높다.</p>
+<table><tr><th>목적</th><th>가능 여부</th></tr>
+<tr><td>CCTV에 인터넷 연결</td><td>가능</td></tr>
+<tr><td>제조사 앱/P2P 원격보기</td><td>가능성 높음</td></tr>
+<tr><td>DDNS/포트포워딩 직접 접속</td><td>어려움</td></tr>
+</table></section>
+<section><h2>4. Tapo 모델 비교</h2>
+<h3>실내용</h3>
+<table><tr><th>모델</th><th>야외용</th><th>회전</th><th>화질</th><th>판단</th></tr>
+<tr><td>C100</td><td>❌</td><td>❌</td><td>200만</td><td>실내 고정용</td></tr>
+<tr><td>C110</td><td>❌</td><td>❌</td><td>300만</td><td>냉동고 고정 확인용</td></tr>
+<tr><td>C210</td><td>❌</td><td>✅</td><td>300만</td><td>하우스 내부용 무난</td></tr>
+<tr><td>C225</td><td>❌</td><td>✅</td><td>400만</td><td>실내용 고급형</td></tr>
+</table>
+<h3>실외/방수형</h3>
+<table><tr><th>모델</th><th>야외용</th><th>회전</th><th>화질</th><th>판단</th></tr>
+<tr><td>C310</td><td>✅ IP66</td><td>❌</td><td>300만</td><td>외부 고정 감시</td></tr>
+<tr><td>C320WS</td><td>✅ IP66</td><td>❌</td><td>400만</td><td>외부 고정 감시 추천</td></tr>
+<tr><td>C500</td><td>✅ IP65</td><td>✅</td><td>200만</td><td>외부 회전형</td></tr>
+</table></section>
+<section><h2>5. 용도별 추천</h2>
+<table><tr><th>용도</th><th>추천</th></tr>
+<tr><td>하우스 내부 냉동고만 확인</td><td>Tapo C110</td></tr>
+<tr><td>하우스 내부 냉동고 + 컨트롤박스</td><td>Tapo C210</td></tr>
+<tr><td>5m 거리 숫자 확인 안정성</td><td>C225 또는 C320WS급</td></tr>
+<tr><td>하우스 내부지만 습기/물방울 걱정</td><td>C320WS</td></tr>
+<tr><td>농막 외부/하우스 외부</td><td>C320WS</td></tr>
+</table></section>
+<section><h2>6. 최종 구성안</h2>
+<h3>임시/현실 구성</h3>
+<pre>SKT 데이터함께쓰기 유심
+        ↓
+남는 핸드폰 핫스팟
+        ↓
+Tapo CCTV 또는 ipTIME Extender N3
+        ↓
+CCTV 원격 확인</pre>
+<h3>안정형 구성</h3>
+<pre>SKT/LTE 데이터 회선
+        ↓
+LTE 라우터
+        ↓
+CCTV + 온도센서 + 전원센서
+        ↓
+UPS로 라우터 전원 유지</pre>
+</section>
+<footer>화곡농장 · CCTV 인터넷 연결 정리 · 2026-08-21</footer>
+</main>
+</body>
+</html>

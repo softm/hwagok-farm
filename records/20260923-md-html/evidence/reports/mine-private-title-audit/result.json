@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "repo": "mine-private",
+  "project": "mine-private",
+  "visibility": "private",
+  "centralRevision": "52574af45cb7f04b389b12ef954d6fdba9d74f4e",
+  "checkedAt": "2026-09-30T10:56:02.012Z",
+  "applied": true,
+  "registeredProjects": 13,
+  "registeredRows": 6,
+  "sourceResolved": 6,
+  "changedFiles": [
+    "archive/20260806-right-index-laceration/index.html",
+    "archive/20260806-right-index-laceration/summary.md",
+    "archive/20260810-medical-referral/index.html",
+    "archive/20260810-medical-referral/summary.md",
+    "archive/20260812-farmer-safety-insurance/index.html",
+    "archive/20260812-farmer-safety-insurance/summary.md",
+    "archive/20260819-all-i-have/index.html",
+    "archive/20260819-all-i-have/summary.md",
+    "archive/20260903-health-checkup-insurance/index.html",
+    "archive/20260903-health-checkup-insurance/summary.md",
+    "archive/20260904-onsu-hill-renewal/index.html",
+    "archive/20260904-onsu-hill-renewal/summary.md",
+    "project.json"
+  ],
+  "mediaFilesChecked": 4,
+  "mediaUnchanged": true,
+  "results": [
+    {
+      "url": "https://mine-private-sigma.vercel.app/archive/20260806-right-index-laceration/",
+      "name": "비공개 상세 기록 01",
+      "title": "작성일 미확인 비공개 상세 기록 01",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "archive/20260806-right-index-laceration/index.html",
+          "state": "title-corrected",
+          "before": "오른손 검지 열상 진료 경과",
+          "after": "작성일 미확인 비공개 상세 기록 01"
+        },
+        {
+          "file": "archive/20260806-right-index-laceration/summary.md",
+          "state": "title-corrected",
+          "before": "오른손 검지 열상 진료 경과",
+          "after": "작성일 미확인 비공개 상세 기록 01"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/20260806-right-index-laceration",
+      "slug": "20260806-right-index-laceration"
+    },
+    {
+      "url": "https://mine-private-sigma.vercel.app/archive/20260810-medical-referral/",
+      "name": "진료의뢰서 내용 요약",
+      "title": "2026-08-10 진료의뢰서 내용 요약",
+      "date": "2026-08-10",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "archive/20260810-medical-referral/index.html",
+          "state": "title-corrected",
+          "before": "진료의뢰서 기록",
+          "after": "2026-08-10 진료의뢰서 내용 요약"
+        },
+        {
+          "file": "archive/20260810-medical-referral/summary.md",
+          "state": "title-corrected",
+          "before": "진료의뢰서 기록",
+          "after": "2026-08-10 진료의뢰서 내용 요약"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/20260810-medical-referral",
+      "slug": "20260810-medical-referral"
+    },
+    {
+      "url": "https://mine-private-sigma.vercel.app/archive/20260812-farmer-safety-insurance/",
+      "name": "농업인 안전보험 가입정보",
+      "title": "2026-08-12 농업인 안전보험 가입정보",
+      "date": "2026-08-12",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "archive/20260812-farmer-safety-insurance/index.html",
+          "state": "title-corrected",
+          "before": "농업인NH안전보험 가입 기록",
+          "after": "2026-08-12 농업인 안전보험 가입정보"
+        },
+        {
+          "file": "archive/20260812-farmer-safety-insurance/summary.md",
+          "state": "title-corrected",
+          "before": "농업인NH안전보험 가입 기록",
+          "after": "2026-08-12 농업인 안전보험 가입정보"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/20260812-farmer-safety-insurance",
+      "slug": "20260812-farmer-safety-insurance"
+    },
+    {
+      "url": "https://mine-private-sigma.vercel.app/archive/20260819-all-i-have/",
+      "name": "내가 가진 모든 것",
+      "title": "2026-08-19 내가 가진 모든 것",
+      "date": "2026-08-19",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "archive/20260819-all-i-have/index.html",
+          "state": "title-corrected",
+          "before": "내가 가진 모든 것",
+          "after": "2026-08-19 내가 가진 모든 것"
+        },
+        {
+          "file": "archive/20260819-all-i-have/summary.md",
+          "state": "title-corrected",
+          "before": "내가 가진 모든 것",
+          "after": "2026-08-19 내가 가진 모든 것"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/20260819-all-i-have",
+      "slug": "20260819-all-i-have"
+    },
+    {
+      "url": "https://mine-private-sigma.vercel.app/archive/20260903-health-checkup-insurance/",
+      "name": "건강검진 연세수내과",
+      "title": "2026-08-28 건강검진 연세수내과",
+      "date": "2026-08-28",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "archive/20260903-health-checkup-insurance/index.html",
+          "state": "title-corrected",
+          "before": "건강검진·실비청구 정리",
+          "after": "2026-08-28 건강검진 연세수내과"
+        },
+        {
+          "file": "archive/20260903-health-checkup-insurance/summary.md",
+          "state": "title-corrected",
+          "before": "연세수내과 건강검진·실비청구 정리",
+          "after": "2026-08-28 건강검진 연세수내과"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/20260903-health-checkup-insurance",
+      "slug": "20260903-health-checkup-insurance"
+    },
+    {
+      "url": "https://mine-private-sigma.vercel.app/archive/20260904-onsu-hill-renewal/",
+      "name": "비공개 상세 기록 06",
+      "title": "작성일 미확인 비공개 상세 기록 06",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "archive/20260904-onsu-hill-renewal/index.html",
+          "state": "title-corrected",
+          "before": "온수힐스테이트 임대차 갱신계약 정리",
+          "after": "작성일 미확인 비공개 상세 기록 06"
+        },
+        {
+          "file": "archive/20260904-onsu-hill-renewal/summary.md",
+          "state": "title-corrected",
+          "before": "온수힐스테이트 임대차 갱신계약 정리",
+          "after": "작성일 미확인 비공개 상세 기록 06"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/20260904-onsu-hill-renewal",
+      "slug": "20260904-onsu-hill-renewal"
+    }
+  ]
+}

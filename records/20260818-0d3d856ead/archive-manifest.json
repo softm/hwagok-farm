@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "source": "20260818_화곡농장_화이트클로버_파종계획_보고서.zip",
+  "inputSha256": "17fe9992e576b8cee5f5691eb57448623855a2cbc8021d0c671b9885c2544ec5",
+  "date": "2026-08-18",
+  "title": "화곡농장 화이트클로버 파종계획 보고서",
+  "slug": "20260818-0d3d856ead",
+  "files": [
+    {
+      "path": "20260818_화곡농장_화이트클로버_파종계획_보고서.html",
+      "size": 15640,
+      "sha256": "572e275f303cf452f81521723a61879ca071fd149d878f4b410b2d5d130d170a"
+    },
+    {
+      "path": "20260818_화곡농장_화이트클로버_파종계획_보고서.md",
+      "size": 16562,
+      "sha256": "cfdbb5e914685c934e4cd428348df49b4fbae4a31a3c910418dd96df4cfe8143"
+    },
+    {
+      "path": "assets/01_화이트클로버_살포대상_파란영역.png",
+      "size": 2679390,
+      "sha256": "c887c7848023d2b5f7fd31ee3d4a73eadeab43abd7f54a01efe7a798022634da"
+    },
+    {
+      "path": "assets/02_화이트클로버_상품_파종정보.png",
+      "size": 346679,
+      "sha256": "ed002b9e04ae4ea09bb2ab8df60b23e69771fb59dc11806c6c55810a8ae62a9b"
+    },
+    {
+      "path": "assets/03_화이트클로버_75평_살포구역도.png",
+      "size": 1931366,
+      "sha256": "271abd4e7cbd3b32aac28b130c9d8ec6fc0c9f9f211ed6154d596664b3220ba2"
+    }
+  ]
+}

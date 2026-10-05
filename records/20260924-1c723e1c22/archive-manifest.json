@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "source": "20260924_서산시농업기술센터_북부농업기계임대사업소_관리기임대.zip",
+  "inputSha256": "a195e828044969206c96cefdfeca6759eea10d8c8e1cdd35b67d0febb3de202c",
+  "date": "2026-09-24",
+  "title": "서산시농업기술센터 북부농업기계임대사업소 관리기임대",
+  "slug": "20260924-1c723e1c22",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 4621,
+      "sha256": "0a266cc54aec4cff9ba096e2dee1d7699fff5c27a290bd08b19501c4112f6db1"
+    },
+    {
+      "path": "assets/1000066165.jpg",
+      "size": 216650,
+      "sha256": "09a195543d67464b1493c4f9e6a6d6d326160a5bdc5b4883e54e26402b3e53af"
+    },
+    {
+      "path": "assets/1000066166.mp4",
+      "size": 4237441,
+      "sha256": "ab5610c2eb8b6da5680f0727fb43e0cbeee0375d816b6ab7b7f44661d8c46b83"
+    },
+    {
+      "path": "assets/1000066167.jpg",
+      "size": 274813,
+      "sha256": "a4016a55c8df8c7bec2d5f936c91ba919a519903dfd8624139c1faaffa6fff97"
+    },
+    {
+      "path": "assets/1000066168.jpg",
+      "size": 236712,
+      "sha256": "013b5dd194a7a422dafbd30ae1bf8a9d14e1525215c33d6898efbd09ff9cd2a4"
+    },
+    {
+      "path": "assets/1000066169.jpg",
+      "size": 265434,
+      "sha256": "fd918edec835287916d221ece93534cf870c3d0b3096e5c1297b833404f2b46e"
+    },
+    {
+      "path": "assets/1000066170.jpg",
+      "size": 221778,
+      "sha256": "3c3bbcb2968c99d19fdaf01ecda03a4688cced845dfd6e7a7023c490f436e4c2"
+    },
+    {
+      "path": "assets/1000066171.jpg",
+      "size": 321944,
+      "sha256": "87e1a62f7ce8c8f1ec874393717d1be8c05da09636d4869e91cdb542972beae8"
+    },
+    {
+      "path": "assets/1000066172.jpg",
+      "size": 239646,
+      "sha256": "11e5caf45c27491ad23f46498ac5002b40cfac474c942e6a3c2aaf94d8b0e901"
+    },
+    {
+      "path": "assets/1000066173.jpg",
+      "size": 149382,
+      "sha256": "ee320ae07416caba4098571208882e1800d28012a1c75177151b53900978b81f"
+    },
+    {
+      "path": "assets/1000066174.jpg",
+      "size": 421906,
+      "sha256": "c79d7027c89c8435a307055b7c85517290276aff65a42977d97a4444dc6a8c6c"
+    },
+    {
+      "path": "assets/1000066175.jpg",
+      "size": 407293,
+      "sha256": "d47558fdb9d11cc4bda7870dd7060d9c18c519dc2cfdb1ff9ee1a1e47746668f"
+    },
+    {
+      "path": "assets/1000066176.jpg",
+      "size": 378947,
+      "sha256": "3dfe8cbd6496394ff7cf89c4a8f1b01fd893ca9b33e77a3d2375777910519c60"
+    },
+    {
+      "path": "assets/1000066177.jpg",
+      "size": 321361,
+      "sha256": "6ba4e245e7905f3e608123db382c99dfa738d3bac764c02c386e583bea77f672"
+    },
+    {
+      "path": "assets/1000066178.jpg",
+      "size": 340638,
+      "sha256": "3f636456fa1100bcc35458e162cf2bea97df4f4bb36ebfc181526d495fcc0ca9"
+    },
+    {
+      "path": "assets/1000066179.mp4",
+      "size": 9912312,
+      "sha256": "e1764084a5aedc3fa627c7e82e61cf77d6dfe8176405d038573b16549ff9cdae"
+    },
+    {
+      "path": "assets/1000066180.jpg",
+      "size": 208922,
+      "sha256": "97e1a122d05f10fe94de48fb2acf5a00dea84fb7e6c52507dc7b24147f0360ba"
+    },
+    {
+      "path": "assets/1000066192.jpg",
+      "size": 389641,
+      "sha256": "5fc46395700739f27e9a0d8cb96feb279eabed384173d49d4c5ae2bd5577a3b5"
+    },
+    {
+      "path": "assets/1000066193.jpg",
+      "size": 498346,
+      "sha256": "8af33608e0edfb00d4d054b599a82165d2a2d567364659602b70ffaf3e02cc93"
+    },
+    {
+      "path": "assets/1000066195.jpg",
+      "size": 513635,
+      "sha256": "001bf9aaa3c2c01cb07298a5086082f9541463f10ca8ad395604490927586ff1"
+    },
+    {
+      "path": "assets/1000066196.jpg",
+      "size": 385278,
+      "sha256": "7d7afdecb1d87b63f7cb3e0d242bc9d993cd024cc7a41d743ae76d7aac2d6245"
+    },
+    {
+      "path": "index.html",
+      "size": 5390,
+      "sha256": "ac59d590508d6b03d44f0e4e13843d87ab180e1da794ceaa61aa7c404bf157f1"
+    }
+  ]
+}

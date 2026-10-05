@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "source": "20260605_서산_화곡농장_엄마무밭_예초기작업_타랑제초제살포.zip",
+  "inputSha256": "b812e3815bcd648938dc7602b0baaba490d5c2b86f5023f77519145203967953",
+  "date": "2026-06-05",
+  "title": "서산 화곡농장 엄마무밭 예초기작업 타랑제초제살포",
+  "slug": "20260605-8f04eef435",
+  "files": [
+    {
+      "path": "20260605_서산_화곡농장_엄마무밭_예초기작업_타랑제초제살포.md",
+      "size": 1673,
+      "sha256": "1d91a8b85e19f43ac2e5b39593bb36c11593039e5f9d2934336dea1e15e44c58"
+    },
+    {
+      "path": "images/20260605_164310.jpg",
+      "size": 716729,
+      "sha256": "ce1b528b5c0ca2021c8ec982ec280ca5b3068e2d8b02e715c46605fddc730e89"
+    },
+    {
+      "path": "images/20260605_164352.mp4",
+      "size": 36590747,
+      "sha256": "ac53df2a574f763b76e38c03406317d6bfc7fed3cda5d5120ae51846192ea0d9"
+    },
+    {
+      "path": "images/20260605_164424.jpg",
+      "size": 659885,
+      "sha256": "326294620fab8505f3abf3bfc68759d7f0e16ba5944f6332a81e4a0efdfeeb6b"
+    },
+    {
+      "path": "images/20260605_164428.jpg",
+      "size": 715568,
+      "sha256": "cb578fb1b8841c9533136d19ea2bac181eeb3afec9f3b28e99119167763cf26d"
+    },
+    {
+      "path": "images/20260605_164610.jpg",
+      "size": 693674,
+      "sha256": "ebf6ca12c56da821d50142535091ad41ddec665a4e17d21fa5f58cea9e222da5"
+    },
+    {
+      "path": "images/20260605_164611.jpg",
+      "size": 662086,
+      "sha256": "bc4c75d6b020c4805913251bcb4eec4532abb0943c18128efa6de8ffaee0c009"
+    },
+    {
+      "path": "images/20260605_173537.jpg",
+      "size": 364514,
+      "sha256": "de2ffd1b0f6b4c3cf289c131b0a92d82251758260a6503d6c6e48f982bf984e0"
+    },
+    {
+      "path": "images/20260605_173540.jpg",
+      "size": 249203,
+      "sha256": "f17745da1ad5d60958249af9b9830dd1fa85fbefa77a52c44a25acc5b9d4f5aa"
+    },
+    {
+      "path": "images/20260605_173544.jpg",
+      "size": 207257,
+      "sha256": "e17e57b304283995811e280382704b0fbac090f6295fd9be1229ab3c5cc1aac2"
+    },
+    {
+      "path": "images/20260605_173552.jpg",
+      "size": 219153,
+      "sha256": "0bc20c782c5dcac635034c9d24cb42932d788c8b23ee7d549369e3317dac8d2b"
+    }
+  ]
+}

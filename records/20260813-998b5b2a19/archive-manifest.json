@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "source": "20260813_화곡농장_농막아랫밭_나방노린채살포.zip",
+  "inputSha256": "0de8fa005584ab9a27be80f6635052be3c79dd7450d14f411cfbb3a84b406d8a",
+  "date": "2026-08-13",
+  "title": "화곡농장 농막아랫밭 나방노린채살포",
+  "slug": "20260813-998b5b2a19",
+  "files": [
+    {
+      "path": "20260813_화곡농장_농막아랫밭_나방노린채살포.html",
+      "size": 4735,
+      "sha256": "1385ed2c4e0d1015dfae115cb61b82b44a89d9aacf3c86d62c468774c3883ffb"
+    },
+    {
+      "path": "20260813_화곡농장_농막아랫밭_나방노린채살포.md",
+      "size": 2157,
+      "sha256": "0485bef76cec0dafb83463398c6efde976a115fc41502e463c22a1f72f32905d"
+    },
+    {
+      "path": "images/01-1000060294.jpg",
+      "size": 135216,
+      "sha256": "ab9fde2a83a23351b06bcbb8f5639b614a8923828faed58aff627d14e12e2eeb"
+    },
+    {
+      "path": "images/02-1000060293.jpg",
+      "size": 143936,
+      "sha256": "a8ded06794ad68535c4e1879169fc6b61b10b2e62e22a34fb9e7d1a894c3f911"
+    },
+    {
+      "path": "images/03-1000060292.jpg",
+      "size": 203868,
+      "sha256": "3d39ec9b52d18eeb783201790ae24cbd672063c0623c5782eced5bcad591558b"
+    },
+    {
+      "path": "images/04-1000060291.jpg",
+      "size": 222455,
+      "sha256": "a83961723d1b5ae94700ff5475b2751086684b6644e36550e4722a1d513e6b89"
+    },
+    {
+      "path": "images/05-1000060290.jpg",
+      "size": 171992,
+      "sha256": "623348f848a7a4a9b6af16c2c27b70a91fc0a4355cf4e8826a00ae61d0d4c0f3"
+    }
+  ]
+}

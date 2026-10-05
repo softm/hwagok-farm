@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "source": "20260813_화곡농장_제초제_구입_보유_사용정리.zip",
+  "inputSha256": "b85ecb05dc2078ba831ebbe48adc455fdba2bd42190c771b982ee3b1685e6e10",
+  "date": "2026-08-13",
+  "title": "화곡농장 제초제 구입 보유 사용정리",
+  "slug": "20260813-8328568061",
+  "files": [
+    {
+      "path": "20260813_화곡농장_제초제_구입_보유_사용정리.html",
+      "size": 15426,
+      "sha256": "fe2a8219290966fe92d9d3a12d545e13e409d666b65cb3a25d0c18dad56ada17"
+    },
+    {
+      "path": "20260813_화곡농장_제초제_구입_보유_사용정리.md",
+      "size": 10521,
+      "sha256": "e74b2412dece4b5e5257f0712d6cafa6ace4e9f2e60b0642a5347bceb1b535c8"
+    },
+    {
+      "path": "README.txt",
+      "size": 341,
+      "sha256": "4bd8c494bd72e6315853bb7ebcd6451bc8bbc02e59e332ddcae1b0b7ae618bc4"
+    },
+    {
+      "path": "images/1000058966.jpg",
+      "size": 253935,
+      "sha256": "c04c6a961a766975fedf8df2fda4abbc920037f2b7d5335d70d93b1f621ad41d"
+    },
+    {
+      "path": "images/1000058967.jpg",
+      "size": 305293,
+      "sha256": "501f24499ba6695f5e932cc776633d1b1adc7b09c72a90cf676c94bf428cf9aa"
+    },
+    {
+      "path": "images/1000058968.jpg",
+      "size": 286667,
+      "sha256": "1f96a7ad517f29eda51107366b01d7f1ad1010bc34bf1286fc0a28937d3e9a59"
+    },
+    {
+      "path": "images/1000058969.jpg",
+      "size": 334092,
+      "sha256": "be4139b97e7f36f67a77a71d6e8d7bce2ae73506339a16e230fdd5f99d2beeee"
+    },
+    {
+      "path": "images/1000058970.jpg",
+      "size": 372570,
+      "sha256": "ad54fa0efdd05bf20044ae21c386e95b8a1804ac29c0f6cdfd21ac991870fea7"
+    },
+    {
+      "path": "images/1000058971.jpg",
+      "size": 327437,
+      "sha256": "dbc7dcee38f62bde06b3d8f801c3ddc34eaeb4f76e3d5da2a2e37b0696b541db"
+    },
+    {
+      "path": "images/1000058972.jpg",
+      "size": 323762,
+      "sha256": "8e72b49def081294292d6f6e39cbfac7b5522dfe0b3facdd5112487c97684936"
+    },
+    {
+      "path": "images/1000058973.jpg",
+      "size": 322243,
+      "sha256": "d66cb0b4849434311453a82ad52d1d947d525f81df6c87bea74f7a75a4da92f8"
+    },
+    {
+      "path": "images/1000058974.jpg",
+      "size": 292083,
+      "sha256": "0d07e422d5db5ff1434f87dc635015a7011001b73dd79a34f533fa84c596591b"
+    },
+    {
+      "path": "images/1000058975.jpg",
+      "size": 364347,
+      "sha256": "767958cd1f8ccc6af15ddcc8a221d64102349d3037c58f8b93038c4fe2002845"
+    },
+    {
+      "path": "images/1000058976.jpg",
+      "size": 370319,
+      "sha256": "733a95ad2167a7c40dacec0f36cfa651b460daa649275f8dac734fc174069402"
+    },
+    {
+      "path": "images/1000058977.jpg",
+      "size": 354891,
+      "sha256": "811bf69cc8b3634c3a2b39145253ae4170930a29a33119b854f3611feece8f60"
+    },
+    {
+      "path": "images/1000058978.jpg",
+      "size": 313749,
+      "sha256": "457ba568e4cd558658f43dc50f0f2ba5ffa43f37dd620a6bea73c42359927783"
+    },
+    {
+      "path": "images/1000058979.jpg",
+      "size": 318405,
+      "sha256": "f2a449e6e951f47247f992276ce845936a95445af7a404abd570fa7a6c85130d"
+    },
+    {
+      "path": "images/1000058980.jpg",
+      "size": 287903,
+      "sha256": "7d97311f5f2a8ac1c80d7578b90b173c2fe0bc7836c51fc01d67e8c89bf64a2b"
+    },
+    {
+      "path": "images/1000058981.jpg",
+      "size": 327842,
+      "sha256": "03eaadb93e39c905d95726bf87e3f703c47d65456a9568af68e3be1e638d5302"
+    },
+    {
+      "path": "images/1000058982.jpg",
+      "size": 290698,
+      "sha256": "3ea0250b670d5efd731d40d21c36e3ccc2d115e1dffbb0f8cb9a4cdbb0fae851"
+    },
+    {
+      "path": "images/1000058984.jpg",
+      "size": 161194,
+      "sha256": "dcb83a7c51a5e6df0ec474c8e3110cdf17397a0c211e12690a05c0bafe46b9da"
+    },
+    {
+      "path": "images/1000058985.jpg",
+      "size": 204223,
+      "sha256": "73083958ac837d9ab4aeda1af873a8fd00dff24f57499da8af744bcc61830846"
+    }
+  ]
+}

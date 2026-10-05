@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "repo": "father-hospital-treatment-private",
+  "project": "father-hospital-treatment-private",
+  "visibility": "private",
+  "centralRevision": "52574af45cb7f04b389b12ef954d6fdba9d74f4e",
+  "checkedAt": "2026-09-30T10:56:40.299Z",
+  "applied": true,
+  "registeredProjects": 13,
+  "registeredRows": 7,
+  "sourceResolved": 0,
+  "changedFiles": [
+    "project.json",
+    "app/archive/page.tsx",
+    "lib/archive-records.ts"
+  ],
+  "mediaFilesChecked": 3,
+  "mediaUnchanged": true,
+  "results": [
+    {
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260923-seosan-medical-record-ha-correction",
+      "name": "서산의료원 진료기록 발급 및 HA(-) → HA(+) 정정 요청",
+      "title": "작성일 미확인 서산의료원 진료기록 발급 및 HA(-) → HA(+) 정정 요청",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "view/20260923-seosan-medical-record-ha-correction",
+      "slug": "20260923-seosan-medical-record-ha-correction"
+    },
+    {
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260911-seosan-medical-center-response-review",
+      "name": "서산의료원 민원답변 검토 및 추가의견서",
+      "title": "작성일 미확인 서산의료원 민원답변 검토 및 추가의견서",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "view/20260911-seosan-medical-center-response-review",
+      "slug": "20260911-seosan-medical-center-response-review"
+    },
+    {
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260908-teacher-mutual-aid-adl-documents",
+      "name": "한국교직원공제회 보험서류 재준비 · ADL 진단자료",
+      "title": "작성일 미확인 한국교직원공제회 보험서류 재준비 · ADL 진단자료",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "view/20260908-teacher-mutual-aid-adl-documents",
+      "slug": "20260908-teacher-mutual-aid-adl-documents"
+    },
+    {
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260819-teacher-mutual-aid-insurance-complaint",
+      "name": "한국교직원공제회 보험금 심사 지연 및 반복 보완요구 민원",
+      "title": "작성일 미확인 한국교직원공제회 보험금 심사 지연 및 반복 보완요구 민원",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "view/20260819-teacher-mutual-aid-insurance-complaint",
+      "slug": "20260819-teacher-mutual-aid-insurance-complaint"
+    },
+    {
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260811-seosan-medical-record-complaint",
+      "name": "서산의료원 의무기록 정정·민원",
+      "title": "작성일 미확인 서산의료원 의무기록 정정·민원",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "view/20260811-seosan-medical-record-complaint",
+      "slug": "20260811-seosan-medical-record-complaint"
+    },
+    {
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260807-seosan-medical-record-correction",
+      "name": "서산의료원 의무기록 정정 및 농업인안전보험 재심사 정리",
+      "title": "작성일 미확인 서산의료원 의무기록 정정 및 농업인안전보험 재심사 정리",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "view/20260807-seosan-medical-record-correction",
+      "slug": "20260807-seosan-medical-record-correction"
+    },
+    {
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260703-neuro-ophthalmology-visual-field",
+      "name": "신경안과 좌측 시야 결손·우안 시력 저하 진료 정리",
+      "title": "작성일 미확인 신경안과 좌측 시야 결손·우안 시력 저하 진료 정리",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "view/20260703-neuro-ophthalmology-visual-field",
+      "slug": "20260703-neuro-ophthalmology-visual-field"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "source": "cctv_internet_20260821_md_html.zip",
+  "inputSha256": "b8e0816c9d36b8157ba6b45c21a0b1e208c2cb83201aa81d9332665ea8709c06",
+  "date": "2026-08-21",
+  "title": "cctv internet 20260821 md html",
+  "slug": "20260821-md-html",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 7279,
+      "sha256": "04ae3a566c40289d3c91bbd907c015e5708bafc40dec14fa6cc53138b005420c"
+    },
+    {
+      "path": "index.html",
+      "size": 6075,
+      "sha256": "68e4abed5b7217b80854bf9a258fdc2bc810b68f743f17084575a3c6be034a5a"
+    }
+  ]
+}

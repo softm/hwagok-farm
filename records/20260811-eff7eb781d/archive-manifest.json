@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "source": "20260811_화곡농장_단골_농막아래농지_들깨밭_살포기록.zip",
+  "inputSha256": "dbf41d16f87ad12e33776a2f7a50a83c0a2b918b04e7d582527c0e16688899c0",
+  "date": "2026-08-11",
+  "title": "화곡농장 단골 농막아래농지 들깨밭 살포기록",
+  "slug": "20260811-eff7eb781d",
+  "files": [
+    {
+      "path": "20260811_화곡농장_단골_농막아래농지_들깨밭_살포기록.html",
+      "size": 8680,
+      "sha256": "813b4943607ddb71678536cd5f90598c308bfb7b9f427dfab8dc6b7ab9712bad"
+    },
+    {
+      "path": "20260811_화곡농장_단골_농막아래농지_들깨밭_살포기록.md",
+      "size": 8792,
+      "sha256": "de2b85408263a01e901c7e6fa9bf0cf375d9b85013852fe06385b42c8d02ea69"
+    },
+    {
+      "path": "README.txt",
+      "size": 294,
+      "sha256": "3c54c1e98bb070fc4ec745a8a43e637facfab2e281a86ffbf5a579286e132d5a"
+    },
+    {
+      "path": "images/01_분무기_TS-1100N_20L.jpg",
+      "size": 296209,
+      "sha256": "ff858f52e631185da2d82daf675c143e82ed183bd1a3de90bf62a055b7e8a7a1"
+    },
+    {
+      "path": "images/02_단골_적용대상_사용량_라벨.jpg",
+      "size": 245899,
+      "sha256": "d675f6b929c4078f42fd69cd0cc14c09948b60f2cd44110a1259ddac55dc9850"
+    },
+    {
+      "path": "images/03_단골_라벨_사용량_근접.jpg",
+      "size": 205818,
+      "sha256": "cab6447d6b001985d2d56dd78511a5b8c83729728b34e497a4772bd434d7f6f4"
+    },
+    {
+      "path": "images/04_단골_500mL_전면.jpg",
+      "size": 178688,
+      "sha256": "301d18ecf77a03da08b8e1f5df52776107544431aaac860ec7bcdda3b88cd41b"
+    },
+    {
+      "path": "images/05_단골_성분_주의사항.jpg",
+      "size": 185839,
+      "sha256": "acf486cc8e2ea5008df75f0af36d96dd6b4d985405c2da40cadcadab2b5f73b2"
+    },
+    {
+      "path": "images/06_농막아래농지_전경_01.jpg",
+      "size": 685177,
+      "sha256": "8c22c4604ba95b128414d910988582298f596e80a4d83889a2017eda27b970ce"
+    },
+    {
+      "path": "images/07_농막아래농지_전경_02.jpg",
+      "size": 707757,
+      "sha256": "83bb0afad52b42c499d7699e0bd4185207718276b16d14092d33fa78797f9472"
+    },
+    {
+      "path": "images/08_농막아래농지_전경_03.jpg",
+      "size": 641505,
+      "sha256": "1c3d701761774f359bd8725c223fc01a5353072f2e9512f820619e75d85b9be5"
+    },
+    {
+      "path": "images/09_농막아래농지_전경_04.jpg",
+      "size": 678738,
+      "sha256": "3136855371391a5ab0620310e9a141bbe693cd93e5c10fad450c361f1e41f2d9"
+    },
+    {
+      "path": "images/10_농막아래농지_전경_05.jpg",
+      "size": 506043,
+      "sha256": "a137a9d75f08fe10a0838d3fc5b712df06658265e7436682a300996a7a84b7ba"
+    },
+    {
+      "path": "images/11_들깨밭_살포_01.jpg",
+      "size": 576860,
+      "sha256": "bbe4c22c940d6db98d1ece257152f2f67591984815f6016463ca56f701793f22"
+    },
+    {
+      "path": "images/12_들깨밭_살포_02.jpg",
+      "size": 593075,
+      "sha256": "a914982a1980e7681ab02e22c8eb3cd9145fe353730f012c79ba9fad9ab29e9e"
+    },
+    {
+      "path": "images/13_들깨밭_살포_03.jpg",
+      "size": 545443,
+      "sha256": "d8db7d9a89fdb7bad0639d7b344d3543e404d68739d3a8ec6b3b4470b8a15352"
+    },
+    {
+      "path": "images/14_들깨밭_살포_04.jpg",
+      "size": 587525,
+      "sha256": "d86f28bab4460cde2ce7ef58cbcdbdee8618d3ca7cd311ba05493f2a9a58fb5c"
+    },
+    {
+      "path": "images/15_들깨밭_살포_05.jpg",
+      "size": 583057,
+      "sha256": "3d6abeb0bc2f1565348e2362ece3a3cfc175d67a2365ed2074bbcbe889391be3"
+    },
+    {
+      "path": "images/16_들깨밭_살포_06.jpg",
+      "size": 588546,
+      "sha256": "ea2a8f37fced2bf9584d5b97de48fc6c254582505aba790c3a625e6d4f5c369c"
+    },
+    {
+      "path": "images/17_들깨밭_살포_07.jpg",
+      "size": 574454,
+      "sha256": "3ad20c445dba1b3b46df9210a1d560e1d31dcdd40f87a8a72378a1e7a62301c5"
+    },
+    {
+      "path": "images/18_들깨밭_살포_08.jpg",
+      "size": 579534,
+      "sha256": "6bd1e3b1e3ed59c506c111be840e7933ad49758f4cefaf84b2f6cf2656a43abf"
+    },
+    {
+      "path": "images/19_들깨밭_살포_09.jpg",
+      "size": 572469,
+      "sha256": "54775c946ae06896917b4177fa81f381a1cb14442b408e7e275a960e1205530d"
+    },
+    {
+      "path": "images/20_들깨밭_살포_10.jpg",
+      "size": 579083,
+      "sha256": "3e311afe6616f43b0e1ae6bd435f2fb4bffc5b5f02c4d5a0e0ecd7f4e96ec6d4"
+    },
+    {
+      "path": "images/21_들깨밭_살포_11.jpg",
+      "size": 515688,
+      "sha256": "0b49c9779cd3435f9108c2c78163ee42b0c60b012ef4df8409a2cc3e3d0f5eff"
+    },
+    {
+      "path": "images/22_들깨밭_살포_12.jpg",
+      "size": 511373,
+      "sha256": "1dc1d15a40086eb733f79fd3a0ecb9302f649cc99696f018be0b4fbc8b5857de"
+    },
+    {
+      "path": "images/23_들깨밭_살포_13.jpg",
+      "size": 574210,
+      "sha256": "380e6ed085451e7045156eb16c1983db6724de698b467d46905a8cc5e3737cb6"
+    },
+    {
+      "path": "images/24_들깨밭_살포_14.jpg",
+      "size": 560449,
+      "sha256": "806c93b4b78ab162a810ee2dc635d2c6c79585d7a4a7824ea6872e886f5ecf83"
+    },
+    {
+      "path": "images/25_들깨밭_살포_15.jpg",
+      "size": 613408,
+      "sha256": "38969be8a4fc710eb98eac031b4f72a7322e6d5df2426c05bba5fa24a7506c2c"
+    }
+  ]
+}

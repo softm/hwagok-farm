@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "repo": "hwagok-farm",
+  "project": "hwagok-farm",
+  "visibility": "public",
+  "centralRevision": "52574af45cb7f04b389b12ef954d6fdba9d74f4e",
+  "checkedAt": "2026-09-30T10:54:31.903Z",
+  "applied": true,
+  "registeredProjects": 13,
+  "registeredRows": 23,
+  "sourceResolved": 23,
+  "changedFiles": [
+    "app/farm-machine-rental-20260924/page.tsx",
+    "public/archive/farm-machine-rental-20260924/record.html",
+    "public/archive/farm-machine-rental-20260924/record.md",
+    "app/deodeok-harvest-20260923/page.tsx",
+    "public/archive/deodeok-harvest-20260923/index.html",
+    "public/archive/deodeok-harvest-20260923/record.html",
+    "public/archive/deodeok-harvest-20260923/record.md",
+    "public/archive/cultivator-manual-start-20260922/record.html",
+    "public/archive/cultivator-manual-start-20260922/record.md",
+    "public/archive/asea-engine-stop-20260922/record.md",
+    "app/fan-gearbox-repair-20260914/page.tsx",
+    "public/archive/fan-gearbox-repair-20260914/record.html",
+    "public/archive/fan-gearbox-repair-20260914/record.md",
+    "public/mowing-20260907/index.html",
+    "public/mowing-20260907/record.md",
+    "app/irrigation-20260905/page.tsx",
+    "app/perilla-transplant-20260830/page.tsx",
+    "public/mowing-20260826/index.html",
+    "public/mowing-20260826/record.md",
+    "app/cctv-internet-20260821/page.tsx",
+    "app/sprinkler-thread-20260820/page.tsx",
+    "app/spray-record-20260813/page.tsx",
+    "app/dangol-spray-20260811/page.tsx",
+    "public/20260811-gourd-harvest/index.html",
+    "app/onion-purchase-20260811/page.tsx",
+    "app/onion-sourcing-20260810/page.tsx",
+    "app/shade-net-20260807/page.tsx",
+    "app/freezer-electric-20260711/page.tsx",
+    "app/farm-awning-repair-20260711/page.tsx",
+    "app/fertilizer-plan/page.tsx",
+    "app/moskill-20260527/page.tsx",
+    "app/white-clover/page.tsx",
+    "app/farm-machine-rental/page.tsx",
+    "archive/records.ts"
+  ],
+  "mediaFilesChecked": 130,
+  "mediaUnchanged": true,
+  "results": [
+    {
+      "url": "https://softm.github.io/hwagok-farm/farm-machine-rental-20260924/",
+      "name": "관리기 임대·출고",
+      "title": "작성일 미확인 관리기 임대·출고",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/farm-machine-rental-20260924/page.tsx",
+          "state": "title-corrected",
+          "before": "관리기 임대부터 화곡농장 현장 하차까지",
+          "after": "작성일 미확인 관리기 임대·출고"
+        },
+        {
+          "file": "public/archive/farm-machine-rental-20260924/record.html",
+          "state": "title-corrected",
+          "before": "2026-09-24 북부 농업기계 임대사업소 관리기 임대·출고",
+          "after": "작성일 미확인 관리기 임대·출고"
+        },
+        {
+          "file": "public/archive/farm-machine-rental-20260924/record.md",
+          "state": "title-corrected",
+          "before": "2026-09-24 서산시농업기술센터 북부 농업기계 임대사업소 관리기 임대·출고 기록",
+          "after": "작성일 미확인 관리기 임대·출고"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "farm-machine-rental-20260924",
+      "slug": "farm-machine-rental-20260924"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/deodeok-harvest-20260923/",
+      "name": "화곡농장 더덕수확과 씨앗채취",
+      "title": "2026-09-24 화곡농장 더덕수확과 씨앗채취",
+      "date": "2026-09-24",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/deodeok-harvest-20260923/page.tsx",
+          "state": "title-corrected",
+          "before": "더덕 수확 및 더덕 씨앗 채취",
+          "after": "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+        },
+        {
+          "file": "public/archive/deodeok-harvest-20260923/index.html",
+          "state": "title-corrected",
+          "before": "더덕 수확, 씨앗 채취 기록",
+          "after": "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+        },
+        {
+          "file": "public/archive/deodeok-harvest-20260923/record.html",
+          "state": "title-corrected",
+          "before": "더덕 수확, 씨앗 채취 기록",
+          "after": "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+        },
+        {
+          "file": "public/archive/deodeok-harvest-20260923/record.md",
+          "state": "title-corrected",
+          "before": "2026-09-23 화곡농장 더덕 수확 및 더덕 씨앗 채취",
+          "after": "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "deodeok-harvest-20260923",
+      "slug": "deodeok-harvest-20260923"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/archive/cultivator-manual-start-20260922/",
+      "name": "관리기 수동시동",
+      "title": "2026-09-22 관리기 수동시동",
+      "date": "2026-09-22",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "public/archive/cultivator-manual-start-20260922/record.html",
+          "state": "title-corrected",
+          "before": "아세아 관리기 수동 시동·정지",
+          "after": "2026-09-22 관리기 수동시동"
+        },
+        {
+          "file": "public/archive/cultivator-manual-start-20260922/record.md",
+          "state": "title-corrected",
+          "before": "아세아 관리기 수동 시동 및 정지",
+          "after": "2026-09-22 관리기 수동시동"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/cultivator-manual-start-20260922",
+      "slug": "cultivator-manual-start-20260922"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/archive/asea-engine-stop-20260922/",
+      "name": "관리기 엔진정지",
+      "title": "2026-09-22 관리기 엔진정지",
+      "date": "2026-09-22",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "public/archive/asea-engine-stop-20260922/record.md",
+          "state": "title-corrected",
+          "before": "아세아 관리기 엔진 정지",
+          "after": "2026-09-22 관리기 엔진정지"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "archive/asea-engine-stop-20260922",
+      "slug": "asea-engine-stop-20260922"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/fan-gearbox-repair-20260914/",
+      "name": "선풍기 기어박스 수리 안내",
+      "title": "2026-09-06 선풍기 기어박스 수리 안내",
+      "date": "2026-09-06",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/fan-gearbox-repair-20260914/page.tsx",
+          "state": "title-corrected",
+          "before": "선풍기 기어박스 수리 안내",
+          "after": "2026-09-06 선풍기 기어박스 수리 안내"
+        },
+        {
+          "file": "public/archive/fan-gearbox-repair-20260914/record.html",
+          "state": "title-corrected",
+          "before": "2026-09-14 타이거킹 공업용 선풍기 회전기어박스 주문",
+          "after": "2026-09-06 선풍기 기어박스 수리 안내"
+        },
+        {
+          "file": "public/archive/fan-gearbox-repair-20260914/record.md",
+          "state": "title-corrected",
+          "before": "2026-09-14 타이거킹 공업용 선풍기 회전기어박스 주문",
+          "after": "2026-09-06 선풍기 기어박스 수리 안내"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "fan-gearbox-repair-20260914",
+      "slug": "fan-gearbox-repair-20260914"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/mowing-20260907/",
+      "name": "벌초",
+      "title": "작성일 미확인 벌초",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "public/mowing-20260907/index.html",
+          "state": "title-corrected",
+          "before": "9월 7일, 벌초 작업 기록",
+          "after": "작성일 미확인 벌초"
+        },
+        {
+          "file": "public/mowing-20260907/record.md",
+          "state": "title-corrected",
+          "before": "2026년 9월 7일 화곡농장 벌초 작업 기록",
+          "after": "작성일 미확인 벌초"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "mowing-20260907",
+      "slug": "mowing-20260907"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/irrigation-20260905/",
+      "name": "화이트클로버 자동급수",
+      "title": "작성일 미확인 화이트클로버 자동급수",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/irrigation-20260905/page.tsx",
+          "state": "title-corrected",
+          "before": "하우스 앞밭 화이트클로버 자동급수",
+          "after": "작성일 미확인 화이트클로버 자동급수"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "irrigation-20260905",
+      "slug": "irrigation-20260905"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/perilla-transplant-20260830/",
+      "name": "들깨 정식",
+      "title": "작성일 미확인 들깨 정식",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/perilla-transplant-20260830/page.tsx",
+          "state": "title-corrected",
+          "before": "663-1·667-35 들깨 정식 기록",
+          "after": "작성일 미확인 들깨 정식"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "perilla-transplant-20260830",
+      "slug": "perilla-transplant-20260830"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/mowing-20260826/",
+      "name": "벌초",
+      "title": "작성일 미확인 벌초",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "public/mowing-20260826/index.html",
+          "state": "title-corrected",
+          "before": "2026년 8월 26일 벌초 작업 기록",
+          "after": "작성일 미확인 벌초"
+        },
+        {
+          "file": "public/mowing-20260826/record.md",
+          "state": "title-corrected",
+          "before": "2026년 8월 26일 벌초 작업 기록",
+          "after": "작성일 미확인 벌초"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "mowing-20260826",
+      "slug": "mowing-20260826"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/cctv-internet-20260821/",
+      "name": "CCTV 인터넷 연결",
+      "title": "작성일 미확인 CCTV 인터넷 연결",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/cctv-internet-20260821/page.tsx",
+          "state": "title-corrected",
+          "before": "유선 인터넷이 안 되는 농막은 핫스팟으로 먼저 연결하고 라우터로 안정화합니다.",
+          "after": "작성일 미확인 CCTV 인터넷 연결"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "cctv-internet-20260821",
+      "slug": "cctv-internet-20260821"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/sprinkler-thread-20260820/",
+      "name": "스프링클러 나사 규격",
+      "title": "작성일 미확인 스프링클러 나사 규격",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/sprinkler-thread-20260820/page.tsx",
+          "state": "title-corrected",
+          "before": "1/2인치는 12.7mm가 아니라 수나사 외경 약 20.9mm 입니다.",
+          "after": "작성일 미확인 스프링클러 나사 규격"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "sprinkler-thread-20260820",
+      "slug": "sprinkler-thread-20260820"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/spray-record-20260813/",
+      "name": "농막 아랫밭 방제",
+      "title": "작성일 미확인 농막 아랫밭 방제",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/spray-record-20260813/page.tsx",
+          "state": "title-corrected",
+          "before": "농막 아랫밭 나방노린채 살포",
+          "after": "작성일 미확인 농막 아랫밭 방제"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "spray-record-20260813",
+      "slug": "spray-record-20260813"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/dangol-spray-20260811/",
+      "name": "단골 들깨밭 살포",
+      "title": "작성일 미확인 단골 들깨밭 살포",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/dangol-spray-20260811/page.tsx",
+          "state": "title-corrected",
+          "before": "농막 아래 들깨밭 단골 제초제 살포",
+          "after": "작성일 미확인 단골 들깨밭 살포"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "dangol-spray-20260811",
+      "slug": "dangol-spray-20260811"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/20260811-gourd-harvest/",
+      "name": "박 수확 · 사진 53장",
+      "title": "작성일 미확인 박 수확 · 사진 53장",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "public/20260811-gourd-harvest/index.html",
+          "state": "title-corrected",
+          "before": "2026-08-11 박 수확",
+          "after": "작성일 미확인 박 수확 · 사진 53장"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "20260811-gourd-harvest",
+      "slug": "20260811-gourd-harvest"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/onion-purchase-20260811/",
+      "name": "양파 구입·저온창고 보관",
+      "title": "작성일 미확인 양파 구입·저온창고 보관",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/onion-purchase-20260811/page.tsx",
+          "state": "title-corrected",
+          "before": "양파 구입 및 저온창고 보관",
+          "after": "작성일 미확인 양파 구입·저온창고 보관"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "onion-purchase-20260811",
+      "slug": "onion-purchase-20260811"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/onion-sourcing-20260810/",
+      "name": "양파 구매처 조사",
+      "title": "작성일 미확인 양파 구매처 조사",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/onion-sourcing-20260810/page.tsx",
+          "state": "title-corrected",
+          "before": "양파 30망 구매처 조사",
+          "after": "작성일 미확인 양파 구매처 조사"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "onion-sourcing-20260810",
+      "slug": "onion-sourcing-20260810"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/shade-net-20260807/",
+      "name": "농막 그늘막",
+      "title": "작성일 미확인 농막 그늘막",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/shade-net-20260807/page.tsx",
+          "state": "title-corrected",
+          "before": "차양막 하단에서 난간까지 그늘막 설치 크기 를 잡았습니다.",
+          "after": "작성일 미확인 농막 그늘막"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "shade-net-20260807",
+      "slug": "shade-net-20260807"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/freezer-electric-20260711/",
+      "name": "냉동고 전기 증설",
+      "title": "작성일 미확인 냉동고 전기 증설",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/freezer-electric-20260711/page.tsx",
+          "state": "title-corrected",
+          "before": "냉동고 전기 증설 작업",
+          "after": "작성일 미확인 냉동고 전기 증설"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "freezer-electric-20260711",
+      "slug": "freezer-electric-20260711"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/farm-awning-repair-20260711/",
+      "name": "농막 차양막 시정조치",
+      "title": "작성일 미확인 농막 차양막 시정조치",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/farm-awning-repair-20260711/page.tsx",
+          "state": "title-corrected",
+          "before": "농막 차양막 거치대 대각선 보강 시정조치",
+          "after": "작성일 미확인 농막 차양막 시정조치"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "farm-awning-repair-20260711",
+      "slug": "farm-awning-repair-20260711"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/fertilizer-plan/",
+      "name": "지선이밭 아랫밭 맞춤 18호 비료 사용법",
+      "title": "2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법",
+      "date": "2026-07-03",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/fertilizer-plan/page.tsx",
+          "state": "title-corrected",
+          "before": "들깨·열무 밑거름 시비 계획",
+          "after": "2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "fertilizer-plan",
+      "slug": "fertilizer-plan"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/moskill-20260527/",
+      "name": "모스킬 방제",
+      "title": "작성일 미확인 모스킬 방제",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/moskill-20260527/page.tsx",
+          "state": "title-corrected",
+          "before": "박밭 잎벌레 피해 모스킬 방제 기록",
+          "after": "작성일 미확인 모스킬 방제"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "moskill-20260527",
+      "slug": "moskill-20260527"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/white-clover/",
+      "name": "화이트클로버 파종계획",
+      "title": "작성일 미확인 화이트클로버 파종계획",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/white-clover/page.tsx",
+          "state": "title-corrected",
+          "before": "엄나무밭 화이트클로버 파종계획",
+          "after": "작성일 미확인 화이트클로버 파종계획"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "white-clover",
+      "slug": "white-clover"
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/farm-machine-rental/",
+      "name": "농기계 임대·운반 서비스",
+      "title": "작성일 미확인 농기계 임대·운반 서비스",
+      "date": "",
+      "visibility": "public",
+      "files": [
+        {
+          "file": "app/farm-machine-rental/page.tsx",
+          "state": "title-corrected",
+          "before": "농기계는 빌리고, 밭까지 운반 받으세요.",
+          "after": "작성일 미확인 농기계 임대·운반 서비스"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "farm-machine-rental",
+      "slug": "farm-machine-rental"
+    }
+  ]
+}

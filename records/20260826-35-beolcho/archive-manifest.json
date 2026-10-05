@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": "20260826_벌초_35만_beolcho.zip",
+  "inputSha256": "965e577e1c2179c1e89aae8bf5eb9280f43c4749594a1c9edb0f46b682d143cb",
+  "date": "2026-08-26",
+  "title": "벌초 35만 beolcho",
+  "slug": "20260826-35-beolcho",
+  "files": [
+    {
+      "path": "20260826_벌초_작업기록.html",
+      "size": 4046,
+      "sha256": "0d85fa7c11be17d36339eae44fcac86cd8b6f122508f5b9bbee13585de557480"
+    },
+    {
+      "path": "20260826_벌초_작업기록.md",
+      "size": 1199,
+      "sha256": "38bb8963447cbaea5f2232b363e4d613a513dd159b5ec291163d689ff14af9df"
+    },
+    {
+      "path": "images/01_벌초작업.jpg",
+      "size": 637745,
+      "sha256": "656c9b6933a9b79728ac70cd5470b44167c386589fd018154d8cb73da4d81d89"
+    },
+    {
+      "path": "images/02_밭전경.jpg",
+      "size": 433490,
+      "sha256": "463833dbabfd5fa858a1edabb8f51efb67a8cceb5ab9b14fbff46cce4ddb549a"
+    },
+    {
+      "path": "images/03_밭전경.jpg",
+      "size": 405822,
+      "sha256": "fde4dac8fdd538035bc3a6f04d50f238bdf6977cc6b036304de3758f815227ae"
+    },
+    {
+      "path": "images/04_작업중.jpg",
+      "size": 642001,
+      "sha256": "c653e7fc733ffe5b504a16301c4448e7b2c176f2f54a984ea7e9eacad049def5"
+    },
+    {
+      "path": "images/05_현장전경.jpg",
+      "size": 666169,
+      "sha256": "bcd161c7c2fc26d3b478c44591412720267439443322256dc0a6941a678685f1"
+    },
+    {
+      "path": "images/06_현장원경.jpg",
+      "size": 529164,
+      "sha256": "98a48142e5eb9e25fc5fa4460307c115b7ba0e3938b308917c90af887d34396a"
+    },
+    {
+      "path": "video/20260826_072412.mp4",
+      "size": 34877581,
+      "sha256": "7ca3f3f3636ac1254baf516c80cdb6c5d86d20493655d08c321ad90fbad68735"
+    }
+  ]
+}

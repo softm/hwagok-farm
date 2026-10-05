@@ -1,0 +1,41 @@
+{
+  "record_date": "2026-09-07",
+  "project": "화곡농장",
+  "title": "2026년 9월 7일 벌초 작업 기록",
+  "start": "08:30",
+  "end": "17:00",
+  "elapsed_minutes": 510,
+  "break_minutes": null,
+  "worker_note_verbatim": "호경당숙 같은 교회 사람",
+  "people_count": null,
+  "area": null,
+  "cost_krw": null,
+  "public_url": "https://softm.github.io/hwagok-farm/mowing-20260907/",
+  "repo": "softm/hwagok-farm",
+  "photos": [
+    {
+      "source_filename": "KakaoTalk_Photo_2026-09-07-21-46-19.jpeg",
+      "public_file": "images/01-slope.jpg",
+      "caption": "차량 옆 경사면에 풀이 베어진 흔적이 보이며, 잘린 풀과 덩굴이 비탈에 남아 있습니다.",
+      "sha256": "9abe70ffafed0401c9076e958b241ecc10e2bbc485a28964b9d368656c730f4d",
+      "exif_removed": true,
+      "plate_redacted": true
+    },
+    {
+      "source_filename": "KakaoTalk_Photo_2026-09-07-21-46-17.jpeg",
+      "public_file": "images/02-path.jpg",
+      "caption": "지주대가 설치된 재배 구역 옆 통로에 풀베기 흔적이 보이고, 바닥에 잘린 풀이 깔려 있습니다.",
+      "sha256": "599af1a9d9b7dea81b26fb87b1a290b69b26594524a671a763ed4c88b7009e8b",
+      "exif_removed": true,
+      "plate_redacted": false
+    },
+    {
+      "source_filename": "KakaoTalk_Photo_2026-09-07-21-46-15.jpeg",
+      "public_file": "images/03-field.jpg",
+      "caption": "하우스가 보이는 넓은 구역에 풀베기 흔적이 있으며, 잘린 풀과 일부 덩굴·열매가 남아 있습니다.",
+      "sha256": "d71f31c3abcc8795257b161e8f120da5aef2d122eb2c56c6dae0221d96702c57",
+      "exif_removed": true,
+      "plate_redacted": false
+    }
+  ]
+}

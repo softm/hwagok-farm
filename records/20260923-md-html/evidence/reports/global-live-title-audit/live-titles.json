@@ -1,0 +1,957 @@
+{
+  "checkedAt": "2026-09-30T11:04:52Z",
+  "projectCount": 13,
+  "rowCount": 75,
+  "privateContentFetched": false,
+  "projects": [
+    {
+      "repo": "hwagok-farm",
+      "title": "화곡농장",
+      "home": "https://softm.github.io/projects/hwagok-farm/",
+      "rows": 27,
+      "publicRows": 23,
+      "privateRows": 4,
+      "counts": {
+        "matched": 23,
+        "private-authenticated-page-not-fetched": 4
+      }
+    },
+    {
+      "repo": "gwangmyeong",
+      "title": "광명",
+      "home": "https://softm.github.io/projects/gwangmyeong/",
+      "rows": 2,
+      "publicRows": 2,
+      "privateRows": 0,
+      "counts": {
+        "matched": 2
+      }
+    },
+    {
+      "repo": "mine-private",
+      "title": "나",
+      "home": "https://softm.github.io/projects/mine/",
+      "rows": 6,
+      "publicRows": 0,
+      "privateRows": 6,
+      "counts": {
+        "private-authenticated-page-not-fetched": 6
+      }
+    },
+    {
+      "repo": "onsuhill-private",
+      "title": "온수힐",
+      "home": "https://softm.github.io/projects/onsuhill/",
+      "rows": 7,
+      "publicRows": 0,
+      "privateRows": 7,
+      "counts": {
+        "private-authenticated-page-not-fetched": 7
+      }
+    },
+    {
+      "repo": "yeonseo",
+      "title": "연서 교육",
+      "home": "https://softm.github.io/projects/yeonseo/",
+      "rows": 2,
+      "publicRows": 0,
+      "privateRows": 2,
+      "counts": {
+        "private-authenticated-page-not-fetched": 2
+      }
+    },
+    {
+      "repo": "ungdo-private",
+      "title": "웅도 토지·성토",
+      "home": "https://softm.github.io/projects/ungdo/",
+      "rows": 10,
+      "publicRows": 1,
+      "privateRows": 9,
+      "counts": {
+        "external-service-or-project-home": 1,
+        "private-authenticated-page-not-fetched": 9
+      }
+    },
+    {
+      "repo": "hwagok-land-permit-private",
+      "title": "화곡리 개간허가",
+      "home": "https://softm.github.io/projects/hwagok-land-permit/",
+      "rows": 5,
+      "publicRows": 0,
+      "privateRows": 5,
+      "counts": {
+        "private-authenticated-page-not-fetched": 5
+      }
+    },
+    {
+      "repo": "father-hospital-treatment-private",
+      "title": "아버지 병원 치료",
+      "home": "https://softm.github.io/projects/father-hospital-treatment/",
+      "rows": 7,
+      "publicRows": 0,
+      "privateRows": 7,
+      "counts": {
+        "private-authenticated-page-not-fetched": 7
+      }
+    },
+    {
+      "repo": "homecare-nationwide-care-services-map",
+      "title": "돌봄한눈·전국 요양기관",
+      "home": "https://softm.github.io/projects/homecare-nationwide-care-services-map/",
+      "rows": 2,
+      "publicRows": 2,
+      "privateRows": 0,
+      "counts": {
+        "external-service-or-project-home": 2
+      }
+    },
+    {
+      "repo": "medical-finder",
+      "title": "메디찾기 · 병원·약국·비급여",
+      "home": "https://softm.github.io/projects/medical-finder/",
+      "rows": 1,
+      "publicRows": 0,
+      "privateRows": 1,
+      "counts": {
+        "private-authenticated-page-not-fetched": 1
+      }
+    },
+    {
+      "repo": "gyeongju-kim",
+      "title": "경주김씨",
+      "home": "https://softm.github.io/projects/gyeongju-kim/",
+      "rows": 0,
+      "publicRows": 0,
+      "privateRows": 0,
+      "counts": {}
+    },
+    {
+      "repo": "baksok-public",
+      "title": "서해박속낙지",
+      "home": "https://softm.github.io/projects/baksok/",
+      "rows": 6,
+      "publicRows": 1,
+      "privateRows": 5,
+      "counts": {
+        "title-mismatch": 1,
+        "private-authenticated-page-not-fetched": 5
+      }
+    },
+    {
+      "repo": "gyeongju-trip-map",
+      "title": "용인·경주·이천 가족여행",
+      "home": "https://softm.github.io/projects/gyeongju-trip-map/",
+      "rows": 0,
+      "publicRows": 0,
+      "privateRows": 0,
+      "counts": {}
+    }
+  ],
+  "results": [
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/farm-machine-rental-20260924/",
+      "name": "관리기 임대·출고",
+      "authoredDate": "",
+      "expected": "작성일 미확인 관리기 임대·출고",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/farm-machine-rental-20260924/",
+      "actual": [
+        "작성일 미확인 관리기 임대·출고"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/deodeok-harvest-20260923/",
+      "name": "화곡농장 더덕수확과 씨앗채취",
+      "authoredDate": "2026-09-24",
+      "expected": "2026-09-24 화곡농장 더덕수확과 씨앗채취",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/deodeok-harvest-20260923/",
+      "actual": [
+        "2026-09-24 화곡농장 더덕수확과 씨앗채취"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/archive/cultivator-manual-start-20260922/",
+      "name": "관리기 수동시동",
+      "authoredDate": "2026-09-22",
+      "expected": "2026-09-22 관리기 수동시동",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/archive/cultivator-manual-start-20260922/record.html",
+      "actual": [
+        "2026-09-22 관리기 수동시동"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/archive/asea-engine-stop-20260922/",
+      "name": "관리기 엔진정지",
+      "authoredDate": "2026-09-22",
+      "expected": "2026-09-22 관리기 엔진정지",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/archive/asea-engine-stop-20260922/record.html",
+      "actual": [
+        "2026-09-22 관리기 엔진정지"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/fan-gearbox-repair-20260914/",
+      "name": "선풍기 기어박스 수리 안내",
+      "authoredDate": "2026-09-06",
+      "expected": "2026-09-06 선풍기 기어박스 수리 안내",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/fan-gearbox-repair-20260914/",
+      "actual": [
+        "2026-09-06 선풍기 기어박스 수리 안내"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/mowing-20260907/",
+      "name": "벌초",
+      "authoredDate": "",
+      "expected": "작성일 미확인 벌초",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/mowing-20260907/",
+      "actual": [
+        "작성일 미확인 벌초"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/irrigation-20260905/",
+      "name": "화이트클로버 자동급수",
+      "authoredDate": "",
+      "expected": "작성일 미확인 화이트클로버 자동급수",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/irrigation-20260905/",
+      "actual": [
+        "작성일 미확인 화이트클로버 자동급수"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/perilla-transplant-20260830/",
+      "name": "들깨 정식",
+      "authoredDate": "",
+      "expected": "작성일 미확인 들깨 정식",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/perilla-transplant-20260830/",
+      "actual": [
+        "작성일 미확인 들깨 정식"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/mowing-20260826/",
+      "name": "벌초",
+      "authoredDate": "",
+      "expected": "작성일 미확인 벌초",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/mowing-20260826/",
+      "actual": [
+        "작성일 미확인 벌초"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/cctv-internet-20260821/",
+      "name": "CCTV 인터넷 연결",
+      "authoredDate": "",
+      "expected": "작성일 미확인 CCTV 인터넷 연결",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/cctv-internet-20260821/",
+      "actual": [
+        "작성일 미확인 CCTV 인터넷 연결"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/sprinkler-thread-20260820/",
+      "name": "스프링클러 나사 규격",
+      "authoredDate": "",
+      "expected": "작성일 미확인 스프링클러 나사 규격",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/sprinkler-thread-20260820/",
+      "actual": [
+        "작성일 미확인 스프링클러 나사 규격"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/spray-record-20260813/",
+      "name": "농막 아랫밭 방제",
+      "authoredDate": "",
+      "expected": "작성일 미확인 농막 아랫밭 방제",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/spray-record-20260813/",
+      "actual": [
+        "작성일 미확인 농막 아랫밭 방제"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/dangol-spray-20260811/",
+      "name": "단골 들깨밭 살포",
+      "authoredDate": "",
+      "expected": "작성일 미확인 단골 들깨밭 살포",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/dangol-spray-20260811/",
+      "actual": [
+        "작성일 미확인 단골 들깨밭 살포"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/20260811-gourd-harvest/",
+      "name": "박 수확 · 사진 53장",
+      "authoredDate": "",
+      "expected": "작성일 미확인 박 수확 · 사진 53장",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/20260811-gourd-harvest/",
+      "actual": [
+        "작성일 미확인 박 수확 · 사진 53장"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/onion-purchase-20260811/",
+      "name": "양파 구입·저온창고 보관",
+      "authoredDate": "",
+      "expected": "작성일 미확인 양파 구입·저온창고 보관",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/onion-purchase-20260811/",
+      "actual": [
+        "작성일 미확인 양파 구입·저온창고 보관"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/onion-sourcing-20260810/",
+      "name": "양파 구매처 조사",
+      "authoredDate": "",
+      "expected": "작성일 미확인 양파 구매처 조사",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/onion-sourcing-20260810/",
+      "actual": [
+        "작성일 미확인 양파 구매처 조사"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/shade-net-20260807/",
+      "name": "농막 그늘막",
+      "authoredDate": "",
+      "expected": "작성일 미확인 농막 그늘막",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/shade-net-20260807/",
+      "actual": [
+        "작성일 미확인 농막 그늘막"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/freezer-electric-20260711/",
+      "name": "냉동고 전기 증설",
+      "authoredDate": "",
+      "expected": "작성일 미확인 냉동고 전기 증설",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/freezer-electric-20260711/",
+      "actual": [
+        "작성일 미확인 냉동고 전기 증설"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/farm-awning-repair-20260711/",
+      "name": "농막 차양막 시정조치",
+      "authoredDate": "",
+      "expected": "작성일 미확인 농막 차양막 시정조치",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/farm-awning-repair-20260711/",
+      "actual": [
+        "작성일 미확인 농막 차양막 시정조치"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/fertilizer-plan/",
+      "name": "지선이밭 아랫밭 맞춤 18호 비료 사용법",
+      "authoredDate": "2026-07-03",
+      "expected": "2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/fertilizer-plan/",
+      "actual": [
+        "2026-07-03 지선이밭 아랫밭 맞춤 18호 비료 사용법"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/moskill-20260527/",
+      "name": "모스킬 방제",
+      "authoredDate": "",
+      "expected": "작성일 미확인 모스킬 방제",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/moskill-20260527/",
+      "actual": [
+        "작성일 미확인 모스킬 방제"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/white-clover/",
+      "name": "화이트클로버 파종계획",
+      "authoredDate": "",
+      "expected": "작성일 미확인 화이트클로버 파종계획",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/white-clover/",
+      "actual": [
+        "작성일 미확인 화이트클로버 파종계획"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "public",
+      "url": "https://softm.github.io/hwagok-farm/farm-machine-rental/",
+      "name": "농기계 임대·운반 서비스",
+      "authoredDate": "",
+      "expected": "작성일 미확인 농기계 임대·운반 서비스",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/hwagok-farm/farm-machine-rental/",
+      "actual": [
+        "작성일 미확인 농기계 임대·운반 서비스"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "private",
+      "url": "https://hwagok-farm-private.vercel.app/records/20260812-nh-farm-safety-insurance/",
+      "name": "농업인 안전보험 가입정보",
+      "authoredDate": "2026-08-12",
+      "expected": "2026-08-12 농업인 안전보험 가입정보",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "private",
+      "url": "https://hwagok-farm-private.vercel.app/records/20260905-radish-sowing/",
+      "name": "파종 작업 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 파종 작업 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "private",
+      "url": "https://hwagok-farm-private.vercel.app/fertilizer-plan-20260914/",
+      "name": "비료 사용 계획",
+      "authoredDate": "",
+      "expected": "작성일 미확인 비료 사용 계획",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-farm",
+      "visibility": "private",
+      "url": "https://hwagok-farm-private.vercel.app/pesticide-consultation/",
+      "name": "방제 상담 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 방제 상담 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "gwangmyeong",
+      "visibility": "public",
+      "url": "https://softm.github.io/gwangmyeong/20260630-water-meter/",
+      "name": "수도 계량기 현장점검 및 요금상담",
+      "authoredDate": "",
+      "expected": "작성일 미확인 수도 계량기 현장점검 및 요금상담",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/gwangmyeong/20260630-water-meter/",
+      "actual": [
+        "작성일 미확인 수도 계량기 현장점검 및 요금상담"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "gwangmyeong",
+      "visibility": "public",
+      "url": "https://softm.github.io/gwangmyeong/20260718-himart-appliances/",
+      "name": "하이마트 가전 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 하이마트 가전 기록",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/gwangmyeong/20260718-himart-appliances/",
+      "actual": [
+        "작성일 미확인 하이마트 가전 기록"
+      ],
+      "status": "matched"
+    },
+    {
+      "project": "mine-private",
+      "visibility": "private",
+      "url": "https://mine-private-sigma.vercel.app/archive/20260806-right-index-laceration/",
+      "name": "비공개 상세 기록 01",
+      "authoredDate": "",
+      "expected": "작성일 미확인 비공개 상세 기록 01",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "mine-private",
+      "visibility": "private",
+      "url": "https://mine-private-sigma.vercel.app/archive/20260810-medical-referral/",
+      "name": "진료의뢰서 내용 요약",
+      "authoredDate": "2026-08-10",
+      "expected": "2026-08-10 진료의뢰서 내용 요약",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "mine-private",
+      "visibility": "private",
+      "url": "https://mine-private-sigma.vercel.app/archive/20260812-farmer-safety-insurance/",
+      "name": "농업인 안전보험 가입정보",
+      "authoredDate": "2026-08-12",
+      "expected": "2026-08-12 농업인 안전보험 가입정보",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "mine-private",
+      "visibility": "private",
+      "url": "https://mine-private-sigma.vercel.app/archive/20260819-all-i-have/",
+      "name": "내가 가진 모든 것",
+      "authoredDate": "2026-08-19",
+      "expected": "2026-08-19 내가 가진 모든 것",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "mine-private",
+      "visibility": "private",
+      "url": "https://mine-private-sigma.vercel.app/archive/20260903-health-checkup-insurance/",
+      "name": "건강검진 연세수내과",
+      "authoredDate": "2026-08-28",
+      "expected": "2026-08-28 건강검진 연세수내과",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "mine-private",
+      "visibility": "private",
+      "url": "https://mine-private-sigma.vercel.app/archive/20260904-onsu-hill-renewal/",
+      "name": "비공개 상세 기록 06",
+      "authoredDate": "",
+      "expected": "작성일 미확인 비공개 상세 기록 06",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "onsuhill-private",
+      "visibility": "private",
+      "url": "https://onsuhill-private.vercel.app/api/site?route=renewal",
+      "name": "임대차 갱신계약 전체 정리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 임대차 갱신계약 전체 정리",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "onsuhill-private",
+      "visibility": "private",
+      "url": "https://onsuhill-private.vercel.app/api/site?route=documents",
+      "name": "생성 문서 및 계약서 작성본",
+      "authoredDate": "",
+      "expected": "작성일 미확인 생성 문서 및 계약서 작성본",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "onsuhill-private",
+      "visibility": "private",
+      "url": "https://onsuhill-private.vercel.app/api/site?route=messages",
+      "name": "세입자 문자·전화 대응",
+      "authoredDate": "",
+      "expected": "작성일 미확인 세입자 문자·전화 대응",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "onsuhill-private",
+      "visibility": "private",
+      "url": "https://onsuhill-private.vercel.app/api/site?route=facilities",
+      "name": "욕실·보일러 수선 이슈",
+      "authoredDate": "",
+      "expected": "작성일 미확인 욕실·보일러 수선 이슈",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "onsuhill-private",
+      "visibility": "private",
+      "url": "https://onsuhill-private.vercel.app/api/site?route=okgil",
+      "name": "전세계약 갱신 검토",
+      "authoredDate": "",
+      "expected": "작성일 미확인 전세계약 갱신 검토",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "onsuhill-private",
+      "visibility": "private",
+      "url": "https://onsuhill-private.vercel.app/api/site?route=led-repair",
+      "name": "LED 수리 기록·증빙",
+      "authoredDate": "",
+      "expected": "작성일 미확인 LED 수리 기록·증빙",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "onsuhill-private",
+      "visibility": "private",
+      "url": "https://onsuhill-private.vercel.app/",
+      "name": "온수힐 비공개 프로젝트 홈",
+      "authoredDate": "",
+      "expected": "작성일 미확인 온수힐 비공개 프로젝트 홈",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "yeonseo",
+      "visibility": "private",
+      "url": "https://yeonseo-middle-school-choice.softm.chatgpt.site/",
+      "name": "기존 비공개 채팅 정리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 기존 비공개 채팅 정리",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "yeonseo",
+      "visibility": "private",
+      "url": "",
+      "name": "사진·영상·음성 기록 모음",
+      "authoredDate": "",
+      "expected": "작성일 미확인 사진·영상·음성 기록 모음",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "public",
+      "url": "https://ungdo-land-records.softm.chatgpt.site",
+      "name": "기존 공개 토지 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 기존 공개 토지 기록",
+      "status": "external-service-or-project-home"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/ungdo-case",
+      "name": "63-1·66 관련 종합 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 63-1·66 관련 종합 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/ungdo-66-field-record",
+      "name": "웅도리 66 현장·드론·방문 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 웅도리 66 현장·드론·방문 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/40-25-sale",
+      "name": "잔여지 검토 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 잔여지 검토 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/ungdo-66-restoration-agreement",
+      "name": "66 원상복구·우량농지 조성 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 66 원상복구·우량농지 조성 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/ungdo-66-sewer-pipe",
+      "name": "66번지 배수시설 관련 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 66번지 배수시설 관련 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/reports/ungdo-66-20260907/index.html",
+      "name": "지도·현장사진 보고서",
+      "authoredDate": "",
+      "expected": "작성일 미확인 지도·현장사진 보고서",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/live/records/20260911-notarization/deployed-media-report.html",
+      "name": "공증 상세 미디어 보고서",
+      "authoredDate": "",
+      "expected": "작성일 미확인 공증 상세 미디어 보고서",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/media/KakaoTalk_Video_2026-09-01-22-35-25.mp4",
+      "name": "현장 원본 동영상",
+      "authoredDate": "",
+      "expected": "작성일 미확인 현장 원본 동영상",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "ungdo-private",
+      "visibility": "private",
+      "url": "https://ungdo-private.vercel.app/live/records/20260911-notarization/report.md",
+      "name": "공증 정리 Markdown",
+      "authoredDate": "",
+      "expected": "작성일 미확인 공증 정리 Markdown",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-land-permit-private",
+      "visibility": "private",
+      "url": "https://hwagok-land-permit-private.vercel.app/case/appeal",
+      "name": "사건 접수·증거 정리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 사건 접수·증거 정리",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-land-permit-private",
+      "visibility": "private",
+      "url": "https://hwagok-land-permit-private.vercel.app/case/prosecution-outlook",
+      "name": "사건 검토 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 사건 검토 기록",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-land-permit-private",
+      "visibility": "private",
+      "url": "https://hwagok-land-permit-private.vercel.app/case/nonprosecution-appeal",
+      "name": "처분·항고 정리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 처분·항고 정리",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-land-permit-private",
+      "visibility": "private",
+      "url": "https://hwagok-land-permit-private.vercel.app/asset/archive-20260926.html",
+      "name": "비공개 아카이브",
+      "authoredDate": "",
+      "expected": "작성일 미확인 비공개 아카이브",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "hwagok-land-permit-private",
+      "visibility": "private",
+      "url": "https://hwagok-land-permit-private.vercel.app/asset/appeals-20260922/staging.html",
+      "name": "비공개 문서 보관",
+      "authoredDate": "",
+      "expected": "작성일 미확인 비공개 문서 보관",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "father-hospital-treatment-private",
+      "visibility": "private",
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260923-seosan-medical-record-ha-correction",
+      "name": "서산의료원 진료기록 발급 및 HA(-) → HA(+) 정정 요청",
+      "authoredDate": "",
+      "expected": "작성일 미확인 서산의료원 진료기록 발급 및 HA(-) → HA(+) 정정 요청",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "father-hospital-treatment-private",
+      "visibility": "private",
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260911-seosan-medical-center-response-review",
+      "name": "서산의료원 민원답변 검토 및 추가의견서",
+      "authoredDate": "",
+      "expected": "작성일 미확인 서산의료원 민원답변 검토 및 추가의견서",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "father-hospital-treatment-private",
+      "visibility": "private",
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260908-teacher-mutual-aid-adl-documents",
+      "name": "한국교직원공제회 보험서류 재준비 · ADL 진단자료",
+      "authoredDate": "",
+      "expected": "작성일 미확인 한국교직원공제회 보험서류 재준비 · ADL 진단자료",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "father-hospital-treatment-private",
+      "visibility": "private",
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260819-teacher-mutual-aid-insurance-complaint",
+      "name": "한국교직원공제회 보험금 심사 지연 및 반복 보완요구 민원",
+      "authoredDate": "",
+      "expected": "작성일 미확인 한국교직원공제회 보험금 심사 지연 및 반복 보완요구 민원",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "father-hospital-treatment-private",
+      "visibility": "private",
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260811-seosan-medical-record-complaint",
+      "name": "서산의료원 의무기록 정정·민원",
+      "authoredDate": "",
+      "expected": "작성일 미확인 서산의료원 의무기록 정정·민원",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "father-hospital-treatment-private",
+      "visibility": "private",
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260807-seosan-medical-record-correction",
+      "name": "서산의료원 의무기록 정정 및 농업인안전보험 재심사 정리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 서산의료원 의무기록 정정 및 농업인안전보험 재심사 정리",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "father-hospital-treatment-private",
+      "visibility": "private",
+      "url": "https://father-hospital-treatment-private.vercel.app/view/20260703-neuro-ophthalmology-visual-field",
+      "name": "신경안과 좌측 시야 결손·우안 시력 저하 진료 정리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 신경안과 좌측 시야 결손·우안 시력 저하 진료 정리",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "homecare-nationwide-care-services-map",
+      "visibility": "public",
+      "url": "https://daycare-nhis-detail-api.softm.chatgpt.site",
+      "name": "공단 상세 API",
+      "authoredDate": "",
+      "expected": "작성일 미확인 공단 상세 API",
+      "status": "external-service-or-project-home"
+    },
+    {
+      "project": "homecare-nationwide-care-services-map",
+      "visibility": "public",
+      "url": "https://github.com/softm/homecare-dolbom-itda-daycare-finder",
+      "name": "주간보호 결정지원",
+      "authoredDate": "",
+      "expected": "작성일 미확인 주간보호 결정지원",
+      "status": "external-service-or-project-home"
+    },
+    {
+      "project": "medical-finder",
+      "visibility": "private",
+      "url": "",
+      "name": "사이트 기획·데이터·구현 문서",
+      "authoredDate": "",
+      "expected": "작성일 미확인 사이트 기획·데이터·구현 문서",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "baksok-public",
+      "visibility": "public",
+      "url": "https://softm.github.io/baksok-public/20260819_rir4000s_13ea/",
+      "name": "가스레인지 교체 검토 기록",
+      "authoredDate": "",
+      "expected": "작성일 미확인 가스레인지 교체 검토 기록",
+      "http": 200,
+      "finalUrl": "https://softm.github.io/baksok-public/20260819_rir4000s_13ea/",
+      "actual": [
+        "서해박속낙지RIR-4000S 13대 교체 검토"
+      ],
+      "status": "title-mismatch"
+    },
+    {
+      "project": "baksok-public",
+      "visibility": "private",
+      "url": "https://baksok-private.vercel.app/reports/20260909-furniture-gas/",
+      "name": "불판 탁자 이가구 계약 배송 & 린나이 RIR4000s 구매",
+      "authoredDate": "2026-09-09",
+      "expected": "2026-09-09 불판 탁자 이가구 계약 배송 & 린나이 RIR4000s 구매",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "baksok-public",
+      "visibility": "private",
+      "url": "https://baksok-private.vercel.app/reports/20260911-rir4000s-delivery/",
+      "name": "서해박속낙지 RIR4000S 5대 배송완료",
+      "authoredDate": "2026-09-11",
+      "expected": "2026-09-11 서해박속낙지 RIR4000S 5대 배송완료",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "baksok-public",
+      "visibility": "private",
+      "url": "https://baksok-private.vercel.app/reports/20260721-tax/",
+      "name": "비공개 운영 분석",
+      "authoredDate": "",
+      "expected": "작성일 미확인 비공개 운영 분석",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "baksok-public",
+      "visibility": "private",
+      "url": "https://baksok-private.vercel.app/reports/20260909-furniture-gas/media-gallery.html",
+      "name": "9/9 회수 사진 갤러리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 9/9 회수 사진 갤러리",
+      "status": "private-authenticated-page-not-fetched"
+    },
+    {
+      "project": "baksok-public",
+      "visibility": "private",
+      "url": "https://baksok-private.vercel.app/reports/20260911-rir4000s-delivery/media-gallery.html",
+      "name": "9/11 회수 사진 갤러리",
+      "authoredDate": "",
+      "expected": "작성일 미확인 9/11 회수 사진 갤러리",
+      "status": "private-authenticated-page-not-fetched"
+    }
+  ]
+}
