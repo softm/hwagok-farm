@@ -94,11 +94,14 @@ def choose_entry(root: Path, metadata):
   chosen=root/relpath(metadata['entry'])
   if not chosen.is_file(): raise ValueError('Declared entry missing')
   return chosen
- # Use the actual full Markdown narrative before an image-only HTML viewer.
+ # ZIP/folder deployment policy: HTML is the canonical web source.
+ # Prefer root index.html, then another HTML file. Markdown is fallback only
+ # when no HTML exists at all.
+ html=[p for p in entries(root) if p.suffix.lower() in {'.html','.htm'}]
+ if html:
+  return next((p for p in html if p==root/'index.html'),max(html,key=lambda p:p.stat().st_size))
  md=[p for p in entries(root) if p.suffix.lower()=='.md']
  if md: return max(md,key=lambda p:p.stat().st_size)
- html=[p for p in entries(root) if p.suffix.lower() in {'.html','.htm'}]
- if html: return next((p for p in html if p==root/'index.html'),max(html,key=lambda p:p.stat().st_size))
  raise ValueError('No narrative HTML/Markdown: retain input rather than generate a filename-only record')
 
 def event_date(metadata, name):

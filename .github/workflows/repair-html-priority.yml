@@ -1,0 +1,94 @@
+name: Repair archive HTML priority
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/archive_inbox.py'
+      - 'scripts/repair_html_priority.py'
+      - '.github/workflows/repair-html-priority.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: archive-html-priority-repair
+  cancel-in-progress: false
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install -r scripts/archive-requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y pandoc
+      - name: Rebuild deployed ZIP records from HTML source
+        id: repair
+        run: python scripts/repair_html_priority.py
+      - name: Commit repaired records
+        if: steps.repair.outputs.count != '0'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/records
+          git diff --cached --quiet || git commit -m 'archive: rebuild ZIP indexes from HTML sources'
+          git push origin HEAD:main
+      - name: Redeploy existing Pages configuration
+        if: steps.repair.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          SOURCE_SHA="$(git rev-parse HEAD)"
+          gh workflow run deploy-static-pages.yml --repo "$GITHUB_REPOSITORY" --ref main -f source_sha="$SOURCE_SHA"
+          RUN_ID=''
+          for attempt in $(seq 1 30); do
+            RUN_ID="$(gh run list --repo "$GITHUB_REPOSITORY" --workflow deploy-static-pages.yml --event workflow_dispatch --limit 20 --json databaseId,headSha --jq ".[] | select(.headSha == \"$SOURCE_SHA\") | .databaseId" | head -1)"
+            test -z "$RUN_ID" || break
+            sleep 5
+          done
+          test -n "$RUN_ID"
+          gh run watch "$RUN_ID" --repo "$GITHUB_REPOSITORY" --exit-status
+      - name: Verify live HTML bytes
+        if: steps.repair.outputs.count != '0'
+        run: |
+          python - <<'PY'
+          import hashlib,json,time,urllib.request
+          from pathlib import Path
+          report=json.loads(Path('.archive-run/html-priority-repair.json').read_text())
+          for item in report['repaired']:
+              expected=Path('public/records')/item['slug']/'index.html'
+              want=hashlib.sha256(expected.read_bytes()).hexdigest()
+              last=None
+              for _ in range(8):
+                  try:
+                      req=urllib.request.Request(item['url']+'?repair=html-priority',headers={'Cache-Control':'no-cache','User-Agent':'SOFTM-Archive-Repair'})
+                      with urllib.request.urlopen(req,timeout=45) as r:
+                          data=r.read()
+                          if r.status==200 and hashlib.sha256(data).hexdigest()==want:
+                              break
+                  except Exception as e:
+                      last=e
+                  time.sleep(8)
+              else:
+                  raise RuntimeError(f"Live verification failed for {item['slug']}: {last}")
+          print('verified',len(report['repaired']),'records')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: html-priority-repair-report
+          path: .archive-run/html-priority-repair.json
+          include-hidden-files: true
+          if-no-files-found: warn
