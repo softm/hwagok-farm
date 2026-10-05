@@ -1,0 +1,250 @@
+{
+  "createdDate": "2026-10-05",
+  "sourceFiles": [
+    {
+      "source": "global-live-title-audit-final.zip",
+      "packagePath": "evidence/archives/global-live-title-audit-final.zip",
+      "bytes": 27823,
+      "sha256": "edff4876e8f04f1962d275f42b397564387ab7430ec3c91456de2e72a3906458",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "냉동고 실외기 분석.txt",
+      "packagePath": "evidence/other/냉동고 실외기 분석.txt",
+      "bytes": 1153,
+      "sha256": "05a88ff07d094de676b22ea51cfc7d039c57c50f86316008b382cb849d22808d",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_135442.jpg",
+      "packagePath": "images/20260923_135442.jpg",
+      "bytes": 500665,
+      "sha256": "a19a23e6d5da98abd0f2be8b75b7bccbcc74762c9fe302d146e2cab723443412",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "global-live-title-audit.zip",
+      "packagePath": "evidence/archives/global-live-title-audit.zip",
+      "bytes": 27842,
+      "sha256": "d979061aaaf1893304b0f7400fb9445b66c5032a6da902486fe14be53ac6a3f0",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "hwagok-title-audit.zip",
+      "packagePath": "evidence/archives/hwagok-title-audit.zip",
+      "bytes": 3048,
+      "sha256": "6afa6e3cfd192aedd46349e3566f431d951241b1b1233cd64bb8e60b0393fc1c",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "hwagok-title-media-browser-final.zip",
+      "packagePath": "evidence/archives/hwagok-title-media-browser-final.zip",
+      "bytes": 9327333,
+      "sha256": "7a8ebdc844f3c33bac381e0910eda766ca168b61b0669fe37b7937c7c00e736b",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "hwagok-detail-ui-verification.zip",
+      "packagePath": "evidence/archives/hwagok-detail-ui-verification.zip",
+      "bytes": 2469693,
+      "sha256": "4aa923c7040abdbdb4d25cbb4b3a1e5a73a6442303ffa80401823366cf1e7c9e",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "hwagok-farm-private-title-audit.zip",
+      "packagePath": "evidence/archives/hwagok-farm-private-title-audit.zip",
+      "bytes": 1138,
+      "sha256": "e0215c4a9b1687928f386700cff5f6a51f9e367ae637e466332d3359a81e1a94",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "ungdo-private-title-audit.zip",
+      "packagePath": "evidence/archives/ungdo-private-title-audit.zip",
+      "bytes": 1548,
+      "sha256": "1d6e3b8e1f8219d6daa3f13937b5fca9979f3ccc000003cd0d5ec413c920105e",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "onsuhill-private-title-audit.zip",
+      "packagePath": "evidence/archives/onsuhill-private-title-audit.zip",
+      "bytes": 1023,
+      "sha256": "f0f8a00925f12f5ac199c790035d09aacfec7bd4fdd6f7dc9b2acd8fae245903",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_화곡농장_더덕수확_및_더덕씨앗채취.zip",
+      "packagePath": "evidence/archives/20260923_화곡농장_더덕수확_및_더덕씨앗채취.zip",
+      "bytes": 11790574,
+      "sha256": "53edd2b87bb26db59cd85e5706871dfe26fd4b01fe26d2fcb48e330a99341a80",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "hwagok-land-permit-private-title-audit.zip",
+      "packagePath": "evidence/archives/hwagok-land-permit-private-title-audit.zip",
+      "bytes": 920,
+      "sha256": "5a1ea07c17dc210477c31246fd1911f22711643dff148ca7557b2bf95c4eee7c",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_135439.mp4",
+      "packagePath": "videos/20260923_135439.mp4",
+      "bytes": 1754338,
+      "sha256": "c6b168ec7f87f9718ef8ef47c182257fe808b60bd3bbb1c04ce7fe35aadfd4c1",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_135445.jpg",
+      "packagePath": "images/20260923_135445.jpg",
+      "bytes": 397475,
+      "sha256": "7aef22906e6cf3e82e7844327ef7701ae974db81b6ffea766f793d2aace7fea3",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_124711.jpg",
+      "packagePath": "images/20260923_124711.jpg",
+      "bytes": 432789,
+      "sha256": "4c447137f7243bddf294be37ddc75b27e36174702db5df472f0115d63a646526",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_135441.jpg",
+      "packagePath": "images/20260923_135441.jpg",
+      "bytes": 460525,
+      "sha256": "b81dafba99f5a6bbc24fbbfbf64aaf68126811df6f998a9a488819cff11508d3",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "image(7).png",
+      "packagePath": "screenshots/conversation/image(7).png",
+      "bytes": 55358,
+      "sha256": "e8bd65ee805b93e31e7afb865b62a3c18d0fae4faa5878cd9c184401c76591d2",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "onsuhill-private-title-audit-v2.zip",
+      "packagePath": "evidence/archives/onsuhill-private-title-audit-v2.zip",
+      "bytes": 1123,
+      "sha256": "0bcecdd2fb680ef786e5ad5a81239132fa731b8ca12d31520e3f369c120d6999",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "father-hospital-treatment-private-title-audit-v2.zip",
+      "packagePath": "evidence/archives/father-hospital-treatment-private-title-audit-v2.zip",
+      "bytes": 1562,
+      "sha256": "9336c3064a402f529f26c0777d56ea272605ce317a33e89c299b269bfd09d0af",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "deodeok-20260923-media-verification.json",
+      "packagePath": "evidence/other/deodeok-20260923-media-verification.json",
+      "bytes": 2896,
+      "sha256": "0c8f86b465537464cd8da55875c6eba937958cc2d07d348970a70a48c7b74e88",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_135437.jpg",
+      "packagePath": "images/20260923_135437.jpg",
+      "bytes": 668132,
+      "sha256": "0a9cf4443b1fbc4b64698859aec89ab5cb58eebfe45a9b058099ed1fe6b810a8",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_124713.mp4",
+      "packagePath": "videos/20260923_124713.mp4",
+      "bytes": 4291255,
+      "sha256": "28f7c42dddccb0c33864b416d1fa38dbbf66c4d652969bb6b906e2187ca4c89d",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "hwagok-live-title-verification.zip",
+      "packagePath": "evidence/archives/hwagok-live-title-verification.zip",
+      "bytes": 1937,
+      "sha256": "5c10d4ab12d981ae465869bf46df36fbd8b7e833a9ab8f04442d5c4e3cd4410d",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "image(8).png",
+      "packagePath": "screenshots/conversation/image(8).png",
+      "bytes": 309339,
+      "sha256": "8e6884042f700cdfed58c6946d6311df2194fe14542aa85ba27d1098d3c002b7",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_124729.jpg",
+      "packagePath": "images/20260923_124729.jpg",
+      "bytes": 406904,
+      "sha256": "b563d1389b1287081a30374289d67156d5355e824d61150d47970cf01c206426",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "father-hospital-treatment-private-title-audit.zip",
+      "packagePath": "evidence/archives/father-hospital-treatment-private-title-audit.zip",
+      "bytes": 1292,
+      "sha256": "8ed918f9b1faaba2f88c548cdf95f72efa7f0e4ec7ff30a41d16105e75e64cdf",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_더덕수확_사진영상포함_바로보기.html",
+      "packagePath": "evidence/prior-documents/20260923_더덕수확_사진영상포함_바로보기.html",
+      "bytes": 21805107,
+      "sha256": "22aa738dc534ed850f4c1923f8661fc252469059e86b5694c847fc3e9d5e97c9",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "baksok-private-title-audit.zip",
+      "packagePath": "evidence/archives/baksok-private-title-audit.zip",
+      "bytes": 1204,
+      "sha256": "03f9f5856d920f2ea3c47c667f4541279054d0ba55cfc2dacaafc2565906c9e3",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "baksok-public-title-audit.zip",
+      "packagePath": "evidence/archives/baksok-public-title-audit.zip",
+      "bytes": 1055,
+      "sha256": "fb8d9b08155b84842eb3c8f588c69cd826bc0d73287d544aa0bf8d1c1e649c8c",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "deodeok-20260923-complete.zip",
+      "packagePath": "evidence/archives/deodeok-20260923-complete.zip",
+      "bytes": 16303693,
+      "sha256": "9b817586901d7a52222820158f16c79b234edfc3c522dbe1d53f1743914310d0",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "gwangmyeong-title-audit.zip",
+      "packagePath": "evidence/archives/gwangmyeong-title-audit.zip",
+      "bytes": 1374,
+      "sha256": "f16cae56959c2104ff079a6ab8d2f0d1d4baa0f0f5fa1b2f08c572ce807f364a",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_124725.mp4",
+      "packagePath": "videos/20260923_124725.mp4",
+      "bytes": 2391469,
+      "sha256": "5a62fb882984b6aa261fb035e6890bc0dc7ddf63c2c61e1798357db683a993ba",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "20260923_124728.jpg",
+      "packagePath": "images/20260923_124728.jpg",
+      "bytes": 490412,
+      "sha256": "9e2919e8eba3a606215b8937ed0604702b7cc857f7e869f0e3e96ccd9854ae08",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "mine-private-title-audit.zip",
+      "packagePath": "evidence/archives/mine-private-title-audit.zip",
+      "bytes": 1414,
+      "sha256": "b8ddf112f197999c694d6e34aaab026077a62194cca20c4b762fea7a75171d73",
+      "preservedUnchanged": true
+    },
+    {
+      "source": "deodeok-20260923-complete/record.md",
+      "packagePath": "evidence/prior-documents/previous-delivered-record.md",
+      "bytes": 6016,
+      "sha256": "58300bcd25b3b45eea7932b147cb2d6f20aa7cb37a30e885f9fb93011b27057f",
+      "preservedUnchanged": true
+    }
+  ]
+}

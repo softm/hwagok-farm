@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "source": "20260807_화곡농장_농막_그늘막_예상설치_정리_이미지포함.zip",
+  "inputSha256": "59a15e173e3bbddfc8825a5711264149e84cbaab3ccc5214ba84e4b8abf9df70",
+  "date": "2026-08-07",
+  "title": "화곡농장 농막 그늘막 예상설치 정리 이미지포함",
+  "slug": "20260807-538c5e43fc",
+  "files": [
+    {
+      "path": "20260807_화곡농장_농막_그늘막_예상설치_정리_이미지포함.html",
+      "size": 22061402,
+      "sha256": "dea6367c986367b450c8b7519a952729d62bd9be0fd9127d4a498eaedc31cf3b"
+    },
+    {
+      "path": "20260807_화곡농장_농막_그늘막_예상설치_정리_이미지포함.md",
+      "size": 3506,
+      "sha256": "dd0600ad7b5295cd917a9951710c11eb813d96840ac9fca9c02bb7244a0280ea"
+    },
+    {
+      "path": "images/01_원본_전면사선_초기.jpg",
+      "size": 347951,
+      "sha256": "3208f18b029e2aa22e933767051117e1dbe970436817e6f6b4bf48e5bfa4d0c1"
+    },
+    {
+      "path": "images/02_원본_전면사선_20260711.jpg",
+      "size": 347951,
+      "sha256": "3208f18b029e2aa22e933767051117e1dbe970436817e6f6b4bf48e5bfa4d0c1"
+    },
+    {
+      "path": "images/03_원본_긴면.jpg",
+      "size": 294272,
+      "sha256": "445a3453d2d7e8e84eef878711233da46a1640e57493a28a08e843f4acc4820c"
+    },
+    {
+      "path": "images/04_원본_짧은면.jpg",
+      "size": 298101,
+      "sha256": "72e759dc938e72aa5e1ff3e445b0071d59f4a7a91d6f9bf23b0547098bd69f30"
+    },
+    {
+      "path": "images/05_원본_반대긴면.jpg",
+      "size": 270574,
+      "sha256": "450e81674cc148adfbcfc556e03ce47f272e5ea0b0810fbd20fb1a62c416d028"
+    },
+    {
+      "path": "images/06_예상설치도_긴면_1.png",
+      "size": 2456389,
+      "sha256": "5a3de2a55bf905a822f9fefb4ce968a791582c987a6902f0ec2c9381bd3c7cc7"
+    },
+    {
+      "path": "images/07_예상설치도_긴면_2.png",
+      "size": 2377733,
+      "sha256": "b215db7ea9649f43ecfadb9b8fbebe3239ffb55c3f4eb1f259bf0db5975341ea"
+    },
+    {
+      "path": "images/08_예상설치도_짧은면.png",
+      "size": 2318374,
+      "sha256": "d30fad41b5b50ebbc96fcdfdd000dfbc71463419ff8e1ef9d8cfa04ba8d5b8c5"
+    },
+    {
+      "path": "images/09_예상설치도_추가.png",
+      "size": 2310032,
+      "sha256": "e5db15dea685ef3600121f8f78676a5f4be02d429e8f3be9a9d068b04e8982a0"
+    },
+    {
+      "path": "images/10_바닥기준_종합치수도.png",
+      "size": 2382149,
+      "sha256": "3c7f90df70cd99a12e562a50c55a9c287e52b1069c439e4cebf9b6b353cb0156"
+    },
+    {
+      "path": "images/thumbs/01_원본_전면사선_초기_thumb.jpg",
+      "size": 77419,
+      "sha256": "7795d42b76c0c01ee8d37a48080681d61007a8bb5426a8c6ef65f6d339aab7b8"
+    },
+    {
+      "path": "images/thumbs/02_원본_전면사선_20260711_thumb.jpg",
+      "size": 77419,
+      "sha256": "7795d42b76c0c01ee8d37a48080681d61007a8bb5426a8c6ef65f6d339aab7b8"
+    },
+    {
+      "path": "images/thumbs/03_원본_긴면_thumb.jpg",
+      "size": 68387,
+      "sha256": "3ac427f61abdb7a6ca4de944cb412c82b8e451b07955125e2cc503fb5ba99093"
+    },
+    {
+      "path": "images/thumbs/04_원본_짧은면_thumb.jpg",
+      "size": 67393,
+      "sha256": "b11e7ab19ef9e8c933922a9613bf900a04eeba2511f6b146bfbeebe345dec727"
+    },
+    {
+      "path": "images/thumbs/05_원본_반대긴면_thumb.jpg",
+      "size": 63210,
+      "sha256": "044b63a8520f2156cf21f6ab91dca1d61fd142540d2b1b2385d4fb0e1e939123"
+    },
+    {
+      "path": "images/thumbs/06_예상설치도_긴면_1_thumb.jpg",
+      "size": 82745,
+      "sha256": "4ea26fbf9448e303d4e0368f563c7c16850ea36406bfbc8c37bcc8aa9d324a24"
+    },
+    {
+      "path": "images/thumbs/07_예상설치도_긴면_2_thumb.jpg",
+      "size": 76369,
+      "sha256": "cfd23c80805d2439db26d33aa9159821717583decdd28bdffee2eddde83f1662"
+    },
+    {
+      "path": "images/thumbs/08_예상설치도_짧은면_thumb.jpg",
+      "size": 68885,
+      "sha256": "3587ac4dcbba3202d523f0b6ab9fcd16cd8224b975585e4793ecfacbba1289ba"
+    },
+    {
+      "path": "images/thumbs/09_예상설치도_추가_thumb.jpg",
+      "size": 65796,
+      "sha256": "6b8d373543000a5f56412c2153b10ab13d466df3ba6905c51b84f249c0ccc389"
+    },
+    {
+      "path": "images/thumbs/10_바닥기준_종합치수도_thumb.jpg",
+      "size": 107204,
+      "sha256": "1f312e1b75db27d8fa59bb3d498c3cecb72939cf9d6b4f435e55a574c5dddd9d"
+    },
+    {
+      "path": "이미지_목록.txt",
+      "size": 747,
+      "sha256": "aa99ee6e65fbdafb38d6dd81c8a89077d8cb3568023c70cadcd3737cbe4d3da2"
+    }
+  ]
+}

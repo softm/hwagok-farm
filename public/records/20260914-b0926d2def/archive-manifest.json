@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "source": "20260914_화곡농장_타이거킹_공업용선풍기_회전기어박스_수리기록_이미지포함.zip",
+  "inputSha256": "ea1d6a98570b10339f4727acd04988b3a3834c252ad42edfd269263216ef9cc1",
+  "date": "2026-09-14",
+  "title": "화곡농장 타이거킹 공업용선풍기 회전기어박스 수리기록 이미지포함",
+  "slug": "20260914-b0926d2def",
+  "files": [
+    {
+      "path": "20260914_화곡농장_타이거킹_공업용선풍기_회전기어박스_수리기록.html",
+      "size": 9592,
+      "sha256": "6bf1161a05015e1fe3a5507e1a9b4fc8fabde1ddb6fc53d50ce26a20fddf62c0"
+    },
+    {
+      "path": "20260914_화곡농장_타이거킹_공업용선풍기_회전기어박스_수리기록.md",
+      "size": 5418,
+      "sha256": "986c070e4b747131661f30800d6b1ec3fe0e23b912e9980c1f4f41b866b8979d"
+    },
+    {
+      "path": "images/01-1000064667.jpg",
+      "size": 212344,
+      "sha256": "ab481cd689251926ca4aa0b8a1220c6797b381d47e5d3d255830d2879b643b20"
+    },
+    {
+      "path": "images/01-20260906_085436.jpg",
+      "size": 185231,
+      "sha256": "2fed1df67899d1752abf06ecdfe8113478a511c75669692530584497daeb1cb2"
+    },
+    {
+      "path": "images/02-1000064668.jpg",
+      "size": 304483,
+      "sha256": "1f8207cdcce2ce4869af818744674e3964877dbe2fb5dafff36d4b32671f9324"
+    },
+    {
+      "path": "images/02-20260906_085439.jpg",
+      "size": 455714,
+      "sha256": "868aee431d16be3616a3c9ae8257578bb3de6c4041b575967211147a30298460"
+    },
+    {
+      "path": "images/03-1000064669.jpg",
+      "size": 185231,
+      "sha256": "2fed1df67899d1752abf06ecdfe8113478a511c75669692530584497daeb1cb2"
+    },
+    {
+      "path": "images/03-20260906_085443.jpg",
+      "size": 433300,
+      "sha256": "6a9c9357e55bc3a9411b4844f6cd6c516fb22eb041005807b228f83cb4f33e3b"
+    },
+    {
+      "path": "images/04-20260906_085534.jpg",
+      "size": 496298,
+      "sha256": "be38ae143e0ef74262acc012dd7852d9056c9b17010f26d765c1d22b73b286d5"
+    },
+    {
+      "path": "images/05-20260906_085538.jpg",
+      "size": 318279,
+      "sha256": "b01e47f6b25b8567b547ede819cce0a88486ed5df6a2177f6c60649323355939"
+    },
+    {
+      "path": "images/20261005_수령한_회전기어박스.png",
+      "size": 5183103,
+      "sha256": "ed788360845b9dc0c10758fcb41ec8530c6ae3a35188fff36fdcdbcefa5e96eb"
+    },
+    {
+      "path": "images/30de77f0-b51e-424a-a84d-abb4611b90b5.png",
+      "size": 541609,
+      "sha256": "af3c36fa55a0e88f972021ab4c529ebab8a70d67f9c070902f107d437edd9bcc"
+    }
+  ]
+}

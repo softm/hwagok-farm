@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "source": "20260811_화곡농장_양파구입_저온창고보관.zip",
+  "inputSha256": "2cfbffa35286aa0465a715d7b2884e70744dac2b45e3952b39dc91504ac6ff33",
+  "date": "2026-08-11",
+  "title": "화곡농장 양파구입 저온창고보관",
+  "slug": "20260811-4feadb09b9",
+  "files": [
+    {
+      "path": "20260811_φÖöΩ│íδåì∞₧Ñ_∞ûæφîîΩ╡¼∞₧à_∞áÇ∞ÿ¿∞░╜Ω│áδ│┤Ω┤Ç.html",
+      "size": 11274,
+      "sha256": "842ac9cb74f00802e44f23dd889bfadef4c81fdec7880b288392b0559aad711e"
+    },
+    {
+      "path": "20260811_φÖöΩ│íδåì∞₧Ñ_∞ûæφîîΩ╡¼∞₧à_∞áÇ∞ÿ¿∞░╜Ω│áδ│┤Ω┤Ç.md",
+      "size": 4330,
+      "sha256": "ba4f355038fcc1217dc5e3f89d7ff7ce2534c2fbfb7f7ec2688a7cba87ae629a"
+    },
+    {
+      "path": "assets/images/1000060105.jpg",
+      "size": 305004,
+      "sha256": "fa3af4afd0b2ce604fa0df0c98f05dbcd71fd99ad2f6e5d956b2799304a89481"
+    },
+    {
+      "path": "assets/images/1000060106.jpg",
+      "size": 359433,
+      "sha256": "dff4392ad610bc58149d2843ea48792987d2250bbc22ece8d103c605ab286f04"
+    },
+    {
+      "path": "assets/images/1000060107.jpg",
+      "size": 321862,
+      "sha256": "b9d073c74a362a5f4d063cbea88d1f53739832175911653a42410dc2d7bd94bd"
+    },
+    {
+      "path": "assets/images/1000060108.jpg",
+      "size": 334175,
+      "sha256": "35537c5717bc1f7909fb84a8cd54202cf94f3b6e8f6a9e1524484b51298f018c"
+    },
+    {
+      "path": "assets/images/1000060264.jpg",
+      "size": 387120,
+      "sha256": "44dbabac8ea27b118b649f2c62a09ff144671be1513342222e665e766719be3c"
+    },
+    {
+      "path": "assets/images/1000060287.jpg",
+      "size": 192909,
+      "sha256": "a7d48f9d6712140b8b74da9b0f5200824f91211ba6a3aaddacfe0ef22f67f2ef"
+    },
+    {
+      "path": "assets/images/1000060288.jpg",
+      "size": 190504,
+      "sha256": "18a06c6120e7184a0c66513e6fe964204e3ad62085a436c99b81947f596c1721"
+    },
+    {
+      "path": "assets/posters/1000060104.jpg",
+      "size": 93599,
+      "sha256": "eba9fef1ce37bd8c7c340f622b7322e7212206b7cd63702cd02983928f6b3848"
+    },
+    {
+      "path": "assets/posters/1000060262.jpg",
+      "size": 145855,
+      "sha256": "02f60fb8e63c18e5c0f07501d338c148c8c436f640fc99d43963e37b7aed33fa"
+    },
+    {
+      "path": "assets/posters/1000060263.jpg",
+      "size": 81415,
+      "sha256": "9f1504eb0bd0daaa4205ac502eb84a6ca7de5387f1c7b24a49bab3324a31cd1c"
+    },
+    {
+      "path": "assets/thumbs/1000060105.jpg",
+      "size": 36582,
+      "sha256": "782c75a2c27e56dbb0d6b5c04c8aafd51e172928793c159c5654763ab9ed84ce"
+    },
+    {
+      "path": "assets/thumbs/1000060106.jpg",
+      "size": 35298,
+      "sha256": "839cdab425ecf4ccd7869ff5d3de3ff91f9bd9a87416bcbef42615e4c8f597b4"
+    },
+    {
+      "path": "assets/thumbs/1000060107.jpg",
+      "size": 33865,
+      "sha256": "a57c06bae65e645c9139e2fa7975e379438881fa66cdebf4f6df92203c264b85"
+    },
+    {
+      "path": "assets/thumbs/1000060108.jpg",
+      "size": 36448,
+      "sha256": "a371a332eccbc0a2ed4217809322235c87c2a0b267b2302fa500dfb1dfa590bc"
+    },
+    {
+      "path": "assets/thumbs/1000060264.jpg",
+      "size": 42495,
+      "sha256": "172532b82254357ed182309035d89afcb8e1dbde9d0ceb8cd17f6be7b3bf50a5"
+    },
+    {
+      "path": "assets/thumbs/1000060287.jpg",
+      "size": 13621,
+      "sha256": "716145493fec97d5c11b190def7c1bdda0edf47d597cd5ccc01b43c1c6f6540a"
+    },
+    {
+      "path": "assets/thumbs/1000060288.jpg",
+      "size": 11532,
+      "sha256": "42462d9c8f776026d48d30fac877e37de41f3b004cf8c4cd36f8f7ea9d1ba0d0"
+    },
+    {
+      "path": "assets/videos/1000060104.mp4",
+      "size": 8766629,
+      "sha256": "0c735b2c8a417266ddd015d0089f035edc93209fdb1331acfb3c34d3054e660a"
+    },
+    {
+      "path": "assets/videos/1000060262.mp4",
+      "size": 7270122,
+      "sha256": "c42a30a9b45495adc5de5c1805286be3d04ee2db177638a06cc4458260661a46"
+    },
+    {
+      "path": "assets/videos/1000060263.mp4",
+      "size": 8175575,
+      "sha256": "59218732983d6f54445a572ad7459789f2b91542b198b822fcb7102fd366d362"
+    }
+  ]
+}

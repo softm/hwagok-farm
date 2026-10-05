@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-09-30",
+  "archive": "deodeok-20260923-complete.zip",
+  "archiveSha256": "9b817586901d7a52222820158f16c79b234edfc3c522dbe1d53f1743914310d0",
+  "originalImages": 7,
+  "originalVideos": 3,
+  "localOriginalBytesVerified": true,
+  "media": [
+    {
+      "name": "20260923_124711.jpg",
+      "kind": "image",
+      "bytes": 432789,
+      "sha256": "4c447137f7243bddf294be37ddc75b27e36174702db5df472f0115d63a646526",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_124713.mp4",
+      "kind": "video",
+      "bytes": 4291255,
+      "sha256": "28f7c42dddccb0c33864b416d1fa38dbbf66c4d652969bb6b906e2187ca4c89d",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_124725.mp4",
+      "kind": "video",
+      "bytes": 2391469,
+      "sha256": "5a62fb882984b6aa261fb035e6890bc0dc7ddf63c2c61e1798357db683a993ba",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_124728.jpg",
+      "kind": "image",
+      "bytes": 490412,
+      "sha256": "9e2919e8eba3a606215b8937ed0604702b7cc857f7e869f0e3e96ccd9854ae08",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_124729.jpg",
+      "kind": "image",
+      "bytes": 406904,
+      "sha256": "b563d1389b1287081a30374289d67156d5355e824d61150d47970cf01c206426",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_135437.jpg",
+      "kind": "image",
+      "bytes": 668132,
+      "sha256": "0a9cf4443b1fbc4b64698859aec89ab5cb58eebfe45a9b058099ed1fe6b810a8",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_135439.mp4",
+      "kind": "video",
+      "bytes": 1754338,
+      "sha256": "c6b168ec7f87f9718ef8ef47c182257fe808b60bd3bbb1c04ce7fe35aadfd4c1",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_135441.jpg",
+      "kind": "image",
+      "bytes": 460525,
+      "sha256": "b81dafba99f5a6bbc24fbbfbf64aaf68126811df6f998a9a488819cff11508d3",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_135442.jpg",
+      "kind": "image",
+      "bytes": 500665,
+      "sha256": "a19a23e6d5da98abd0f2be8b75b7bccbcc74762c9fe302d146e2cab723443412",
+      "archiveMatchesOriginal": true
+    },
+    {
+      "name": "20260923_135445.jpg",
+      "kind": "image",
+      "bytes": 397475,
+      "sha256": "7aef22906e6cf3e82e7844327ef7701ae974db81b6ffea766f793d2aace7fea3",
+      "archiveMatchesOriginal": true
+    }
+  ],
+  "publicMediaUpload": "not-completed",
+  "publicMediaPlayback": "not-verified",
+  "standaloneHtmlOriginalsEmbeddedAndHashMatched": true,
+  "imagesDecodeVerified": 7,
+  "originalAndPlaybackVideoDecodeVerified": 6,
+  "browserPlaybackCheck": "not-verified-in-current-runtime: browser navigation blocked by administrator",
+  "globalPolicyCommit": "6864ce1d16144785ae43edaca870ba3d129f2847",
+  "farmPolicyLinkCommit": "287b29c292fdfb0da9db4002cfb0ae0ffd88a7b9"
+}

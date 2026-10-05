@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "source": "20260705_화곡농장_들깨_열무_밑거름_시비계획.zip",
+  "inputSha256": "edfbdeda9ccbe2048e78f1c31d6b6dcaf6dd0409147abb806e997056dacf679f",
+  "date": "2026-07-05",
+  "title": "화곡농장 들깨 열무 밑거름 시비계획",
+  "slug": "20260705-3370807a35",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 2514,
+      "sha256": "ecc68ea5a32f9e190b1374efe9515f5c685f900a480db7b714a50c60f6826274"
+    },
+    {
+      "path": "images/bihwangold.png",
+      "size": 1328224,
+      "sha256": "3fa10bc66c5b6df98d5f48c150b1c8122afd5015b28116b35466cc8620f9ba7c"
+    },
+    {
+      "path": "images/custom18.jpg",
+      "size": 318034,
+      "sha256": "797e592c577173b38ff559ce45dcc5e3475154a18afae21cd8345f862ac923d4"
+    },
+    {
+      "path": "images/field-map.jpg",
+      "size": 297343,
+      "sha256": "615c13ac8a2f4d6b4680ba6b2a701969d588675d69c6eb7e5bb2a5505fe94c26"
+    },
+    {
+      "path": "images/premium-fertilizer.png",
+      "size": 71498,
+      "sha256": "f29c0c065e7cabe54767e2b20897e32577f422efc5a8461107f456a87dbd4259"
+    },
+    {
+      "path": "index.html",
+      "size": 3518,
+      "sha256": "5c464a7175ef056beab0da680253ca194e8b5a3f3b48b464bfa558bb8d18d0b4"
+    }
+  ]
+}

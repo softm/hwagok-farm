@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": "20260907_화곡농장_벌초작업_공개.zip",
+  "inputSha256": "1966aec9fb5d9a4b5935e224df96ae9dfaba3ddff0fae95d3c53b98d6c2f8ff6",
+  "date": "2026-09-07",
+  "title": "화곡농장 벌초작업 공개",
+  "slug": "20260907-c1b184fc7d",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 666,
+      "sha256": "321117151f70b249888b5010b670426f969bb6ca1dba21aa3f12dad700466ba7"
+    },
+    {
+      "path": "gallery.js",
+      "size": 1787,
+      "sha256": "44391e4f7d060335dbdefa5bedd85c9d0b4a1ad8fe251577672e822f2d9f3ca5"
+    },
+    {
+      "path": "images/01-slope.jpg",
+      "size": 1090082,
+      "sha256": "9abe70ffafed0401c9076e958b241ecc10e2bbc485a28964b9d368656c730f4d"
+    },
+    {
+      "path": "images/02-path.jpg",
+      "size": 1505148,
+      "sha256": "599af1a9d9b7dea81b26fb87b1a290b69b26594524a671a763ed4c88b7009e8b"
+    },
+    {
+      "path": "images/03-field.jpg",
+      "size": 1394090,
+      "sha256": "d71f31c3abcc8795257b161e8f120da5aef2d122eb2c56c6dae0221d96702c57"
+    },
+    {
+      "path": "index.html",
+      "size": 8324,
+      "sha256": "61ff3e436aa4d893f81aec0daafd0a2ed42d7dc3dfd639e8a6b4ca1de05b90d5"
+    },
+    {
+      "path": "manifest.json",
+      "size": 1686,
+      "sha256": "7613b83c28400a7022052b450eac5f0c5978bc70501f6276c12b84284e2788e0"
+    },
+    {
+      "path": "record.md",
+      "size": 3550,
+      "sha256": "3386409d5be5645acf1609d0d8b9cac41034412c6d1b906288c121b24f36ec42"
+    },
+    {
+      "path": "styles.css",
+      "size": 6452,
+      "sha256": "0ac015a8130f9b2de16870b13e7e31d570190040206042694c65fa36e46b4b35"
+    }
+  ]
+}

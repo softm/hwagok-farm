@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "source": "20260907_화곡농장_화이트클로버_자동급수_정리.zip",
+  "inputSha256": "294b4656ec1fc6a87556e7a7ce064149070b9e4615e936d078db441e9cdb4344",
+  "date": "2026-09-07",
+  "title": "화곡농장 화이트클로버 자동급수 정리",
+  "slug": "20260907-0b1c9f63ab",
+  "files": [
+    {
+      "path": "20260905_화곡농장_하우스앞밭_화이트클로버_자동급수.html",
+      "size": 8359,
+      "sha256": "d3505adaf7ed8fd6f130dcd06a4459f80da998fa215ba439658a888fa85ad1d3"
+    },
+    {
+      "path": "20260905_화곡농장_하우스앞밭_화이트클로버_자동급수.md",
+      "size": 3808,
+      "sha256": "282ebb812bd001184d5370a664c44ca7d69e8df5f8a265453ff07358af829623"
+    },
+    {
+      "path": "assets/01-1000064654.jpg",
+      "size": 252353,
+      "sha256": "6a536809717e521aec04f893c1fa63dd9dbe229056043cdbef994f1e919c261b"
+    },
+    {
+      "path": "assets/01-20260906_082546.jpg",
+      "size": 673268,
+      "sha256": "c936c9feac156c77a724e79a289dc39ec92d4ae48118ebe77e301ef53f04696a"
+    },
+    {
+      "path": "assets/02-1000064653.jpg",
+      "size": 291085,
+      "sha256": "161dcc20b64dbdab57c55cf040e5961c053a9a8609a7767bc25a83528f94a6f9"
+    },
+    {
+      "path": "assets/02-20260906_082537.jpg",
+      "size": 646021,
+      "sha256": "1883d72e62a3b3eb45996dec6e207daceb9c4bf7ab3b4dc8f03ffbe56af54271"
+    },
+    {
+      "path": "assets/03-1000064652.jpg",
+      "size": 320197,
+      "sha256": "22d5e2bee457a0d5193dd6be6f67e72c1b71c788367f57b19716e4d0629be73e"
+    },
+    {
+      "path": "assets/03-20260906_082509.jpg",
+      "size": 714090,
+      "sha256": "e24735766b81645a8f56a41d74ac11356cfe7604df7a44fee19f07dc7f526b18"
+    },
+    {
+      "path": "assets/04-1000064651.jpg",
+      "size": 404648,
+      "sha256": "987952e1eb30456dcf06cf345764130b92f20a0ae0817f7af3484f0e248e5faf"
+    },
+    {
+      "path": "assets/04-20260906_082459.jpg",
+      "size": 662769,
+      "sha256": "4d356a0366a72b067bc3fdc19220e003ce42a9c22ddd7809628af32806f3f1da"
+    },
+    {
+      "path": "assets/05-1000064649.jpg",
+      "size": 167162,
+      "sha256": "c5ea689da431e41d46878538b5c42b59b3bdd5d386226436886e07055c686926"
+    },
+    {
+      "path": "assets/05-20260906_081346.jpg",
+      "size": 355096,
+      "sha256": "5081117e2d9814d30c43ba239416ac0b8bac30592cd2ccd9b5a43d6673018a8a"
+    },
+    {
+      "path": "assets/06-1000064648.jpg",
+      "size": 241795,
+      "sha256": "e6b63e8bb1f3201743c33b13f5feeaf2c6bf86342e84999ca0273c3b221d9e15"
+    },
+    {
+      "path": "assets/06-20260906_081341.jpg",
+      "size": 335218,
+      "sha256": "fe32bd71e3ccdc390f5dd3351a4b8816723184c990a2ed523f322290dc0a75fd"
+    },
+    {
+      "path": "assets/07-20260906_081315.jpg",
+      "size": 383416,
+      "sha256": "66eba040904ebe7b9455bc578986b3d353ba3b15ef6a0c9f57f69c2c80e32f9e"
+    },
+    {
+      "path": "assets/1000064646.mp4",
+      "size": 1639568,
+      "sha256": "8a8aa76a58183398dbe52b0ea1d35763a7ed54b10553f631824fbac95f27865c"
+    },
+    {
+      "path": "assets/1000064647.mp4",
+      "size": 3772257,
+      "sha256": "f6530a4c9dcb8c15d675ea52c8d4c327bd541050c08f0049407ff3a36dd7230d"
+    },
+    {
+      "path": "assets/20260906_081352.mp4",
+      "size": 24772663,
+      "sha256": "a77943051dc690e7c1338dc62abfb79f522047ff66fab7ee1b537874c0ca1ef0"
+    },
+    {
+      "path": "assets/20260906_082501.mp4",
+      "size": 8580136,
+      "sha256": "7dc3a46dfb8cfa88fb5248000e9ea4cfb252b0132824d8cf541773ef794ce2f1"
+    },
+    {
+      "path": "assets/20260906_082539.mp4",
+      "size": 4966244,
+      "sha256": "ce7c6e126c3bdf73f981a000ddf329d5a63e5c3a120c2620fe3c40546a66ba02"
+    }
+  ]
+}

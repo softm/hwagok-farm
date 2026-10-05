@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "repo": "ungdo-private",
+  "project": "ungdo-private",
+  "visibility": "private",
+  "centralRevision": "52574af45cb7f04b389b12ef954d6fdba9d74f4e",
+  "checkedAt": "2026-09-30T10:56:22.822Z",
+  "applied": true,
+  "registeredProjects": 13,
+  "registeredRows": 9,
+  "sourceResolved": 8,
+  "changedFiles": [
+    "app/ungdo-case/page.tsx",
+    "app/ungdo-66-field-record/page.tsx",
+    "app/40-25-sale/page.tsx",
+    "app/ungdo-66-restoration-agreement/page.tsx",
+    "app/ungdo-66-sewer-pipe/page.tsx",
+    "public/reports/ungdo-66-20260907/index.html",
+    "records/20260911-notarization/deployed-media-report.html",
+    "records/20260911-notarization/report.md",
+    "lib/deployments.ts"
+  ],
+  "mediaFilesChecked": 27,
+  "mediaUnchanged": true,
+  "results": [
+    {
+      "url": "https://ungdo-private.vercel.app/ungdo-case",
+      "name": "63-1·66 관련 종합 기록",
+      "title": "작성일 미확인 63-1·66 관련 종합 기록",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/ungdo-case/page.tsx",
+          "state": "title-corrected",
+          "before": "웅도리 63-1 성토·경계침범 사건",
+          "after": "작성일 미확인 63-1·66 관련 종합 기록"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "ungdo-case",
+      "slug": "ungdo-case"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/ungdo-66-field-record",
+      "name": "웅도리 66 현장·드론·방문 기록",
+      "title": "작성일 미확인 웅도리 66 현장·드론·방문 기록",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/ungdo-66-field-record/page.tsx",
+          "state": "title-corrected",
+          "before": "웅도리 66 현장·드론·방문 기록",
+          "after": "작성일 미확인 웅도리 66 현장·드론·방문 기록"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "ungdo-66-field-record",
+      "slug": "ungdo-66-field-record"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/40-25-sale",
+      "name": "잔여지 검토 기록",
+      "title": "작성일 미확인 잔여지 검토 기록",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/40-25-sale/page.tsx",
+          "state": "title-corrected",
+          "before": "웅도리 40-25 잔여지 수용 vs 민간 매각",
+          "after": "작성일 미확인 잔여지 검토 기록"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "40-25-sale",
+      "slug": "40-25-sale"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/ungdo-66-restoration-agreement",
+      "name": "66 원상복구·우량농지 조성 기록",
+      "title": "작성일 미확인 66 원상복구·우량농지 조성 기록",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/ungdo-66-restoration-agreement/page.tsx",
+          "state": "title-corrected",
+          "before": "웅도리 66번지 원상복구·우량농지 조성 합의 및 공증",
+          "after": "작성일 미확인 66 원상복구·우량농지 조성 기록"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "ungdo-66-restoration-agreement",
+      "slug": "ungdo-66-restoration-agreement"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/ungdo-66-sewer-pipe",
+      "name": "66번지 배수시설 관련 기록",
+      "title": "작성일 미확인 66번지 배수시설 관련 기록",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "app/ungdo-66-sewer-pipe/page.tsx",
+          "state": "title-corrected",
+          "before": "웅도리 66번지 하수관·맨홀 무단매설",
+          "after": "작성일 미확인 66번지 배수시설 관련 기록"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "ungdo-66-sewer-pipe",
+      "slug": "ungdo-66-sewer-pipe"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/reports/ungdo-66-20260907/index.html",
+      "name": "지도·현장사진 보고서",
+      "title": "작성일 미확인 지도·현장사진 보고서",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "public/reports/ungdo-66-20260907/index.html",
+          "state": "title-corrected",
+          "before": "웅도리 66번지 지도 위치 ↔ 현장사진 정리",
+          "after": "작성일 미확인 지도·현장사진 보고서"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "reports/ungdo-66-20260907/index.html",
+      "slug": "ungdo-66-20260907"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/live/records/20260911-notarization/deployed-media-report.html",
+      "name": "공증 상세 미디어 보고서",
+      "title": "작성일 미확인 공증 상세 미디어 보고서",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "records/20260911-notarization/deployed-media-report.html",
+          "state": "title-corrected",
+          "before": "웅도리 66번지 합의·공증 이미지·음성 기록",
+          "after": "작성일 미확인 공증 상세 미디어 보고서"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "live/records/20260911-notarization/deployed-media-report.html",
+      "slug": "deployed-media-report.html"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/media/KakaoTalk_Video_2026-09-01-22-35-25.mp4",
+      "name": "현장 원본 동영상",
+      "title": "작성일 미확인 현장 원본 동영상",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "attachment-not-page"
+    },
+    {
+      "url": "https://ungdo-private.vercel.app/live/records/20260911-notarization/report.md",
+      "name": "공증 정리 Markdown",
+      "title": "작성일 미확인 공증 정리 Markdown",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "records/20260911-notarization/report.md",
+          "state": "title-corrected",
+          "before": "웅도리 66번지 원상복구·우량농지 조성 합의 및 공증 기록",
+          "after": "작성일 미확인 공증 정리 Markdown"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "live/records/20260911-notarization/report.md",
+      "slug": "report.md"
+    }
+  ]
+}

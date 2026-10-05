@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "repo": "baksok-private",
+  "project": "baksok-public",
+  "visibility": "private",
+  "centralRevision": "52574af45cb7f04b389b12ef954d6fdba9d74f4e",
+  "checkedAt": "2026-09-30T10:56:50.042Z",
+  "applied": true,
+  "registeredProjects": 13,
+  "registeredRows": 5,
+  "sourceResolved": 5,
+  "changedFiles": [
+    "reports/20260909-furniture-gas/index.html",
+    "reports/20260911-rir4000s-delivery/index.html",
+    "reports/20260721-tax/index.html",
+    "reports/20260909-furniture-gas/media-gallery.html",
+    "reports/20260911-rir4000s-delivery/media-gallery.html"
+  ],
+  "mediaFilesChecked": 0,
+  "mediaUnchanged": true,
+  "results": [
+    {
+      "url": "https://baksok-private.vercel.app/reports/20260909-furniture-gas/",
+      "name": "불판 탁자 이가구 계약 배송 & 린나이 RIR4000s 구매",
+      "title": "2026-09-09 불판 탁자 이가구 계약 배송 & 린나이 RIR4000s 구매",
+      "date": "2026-09-09",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "reports/20260909-furniture-gas/index.html",
+          "state": "title-corrected",
+          "before": "2026년 9월 이가구 계약·가스설비",
+          "after": "2026-09-09 불판 탁자 이가구 계약 배송 & 린나이 RIR4000s 구매"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "reports/20260909-furniture-gas",
+      "slug": "20260909-furniture-gas"
+    },
+    {
+      "url": "https://baksok-private.vercel.app/reports/20260911-rir4000s-delivery/",
+      "name": "서해박속낙지 RIR4000S 5대 배송완료",
+      "title": "2026-09-11 서해박속낙지 RIR4000S 5대 배송완료",
+      "date": "2026-09-11",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "reports/20260911-rir4000s-delivery/index.html",
+          "state": "title-corrected",
+          "before": "2026년 9월 11일 RIR-4000S 5대 배송 완료",
+          "after": "2026-09-11 서해박속낙지 RIR4000S 5대 배송완료"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "reports/20260911-rir4000s-delivery",
+      "slug": "20260911-rir4000s-delivery"
+    },
+    {
+      "url": "https://baksok-private.vercel.app/reports/20260721-tax/",
+      "name": "비공개 운영 분석",
+      "title": "작성일 미확인 비공개 운영 분석",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "reports/20260721-tax/index.html",
+          "state": "title-corrected",
+          "before": "2026-07-21 · 서해박속낙지 세무·매출 분석",
+          "after": "작성일 미확인 비공개 운영 분석"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "reports/20260721-tax",
+      "slug": "20260721-tax"
+    },
+    {
+      "url": "https://baksok-private.vercel.app/reports/20260909-furniture-gas/media-gallery.html",
+      "name": "9/9 회수 사진 갤러리",
+      "title": "작성일 미확인 9/9 회수 사진 갤러리",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "reports/20260909-furniture-gas/media-gallery.html",
+          "state": "title-corrected",
+          "before": "2026-09-09 이가구 계약·구매 기록 · 사진 갤러리",
+          "after": "작성일 미확인 9/9 회수 사진 갤러리"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "reports/20260909-furniture-gas/media-gallery.html",
+      "slug": "media-gallery.html"
+    },
+    {
+      "url": "https://baksok-private.vercel.app/reports/20260911-rir4000s-delivery/media-gallery.html",
+      "name": "9/11 회수 사진 갤러리",
+      "title": "작성일 미확인 9/11 회수 사진 갤러리",
+      "date": "",
+      "visibility": "private",
+      "files": [
+        {
+          "file": "reports/20260911-rir4000s-delivery/media-gallery.html",
+          "state": "title-corrected",
+          "before": "2026-09-11 RIR-4000S 배송 기록 · 사진 갤러리",
+          "after": "작성일 미확인 9/11 회수 사진 갤러리"
+        }
+      ],
+      "state": "source-resolved",
+      "route": "reports/20260911-rir4000s-delivery/media-gallery.html",
+      "slug": "media-gallery.html"
+    }
+  ]
+}

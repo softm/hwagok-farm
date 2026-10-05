@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "source": "20260819_화곡농장_제초제_들깨밭_농로잡초관리_웹사이트.zip",
+  "inputSha256": "83e665cdc8c4a7ae8b7941975ce973a89e585569efabc0d41b0b912d21f8f593",
+  "date": "2026-08-19",
+  "title": "화곡농장 제초제 들깨밭 농로잡초관리 웹사이트",
+  "slug": "20260819-3bda6cf8ef",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 988,
+      "sha256": "3d39985cd46145cc2414849a4dfe2050b2c40069edc12758ed497193ec06d557"
+    },
+    {
+      "path": "assets/20260704_한국농약사_제초제상담.txt",
+      "size": 5361,
+      "sha256": "610a9c9b1fb6b1ca23796c3ae13e0be41fe60a9b6bdb77f77c426ebe357f4f64"
+    },
+    {
+      "path": "assets/20260713_한국농약사_제초제상담.txt",
+      "size": 12342,
+      "sha256": "bdfdfee1bf130f42d362cf706cbae15396e6aa7f0a69e7ef1d4854455aaf1266"
+    },
+    {
+      "path": "index.html",
+      "size": 28108,
+      "sha256": "b65fc8c1f25948c1f5af7d0dd3094db79ef96f3866ba90ea212fb5b0403da745"
+    }
+  ]
+}

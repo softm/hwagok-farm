@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "source": "20260711_화곡농장_냉동고_전기증설_작업기록.zip",
+  "inputSha256": "8279e52d8c12e4b9c996b9d2a37e3ab5ac89895d3b9392acd603053b42123430",
+  "date": "2026-07-11",
+  "title": "화곡농장 냉동고 전기증설 작업기록",
+  "slug": "20260711-9eef8f2458",
+  "files": [
+    {
+      "path": "20260711_화곡농장_냉동고_전기증설_이미지보기.html",
+      "size": 3905,
+      "sha256": "6bba0d7a2dff2ba20a32697f50fe4ae06161aa01f91a24ecc4cc1efdec8f94e8"
+    },
+    {
+      "path": "20260711_화곡농장_냉동고_전기증설_작업기록.md",
+      "size": 7438,
+      "sha256": "8124fc165a996ced51c613bdb09c0495fbc4cc71b5411174998f98cc8cb20eb5"
+    },
+    {
+      "path": "images/01_자재_및_배선준비_전경.jpg",
+      "size": 435997,
+      "sha256": "a307b41107e94b0e0002c8d156fffbb490c0ead0e1550d73c7bf7989cacc3d3c"
+    },
+    {
+      "path": "images/02_전선_전선관_공구_배치.jpg",
+      "size": 461131,
+      "sha256": "368d03a288370631d7a0a36a53cddcd47eb38ed58e7c53d19fbf129e2d85f536"
+    },
+    {
+      "path": "images/03_저온창고_제어반_연결작업.jpg",
+      "size": 421976,
+      "sha256": "fb52765c89f2bcfb9c954d915ae9ab92d1885860bdde3f7c7db654a387180293"
+    },
+    {
+      "path": "images/04_저온창고_제어반_작업전경.jpg",
+      "size": 382712,
+      "sha256": "5d92a4a546eeb07a347fb3438335af075b84e7266f1f3d122482512c836fc1e1"
+    },
+    {
+      "path": "images/05_냉동고_디지털_컨트롤박스.jpg",
+      "size": 370376,
+      "sha256": "372174cf3f3919bee9a33516be5ed5ca89e0b49d8fd41d4cc2ac49178266d9a3"
+    },
+    {
+      "path": "images/06_냉동고_및_저온창고_설치전경.jpg",
+      "size": 401438,
+      "sha256": "c2bdaf348790cc507b24b9f32c0a878e3ae47a69190899704d2f0e8264038ef8"
+    },
+    {
+      "path": "images/07_저온창고_상부배선_작업.jpg",
+      "size": 399485,
+      "sha256": "6b90ca59723ddead34abdd172167600d632fd7289714de11ea232f9d08b4cec4"
+    },
+    {
+      "path": "images/08_저온창고_상부배선_작업_정면.jpg",
+      "size": 465075,
+      "sha256": "71da0fd7e6b34a83ad6007bae248c8a4a3487c507c8e505e57654101f274a733"
+    },
+    {
+      "path": "images/09_저온창고_전기함_배선작업.jpg",
+      "size": 316152,
+      "sha256": "a90b8fdb920bf9f04dd84f314c10fad42efe819232ebe0278318f320c546229e"
+    },
+    {
+      "path": "images/10_저온창고_제어함_내부배선.jpg",
+      "size": 307488,
+      "sha256": "416e3b14f1625e41b1dab94b5a0ad68b03ec16525d5915c9555748340e1772a1"
+    }
+  ]
+}

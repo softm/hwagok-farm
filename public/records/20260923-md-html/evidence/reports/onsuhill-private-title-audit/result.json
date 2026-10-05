@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "repo": "onsuhill-private",
+  "project": "onsuhill-private",
+  "visibility": "private",
+  "centralRevision": "52574af45cb7f04b389b12ef954d6fdba9d74f4e",
+  "checkedAt": "2026-09-30T10:56:13.595Z",
+  "applied": true,
+  "registeredProjects": 13,
+  "registeredRows": 7,
+  "sourceResolved": 0,
+  "changedFiles": [
+    "api/site.js"
+  ],
+  "mediaFilesChecked": 1,
+  "mediaUnchanged": true,
+  "results": [
+    {
+      "url": "https://onsuhill-private.vercel.app/api/site?route=renewal",
+      "name": "임대차 갱신계약 전체 정리",
+      "title": "작성일 미확인 임대차 갱신계약 전체 정리",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "api/site",
+      "slug": "renewal"
+    },
+    {
+      "url": "https://onsuhill-private.vercel.app/api/site?route=documents",
+      "name": "생성 문서 및 계약서 작성본",
+      "title": "작성일 미확인 생성 문서 및 계약서 작성본",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "api/site",
+      "slug": "documents"
+    },
+    {
+      "url": "https://onsuhill-private.vercel.app/api/site?route=messages",
+      "name": "세입자 문자·전화 대응",
+      "title": "작성일 미확인 세입자 문자·전화 대응",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "api/site",
+      "slug": "messages"
+    },
+    {
+      "url": "https://onsuhill-private.vercel.app/api/site?route=facilities",
+      "name": "욕실·보일러 수선 이슈",
+      "title": "작성일 미확인 욕실·보일러 수선 이슈",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "api/site",
+      "slug": "facilities"
+    },
+    {
+      "url": "https://onsuhill-private.vercel.app/api/site?route=okgil",
+      "name": "전세계약 갱신 검토",
+      "title": "작성일 미확인 전세계약 갱신 검토",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "api/site",
+      "slug": "okgil"
+    },
+    {
+      "url": "https://onsuhill-private.vercel.app/api/site?route=led-repair",
+      "name": "LED 수리 기록·증빙",
+      "title": "작성일 미확인 LED 수리 기록·증빙",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "unresolved",
+      "route": "api/site",
+      "slug": "led-repair"
+    },
+    {
+      "url": "https://onsuhill-private.vercel.app/",
+      "name": "온수힐 비공개 프로젝트 홈",
+      "title": "작성일 미확인 온수힐 비공개 프로젝트 홈",
+      "date": "",
+      "visibility": "private",
+      "files": [],
+      "state": "project-home-not-record"
+    }
+  ]
+}
