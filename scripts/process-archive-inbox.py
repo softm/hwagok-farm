@@ -135,11 +135,11 @@ def main():
         except Exception as e:
             errors.append(f'{item.name}: {e}')
     if results: update_index(results)
-    # Delete only successfully processed inputs. Existing identical records may also clear their inbox copies.
-    for r in results:
-        item=r['item']
-        if item.is_dir(): shutil.rmtree(item)
-        elif item.exists(): item.unlink()
+    # IMPORTANT: inbox cleanup is deliberately NOT performed here.
+    # Source-of-truth policy requires:
+    # commit-record -> deploy -> live-verify -> sync-project-index -> final-verify -> cleanup-inbox.
+    # Keep every input in zip/ until a later cleanup workflow has evidence that all downstream
+    # deployment and live media checks succeeded.
     if errors:
         print('\n'.join(errors),file=sys.stderr)
         # Keep failed inputs, but successful results remain staged for commit.
