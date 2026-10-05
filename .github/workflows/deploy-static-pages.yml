@@ -14,16 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
-      - name: Assemble static site from current directory units only
+      - name: Assemble clean archive shell
         run: |
           set -euo pipefail
           rm -rf site
           mkdir site
-          cp -a public/. site/
+          if [ -d public ]; then cp -a public/. site/; fi
           cp index.html archive-static.css archive-static.js site/
           touch site/.nojekyll
-          echo "Published directory units:"
-          find public -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort
       - name: Publish static files
         uses: peaceiris/actions-gh-pages@v4
         with:
