@@ -41,5 +41,7 @@
       "size": 171992,
       "sha256": "623348f848a7a4a9b6af16c2c27b70a91fc0a4355cf4e8826a00ae61d0d4c0f3"
     }
-  ]
+  ],
+  "entryPolicy": "html-first-v1",
+  "entrySource": "20260813_화곡농장_농막아랫밭_나방노린채살포.html"
 }

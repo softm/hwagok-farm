@@ -96,5 +96,7 @@
       "size": 148521,
       "sha256": "e6b2a981636d621804de09149bef6a83a8e56bf5de283c33108fd49dd37ef81e"
     }
-  ]
+  ],
+  "entryPolicy": "html-first-v1",
+  "entrySource": "20260803_나리온_미니컷쏘_구매기록.html"
 }

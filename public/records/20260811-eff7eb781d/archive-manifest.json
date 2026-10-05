@@ -146,5 +146,7 @@
       "size": 613408,
       "sha256": "38969be8a4fc710eb98eac031b4f72a7322e6d5df2426c05bba5fa24a7506c2c"
     }
-  ]
+  ],
+  "entryPolicy": "html-first-v1",
+  "entrySource": "20260811_화곡농장_단골_농막아래농지_들깨밭_살포기록.html"
 }

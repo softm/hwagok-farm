@@ -581,5 +581,7 @@
       "size": 1754338,
       "sha256": "c6b168ec7f87f9718ef8ef47c182257fe808b60bd3bbb1c04ce7fe35aadfd4c1"
     }
-  ]
+  ],
+  "entryPolicy": "html-first-v1",
+  "entrySource": "record.html"
 }

@@ -311,5 +311,7 @@
       "size": 4469488,
       "sha256": "9c0920ee44d943db6ded5e2563667bbfd944c29637f253f52d67b065bc58c6a2"
     }
-  ]
+  ],
+  "entryPolicy": "html-first-v1",
+  "entrySource": "20260905_화곡농장_열무_무_파종_정리.html"
 }

@@ -31,5 +31,7 @@
       "size": 1931366,
       "sha256": "271abd4e7cbd3b32aac28b130c9d8ec6fc0c9f9f211ed6154d596664b3220ba2"
     }
-  ]
+  ],
+  "entryPolicy": "html-first-v1",
+  "entrySource": "20260818_화곡농장_화이트클로버_파종계획_보고서.html"
 }
