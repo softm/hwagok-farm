@@ -66,5 +66,7 @@
       "size": 307488,
       "sha256": "416e3b14f1625e41b1dab94b5a0ad68b03ec16525d5915c9555748340e1772a1"
     }
-  ]
+  ],
+  "entryPolicy": "html-exact-v2",
+  "entrySource": "20260711_화곡농장_냉동고_전기증설_이미지보기.html"
 }
