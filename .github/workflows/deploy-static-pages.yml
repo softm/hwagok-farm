@@ -1,20 +1,47 @@
 name: Deploy static GitHub Pages
+run-name: Deploy static archive ${{ inputs.source_sha || github.sha }}
 on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      source_sha:
+        description: Exact committed archive revision to deploy
+        required: false
+        type: string
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: github-pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: https://softm.github.io/hwagok-farm/
     steps:
       - uses: actions/checkout@v4
-        with: {fetch-depth: 0}
-      - name: Assemble clean archive shell
+        with:
+          ref: ${{ inputs.source_sha || github.sha }}
+          fetch-depth: 0
+      - name: Check public/private scope before publication
+        run: python3 scripts/audit_archive_public.py
+      - name: Reject stale publication without changing Pages settings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        id: settings
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+          TYPE="$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.build_type')"
+          test "$TYPE" = legacy || test "$TYPE" = workflow
+          echo "type=$TYPE" >> "$GITHUB_OUTPUT"
+      - name: Assemble existing public archive structure only
         run: |
           set -euo pipefail
           rm -rf site
@@ -22,10 +49,38 @@ jobs:
           if [ -d public ]; then cp -a public/. site/; fi
           cp index.html archive-static.css archive-static.js site/
           touch site/.nojekyll
-      - name: Publish static files
+      - name: Synchronize existing publishing branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./site
           keep_files: false
+      - name: Explicitly request branch-based Pages build
+        if: steps.settings.outputs.type == 'legacy'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" > /tmp/pages-build.json
+          BUILD_ID="$(python3 -c 'import json;print(json.load(open("/tmp/pages-build.json"))["url"].rstrip("/").split("/")[-1])')"
+          for attempt in $(seq 1 60); do
+            STATUS="$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/$BUILD_ID" --jq '.status')"
+            if [ "$STATUS" = built ]; then exit 0; fi
+            if [ "$STATUS" = errored ]; then echo 'Pages build failed'; exit 1; fi
+            sleep 10
+          done
+          echo 'Pages build verification timed out'; exit 1
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.settings.outputs.type == 'workflow'
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        if: steps.settings.outputs.type == 'workflow'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-deployment-scope
+          path: .archive-run/public-scope.json
+          include-hidden-files: true
+          if-no-files-found: warn

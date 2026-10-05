@@ -1,42 +1,123 @@
 name: Process archive inbox
-
 on:
   push:
     branches: [main]
     paths:
       - 'zip/**'
+      - 'scripts/archive*'
+      - 'scripts/process-archive-inbox.py'
+      - 'scripts/verify_archive_live.py'
+      - 'tests/test_archive_inbox.py'
+      - '.github/workflows/process-archive-inbox.yml'
   workflow_dispatch:
-
 permissions:
-  contents: write
-
+  contents: read
 concurrency:
   group: archive-inbox
   cancel-in-progress: false
-
 jobs:
   process:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    timeout-minutes: 55
+    permissions:
+      contents: write
+      actions: write
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
-      - name: Build archive records from ZIP and folder inbox
-        run: python3 scripts/process-archive-inbox.py
-      - name: Guard inbox until downstream verification
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install archive parser and full-document converter
         run: |
-          echo "Inputs in zip/ are intentionally retained."
-          echo "Cleanup is allowed only after deploy -> live-verify -> central index sync -> final-verify."
-      - name: Commit processed archives
+          python -m pip install -r scripts/archive-requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y pandoc
+      - name: Test preservation, duplicate detection and cleanup guards
+        run: python -m unittest discover -s tests -p 'test_archive_inbox.py' -v
+      - name: Check approved archive policy source revisions
+        run: python scripts/archive_completion.py policy
+      - name: Build ZIP and folder records without deleting input
+        id: build
+        run: python scripts/process-archive-inbox.py
+      - name: Commit complete records before deploying
+        if: steps.build.outputs.count != '0'
         run: |
           set -euo pipefail
-          if git diff --quiet && git diff --cached --quiet; then
-            echo "No archive changes"
-            exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/records index.html
+          if test -n "$(git diff --cached --name-only --diff-filter=D)"; then
+            echo 'Refusing archive source deletion'; exit 1
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/records index.html zip
-          git commit -m "archive: build inbox records (retain inputs pending verification)"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m 'archive: preserve complete inbox records; await live verification'
+            git push origin HEAD:main
+          fi
+          python scripts/archive_completion.py stamp
+      - name: Explicitly request deployment and wait for its result
+        if: steps.build.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          SOURCE_SHA="$(git rev-parse HEAD)"
+          gh workflow run deploy-static-pages.yml --repo "$GITHUB_REPOSITORY" --ref main -f source_sha="$SOURCE_SHA"
+          RUN_ID=''
+          for attempt in $(seq 1 30); do
+            RUN_ID="$(gh run list --repo "$GITHUB_REPOSITORY" --workflow deploy-static-pages.yml --event workflow_dispatch --limit 20 --json databaseId,headSha --jq ".[] | select(.headSha == \"$SOURCE_SHA\") | .databaseId" | head -1)"
+            test -z "$RUN_ID" || break
+            sleep 5
+          done
+          test -n "$RUN_ID"
+          gh run watch "$RUN_ID" --repo "$GITHUB_REPOSITORY" --exit-status
+      - name: Install browser for actual image and media checks
+        if: steps.build.outputs.count != '0'
+        run: python -m playwright install --with-deps chromium
+      - name: Verify deployed original bytes and actual detail/service rendering
+        if: steps.build.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/verify_archive_live.py live
+      - name: Synchronize canonical records to central project metadata
+        if: steps.build.outputs.count != '0'
+        env:
+          ARCHIVE_INDEX_TOKEN: ${{ secrets.ARCHIVE_INDEX_TOKEN }}
+        run: python scripts/archive_completion.py sync
+      - name: Verify central home, top index and all original media again
+        if: steps.build.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/verify_archive_live.py final
+      - name: Delete only verified unchanged input in a separate commit
+        if: steps.build.outputs.count != '0'
+        run: python scripts/archive_completion.py cleanup
+      - name: Report actual phase, not just CI status
+        if: always()
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          d=Path('.archive-run'); p=d/'plan.json'
+          plan=json.loads(p.read_text()) if p.exists() else {}
+          result=d/'final.json'
+          final=json.loads(result.read_text()) if result.exists() else {}
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+              out.write('## Archive inbox result\n\n')
+              out.write(f"Prepared inputs: {len(plan.get('records',[]))}\n\n")
+              out.write(f"Build errors: {len(plan.get('errors',[]))}\n\n")
+              out.write(f"Final live verification: {final.get('passed','not executed')}\n\n")
+              out.write('No inputs is not a deployment-complete result. Existing archive completion is not inferred from this run.\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: archive-completion-evidence
+          path: |
+            .archive-run/*.json
+            .archive-run/*.png
+          include-hidden-files: true
+          if-no-files-found: warn
