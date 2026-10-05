@@ -10,19 +10,20 @@ on:
         required: false
         type: string
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 concurrency:
   group: github-pages-deploy
   cancel-in-progress: false
 jobs:
-  deploy:
+  prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-    environment:
-      name: github-pages
-      url: https://softm.github.io/hwagok-farm/
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: read
+    outputs:
+      source_sha: ${{ steps.settings.outputs.source_sha }}
+      build_type: ${{ steps.settings.outputs.build_type }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,17 +31,26 @@ jobs:
           fetch-depth: 0
       - name: Check public/private scope before publication
         run: python3 scripts/audit_archive_public.py
-      - name: Reject stale publication without changing Pages settings
+      - name: Inspect existing Pages mode and reject stale source
+        id: settings
         env:
           GH_TOKEN: ${{ github.token }}
-        id: settings
         run: |
           set -euo pipefail
           git fetch origin main
           test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
-          TYPE="$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.build_type')"
-          test "$TYPE" = legacy || test "$TYPE" = workflow
-          echo "type=$TYPE" >> "$GITHUB_OUTPUT"
+          gh api "repos/$GITHUB_REPOSITORY/pages" > .archive-run/pages-settings.json
+          python3 - <<'PY'
+          import json,os,subprocess
+          data=json.load(open('.archive-run/pages-settings.json'))
+          kind=data['build_type']
+          assert kind in ('legacy','workflow'), 'Unknown Pages publishing mode'
+          if kind=='legacy':
+              assert data['source']['branch']=='gh-pages' and data['source']['path']=='/', 'Existing Pages source differs; do not change settings automatically'
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('build_type='+kind+'\n')
+              out.write('source_sha='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()+'\n')
+          PY
       - name: Assemble existing public archive structure only
         run: |
           set -euo pipefail
@@ -49,6 +59,44 @@ jobs:
           if [ -d public ]; then cp -a public/. site/; fi
           cp index.html archive-static.css archive-static.js site/
           touch site/.nojekyll
+      - uses: actions/upload-artifact@v4
+        if: steps.settings.outputs.build_type == 'legacy'
+        with:
+          name: prepared-public-site
+          path: site/
+          include-hidden-files: true
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.settings.outputs.build_type == 'workflow'
+        with:
+          path: site
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-deployment-scope
+          path: .archive-run/*.json
+          include-hidden-files: true
+          if-no-files-found: warn
+  publish-existing-branch:
+    needs: prepare
+    if: needs.prepare.outputs.build_type == 'legacy'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.source_sha }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: prepared-public-site
+          path: site
+      - name: Reject a source revision superseded by a concurrent upload
+        run: |
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
       - name: Synchronize existing publishing branch
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -56,8 +104,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./site
           keep_files: false
-      - name: Explicitly request branch-based Pages build
-        if: steps.settings.outputs.type == 'legacy'
+      - name: Request native Pages build using existing branch and protection rules
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -71,16 +118,16 @@ jobs:
             sleep 10
           done
           echo 'Pages build verification timed out'; exit 1
-      - uses: actions/upload-pages-artifact@v3
-        if: steps.settings.outputs.type == 'workflow'
-        with:
-          path: site
+  deploy-protected-pages:
+    needs: prepare
+    if: needs.prepare.outputs.build_type == 'workflow'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://softm.github.io/hwagok-farm/
+    steps:
       - uses: actions/deploy-pages@v4
-        if: steps.settings.outputs.type == 'workflow'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: public-deployment-scope
-          path: .archive-run/public-scope.json
-          include-hidden-files: true
-          if-no-files-found: warn
