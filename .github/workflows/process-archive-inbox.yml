@@ -1,0 +1,38 @@
+name: Process archive inbox
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'zip/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archive-inbox
+  cancel-in-progress: false
+
+jobs:
+  process:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Process ZIP and folder inbox
+        run: python3 scripts/process-archive-inbox.py
+      - name: Commit processed archives
+        run: |
+          set -euo pipefail
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No archive changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/records index.html zip
+          git commit -m "archive: process inbox"
+          git push
