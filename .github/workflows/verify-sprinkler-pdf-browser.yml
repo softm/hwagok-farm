@@ -1,0 +1,47 @@
+name: Verify sprinkler PDF in full browser
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/verify-sprinkler-pdf-browser.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pdf-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install browser automation client
+        run: python -m pip install playwright==1.57.0 Pillow==11.3.0
+      - name: Verify PDF rendering, not only its HTTP response
+        run: |
+          mkdir -p evidence
+          python - <<'PY'
+          import json,io
+          from datetime import datetime,timezone
+          from pathlib import Path
+          from PIL import Image
+          from playwright.sync_api import sync_playwright
+          url='https://softm.github.io/hwagok-farm/records/20260809-sprinkler-piping-plan/media.html'
+          with sync_playwright() as p:
+              browser=p.chromium.launch(channel='chrome')
+              page=browser.new_page(viewport={'width':1365,'height':900})
+              response=page.goto(url,wait_until='domcontentloaded',timeout=60000)
+              assert response.status==200
+              frame=page.locator('iframe').first
+              frame.scroll_into_view_if_needed()
+              page.wait_for_timeout(12000)
+              image=frame.screenshot(path='evidence/pdf-rendered.png')
+              pixels=Image.open(io.BytesIO(image)).convert('RGB')
+              colors=pixels.getcolors(maxcolors=1000000)
+              color_count=len(colors) if colors is not None else 1000001
+              assert color_count>128,'PDF viewer is blank or has not painted the document'
+              page.screenshot(path='evidence/pdf-browser.png')
+              Path('evidence/result.json').write_text(json.dumps({'passed':True,'viewerUrl':url,'pdfSource':frame.get_attribute('src'),'browser':'full Google Chrome with PDF renderer','renderedColorCount':color_count,'verifiedAt':datetime.now(timezone.utc).isoformat()},ensure_ascii=False,indent=2))
+              browser.close()
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sprinkler-pdf-rendering-evidence
+          path: evidence/
