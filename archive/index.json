@@ -2,6 +2,37 @@
   "records": [
     {
       "schemaVersion": 2,
+      "id": "20260810-onion-sourcing",
+      "slug": "20260810-onion-sourcing",
+      "date": "2026-08-10",
+      "title": "서산 양파 구매처 조사",
+      "input": "current-conversation",
+      "inputKind": "conversation",
+      "inputSha256": "03fb28397f281812a5602f24ed1269fe9229c15492955b3ac7fea6dccc0ee73f",
+      "entrySource": "20260810_서산_양파_구매처_조사.html",
+      "entryType": "generated-html",
+      "generatedHtml": true,
+      "entrySha256": "2343ed689632b72cc791c522ee33535dd48661ade2ee7af6f5995e755158d673",
+      "files": [
+        {
+          "path": "20260810_서산_양파_구매처_조사.html",
+          "size": 10949,
+          "sha256": "2343ed689632b72cc791c522ee33535dd48661ade2ee7af6f5995e755158d673"
+        },
+        {
+          "path": "20260810_서산_양파_구매처_조사.md",
+          "size": 4772,
+          "sha256": "03fb28397f281812a5602f24ed1269fe9229c15492955b3ac7fea6dccc0ee73f"
+        },
+        {
+          "path": "index.html",
+          "size": 10949,
+          "sha256": "2343ed689632b72cc791c522ee33535dd48661ade2ee7af6f5995e755158d673"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 2,
       "id": "20260809-a3dbdfb7a3",
       "slug": "20260809-a3dbdfb7a3",
       "date": "2026-08-09",
