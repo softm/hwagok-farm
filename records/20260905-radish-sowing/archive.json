@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "id": "20260905-radish-sowing",
+  "slug": "20260905-radish-sowing",
+  "directory": "20260905-radish-sowing",
+  "recordPath": "public/records/20260905-radish-sowing",
+  "inputName": "20260905 무 열무 파종",
+  "inputKind": "folder",
+  "inputTree": "7df15f1cdc6e062fcedf903723b2be293aed8351",
+  "listTitle": "20260905 무 열무 파종",
+  "title": "20260905 무 열무 파종",
+  "label": "20260905 무 열무 파종",
+  "titleSource": "inbox-name",
+  "sourceTitle": "20260905 무 열무 파종",
+  "date": "2026-09-05",
+  "dateSource": "archive-canonical",
+  "visibility": "public",
+  "category": "영농 기록",
+  "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/",
+  "repoUrl": "https://github.com/softm/hwagok-farm/tree/main/public/records/20260905-radish-sowing",
+  "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/inbox-7df15f1cdc-viewer.html",
+  "reusedCanonical": false,
+  "batch": "20261008-hwagok-media-inbox",
+  "media": {
+    "images": 23,
+    "videos": 8,
+    "audio": 0,
+    "originalFiles": 31
+  },
+  "summary": "입력 폴더 원본 사진 23개·영상 8개. 폴더명 그대로 제목을 사용하며 원본 파일을 보존합니다."
+}

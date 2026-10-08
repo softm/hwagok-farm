@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 3,
+  "metadata": {
+    "schemaVersion": 3,
+    "id": "20260913-seed-gourd-harvest",
+    "slug": "20260913-seed-gourd-harvest",
+    "directory": "20260913-seed-gourd-harvest",
+    "recordPath": "public/records/20260913-seed-gourd-harvest",
+    "inputName": "20260913 씨박 수확",
+    "inputKind": "folder",
+    "inputTree": "35db2f5c9692897afe89af1781faad869489b237",
+    "listTitle": "20260913 씨박 수확",
+    "title": "20260913 씨박 수확",
+    "label": "20260913 씨박 수확",
+    "titleSource": "inbox-name",
+    "sourceTitle": "20260913 씨박 수확",
+    "date": "2026-09-13",
+    "dateSource": "archive-canonical",
+    "visibility": "public",
+    "category": "영농 기록",
+    "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/",
+    "repoUrl": "https://github.com/softm/hwagok-farm/tree/main/public/records/20260913-seed-gourd-harvest",
+    "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/inbox-35db2f5c96-viewer.html",
+    "reusedCanonical": false,
+    "batch": "20261008-hwagok-media-inbox",
+    "media": {
+      "images": 17,
+      "videos": 5,
+      "audio": 0,
+      "originalFiles": 22
+    },
+    "summary": "입력 폴더 원본 사진 17개·영상 5개. 폴더명 그대로 제목을 사용하며 원본 파일을 보존합니다."
+  },
+  "inputName": "20260913 씨박 수확",
+  "inputTree": "35db2f5c9692897afe89af1781faad869489b237",
+  "source": "20260913 씨박 수확",
+  "files": [
+    {
+      "path": "20260913_112219.jpg",
+      "size": 3499055,
+      "sha256": "2aa42896ff41cbaa08987371a045d25bfd8b43e5fd10128c7c6c42efeda2df2a"
+    },
+    {
+      "path": "20260913_112224.jpg",
+      "size": 3004942,
+      "sha256": "951e7eaa569b4598337a5821b5f47664cce6c5fab43efa40834a5fc557e5d1ec"
+    },
+    {
+      "path": "20260913_112225.jpg",
+      "size": 3171089,
+      "sha256": "1b3081ea210f3df9b1f1d34b8f982ffb70bb0c224680f36f9e5f830772b6b6e2"
+    },
+    {
+      "path": "20260913_112228.jpg",
+      "size": 3649575,
+      "sha256": "6db3200d92cd69e784067765dda158e92a010cc96e37a6288cbe353c26e3fdf4"
+    },
+    {
+      "path": "20260913_112230.mp4",
+      "size": 2952783,
+      "sha256": "0b586ba03565f7b577a0b98b91fc6d6b8068e32e1f9e0519b6e45b776ce53379"
+    },
+    {
+      "path": "20260913_113538.jpg",
+      "size": 2434280,
+      "sha256": "a0756c1018e589703b61fb61ca2ca00aac87460d39f068e9af8faf765a70d4fe"
+    },
+    {
+      "path": "20260913_113540.mp4",
+      "size": 11411850,
+      "sha256": "356b612b0e96ee53c460c27a3cf3597b749abe2b82d114eecf0bed1a88b02153"
+    },
+    {
+      "path": "20260913_113551.mp4",
+      "size": 5813898,
+      "sha256": "5a029c9e3cedde76c22c6dd5c3f6580fe75337ccd25c6b35bf5208cdf3a79882"
+    },
+    {
+      "path": "20260913_113558(0).jpg",
+      "size": 2319140,
+      "sha256": "73e278f9e9b23be6b6afa71e97133b56fcebb0fef1c1f56d02f7568e7780972b"
+    },
+    {
+      "path": "20260913_113558.jpg",
+      "size": 2279271,
+      "sha256": "495aa5c284c8bf808f0e8482836e01aa9953647f442829df50c623b046653269"
+    },
+    {
+      "path": "20260913_141336.jpg",
+      "size": 4865464,
+      "sha256": "5884e84c4a0bcdbdc80ec3d7d5cf88fb0235c46d841c039113b333274f3fc2bf"
+    },
+    {
+      "path": "20260913_141341.jpg",
+      "size": 3882613,
+      "sha256": "7c9a01ff178ab55440778ca49f532baf3faa31bb743cc540f07c54f613c30db4"
+    },
+    {
+      "path": "20260913_141343.jpg",
+      "size": 3196118,
+      "sha256": "f02bcbd21ed19bd46390db79ebeb3361439dd6aa7b4eab555b01a35c9247c40a"
+    },
+    {
+      "path": "20260913_141346.jpg",
+      "size": 5806502,
+      "sha256": "da9189c662a4748a8faacf842d5e7d54f2c08a330d99256ac49c6a00d1f6dfc7"
+    },
+    {
+      "path": "20260913_141430.jpg",
+      "size": 3965322,
+      "sha256": "0267c004873c753c64e6a34bcc93ab04983a13bda43803dbd7bd3b50c64c4bd9"
+    },
+    {
+      "path": "20260913_141432.mp4",
+      "size": 6961102,
+      "sha256": "db848dda053ed9f94265c96c9fc6ec53ba7feb6d2decb6a8a04027b1443f1ebd"
+    },
+    {
+      "path": "20260913_141514.jpg",
+      "size": 4820222,
+      "sha256": "59745b6b4eab26b83680410c59d4de746cf7d01fc75b028f428bf4cba2e656a1"
+    },
+    {
+      "path": "20260913_141515.jpg",
+      "size": 5333986,
+      "sha256": "17acc9eaf4949383cb8bfb4c8111bffc171c924bbbb117cb2ca59d703500d142"
+    },
+    {
+      "path": "20260913_141517.jpg",
+      "size": 4062700,
+      "sha256": "1bcfb4a3fbf3962c60b12d3224fd7f6b6a15c5e1b97da622201a80eadd492b64"
+    },
+    {
+      "path": "20260913_141550.jpg",
+      "size": 3644809,
+      "sha256": "ac7fd3b35659b291e652e49313cd4750fa373f1a2f05d69a7efaf9425580aeda"
+    },
+    {
+      "path": "20260913_141551.mp4",
+      "size": 14628798,
+      "sha256": "8c41f3124700dfa23a0508f54f05e0cd4a9b93f1805ab35fb3e8703f22229c93"
+    },
+    {
+      "path": "20260913_141616.jpg",
+      "size": 5863627,
+      "sha256": "f3d25723ca8e0bb2706c15d5812e00352196cc3c894a0b95da419cbb06f5dd82"
+    },
+    {
+      "path": "_preview/0267c004873c753c64e6.jpg",
+      "size": 143225,
+      "sha256": "26e4b4cbdac89ddc238cac06ebfcb62d06bffdf5c79d86b5205da6a84fafe0fc"
+    },
+    {
+      "path": "_preview/0b586ba03565f7b577a0.jpg",
+      "size": 45147,
+      "sha256": "ac81d5c8f9aac959c177ba225e66f0840e9e5de6f62958b3efb805b2983fc01d"
+    },
+    {
+      "path": "_preview/0b586ba03565f7b577a0.mp4",
+      "size": 1048163,
+      "sha256": "7b9ea8d899df255cc059d430a82706d7c62c532d850175560d65f2552de4f556"
+    },
+    {
+      "path": "_preview/17acc9eaf4949383cb8b.jpg",
+      "size": 185419,
+      "sha256": "5063882a522a88dc2c5f2e0d733e1416c5e35476ebb8c02da3e761dd5bd44fff"
+    },
+    {
+      "path": "_preview/1b3081ea210f3df9b1f1.jpg",
+      "size": 111670,
+      "sha256": "d6c40ca262346479d4f64cc58d9839122367abffae1cc5074a7f8dca11e530d3"
+    },
+    {
+      "path": "_preview/1bcfb4a3fbf3962c60b1.jpg",
+      "size": 139741,
+      "sha256": "292674a92259c04a5c64bfe23a5062de0d826580d53df9a39cedd1d9fe6799fa"
+    },
+    {
+      "path": "_preview/2aa42896ff41cbaa0898.jpg",
+      "size": 114954,
+      "sha256": "2366cf914288e795485ebf640690df9167198837dcb6427737ef5d945dc57f60"
+    },
+    {
+      "path": "_preview/356b612b0e96ee53c460.jpg",
+      "size": 61179,
+      "sha256": "d987f91aeb080542110c412866e8a7ef2d92b4412ec2945b560ad11c58135b1a"
+    },
+    {
+      "path": "_preview/356b612b0e96ee53c460.mp4",
+      "size": 4290934,
+      "sha256": "326deb34676998f32a0a2c19df2b9c0657a00f643a1b6aeeefb90557e554dcf4"
+    },
+    {
+      "path": "_preview/495aa5c284c8bf808f0e.jpg",
+      "size": 46684,
+      "sha256": "55f6e7713b71ae31f69e57f88d5bedd4544136c1936d68fdadaa319f18559c9d"
+    },
+    {
+      "path": "_preview/5884e84c4a0bcdbdc80e.jpg",
+      "size": 180738,
+      "sha256": "f8a7e0865b609f44c1344efecc0cce9828e757005adacf5a9612aaa5f9ac27c3"
+    },
+    {
+      "path": "_preview/59745b6b4eab26b83680.jpg",
+      "size": 199942,
+      "sha256": "6ace8f49429d09f1f1e2eb816ff9ed64d4a696b3bdf5ef4220c326bb0f91018c"
+    },
+    {
+      "path": "_preview/5a029c9e3cedde76c22c.jpg",
+      "size": 66039,
+      "sha256": "a0c4d1a26bf57d9d9e4ad8540e913eec240c56d05a9e22daba6e4832e9a61a2b"
+    },
+    {
+      "path": "_preview/5a029c9e3cedde76c22c.mp4",
+      "size": 1521001,
+      "sha256": "d720eea942f5a87be85af70770192565a6cbfa1399713555787c65eab482f8f2"
+    },
+    {
+      "path": "_preview/6db3200d92cd69e78406.jpg",
+      "size": 125710,
+      "sha256": "dee42700c842cd168cd8a10f0bf87d88f12c3ef3637181b406847886dd9b33b3"
+    },
+    {
+      "path": "_preview/73e278f9e9b23be6b6af.jpg",
+      "size": 47625,
+      "sha256": "fd29011a0870458e51cd521725ed81cd8b5dfacbd1fc340131f7b0a2c0c1ec97"
+    },
+    {
+      "path": "_preview/7c9a01ff178ab5544077.jpg",
+      "size": 152427,
+      "sha256": "6ab50b13a16ca2ff2b2d710bf980acea01a928e6a0d7aeadce11812acdeffc5f"
+    },
+    {
+      "path": "_preview/8c41f3124700dfa23a05.jpg",
+      "size": 47280,
+      "sha256": "38686ed3f0db10aad44616a7546750eae4b59e9cbd5a646b498cc7c67b742d4e"
+    },
+    {
+      "path": "_preview/8c41f3124700dfa23a05.mp4",
+      "size": 11235006,
+      "sha256": "c044afc4fa7c8b1ae79d2408cd380794e793a777ee378d67d603b9bc84afc0e7"
+    },
+    {
+      "path": "_preview/951e7eaa569b4598337a.jpg",
+      "size": 105079,
+      "sha256": "fe92553891545c426631c948e5a1c94810ee80d99056333afd9365cfb0100416"
+    },
+    {
+      "path": "_preview/a0756c1018e589703b61.jpg",
+      "size": 51232,
+      "sha256": "56e6547a228544a9ecf0a67abd19ccc196334809948f83400fbab64a5ed586f7"
+    },
+    {
+      "path": "_preview/ac7fd3b35659b291e652.jpg",
+      "size": 123180,
+      "sha256": "57992086e69da62c477cc616aa5f1e95ffb03343eb19fe8a866fc0ff8d4410bb"
+    },
+    {
+      "path": "_preview/da9189c662a4748a8faa.jpg",
+      "size": 205293,
+      "sha256": "5a4a23f1eb9b197dcd63386197116331eb70adbfb447b8f8803ef7cbfea7ce40"
+    },
+    {
+      "path": "_preview/db848dda053ed9f94265.jpg",
+      "size": 69147,
+      "sha256": "7bf2a2e73bbb8a193d597d4eee012ed8e2959a9a38b7ae98eab612f5a7e899e2"
+    },
+    {
+      "path": "_preview/db848dda053ed9f94265.mp4",
+      "size": 3238480,
+      "sha256": "1a4105ec53ef4ac38e253baea5ad0421147a7db51fd13ca2c600050e12033b90"
+    },
+    {
+      "path": "_preview/f02bcbd21ed19bd46390.jpg",
+      "size": 132762,
+      "sha256": "c06054d7c962ab10d3c737e5eddad0601ee636720bc8c21452d1ad96fd56e2b2"
+    },
+    {
+      "path": "_preview/f3d25723ca8e0bb2706c.jpg",
+      "size": 231823,
+      "sha256": "c1ef0bc0ff5fcb156dab9784d3eb265184a46bebe433d11f0fa5bd3c30a41514"
+    },
+    {
+      "path": "archive-inputs/35db2f5c9692897afe89af1781faad869489b237.json",
+      "size": 4921,
+      "sha256": "5fa88a6afd120c08bfe056a9bee1536e8966f1bb20d21838e5172093225bd38f"
+    },
+    {
+      "path": "archive.json",
+      "size": 1264,
+      "sha256": "a0045dc0f34d3f62d3a664e4cc92407cad05ba85d015259a64650b4a35193934"
+    },
+    {
+      "path": "inbox-35db2f5c96-summary.md",
+      "size": 3552,
+      "sha256": "43919ed1b5cf8524dff9d404e8c7ee866ee30c307dd8519dd1cfd4f11696782e"
+    },
+    {
+      "path": "inbox-35db2f5c96-viewer.html",
+      "size": 18678,
+      "sha256": "ba1d7ad9f037178368e322218ec9112d5af988976bcb91ac1dd5e09d730a4545"
+    },
+    {
+      "path": "index.html",
+      "size": 18678,
+      "sha256": "ba1d7ad9f037178368e322218ec9112d5af988976bcb91ac1dd5e09d730a4545"
+    },
+    {
+      "path": "source-inventory-35db2f5c96.csv",
+      "size": 2094,
+      "sha256": "338f244db8017880ea5626c725bd353691e8889b9fe6232153a6910f86f3ecb2"
+    }
+  ],
+  "originals": [
+    {
+      "path": "20260913_112219.jpg",
+      "size": 3499055,
+      "sha256": "2aa42896ff41cbaa08987371a045d25bfd8b43e5fd10128c7c6c42efeda2df2a"
+    },
+    {
+      "path": "20260913_112224.jpg",
+      "size": 3004942,
+      "sha256": "951e7eaa569b4598337a5821b5f47664cce6c5fab43efa40834a5fc557e5d1ec"
+    },
+    {
+      "path": "20260913_112225.jpg",
+      "size": 3171089,
+      "sha256": "1b3081ea210f3df9b1f1d34b8f982ffb70bb0c224680f36f9e5f830772b6b6e2"
+    },
+    {
+      "path": "20260913_112228.jpg",
+      "size": 3649575,
+      "sha256": "6db3200d92cd69e784067765dda158e92a010cc96e37a6288cbe353c26e3fdf4"
+    },
+    {
+      "path": "20260913_112230.mp4",
+      "size": 2952783,
+      "sha256": "0b586ba03565f7b577a0b98b91fc6d6b8068e32e1f9e0519b6e45b776ce53379"
+    },
+    {
+      "path": "20260913_113538.jpg",
+      "size": 2434280,
+      "sha256": "a0756c1018e589703b61fb61ca2ca00aac87460d39f068e9af8faf765a70d4fe"
+    },
+    {
+      "path": "20260913_113540.mp4",
+      "size": 11411850,
+      "sha256": "356b612b0e96ee53c460c27a3cf3597b749abe2b82d114eecf0bed1a88b02153"
+    },
+    {
+      "path": "20260913_113551.mp4",
+      "size": 5813898,
+      "sha256": "5a029c9e3cedde76c22c6dd5c3f6580fe75337ccd25c6b35bf5208cdf3a79882"
+    },
+    {
+      "path": "20260913_113558(0).jpg",
+      "size": 2319140,
+      "sha256": "73e278f9e9b23be6b6afa71e97133b56fcebb0fef1c1f56d02f7568e7780972b"
+    },
+    {
+      "path": "20260913_113558.jpg",
+      "size": 2279271,
+      "sha256": "495aa5c284c8bf808f0e8482836e01aa9953647f442829df50c623b046653269"
+    },
+    {
+      "path": "20260913_141336.jpg",
+      "size": 4865464,
+      "sha256": "5884e84c4a0bcdbdc80ec3d7d5cf88fb0235c46d841c039113b333274f3fc2bf"
+    },
+    {
+      "path": "20260913_141341.jpg",
+      "size": 3882613,
+      "sha256": "7c9a01ff178ab55440778ca49f532baf3faa31bb743cc540f07c54f613c30db4"
+    },
+    {
+      "path": "20260913_141343.jpg",
+      "size": 3196118,
+      "sha256": "f02bcbd21ed19bd46390db79ebeb3361439dd6aa7b4eab555b01a35c9247c40a"
+    },
+    {
+      "path": "20260913_141346.jpg",
+      "size": 5806502,
+      "sha256": "da9189c662a4748a8faacf842d5e7d54f2c08a330d99256ac49c6a00d1f6dfc7"
+    },
+    {
+      "path": "20260913_141430.jpg",
+      "size": 3965322,
+      "sha256": "0267c004873c753c64e6a34bcc93ab04983a13bda43803dbd7bd3b50c64c4bd9"
+    },
+    {
+      "path": "20260913_141432.mp4",
+      "size": 6961102,
+      "sha256": "db848dda053ed9f94265c96c9fc6ec53ba7feb6d2decb6a8a04027b1443f1ebd"
+    },
+    {
+      "path": "20260913_141514.jpg",
+      "size": 4820222,
+      "sha256": "59745b6b4eab26b83680410c59d4de746cf7d01fc75b028f428bf4cba2e656a1"
+    },
+    {
+      "path": "20260913_141515.jpg",
+      "size": 5333986,
+      "sha256": "17acc9eaf4949383cb8bfb4c8111bffc171c924bbbb117cb2ca59d703500d142"
+    },
+    {
+      "path": "20260913_141517.jpg",
+      "size": 4062700,
+      "sha256": "1bcfb4a3fbf3962c60b12d3224fd7f6b6a15c5e1b97da622201a80eadd492b64"
+    },
+    {
+      "path": "20260913_141550.jpg",
+      "size": 3644809,
+      "sha256": "ac7fd3b35659b291e652e49313cd4750fa373f1a2f05d69a7efaf9425580aeda"
+    },
+    {
+      "path": "20260913_141551.mp4",
+      "size": 14628798,
+      "sha256": "8c41f3124700dfa23a0508f54f05e0cd4a9b93f1805ab35fb3e8703f22229c93"
+    },
+    {
+      "path": "20260913_141616.jpg",
+      "size": 5863627,
+      "sha256": "f3d25723ca8e0bb2706c15d5812e00352196cc3c894a0b95da419cbb06f5dd82"
+    }
+  ],
+  "originalFileCount": 22,
+  "preservedExistingFiles": 0
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "id": "20260913-radish-irrigation",
+  "slug": "20260913-radish-irrigation",
+  "directory": "20260913-radish-irrigation",
+  "recordPath": "public/records/20260913-radish-irrigation",
+  "inputName": "20260913 열무왕무밭 물주고 이음 재배중",
+  "inputKind": "folder",
+  "inputTree": "94582b8d9e886d9db767f01b320742ac8fb01dee",
+  "listTitle": "20260913 열무왕무밭 물주고 이음 재배중",
+  "title": "20260913 열무왕무밭 물주고 이음 재배중",
+  "label": "20260913 열무왕무밭 물주고 이음 재배중",
+  "titleSource": "inbox-name",
+  "sourceTitle": "20260913 열무왕무밭 물주고 이음 재배중",
+  "date": "2026-09-13",
+  "dateSource": "archive-canonical",
+  "visibility": "public",
+  "category": "영농 기록",
+  "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/",
+  "repoUrl": "https://github.com/softm/hwagok-farm/tree/main/public/records/20260913-radish-irrigation",
+  "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/inbox-94582b8d9e-viewer.html",
+  "reusedCanonical": false,
+  "batch": "20261008-hwagok-media-inbox",
+  "media": {
+    "images": 52,
+    "videos": 12,
+    "audio": 0,
+    "originalFiles": 64
+  },
+  "summary": "입력 폴더 원본 사진 52개·영상 12개. 폴더명 그대로 제목을 사용하며 원본 파일을 보존합니다."
+}

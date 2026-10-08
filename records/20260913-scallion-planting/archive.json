@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "id": "20260913-scallion-planting",
+  "slug": "20260913-scallion-planting",
+  "directory": "20260913-scallion-planting",
+  "recordPath": "public/records/20260913-scallion-planting",
+  "inputName": "20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개",
+  "inputKind": "folder",
+  "inputTree": "c76cf36930313c1d36196d7c23ca97d74a2a1278",
+  "listTitle": "20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개",
+  "title": "20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개",
+  "label": "20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개",
+  "titleSource": "inbox-name",
+  "sourceTitle": "20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개",
+  "date": "2026-09-13",
+  "dateSource": "archive-canonical",
+  "visibility": "public",
+  "category": "영농 기록",
+  "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/",
+  "repoUrl": "https://github.com/softm/hwagok-farm/tree/main/public/records/20260913-scallion-planting",
+  "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/inbox-c76cf36930-viewer.html",
+  "reusedCanonical": false,
+  "batch": "20261008-hwagok-media-inbox",
+  "media": {
+    "images": 53,
+    "videos": 10,
+    "audio": 0,
+    "originalFiles": 63
+  },
+  "summary": "입력 폴더 원본 사진 53개·영상 10개. 폴더명 그대로 제목을 사용하며 원본 파일을 보존합니다."
+}
