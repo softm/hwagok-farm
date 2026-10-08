@@ -1,0 +1,123 @@
+name: Complete four reviewed media inbox folders
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/archive-media-inbox-20261008.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: archive-inbox
+  cancel-in-progress: false
+jobs:
+  complete:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            scripts
+            public
+            zip
+            .github
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install media parsers and actual browser client
+        run: |
+          python -m pip install beautifulsoup4==4.14.3 Pillow==11.3.0 playwright==1.57.0
+          if ! command -v ffmpeg; then sudo apt-get update -qq && sudo apt-get install -y ffmpeg; fi
+          command -v google-chrome
+      - name: Build exact input names, complete media viewers and non-destructive duplicate reconciliation
+        run: |
+          set -euo pipefail
+          git pull --ff-only origin main
+          python -m py_compile scripts/archive_media_inbox_20261008.py
+          python -u scripts/archive_media_inbox_20261008.py build
+          python scripts/audit_archive_public.py
+      - name: Commit only reviewed records and request existing protected deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python - <<'PY'
+          import json,subprocess
+          p=json.load(open('.archive-run/20261008-hwagok-media-inbox/plan.json'))
+          paths=[r['metadata']['recordPath'] for r in p['records']]+['index.html','public/archive-batches/20261008-hwagok-media-inbox.json']
+          subprocess.run(['git','add','--',*paths],check=True)
+          PY
+          test -z "$(git diff --cached --name-only --diff-filter=D)"
+          if ! git diff --cached --quiet; then
+            git commit -m 'archive: preserve four media inbox inputs; use exact folder titles and keep canonical records'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          python scripts/archive_media_inbox_20261008.py stamp
+          SHA="$(git rev-parse HEAD)"
+          gh workflow run deploy-static-pages.yml --repo "$GITHUB_REPOSITORY" --ref main -f source_sha="$SHA"
+          RUN_ID=''
+          for attempt in $(seq 1 35); do
+            RUN_ID="$(gh run list --repo "$GITHUB_REPOSITORY" --workflow deploy-static-pages.yml --event workflow_dispatch --limit 30 --json databaseId,headSha --jq ".[] | select(.headSha == \"$SHA\") | .databaseId" | head -1)"
+            test -z "$RUN_ID" || break
+            sleep 5
+          done
+          test -n "$RUN_ID"
+          gh run watch "$RUN_ID" --repo "$GITHUB_REPOSITORY" --exit-status
+      - name: Verify every original byte, every image, every video, full-size gallery and mobile layout
+        run: python -u scripts/archive_media_inbox_20261008.py live
+      - name: Wait for central repository to publish exact new folder titles
+        run: |
+          python -u - <<'PY'
+          import json,time
+          from urllib.request import Request,urlopen
+          plan=json.load(open('.archive-run/20261008-hwagok-media-inbox/plan.json'))
+          for attempt in range(100):
+              try:
+                  url='https://softm.github.io/projects/projects.json?batch='+str(time.time_ns())
+                  with urlopen(Request(url,headers={'Cache-Control':'no-cache'}),timeout=35) as response:data=json.load(response)
+                  p=next(p for p in data['projects'] if p['repo']=='hwagok-farm')
+                  entries={x.get('url'):x for x in p['links']}
+                  assert all(entries[r['metadata']['url']].get('listTitle')==r['metadata']['inputName'] for r in plan['records'])
+                  print('Central data is published; actual screen verification follows.');break
+              except Exception as e:
+                  print('Await central publication:',type(e).__name__,flush=True)
+                  time.sleep(12)
+          else:raise SystemExit('Central publication not verified; all inbox inputs retained')
+          PY
+      - name: Verify project home, entire projects page, exact titles, counts and navigation
+        run: python -u scripts/archive_media_inbox_20261008.py final
+      - name: Delete only unchanged input folders after final evidence passes
+        run: python -u scripts/archive_media_inbox_20261008.py cleanup
+      - name: Report actual completion phase
+        if: always()
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path('.archive-run/20261008-hwagok-media-inbox')
+          p=json.loads((root/'plan.json').read_text()) if (root/'plan.json').exists() else {}
+          f=json.loads((root/'final.json').read_text()) if (root/'final.json').exists() else {}
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+              out.write('## Reviewed archive inputs\n\n| Input title | Images | Videos | Canonical path |\n|---|---:|---:|---|\n')
+              for r in p.get('records',[]):
+                  m=r['metadata'];out.write('|{}|{}|{}|{}|\n'.format(m['listTitle'],m['media']['images'],m['media']['videos'],m['recordPath']))
+              out.write('\nFinal live verification: '+str(f.get('passed','not executed'))+'\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hwagok-four-inbox-completion-evidence
+          path: .archive-run/20261008-hwagok-media-inbox/
+          include-hidden-files: true
+          if-no-files-found: warn
