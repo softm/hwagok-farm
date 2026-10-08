@@ -1,0 +1,1384 @@
+{
+  "sourceCommit": "87d23682d24cf4c94743479fe6bc4b294aaf779a",
+  "planHash": "c653f9bc16f1964fa31546762c260d2d162da46b08ceb7649a2019948f03782a",
+  "batch": "20261008-hwagok-media-inbox",
+  "passed": true,
+  "phase": "final",
+  "records": [
+    {
+      "title": "20260905 무 열무 파종",
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/",
+      "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/inbox-7df15f1cdc-viewer.html",
+      "images": 23,
+      "videos": 8,
+      "playback": [
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/df57cd3afa21688c8879.mp4",
+          "time": 1.062026,
+          "frames": 37,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/f6f89ac296f16d3f1fa4.mp4",
+          "time": 1.10177,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/81c004b3b0a470daa2f8.mp4",
+          "time": 1.106211,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/3a0869827eb9ca191dca.mp4",
+          "time": 1.10718,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/0774a36d52b394790d23.mp4",
+          "time": 1.094361,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/e5d5eafdc03b295e2063.mp4",
+          "time": 1.124373,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/1fbf5d0cd8ddfed7d8ff.mp4",
+          "time": 1.103557,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/_preview/46cfbb3e96029161ae53.mp4",
+          "time": 1.096502,
+          "frames": 39,
+          "ok": true
+        }
+      ],
+      "zoom": true,
+      "mobile": true,
+      "originalHeadingPreserved": true,
+      "reusedCanonical": false
+    },
+    {
+      "title": "20260913 씨박 수확",
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/",
+      "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/inbox-35db2f5c96-viewer.html",
+      "images": 17,
+      "videos": 5,
+      "playback": [
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/_preview/0b586ba03565f7b577a0.mp4",
+          "time": 1.125624,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/_preview/356b612b0e96ee53c460.mp4",
+          "time": 1.095249,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/_preview/5a029c9e3cedde76c22c.mp4",
+          "time": 1.112816,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/_preview/db848dda053ed9f94265.mp4",
+          "time": 1.121687,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/_preview/8c41f3124700dfa23a05.mp4",
+          "time": 1.121662,
+          "frames": 39,
+          "ok": true
+        }
+      ],
+      "zoom": true,
+      "mobile": true,
+      "originalHeadingPreserved": true,
+      "reusedCanonical": false
+    },
+    {
+      "title": "20260913 열무왕무밭 물주고 이음 재배중",
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/",
+      "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/inbox-94582b8d9e-viewer.html",
+      "images": 52,
+      "videos": 12,
+      "playback": [
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/3b4f3dbb5c1a8ddb8709.mp4",
+          "time": 1.060584,
+          "frames": 37,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/6bee5dd41323e7eb26a4.mp4",
+          "time": 1.09981,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/772eae0506bba0420fb1.mp4",
+          "time": 1.109765,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/c3fdee1ab80c46cb78ff.mp4",
+          "time": 1.107209,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/d542845f6e860117dabf.mp4",
+          "time": 1.105335,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/35b4b72c046c60380457.mp4",
+          "time": 1.110858,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/a707044ea7f1a0f6d87f.mp4",
+          "time": 1.107499,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/cb03ea36bf4d192509a3.mp4",
+          "time": 1.10753,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/d59a95f5ad8ef4aee9f2.mp4",
+          "time": 1.111391,
+          "frames": 144,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/2199d9a45d0c37a5c491.mp4",
+          "time": 1.124079,
+          "frames": 145,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/9559475b3a0582eb7063.mp4",
+          "time": 1.117066,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/_preview/5f561ba862b000031170.mp4",
+          "time": 1.111192,
+          "frames": 38,
+          "ok": true
+        }
+      ],
+      "zoom": true,
+      "mobile": true,
+      "originalHeadingPreserved": true,
+      "reusedCanonical": false
+    },
+    {
+      "title": "20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개",
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/",
+      "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/inbox-c76cf36930-viewer.html",
+      "images": 53,
+      "videos": 10,
+      "playback": [
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/06165ebcc066bb5907b2.mp4",
+          "time": 1.094396,
+          "frames": 38,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/5bb3434b934a8d165799.mp4",
+          "time": 1.121879,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/fc598bb77815f53867d5.mp4",
+          "time": 1.121063,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/07712548ca27907987d2.mp4",
+          "time": 1.120064,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/cb502ea8edb417f4317c.mp4",
+          "time": 1.116084,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/3202a92fdc438a8770c6.mp4",
+          "time": 1.125206,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/bdea8e86a354f10c5774.mp4",
+          "time": 1.127877,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/74deb68b35b8cb3c81b3.mp4",
+          "time": 1.119798,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/93cb956beea870c23114.mp4",
+          "time": 1.12766,
+          "frames": 39,
+          "ok": true
+        },
+        {
+          "src": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/_preview/be3986ac998af7b68fda.mp4",
+          "time": 1.120415,
+          "frames": 39,
+          "ok": true
+        }
+      ],
+      "zoom": true,
+      "mobile": true,
+      "originalHeadingPreserved": true,
+      "reusedCanonical": false
+    }
+  ],
+  "fileChecks": [
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_111848.jpg",
+      "size": 3046841,
+      "sha256": "c88811dbad71694d158cb170bf074b07304c335d06f640cca9016b426c85fe10",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_111959.jpg",
+      "size": 3068123,
+      "sha256": "9d08f8359a1fdbfe5a6e82184939bde735445082c299acf5f522134d6fd70670",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135747.jpg",
+      "size": 5555899,
+      "sha256": "faf0c619c4e3f02e7b1da94693c7d6d26b585a92946f9599c623cdfb55e0a43f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135748.jpg",
+      "size": 5558547,
+      "sha256": "660e216b9c5b68bb51c1eb01fb9d0c1eeca996a62baa32901871824aaddb76bd",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135752.mp4",
+      "size": 11184586,
+      "sha256": "df57cd3afa21688c8879a242de45e5772ac2ebb389a40fbec0aa1e40d4341e8f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135803%280%29.jpg",
+      "size": 5156393,
+      "sha256": "79754bd456e5308b41075be10ae2377a86cf1698ffbd7f61caaffc4880f2d330",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135803.jpg",
+      "size": 5152419,
+      "sha256": "45b3390a95bf9ab638404b776f3d75c701c2a9e6a090c6b601d15ba1398d99ef",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135805.mp4",
+      "size": 3129351,
+      "sha256": "f6f89ac296f16d3f1fa4fb6ba7e0f10c6d27f7c8bd6bdf1552e3cb53eec66d5a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135808.jpg",
+      "size": 5354600,
+      "sha256": "8c55080f6bf74e36213aa052aa7c65907184569f537a61f584b1819b5e158f14",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135809%280%29.jpg",
+      "size": 4789044,
+      "sha256": "8c4ca5f44d17ecd27ab0ee53005751769f8650f80848caeb783ffc9329d81d0b",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135809%281%29.jpg",
+      "size": 2970126,
+      "sha256": "73b18a3050a5e1b4b70a3afe9ed8408c25fd482d8d76af2e57feb6cf3da70ad6",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135809.jpg",
+      "size": 4305845,
+      "sha256": "b791193b435b7554207f0a18561275b6a283a0c301da63536d80ead23a0d25fd",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_135811.mp4",
+      "size": 8927949,
+      "sha256": "81c004b3b0a470daa2f83c6bd4444bfb0a9163107a7467d41a93fd59a8f939a2",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144644.jpg",
+      "size": 5479971,
+      "sha256": "00f421367ed57daed0b5268dcb417d2a41122d74ac66de1602c4d32081f5d4de",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144645.jpg",
+      "size": 5505995,
+      "sha256": "bc66bf27187402a925e0a4bb65deb481f38045354c6f05cb58f5580c033a956d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144648.mp4",
+      "size": 4380292,
+      "sha256": "3a0869827eb9ca191dca39ba930a9a83a70cc1e1abc20a15ae2580545136ed78",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144654.jpg",
+      "size": 5563313,
+      "sha256": "d6bedcdfc78d93a6ed388b626359f5762595c03152fc60c06b5be6f839eb9613",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144655.mp4",
+      "size": 12911844,
+      "sha256": "0774a36d52b394790d23bd18f583f121363e5794bbac41b1c4e7a67cca671754",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144832.jpg",
+      "size": 4559816,
+      "sha256": "15018204bd427e5d0c1d3a40a9e346bebe2cfc77785f25f3866b891e3ac1cfc9",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144838.jpg",
+      "size": 3840997,
+      "sha256": "b55eae1ac7aad921df223accd39320ec69917de588201460d8897bc84166c339",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_144841.mp4",
+      "size": 37473623,
+      "sha256": "e5d5eafdc03b295e2063ee21d713de9d566ac55c5ab56088af47c7a9065fc965",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_145005.jpg",
+      "size": 5077908,
+      "sha256": "3f25d07b36eb526b6823ffa718abb6219999d4ab7e8611f09d43dfd18db9e374",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_145007.mp4",
+      "size": 9760561,
+      "sha256": "1fbf5d0cd8ddfed7d8ffed9569b9eb34191c2deb64ca2d57420a2a276459c19d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_145017.jpg",
+      "size": 5232606,
+      "sha256": "e5eb976e1c14fc527b984937959b6f2d82132d15563ce083b4994dece9778c52",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_163652.jpg",
+      "size": 5785640,
+      "sha256": "d4acd497b8b7368b010f7fc3f22970d5a18ce8b6d4a71ec764f57c6852cfdc3d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_163657.jpg",
+      "size": 5499193,
+      "sha256": "5395304e37fbd285187bfd4411225b88e37f89ae5300a53706b2f05b9476213e",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_163708.jpg",
+      "size": 4404875,
+      "sha256": "7e2d96f00586bf3a1eab7faec7c0640c30daf51b7093393c69064fc798bae36f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_163709.jpg",
+      "size": 4458251,
+      "sha256": "3ff425af957fa642a8e4109de460c12491bfd86298add240dd58f95bb4e38db1",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_163717.jpg",
+      "size": 5052477,
+      "sha256": "0e5dd1881a727bc5ec3a9387c5d657877ba266e9eeaff2133e5765c5a86615d0",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_163723.jpg",
+      "size": 5060486,
+      "sha256": "8945f83d5746362af06888d52521204afea61b9e4343ad8cb4dab547d63843f5",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260905-radish-sowing/20260905_163732.mp4",
+      "size": 5451022,
+      "sha256": "46cfbb3e96029161ae5330c2e23c38dd32b3a55a8b2f58bf0f6e1737e86c04b2",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_112219.jpg",
+      "size": 3499055,
+      "sha256": "2aa42896ff41cbaa08987371a045d25bfd8b43e5fd10128c7c6c42efeda2df2a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_112224.jpg",
+      "size": 3004942,
+      "sha256": "951e7eaa569b4598337a5821b5f47664cce6c5fab43efa40834a5fc557e5d1ec",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_112225.jpg",
+      "size": 3171089,
+      "sha256": "1b3081ea210f3df9b1f1d34b8f982ffb70bb0c224680f36f9e5f830772b6b6e2",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_112228.jpg",
+      "size": 3649575,
+      "sha256": "6db3200d92cd69e784067765dda158e92a010cc96e37a6288cbe353c26e3fdf4",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_112230.mp4",
+      "size": 2952783,
+      "sha256": "0b586ba03565f7b577a0b98b91fc6d6b8068e32e1f9e0519b6e45b776ce53379",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_113538.jpg",
+      "size": 2434280,
+      "sha256": "a0756c1018e589703b61fb61ca2ca00aac87460d39f068e9af8faf765a70d4fe",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_113540.mp4",
+      "size": 11411850,
+      "sha256": "356b612b0e96ee53c460c27a3cf3597b749abe2b82d114eecf0bed1a88b02153",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_113551.mp4",
+      "size": 5813898,
+      "sha256": "5a029c9e3cedde76c22c6dd5c3f6580fe75337ccd25c6b35bf5208cdf3a79882",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_113558%280%29.jpg",
+      "size": 2319140,
+      "sha256": "73e278f9e9b23be6b6afa71e97133b56fcebb0fef1c1f56d02f7568e7780972b",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_113558.jpg",
+      "size": 2279271,
+      "sha256": "495aa5c284c8bf808f0e8482836e01aa9953647f442829df50c623b046653269",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141336.jpg",
+      "size": 4865464,
+      "sha256": "5884e84c4a0bcdbdc80ec3d7d5cf88fb0235c46d841c039113b333274f3fc2bf",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141341.jpg",
+      "size": 3882613,
+      "sha256": "7c9a01ff178ab55440778ca49f532baf3faa31bb743cc540f07c54f613c30db4",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141343.jpg",
+      "size": 3196118,
+      "sha256": "f02bcbd21ed19bd46390db79ebeb3361439dd6aa7b4eab555b01a35c9247c40a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141346.jpg",
+      "size": 5806502,
+      "sha256": "da9189c662a4748a8faacf842d5e7d54f2c08a330d99256ac49c6a00d1f6dfc7",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141430.jpg",
+      "size": 3965322,
+      "sha256": "0267c004873c753c64e6a34bcc93ab04983a13bda43803dbd7bd3b50c64c4bd9",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141432.mp4",
+      "size": 6961102,
+      "sha256": "db848dda053ed9f94265c96c9fc6ec53ba7feb6d2decb6a8a04027b1443f1ebd",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141514.jpg",
+      "size": 4820222,
+      "sha256": "59745b6b4eab26b83680410c59d4de746cf7d01fc75b028f428bf4cba2e656a1",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141515.jpg",
+      "size": 5333986,
+      "sha256": "17acc9eaf4949383cb8bfb4c8111bffc171c924bbbb117cb2ca59d703500d142",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141517.jpg",
+      "size": 4062700,
+      "sha256": "1bcfb4a3fbf3962c60b12d3224fd7f6b6a15c5e1b97da622201a80eadd492b64",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141550.jpg",
+      "size": 3644809,
+      "sha256": "ac7fd3b35659b291e652e49313cd4750fa373f1a2f05d69a7efaf9425580aeda",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141551.mp4",
+      "size": 14628798,
+      "sha256": "8c41f3124700dfa23a0508f54f05e0cd4a9b93f1805ab35fb3e8703f22229c93",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/20260913_141616.jpg",
+      "size": 5863627,
+      "sha256": "f3d25723ca8e0bb2706c15d5812e00352196cc3c894a0b95da419cbb06f5dd82",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_123706.jpg",
+      "size": 2625918,
+      "sha256": "09505bf46c73e9698d7c8f5382749a45ab802d6c573de531fc14cb48a6fad9a9",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_123822.jpg",
+      "size": 2660855,
+      "sha256": "58a58d113375f5469273f44ad511a934cddc7af64f7df6914a1cfac321b17e3b",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124004.jpg",
+      "size": 4670781,
+      "sha256": "47e4d7b4b48a615c51e7a7cd31407fbc93509b29e1fc0f373d84a2b873d8e2a4",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124005.mp4",
+      "size": 12883039,
+      "sha256": "3b4f3dbb5c1a8ddb87090cb2fde084e6a6d0dfe26589e2207ad4761b96564358",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124029.jpg",
+      "size": 5176877,
+      "sha256": "0f77fac7c39179d3c677730afce854f77ca2a6309617ca87ea63d28ee3fc1a67",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124030%280%29.jpg",
+      "size": 5088247,
+      "sha256": "f2dc7677812f95fe4c7d9401764c76b6e6715349d90f94165ee39602c5f56f1a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124030%281%29.jpg",
+      "size": 5075401,
+      "sha256": "7f4d8bb0e782235ced88d5c6f2685ac9eebdaf4e53eae0721aa5215f7c1c04ba",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124030.jpg",
+      "size": 5114846,
+      "sha256": "d6dfc35b3372fbf51363ca8e849308af4a802ef37e068b43c4835d9406c7e9d4",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124031.jpg",
+      "size": 5010453,
+      "sha256": "f896230774cf79154d76cb1826e1faf3f81dad316cd1eea806b24a12af7a91d1",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124033.mp4",
+      "size": 11076943,
+      "sha256": "6bee5dd41323e7eb26a418cf21670c758ab49e0216ff899ee7091dfcd052c001",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124043.jpg",
+      "size": 4755379,
+      "sha256": "018b945644de88b6cdf007d74f89295fe2535ec6ea45c9b74302e16230fa1f8c",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124044.jpg",
+      "size": 4473015,
+      "sha256": "89af63ada219a6c18200cabe16f1e39b2b2d83dc6eb2c6c9a5d0416bf82e4e2d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124046.mp4",
+      "size": 15879327,
+      "sha256": "772eae0506bba0420fb1ea205173382e3b930d2c5beeb2d31dd03e55b5a8af8a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124115.jpg",
+      "size": 5304135,
+      "sha256": "c9222288787c20350a1cc36bec2caed36fd5b0ef1f544e035e39c574eeea995e",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124117.mp4",
+      "size": 6518940,
+      "sha256": "c3fdee1ab80c46cb78ffb63cdfe4d77ebf2150691873a8cf27c1f5ed01d7ebca",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124124.jpg",
+      "size": 4665622,
+      "sha256": "6f31d0baa21c38bff02dce4d0960c1d124abe9357786574fc7c73467c1e3b50c",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124125.jpg",
+      "size": 4858293,
+      "sha256": "2b34f18934fc6124d80e20f6b045f63be4744d6dbfe682caa201387f7d17bd6e",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124128.mp4",
+      "size": 21372848,
+      "sha256": "d542845f6e860117dabf03cb6e5784445a08a945ffe826ee4e837e980b300b6f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124147.jpg",
+      "size": 5004576,
+      "sha256": "6d197bc9a2be665feb2c26b6c06e29099a6ebafc91648ecd8f61f1b919e590b0",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124149.mp4",
+      "size": 4281482,
+      "sha256": "35b4b72c046c60380457d6cd8de2f235787aac348a60e764c644d0cfcaba7104",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260912_124154.jpg",
+      "size": 2952203,
+      "sha256": "249497ebaa73006e92f85b7595439b80092e9152fbdee8e9c85af52b308d25fa",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094052.jpg",
+      "size": 3511167,
+      "sha256": "62dfe06d62c9214edc890a8fae851e14172c752c205560251d4ffda55b9eb6bb",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094054.mp4",
+      "size": 26418015,
+      "sha256": "a707044ea7f1a0f6d87f6f99d28f7a44f6c94ecdf3708dbdc9c6f1d413b4bcac",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094115.jpg",
+      "size": 5565934,
+      "sha256": "aa6058ca46eb23026f3fc471db54bee40c4236691ece3e40961f85c2bb0036c3",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094116.jpg",
+      "size": 5498297,
+      "sha256": "eed20871609aafd3c0586c330710ff2714b102cf58ddce53cd012c169c1b531d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094119.jpg",
+      "size": 3482201,
+      "sha256": "8cf5bed6e5249f2822ce43819a696afc422ceab79f12f7db92195806acff8461",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094120.mp4",
+      "size": 15815390,
+      "sha256": "cb03ea36bf4d192509a3ca8b21e3c870f35f9fca7c5318843d9c53ffc11611cd",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094156.jpg",
+      "size": 5724627,
+      "sha256": "2e6208f25bff8df8d83fd6fc7a59f12f3d7c23bef69423633d9018f9ba44acc0",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094158.mp4",
+      "size": 12269088,
+      "sha256": "d59a95f5ad8ef4aee9f2b471e0d342d6050840a5784805b0600d923ebe734c7a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094237.jpg",
+      "size": 5168863,
+      "sha256": "ea9e4ec4a246106b6e68ea30b19c2525d95a649ca3a76b24002cb2f86cb311b1",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094238.mp4",
+      "size": 54759391,
+      "sha256": "2199d9a45d0c37a5c4910266cf33f8e013c1a049b7579b6ad7f46a83bb9e39c7",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094322.jpg",
+      "size": 5146358,
+      "sha256": "05176c7895b218f08673134dbd449e12f0475e45a353f858a2663e93669c6cea",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094323.jpg",
+      "size": 3550448,
+      "sha256": "89e3421daa24ad230b43da05a45eaa937682959142ebf01ede01a4cb43c0db07",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094324%280%29.jpg",
+      "size": 3778219,
+      "sha256": "d9301cbc8ef7ff6123dcd88884dbcac513d9b6a0e53f784bad159de3f11114be",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094324%281%29.jpg",
+      "size": 4414448,
+      "sha256": "e40617c290c41bd8ffc6f1a237ae27f806663f0d14da94f84f93ff2052a26fde",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094324%282%29.jpg",
+      "size": 4556136,
+      "sha256": "135f3f9fcc394ec0ddc18894d91b91aca2e9709ca1cc7ca7cd76157bd004be67",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094324.jpg",
+      "size": 4835403,
+      "sha256": "45782f086151c1313a03b56871265d654c864c3e5bfbd43d7c669fee68328a9f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094325%280%29.jpg",
+      "size": 4623387,
+      "sha256": "11aeb364151d30783071532d09b873422ca5f9b7e4a807225b6402cf434b74ad",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094325%281%29.jpg",
+      "size": 4486914,
+      "sha256": "ef2660011fa0fc5e20abbe97954a86a59a14103f1bf4c2b1203e163e266ff05d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094325%282%29.jpg",
+      "size": 4888744,
+      "sha256": "c1ca05a7d3e7ccb822515a44deb818223e6371c38e642bd738c52e261c634d0a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094325.jpg",
+      "size": 4704378,
+      "sha256": "801f635839501da6203a8324cb80a6f906d1578eeb40e5e12fb79e8565f0319b",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094326%280%29.jpg",
+      "size": 4698746,
+      "sha256": "505e9d05d7fd345f6773c9d737b51f9dbf6f8a17ec510db575417f1811449464",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094326.jpg",
+      "size": 4648362,
+      "sha256": "e05590d4c6451d7b4d90470c8939f4c2f80d3b331743ef5c06628fd47c4c0665",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094327%280%29.jpg",
+      "size": 3317642,
+      "sha256": "c8a0dfbd6c521f14c58b350a71724fa0371db563b62489b81c7efada81380ce5",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094327%281%29.jpg",
+      "size": 3511645,
+      "sha256": "3f3d1fee22a793abd3bbf8cf8f922f956fcaadfeb9146639a3b2b5b436eeefae",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094327%282%29.jpg",
+      "size": 3701871,
+      "sha256": "96ef470e2555326612f4ccf75bb3fbd76d074034debb9d125d3d49187a8bfaf4",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094327%283%29.jpg",
+      "size": 3606243,
+      "sha256": "21736b2cb8a42836b092b4e2e711c3a5c6d793e918d70f9962ff6e61c5fb0321",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094327.jpg",
+      "size": 3482147,
+      "sha256": "0115771f84907ea9bf31e9cee99a9f5bee8525a1d976417901f76d9a78a7245c",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094328%280%29.jpg",
+      "size": 3522117,
+      "sha256": "f569a019db223df6dda94343f1959d897221b86a741ef9d1b502bbeef540bba9",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094328%281%29.jpg",
+      "size": 4416118,
+      "sha256": "4150a751e2ac0dfdc43ffaa957e77b8024095c6bc49f98c8a9e4016350b97a18",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094328%282%29.jpg",
+      "size": 3684288,
+      "sha256": "e93f7f0675e94c5bdc19947a8ca4d707ed30f5c83058ffe18d6a34e9e5e07719",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094328%283%29.jpg",
+      "size": 3389974,
+      "sha256": "bf94a9c2d9e701738b13a8def2e606637907c365106bf690c63ab0e606236bee",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094328.jpg",
+      "size": 3690581,
+      "sha256": "0a41cf56e2c0f5b889a1e5dd89effb535cef113622e48bcaae5215b4d11735b1",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094329%280%29.jpg",
+      "size": 3821800,
+      "sha256": "e9ef233d67356e54ec7abb74cab047b5d3753975ca9123064b3d1b002941a388",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094329%281%29.jpg",
+      "size": 3789323,
+      "sha256": "169e6c5741cab1ab61443415a11671d736bbe76737b44e3a57087cf4bc21c660",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094329%282%29.jpg",
+      "size": 3923015,
+      "sha256": "bf5c72be0a35b99b5c2b5819e81c04c3584e1faf1143c77ef1b6a0fc6d4efe4c",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094329.jpg",
+      "size": 3287544,
+      "sha256": "7d8564b3f654905b22a22efc3bdc32ed87dcb15110f6f8c6c72b0414b4167a6d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094330%280%29.jpg",
+      "size": 4548020,
+      "sha256": "39df10d9f03cc4184bde9e6be786ced38c9f7c2ef7ba21fa7d3dc7e356bd77b3",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094330%281%29.jpg",
+      "size": 4752877,
+      "sha256": "fd57e8e53fc248ec7da4b51f53074724441b7173b691891d660098e75ad9f63a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094330.jpg",
+      "size": 4925381,
+      "sha256": "9b6ba383f9ea2f0a64bdc0d455d4d9bd286bde77a0e4717204b86561c59d785d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094332.mp4",
+      "size": 10810403,
+      "sha256": "9559475b3a0582eb7063b1e993bbc6d1d9dfaa6d9da4577979f6332dc1861aea",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094342.jpg",
+      "size": 5039746,
+      "sha256": "650c1fb96c97c79a3e93948e1115d36160b83a5a9865c8a5f8d7366e2bef4310",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094344.mp4",
+      "size": 14929675,
+      "sha256": "5f561ba862b000031170e4b6acaf147929e56e212ad570b8810e69c0bede22ca",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-radish-irrigation/20260913_094357.jpg",
+      "size": 5263790,
+      "sha256": "50fa162a50e79c7c3579159ef1c09fe1c76d079e1c13e487468d5b7b148f8df8",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153402.jpg",
+      "size": 4703648,
+      "sha256": "4dfe504cf6775a3c1ade52a123eb60f9f51eedd0235680e2ccac3168b8c78b60",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153404.mp4",
+      "size": 29998496,
+      "sha256": "06165ebcc066bb5907b23115a7d0442654d446528a5d670fdb1e62277926d9b3",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153428.jpg",
+      "size": 3106965,
+      "sha256": "3af61402aba08f3cf8bd11bb2d567df33efd1e65c9c258f305c639c52bab7139",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153431.mp4",
+      "size": 24612505,
+      "sha256": "5bb3434b934a8d165799957db4c6a18fc84a6d0d0dfd1f1a1b72ca8d58222da2",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153451.jpg",
+      "size": 3801974,
+      "sha256": "f5fccc9d63bb99237eec08160c99e43db35c82f7e19b490592281026d508c6b7",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153452.jpg",
+      "size": 3551092,
+      "sha256": "91268c71a9b9003f8eeda1b65fd700d75564cdf14bd949d66c8a105523450440",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153511.jpg",
+      "size": 3931854,
+      "sha256": "a69ed1e1f7e8a94eaf1d3fd960b97be2c57f1b59bafae9d170251234bf78ac14",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153512.jpg",
+      "size": 4078376,
+      "sha256": "b1a074cffa28cb26cb9abf874c3c079296337e6edeeede7b37cfdcf99aa9efa0",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153514.mp4",
+      "size": 27389025,
+      "sha256": "fc598bb77815f53867d5bf073cfe4f98970f1e9ff664e6ffbf9f062ec4fdda31",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153545%280%29.jpg",
+      "size": 3652400,
+      "sha256": "c1c0d9552856628ae44c9c7a6d00712a0450eb3784e2a97c169b8fc5a9f23a8d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153545.jpg",
+      "size": 3762560,
+      "sha256": "32bb14d47d01d878dff069656fe1ed934015e78c490597fb6d27017ed94dc831",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153548.mp4",
+      "size": 36302794,
+      "sha256": "07712548ca27907987d2d08c561e48623574717a2f87c8bde9666f6229d7d214",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153617.jpg",
+      "size": 2038957,
+      "sha256": "b50c2e9b2b73e69b6720a5fe0275482a27d53074421c94f50b54d150bb4b0e54",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153618.jpg",
+      "size": 2161030,
+      "sha256": "64408329b0c69fb5ff6dc4deaafe58792b9bfa32bea18689b98270d84b696ac3",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153628.jpg",
+      "size": 2416224,
+      "sha256": "496e0995c492d1b1bc1e5a4f727ef8935d02b3a6e9e50602137a03bd73c75555",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153704.jpg",
+      "size": 3411833,
+      "sha256": "f7938beb2f7a6ca54d417d983a48dfd340a6096a951d5cce9955dc5b7282a68c",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153706.jpg",
+      "size": 3316612,
+      "sha256": "5112a3e752f024abcd7275243cec918378a411f399f14ac3b004227ab47ddc08",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153707.jpg",
+      "size": 2428133,
+      "sha256": "8a320f58cefb6c08c47434848360b6eda653ac929f1681b28f627e8981518a61",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153709.jpg",
+      "size": 3407168,
+      "sha256": "96741c3836c1b0e3b8da3ef91bc05865530e653d271e4048d9d843aa2d12d660",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153711%280%29.jpg",
+      "size": 3317070,
+      "sha256": "2f56a47e5568fa5d3193d88f2f66f87478a74a74b8045fb301c8de8f7ec013ff",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153711.jpg",
+      "size": 3430269,
+      "sha256": "1e844cb92cddaf07192ab36049f39521475285a01dd76b7d36103bc3951b39e9",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153713.jpg",
+      "size": 3880963,
+      "sha256": "077d45d2e84955bec913b852282fe94a3c275f78bd219dd70ff5605478ddb128",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153715.jpg",
+      "size": 3656395,
+      "sha256": "15101fab4cf52063547ddd94241b87a56f3e0015e51b7ce80530681a69222ef1",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_153718.mp4",
+      "size": 7292333,
+      "sha256": "cb502ea8edb417f4317c9e59c807cf11b28c68c53083d1dd180faabb41efb41e",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_155423.jpg",
+      "size": 3283533,
+      "sha256": "ce877119c3364b9c54e2ac66344786e5126e12bf82ead233e4981a64eb50756a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_155424.mp4",
+      "size": 9664624,
+      "sha256": "3202a92fdc438a8770c602af6a39deec22a9c4aefc0ca36628e7995e397152bc",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_160953.jpg",
+      "size": 3238580,
+      "sha256": "d166dfb920a10f788cb1ba9345761f4535c56cc7f6d2956fdb7ce1fbf413a1d0",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_160956.jpg",
+      "size": 4004547,
+      "sha256": "e6d31eadbf2524076f699f485ecfb2bbe1462921a1556777894ce2a1d48a3bf3",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_160958.mp4",
+      "size": 2672708,
+      "sha256": "bdea8e86a354f10c5774655a8cf1c02902d89cf25ef5e3b1ea2fc6094b9e530d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_161224.jpg",
+      "size": 4578365,
+      "sha256": "6f58f6450a92e714f596a2bd80fd4772c61ec0ad61d1d43d9e86b82f046ccdcf",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_161227.jpg",
+      "size": 5618190,
+      "sha256": "07e8b21ea76ea3253405b50218d23380bf909f9e3f2615be5aa4de863935f96f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174808.jpg",
+      "size": 2742192,
+      "sha256": "904921f1937633a04e15dfca131af689ad1cba6bafd45b5cd0b8f8005893b0c5",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174810.jpg",
+      "size": 3318264,
+      "sha256": "e42265ce68dcbd9487f681ecd23c97a7610f135a876ea1f2a213e33cf4a676d9",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174811.jpg",
+      "size": 3782637,
+      "sha256": "3d0a86b38d2fc27de6901d1eb4e73b01d09b2175f18631e0f6a42db1b7985adc",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174816.jpg",
+      "size": 3450600,
+      "sha256": "57a353279a0c438df9679191cbee646940e3bcdbfd86c88f7c7807412bf90f6b",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174819.jpg",
+      "size": 4834002,
+      "sha256": "f1521df15be202723bdf5768beb1c3113eee5f61004e03771ed3c189e9afa70a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174821.jpg",
+      "size": 3417724,
+      "sha256": "b54a44a4339a6b002f4c1ef201604e499433d16dce49e54f1fab610e64309958",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174925.jpg",
+      "size": 3439282,
+      "sha256": "f8c61fa883e15316577da84b559573edee0022edc1926ad47955b7011ebeddea",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174927.jpg",
+      "size": 3990938,
+      "sha256": "0f3c8f474c1225f338b59293f863f03b95159deaa9874fbf69c797746edc9a6f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174933.jpg",
+      "size": 3166496,
+      "sha256": "b91eb77a9628b165c46191a8613387a13dde19429c2dc105b37f7f1c8e69711b",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_174936.jpg",
+      "size": 3676206,
+      "sha256": "bd0de01d49faecfc49ab40681749e4f3dbb485c547bc1e8c365c449dd26eedd3",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_190200.jpg",
+      "size": 2047187,
+      "sha256": "871eb298a7570bd2e0f2d32f3397797f382427c6ee3956c027534260fd602e8c",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_190203.mp4",
+      "size": 13480816,
+      "sha256": "74deb68b35b8cb3c81b30f17d298d53ef048e33f7f096e81f4a84aa5baf52dba",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_190214.jpg",
+      "size": 2244765,
+      "sha256": "51720c663ae957261b82400b050467371cb815a3c3959ea57a346726a0c22f0d",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_190215.jpg",
+      "size": 2196800,
+      "sha256": "53aadbf28000342c895cdb54b7f9749a0b66ec104675ed23322df7df0c7f2c91",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_190216.jpg",
+      "size": 1512975,
+      "sha256": "57e03219b2f5aeec915c16b579207136b00564c0eb53b0999aa271e1601da6a0",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_190217.jpg",
+      "size": 1658537,
+      "sha256": "b95fa47a3383f0e7ae631ad1db82de3ae0fd6d65963d39324e490a5a315d991f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260912_190220.jpg",
+      "size": 2172728,
+      "sha256": "cc2bc47d114fbb742fc28c2aad6f9e12c3568d67a77844c73abede73321fa055",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_084937.jpg",
+      "size": 3628241,
+      "sha256": "c6fe310fe19c03be7838396397b595954893b2f0e5b9dcc8f56832b3371145cf",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_084942.jpg",
+      "size": 2766659,
+      "sha256": "9c22ccdff125eb6621b85b649895a4724db052c392fe31d3acd7a8137f088700",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_084943.mp4",
+      "size": 12807774,
+      "sha256": "93cb956beea870c231140a7ae61c65e1c0bfe1642846efbcddb669366e44f94f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_084958.jpg",
+      "size": 2667906,
+      "sha256": "96cd9c1ea3f30c8630157aa85b9e248e149047fd0b791bf32ce06bb834d64e3f",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_085002.jpg",
+      "size": 2433718,
+      "sha256": "0af476403dffe8952b425ef87de00352e3956a6b85813d32972ab7c5bdea65e8",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_085008.jpg",
+      "size": 2406741,
+      "sha256": "8ca7c1c60f6d4b657f3064cd4b5fd41d3f23420544bd291c2783dbfa74b1dc2b",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_085307.jpg",
+      "size": 3212654,
+      "sha256": "9b9ab2bf8e31db684e0788a918cb64a52282722a5f13cab5cd79f046118a1601",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_085310.jpg",
+      "size": 3699116,
+      "sha256": "74f6d7aeaebe259fa0f7c8fcaae407ef9464b709b32996d537488a90f98cccb9",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_085313.jpg",
+      "size": 4463605,
+      "sha256": "5fbe21febf7c4115fb6aa80b93c529af427908e9001b04543a17056c42f0a8ee",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_091536.jpg",
+      "size": 3138375,
+      "sha256": "9ee5c42eee52b7492b1a8e5ca44225dbc16e247c4007d9b0acbfdd841eba21f3",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_091538.jpg",
+      "size": 3656035,
+      "sha256": "36be8683ac2dede3d4c5d451caad7f512b359557644f94f704970b1c8df81b3a",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_091539.jpg",
+      "size": 3298570,
+      "sha256": "8de83dade4fb779a26aba9a3f9b040f59a67bf13bc7fc238dc208ced527d13b7",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_091540.jpg",
+      "size": 4139062,
+      "sha256": "8f67f150b5dede1cf3de0778b486edee95ae77681eef01486ba862b6e9f66cdb",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_091546.mp4",
+      "size": 3472070,
+      "sha256": "be3986ac998af7b68fda7550043db0eca8eebb0d53daec6a0146b8cf19359a07",
+      "status": 200
+    },
+    {
+      "url": "https://softm.github.io/hwagok-farm/records/20260913-scallion-planting/20260913_091550.jpg",
+      "size": 4098374,
+      "sha256": "cc517939e3869fed5d0e5f48aab3ca83810293f2bad831a1791a934de4a78d1d",
+      "status": 200
+    }
+  ],
+  "serviceHome": true,
+  "centralHome": true,
+  "topProjects": true,
+  "deepLinks": true,
+  "publicCount": 34,
+  "privateCount": 1,
+  "totalCount": 35,
+  "verifiedAt": "2026-10-08T06:06:56.197753+00:00",
+  "inputCleanup": "only these verified unchanged folders; originals retained",
+  "inputs": [
+    {
+      "path": "zip/20260905 무 열무 파종",
+      "tree": "7df15f1cdc6e062fcedf903723b2be293aed8351",
+      "recordPath": "public/records/20260905-radish-sowing"
+    },
+    {
+      "path": "zip/20260913 씨박 수확",
+      "tree": "35db2f5c9692897afe89af1781faad869489b237",
+      "recordPath": "public/records/20260913-seed-gourd-harvest"
+    },
+    {
+      "path": "zip/20260913 열무왕무밭 물주고 이음 재배중",
+      "tree": "94582b8d9e886d9db767f01b320742ac8fb01dee",
+      "recordPath": "public/records/20260913-radish-irrigation"
+    },
+    {
+      "path": "zip/20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개",
+      "tree": "c76cf36930313c1d36196d7c23ca97d74a2a1278",
+      "recordPath": "public/records/20260913-scallion-planting"
+    }
+  ]
+}
