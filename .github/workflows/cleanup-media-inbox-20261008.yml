@@ -1,0 +1,112 @@
+name: Finalize verified four-folder inbox cleanup
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/cleanup-media-inbox-20261008.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: archive-inbox
+  cancel-in-progress: false
+jobs:
+  cleanup-verified-inputs:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            scripts
+            public/records/20260905-radish-sowing
+            public/records/20260913-seed-gourd-harvest
+            public/records/20260913-radish-irrigation
+            public/records/20260913-scallion-planting
+            zip
+            reports
+      - name: Restore successful live verification evidence from the reviewed batch
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: '11531636604'
+          run-id: 37733349476
+          github-token: ${{ github.token }}
+          path: .archive-run/20261008-hwagok-media-inbox
+          merge-multiple: true
+      - name: Verify evidence bindings and unchanged published record trees
+        run: |
+          set -euo pipefail
+          python3 -u - <<'PY'
+          import hashlib,json,re,subprocess,time
+          from pathlib import Path
+          from urllib.request import Request,urlopen
+          root=Path('.archive-run/20261008-hwagok-media-inbox')
+          plan=json.loads((root/'plan.json').read_text())
+          final=json.loads((root/'final.json').read_text())
+          live=json.loads((root/'live.json').read_text())
+          batch='20261008-hwagok-media-inbox'
+          expected={
+              'zip/20260905 무 열무 파종':('7df15f1cdc6e062fcedf903723b2be293aed8351','public/records/20260905-radish-sowing'),
+              'zip/20260913 씨박 수확':('35db2f5c9692897afe89af1781faad869489b237','public/records/20260913-seed-gourd-harvest'),
+              'zip/20260913 열무왕무밭 물주고 이음 재배중':('94582b8d9e886d9db767f01b320742ac8fb01dee','public/records/20260913-radish-irrigation'),
+              'zip/20260913 쪽파 정식 로터리 12중 한줄 80구멍 약 1000개':('c76cf36930313c1d36196d7c23ca97d74a2a1278','public/records/20260913-scallion-planting')
+          }
+          assert plan['batch']==batch and len(plan['records'])==4
+          assert {r['input'] for r in plan['records']}==set(expected)
+          source=plan['sourceCommit'];assert re.fullmatch('[0-9a-f]{40}',source)
+          plan_hash=hashlib.sha256((root/'plan.json').read_bytes()).hexdigest()
+          for proof,phase in [(live,'live'),(final,'final')]:
+              assert proof['passed'] is True and proof['phase']==phase
+              assert proof['sourceCommit']==source and proof['planHash']==plan_hash and proof['batch']==batch
+              assert len(proof['records'])==4
+          assert all(final.get(k) is True for k in ['serviceHome','centralHome','topProjects','deepLinks'])
+          assert len(final['fileChecks'])==180
+          assert sum(len(r['originals']) for r in plan['records'])==180
+          assert sum(r['images'] for r in final['records'])==145
+          assert sum(r['videos'] for r in final['records'])==35
+          assert all(x['zoom'] and x['mobile'] and x['originalHeadingPreserved'] and all(v['ok'] for v in x['playback']) for x in final['records'])
+          def git(*args):return subprocess.check_output(['git',*args],text=True).strip()
+          subprocess.run(['git','merge-base','--is-ancestor',source,'HEAD'],check=True)
+          for record in plan['records']:
+              tree,path=expected[record['input']]
+              assert record['inputTree']==tree and record['metadata']['recordPath']==path
+              assert git('rev-parse','HEAD:'+record['input'])==tree,'Input changed since verification'
+              assert git('rev-parse',source+':'+path)==git('rev-parse','HEAD:'+path),'Published record changed since verification'
+          url='https://softm.github.io/projects/projects.json?cleanup-proof='+str(time.time_ns())
+          with urlopen(Request(url,headers={'Cache-Control':'no-cache'}),timeout=60) as response:
+              assert response.status==200
+              data=json.load(response)
+          project=next(p for p in data['projects'] if p['repo']=='hwagok-farm')
+          for record in plan['records']:
+              meta=record['metadata']
+              matches=[x for x in project['links'] if x.get('url')==meta['url']]
+              assert len(matches)==1 and matches[0].get('listTitle',matches[0]['title'])==meta['inputName']
+          print(json.dumps({'evidenceValid':True,'sourceCommit':source,'publishedRecordTreesUnchanged':True,'originalFiles':180,'photos':145,'videos':35,'centralTitlesStillPublished':True},ensure_ascii=False))
+          PY
+      - name: Commit receipt and remove only verified unchanged inbox folders
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 -u scripts/archive_media_inbox_20261008.py cleanup
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('reports/20261008-hwagok-media-inbox-completion.json')
+          report=json.loads(p.read_text())
+          assert report['passed'] is True
+          for source in report['inputs']:
+              assert not Path(source['path']).exists()
+              assert Path(source['recordPath']).is_dir()
+          print(json.dumps({'cleanupCommitted':True,'originalsRetained':True,'report':str(p),'publicCount':report['publicCount'],'privateCount':report['privateCount']},ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hwagok-four-inbox-final-cleanup-receipt
+          path: reports/20261008-hwagok-media-inbox-completion.json
+          if-no-files-found: warn
