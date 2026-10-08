@@ -1,0 +1,82 @@
+name: Apply input name to archive list title
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/apply-inbox-list-title.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: archive-inbox
+  cancel-in-progress: false
+jobs:
+  apply-title:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: public/records/20260809-sprinkler-piping-plan
+      - name: Update only input-derived listing metadata, preserving source bytes
+        run: |
+          set -euo pipefail
+          git pull --ff-only origin main
+          python3 - <<'PY'
+          import hashlib,json,re
+          from pathlib import Path,PurePosixPath
+          root=Path('public/records/20260809-sprinkler-piping-plan')
+          mp=root/'archive-manifest.json';m=json.loads(mp.read_text(encoding='utf-8'))
+          expected='20260809_화곡농장_스프링클러_배관계획_작업정리'
+          assert m['inputTree']=='42cc1d080b28e96c968262f8b70aa87bad8bc9d4'
+          name=PurePosixPath(m['input']).name
+          assert name==expected and m['source']==name
+          for f in m['files']:
+              p=root/f['path'];assert p.is_file()
+              assert p.stat().st_size==f['size'] and hashlib.sha256(p.read_bytes()).hexdigest()==f['sha256'],f['path']
+          ap=root/'archive.json';a=json.loads(ap.read_text(encoding='utf-8'))
+          before_identity={k:a[k] for k in ('id','slug','date','url','repoUrl','recordPath')}
+          source_title=a.get('sourceTitle') or a['title']
+          updates={'inputName':name,'inputKind':'folder','listTitle':name,'title':name,'titleSource':'inbox-name','sourceTitle':source_title}
+          a.update(updates);m['metadata'].update(updates)
+          m.update(inputName=name,inputKind='folder',listTitle=name)
+          assert all(a[k]==v for k,v in before_identity.items())
+          for p,data in [(ap,a),(mp,m)]:p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          p=Path('index.html');text=p.read_text(encoding='utf-8')
+          match=re.search(r'(<script\b[^>]*\bid=[\"\x27]archive-data[\"\x27][^>]*>)(.*?)(</script>)',text,re.S)
+          assert match,'Canonical catalogue missing'
+          rows=json.loads(match[2]);matched=[r for r in rows if r.get('url')==a['url']]
+          assert len(matched)==1
+          matched[0].update(updates)
+          payload=json.dumps(rows,ensure_ascii=False,separators=(',',':')).replace('</',r'<\/')
+          p.write_text(text[:match.start(2)]+payload+text[match.end(2):],encoding='utf-8')
+          print(json.dumps({'listTitle':name,'sourceTitle':source_title,'originalFilesUnchanged':len(m['files']),'publicCountUnchanged':len(rows),'urlUnchanged':a['url']},ensure_ascii=False))
+          PY
+      - name: Commit metadata only and request existing deployment workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html public/records/20260809-sprinkler-piping-plan/archive.json public/records/20260809-sprinkler-piping-plan/archive-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'archive: use exact input folder name for sprinkler list title; preserve HTML'
+            git push origin HEAD:main
+          fi
+          SHA="$(git rev-parse HEAD)"
+          gh workflow run deploy-static-pages.yml --repo "$GITHUB_REPOSITORY" --ref main -f source_sha="$SHA"
+          RUN_ID=''
+          for attempt in $(seq 1 30); do
+            RUN_ID="$(gh run list --repo "$GITHUB_REPOSITORY" --workflow deploy-static-pages.yml --event workflow_dispatch --limit 20 --json databaseId,headSha --jq ".[] | select(.headSha == \"$SHA\") | .databaseId" | head -1)"
+            test -z "$RUN_ID" || break
+            sleep 5
+          done
+          test -n "$RUN_ID"
+          gh run watch "$RUN_ID" --repo "$GITHUB_REPOSITORY" --exit-status
