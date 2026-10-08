@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "id": "20260913-seed-gourd-harvest",
+  "slug": "20260913-seed-gourd-harvest",
+  "directory": "20260913-seed-gourd-harvest",
+  "recordPath": "public/records/20260913-seed-gourd-harvest",
+  "inputName": "20260913 씨박 수확",
+  "inputKind": "folder",
+  "inputTree": "35db2f5c9692897afe89af1781faad869489b237",
+  "listTitle": "20260913 씨박 수확",
+  "title": "20260913 씨박 수확",
+  "label": "20260913 씨박 수확",
+  "titleSource": "inbox-name",
+  "sourceTitle": "20260913 씨박 수확",
+  "date": "2026-09-13",
+  "dateSource": "archive-canonical",
+  "visibility": "public",
+  "category": "영농 기록",
+  "url": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/",
+  "repoUrl": "https://github.com/softm/hwagok-farm/tree/main/public/records/20260913-seed-gourd-harvest",
+  "attachmentsUrl": "https://softm.github.io/hwagok-farm/records/20260913-seed-gourd-harvest/inbox-35db2f5c96-viewer.html",
+  "reusedCanonical": false,
+  "batch": "20261008-hwagok-media-inbox",
+  "media": {
+    "images": 17,
+    "videos": 5,
+    "audio": 0,
+    "originalFiles": 22
+  },
+  "summary": "입력 폴더 원본 사진 17개·영상 5개. 폴더명 그대로 제목을 사용하며 원본 파일을 보존합니다."
+}
