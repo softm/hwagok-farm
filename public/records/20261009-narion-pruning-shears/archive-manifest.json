@@ -5,11 +5,23 @@
   "project": "hwagok-farm",
   "visibility": "public",
   "productPriceKRW": 159000,
-  "imageCountLocal": 1,
+  "imageCountLocal": 2,
   "imageCountWeb": 0,
   "sourceImageSha256": "",
   "paymentVerified": false,
   "batteryPhysicalVerified": false,
-  "mediaPublicationStatus": "pending",
-  "notes": "원본 PNG는 로컬 ZIP에 보관; GitHub 업로드 미완료"
+  "mediaPublicationStatus": "pending-original-images",
+  "notes": "로컬 MD/HTML/ZIP에 원본 PNG 2개 보존됨; 웹 이미지 원본 2개 업로드 미완료. 시각적 내용은 동일하나 두 파일 SHA가 다름. 웹 완료 금지.",
+  "localOriginalImages": [
+    {
+      "name": "image(20261009-202631).png",
+      "sha256": "ff518ed8566bd5a08caaed97efbf5546b7960ce358ae9a3842bc29b82e3197f2",
+      "bytes": 760861
+    },
+    {
+      "name": "image(20261009-205840).png",
+      "sha256": "a9e81d77740905ba3be784f775dbde9350383fd4bc0b4e21e301ade64c7dbd39",
+      "bytes": 701890
+    }
+  ]
 }
