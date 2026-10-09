@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "id": "20261009-1b55fdf7ad",
+  "slug": "20261009-1b55fdf7ad",
+  "date": "2026-10-09",
+  "title": "화곡농장 보유 농약 정리",
+  "input": "20261009 화곡농장 보유 농약 정리",
+  "inputKind": "folder",
+  "inputSha256": "1b55fdf7ad35bbe38e1b5f7df113d88387188a38e19c37956c7cf0a3e15f07fe",
+  "entrySource": "index.html",
+  "entryType": "html-source",
+  "generatedHtml": false,
+  "entrySha256": "f3c88f7b845547e3e56892958db9a95c1926c8851d5bae1c9f1ab7af0ec09215",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 3859,
+      "sha256": "a854d30a714fd0af3048d58ceb29d8af5a9b5aa870a4dbc22c9c2e2bee3cfc11"
+    },
+    {
+      "path": "images/1000054040.jpg",
+      "size": 189812,
+      "sha256": "cfc26a925b40c05be8704d208034f918335595b8b5f9fb7dd451aae68488a515"
+    },
+    {
+      "path": "images/1000054041.jpg",
+      "size": 239789,
+      "sha256": "bfa96c6c5c7c46a454b8c060d770a5e634527958a16dfb77196f27282c6cd241"
+    },
+    {
+      "path": "images/1000054042.jpg",
+      "size": 207252,
+      "sha256": "e83c86346c84ec7d4b561738c440df75f8979c12e5165791ebd1a46785b5cba1"
+    },
+    {
+      "path": "images/1000054043.jpg",
+      "size": 200795,
+      "sha256": "a20adb47ecb65e85d5d081e0d9cb468e5049d36c51459a72d9633436086a0724"
+    },
+    {
+      "path": "images/1000054044.jpg",
+      "size": 225218,
+      "sha256": "92fff4c9189d9715d68513bef7e8349a6fb9e1d3ee3fe68fcdadc1f07a2a87de"
+    },
+    {
+      "path": "images/1000054046.jpg",
+      "size": 203161,
+      "sha256": "6db1f235b77fb909b0468b5cd7b79dd11ef3b236830b98dc00675f220837dabf"
+    },
+    {
+      "path": "images/1000054047.jpg",
+      "size": 242588,
+      "sha256": "a3a5d2120eee22945c551d787f5ea4685fe195a0fc5c26ff944852ba8a1ab7b6"
+    },
+    {
+      "path": "images/1000054048.jpg",
+      "size": 254209,
+      "sha256": "1803f8991ef9b33d82094e1f18667e8d34ad71f6712760df036427b7cfe5e5e5"
+    },
+    {
+      "path": "index.html",
+      "size": 5352,
+      "sha256": "f3c88f7b845547e3e56892958db9a95c1926c8851d5bae1c9f1ab7af0ec09215"
+    },
+    {
+      "path": "농약사_상담원문.txt",
+      "size": 3054,
+      "sha256": "16403ed888399aa46da584b6a3db0f88adf2f8575c7944df167d024ecf020c72"
+    }
+  ]
+}
