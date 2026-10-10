@@ -5,13 +5,13 @@
   "project": "hwagok-farm",
   "visibility": "public",
   "productPriceKRW": 159000,
-  "imageCountLocal": 2,
+  "imageCountLocal": 3,
   "imageCountWeb": 0,
   "sourceImageSha256": "",
-  "paymentVerified": false,
+  "paymentVerified": true,
   "batteryPhysicalVerified": false,
-  "mediaPublicationStatus": "pending-original-images",
-  "notes": "로컬 MD/HTML/ZIP에 원본 PNG 2개 보존됨; 웹 이미지 원본 2개 업로드 미완료. 시각적 내용은 동일하나 두 파일 SHA가 다름. 웹 완료 금지.",
+  "mediaPublicationStatus": "public-summary-added-original-product-images-pending",
+  "notes": "2026-10-10 주문 결제 완료(159,000원). 로컬 원본 PNG 3개 중 주문 증빙 1개 개인정보로 공개 금지. 공개 요약 SVG 1개 게시, 상품 선택 원본 PNG 2개 웹 게시 미완료.",
   "localOriginalImages": [
     {
       "name": "image(20261009-202631).png",
@@ -22,6 +22,22 @@
       "name": "image(20261009-205840).png",
       "sha256": "a9e81d77740905ba3be784f775dbde9350383fd4bc0b4e21e301ade64c7dbd39",
       "bytes": 701890
+    },
+    {
+      "name": "image(20261010-024110).png",
+      "visibility": "local-sensitive-private",
+      "note": "Contains order number and delivery information; never upload to public repository."
     }
-  ]
+  ],
+  "orderDate": "2026-10-10",
+  "paymentStatus": "paid",
+  "paymentMethod": "credit_card",
+  "paymentKRW": 159000,
+  "shippingKRW": 0,
+  "expectedPointsKRW": 3600,
+  "deliveryStatus": "unverified",
+  "publicDerivativeImageCount": 1,
+  "privateOriginalImageCount": 1,
+  "privateReceiptPubliclyOmitted": true,
+  "publicDerivativePath": "images/order-summary-public.svg"
 }
