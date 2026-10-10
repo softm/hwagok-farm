@@ -39,5 +39,6 @@
   "publicDerivativeImageCount": 1,
   "privateOriginalImageCount": 1,
   "privateReceiptPubliclyOmitted": true,
-  "publicDerivativePath": "images/order-summary-public.svg"
+  "publicDerivativePath": "https://raw.githubusercontent.com/softm/hwagok-farm/main/public/records/20261009-narion-pruning-shears/images/order-summary-public.svg",
+  "publicDerivativeDelivery": "via public main raw asset; branch svg upload blocked"
 }
