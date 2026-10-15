@@ -117,4 +117,10 @@ class InboxTests(unittest.TestCase):
   self.zip();plan=build_batch(self.root);text=(self.root/'index.html').read_text()
   self.assertIn(plan['records'][0]['metadata']['title'],text)
   self.assertTrue((self.root/'zip/20261005_test.zip').exists())
+ # SOFTM-live-empty-image-placeholder-test START: src 없는 모달 이미지 자리표시자가 배포 실패를 만들지 않는 회귀 검증 (2026-10-15)
+ def test_live_verifier_skips_empty_image_placeholder(self):
+  verifier=(Path(__file__).resolve().parents[1]/'scripts/verify_archive_live.py').read_text()
+  self.assertIn("if(!src) return {src:'',ok:true,skipped:'empty-placeholder'};",verifier)
+  self.assertIn("catch(e) { return {src,ok:false,error:String(e)}; }",verifier)
+ # SOFTM-live-empty-image-placeholder-test END: src 없는 모달 이미지 자리표시자가 배포 실패를 만들지 않는 회귀 검증 (2026-10-15)
 if __name__=='__main__':unittest.main()
