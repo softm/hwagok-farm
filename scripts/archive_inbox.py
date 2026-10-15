@@ -266,7 +266,9 @@ def build(item: Path, root: Path):
   # Preserve the extracted ZIP/folder tree at the record root so the original
   # HTML keeps its relative image/media/style/script references.
   for p in entries(source):
-   rel=p.relative_to(source); dst=draft/rel; dst.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(p,dst)
+   rel=p.relative_to(source)
+   if rel.as_posix()=='archive-manifest.json': continue # SOFTM-manifest-reserved: 입력 manifest는 source/에 보존하고 기록 루트는 배포 manifest 전용으로 예약 (2026-10-15)
+   dst=draft/rel; dst.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(p,dst)
   # Keep a source mirror as provenance while the root tree remains directly deployable.
   shutil.copytree(source,draft/'source')
   metadata=render(source,draft,meta,date,slug,item)
