@@ -77,6 +77,12 @@ class InboxTests(unittest.TestCase):
  def test_mac_metadata_ignored(self):
   p=self.zip(files={'index.html':HTML,'사진.png':PNG,'__MACOSX/._index.html':'junk','.DS_Store':'junk'})
   r=build(p,self.root);self.assertFalse(any('__MACOSX' in x['path'] for x in r['files']))
+ # SOFTM-manifest-reserved-test START: 입력 manifest와 배포 manifest의 경로 충돌 방지 검증 (2026-10-15)
+ def test_input_manifest_is_preserved_but_record_manifest_is_reserved(self):
+  original='{"schemaVersion":3,"source":"input"}\n';p=self.zip(files={'index.html':HTML,'archive-manifest.json':original})
+  r=build(p,self.root);target=self.root/r['recordPath'];verify_files(target,r['files'])
+  self.assertEqual((target/'source/archive-manifest.json').read_text(),original);self.assertEqual(json.loads((target/'archive-manifest.json').read_text())['schemaVersion'],2)
+ # SOFTM-manifest-reserved-test END: 입력 manifest와 배포 manifest의 경로 충돌 방지 검증 (2026-10-15)
  def test_undated_input_is_held(self):
   p=self.zip(name='unknown.zip')
   with self.assertRaisesRegex(ValueError,'date'):build(p,self.root)
