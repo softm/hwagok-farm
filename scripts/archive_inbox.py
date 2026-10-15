@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Non-destructive ZIP/folder archive builder. Cleanup is a separate proof-gated command."""
 from __future__ import annotations
-import argparse, datetime as dt, hashlib, json, os, re, shutil, stat, subprocess, tempfile, unicodedata, zipfile
+import argparse, datetime as dt, hashlib, html, json, os, re, shutil, stat, subprocess, tempfile, unicodedata, zipfile
 from pathlib import Path, PurePosixPath
 from urllib.parse import quote, unquote, urlsplit
 from bs4 import BeautifulSoup
@@ -11,13 +11,14 @@ HOME = 'https://softm.github.io/hwagok-farm/'
 CENTRAL = 'https://softm.github.io/projects/hwagok-farm/'
 REPO = 'softm/hwagok-farm'
 POLICY = {
- 'projects/archive-deployment/archive_deployment_prompt.md':'ef3988364151b100949510c8e3176d5f0a2df724',
- 'projects/archive-deployment/20261005_아카이브배포_ZIP폴더_Workflow_처리기준.md':'0a3a002aa459d1cfb08e721baae9082c22c31c79',
+ 'projects/archive-deployment/archive_deployment_prompt.md':'9413aa3e970bbc18111f4bcf37418b7faba4e3d6',
+ 'projects/archive-deployment/20261005_아카이브배포_ZIP폴더_Workflow_처리기준.md':'dd087e26ca3429a32a46d8292064c522959c7458',
 }
 IGNORED = {'.DS_Store', 'Thumbs.db', '__MACOSX'}
 IMAGES={'.jpg','.jpeg','.png','.webp','.gif','.avif','.svg'}
 VIDEOS={'.mp4','.mov','.webm','.m4v'}
 AUDIO={'.mp3','.m4a','.wav','.ogg','.flac','.aac'}
+# SOFTM-archive-policy-v2: 최신 중앙 정책 blob을 검토·고정하고 입력 형식 분류를 유지 (2026-10-15)
 
 
 def digest(path: Path) -> str:
@@ -93,18 +94,88 @@ def choose_entry(root: Path, metadata):
  if metadata.get('entry'):
   chosen=root/relpath(metadata['entry'])
   if not chosen.is_file(): raise ValueError('Declared entry missing')
-  return chosen
- # ZIP/folder deployment policy: an existing HTML file is the canonical web source.
- # Never synthesize index.html from Markdown.
+  if chosen.suffix.lower() in {'.html','.htm'}: return chosen
+ # SOFTM-archive-entry-fallback START: 원본 HTML을 우선하되 없으면 안전한 MD/TXT/미디어 HTML 생성을 허용 (2026-10-15)
  html=[p for p in entries(root) if p.suffix.lower() in {'.html','.htm'}]
- if not html:
-  raise ValueError('No HTML source: index.html must not be generated from Markdown')
+ if not html: return None
  root_html=[p for p in html if p.parent==root]
  if root/'index.html' in html:
   return root/'index.html'
  if root_html:
   return max(root_html,key=lambda p:p.stat().st_size)
  return max(html,key=lambda p:p.stat().st_size)
+
+def choose_text(root: Path, suffixes):
+ candidates=[p for p in entries(root) if p.suffix.lower() in suffixes]
+ if not candidates: return None
+ preferred=[p for p in candidates if p.stem.lower() in {'readme','summary','index'}]
+ top=[p for p in candidates if p.parent==root]
+ return max(preferred or top or candidates,key=lambda p:p.stat().st_size)
+
+def markdown_title(text: str, fallback: str):
+ match=re.search(r'^\s*#\s+(.+?)\s*$',text,re.M)
+ value=match.group(1) if match else fallback
+ return re.sub(r'[`*_\[\]]','',value).strip() or fallback
+
+def sanitize_fragment(fragment: str):
+ soup=BeautifulSoup(fragment,'html.parser')
+ for tag in soup.find_all(['script','iframe','object','embed']): tag.decompose()
+ for tag in soup.find_all(True):
+  for attr in list(tag.attrs):
+   if attr.lower().startswith('on'): del tag.attrs[attr]
+  for attr in ('href','src'):
+   value=str(tag.attrs.get(attr,'')).strip()
+   if not value: continue
+   parsed=urlsplit(value)
+   if value.startswith('//') or (parsed.scheme and parsed.scheme.lower() not in {'http','https','mailto'}):
+    del tag.attrs[attr]
+ return str(soup)
+
+def attachment_html(root: Path):
+ blocks=[]
+ for path in entries(root):
+  rel=path.relative_to(root).as_posix(); ext=path.suffix.lower()
+  if ext in {'.html','.htm','.md','.markdown','.txt','.log','.json'}: continue
+  target=html.escape(rel,quote=True); label=html.escape(rel)
+  if ext in IMAGES:
+   blocks.append(f'<figure><a href="{target}" target="_blank" rel="noopener"><img loading="lazy" src="{target}" alt="{label}"></a><figcaption>{label} · <a href="{target}" download>원본 다운로드</a></figcaption></figure>')
+  elif ext in VIDEOS:
+   blocks.append(f'<figure><video controls preload="metadata" src="{target}"></video><figcaption>{label} · <a href="{target}" download>원본 다운로드</a></figcaption></figure>')
+  elif ext in AUDIO:
+   blocks.append(f'<figure><audio controls preload="metadata" src="{target}"></audio><figcaption>{label} · <a href="{target}" download>원본 다운로드</a></figcaption></figure>')
+  elif ext=='.pdf':
+   blocks.append(f'<article class="file"><strong>{label}</strong><iframe title="{label}" loading="lazy" src="{target}"></iframe><p><a href="{target}" target="_blank" rel="noopener">원본 열기</a> · <a href="{target}" download>다운로드</a></p></article>')
+  else:
+   blocks.append(f'<p class="file"><a href="{target}" target="_blank" rel="noopener">{label}</a> · <a href="{target}" download>다운로드</a></p>')
+ return '\n'.join(blocks)
+
+def generated_shell(title: str, date: str, body: str, attachments: str):
+ heading=html.escape(title); shown_date=html.escape(date)
+ extra=f'<hr><h2>첨부 자료</h2>{attachments}' if attachments else ''
+ return f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{heading}</title><style>body{{max-width:980px;margin:40px auto;padding:0 20px;font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;line-height:1.72;color:#202923}}nav{{display:flex;gap:14px;flex-wrap:wrap}}a{{color:#165c3b}}img,video,iframe{{display:block;max-width:100%;height:auto}}audio{{width:100%}}iframe{{width:100%;height:min(72vh,760px);border:1px solid #ccd3ce}}figure,.file{{margin:24px 0;padding:14px;border:1px solid #d8ddd9;border-radius:12px}}figcaption{{margin-top:8px;font-size:.9rem;word-break:break-all}}pre{{overflow:auto;white-space:pre-wrap;word-break:break-word;background:#f4f6f4;padding:16px;border-radius:10px}}table{{display:block;width:100%;overflow:auto;border-collapse:collapse}}th,td{{border:1px solid #d8ddd9;padding:7px 10px}}</style></head><body><header><nav><a href="{HOME}">프로젝트 홈</a><a href="{CENTRAL}">중앙 프로젝트 홈</a></nav><h1>{heading}</h1><p>{shown_date}</p></header><main>{body}{extra}</main></body></html>'''
+
+def generate_entry(root: Path, meta, input_name: str, date: str):
+ fallback=str(meta.get('sourceTitle') or meta.get('title') or Path(input_name).stem)
+ declared=root/relpath(meta['entry']) if meta.get('entry') else None
+ markdown=declared if declared and declared.suffix.lower() in {'.md','.markdown'} else choose_text(root,{'.md','.markdown'})
+ text_file=declared if declared and declared.suffix.lower() in {'.txt','.log'} else choose_text(root,{'.txt','.log'})
+ attachments=attachment_html(root)
+ if markdown:
+  raw=markdown.read_text(encoding='utf-8',errors='replace')
+  source_title=markdown_title(raw,fallback)
+  body=subprocess.run(['pandoc','--from=gfm-raw_html','--to=html5'],input=raw,check=True,capture_output=True,text=True).stdout
+  source_link=html.escape(markdown.relative_to(root).as_posix(),quote=True)
+  body=sanitize_fragment(body)+f'<p><a href="{source_link}" download>원본 Markdown 다운로드</a></p>'
+  return generated_shell(source_title,date,body,attachments),source_title,'markdown-generated',markdown
+ if text_file:
+  raw=text_file.read_text(encoding='utf-8',errors='replace');source_title=fallback
+  source_link=html.escape(text_file.relative_to(root).as_posix(),quote=True)
+  body=f'<pre>{html.escape(raw)}</pre><p><a href="{source_link}" download>원본 텍스트 다운로드</a></p>'
+  return generated_shell(source_title,date,body,attachments),source_title,'text-generated',text_file
+ listing=''.join(f'<li><a href="{html.escape(p.relative_to(root).as_posix(),quote=True)}">{html.escape(p.relative_to(root).as_posix())}</a></li>' for p in entries(root))
+ body='<p>HTML·Markdown·텍스트 본문이 없어 확보된 미디어·문서 목록으로 만든 보기 페이지입니다.</p><ul>'+listing+'</ul>'
+ return generated_shell(fallback,date,body,attachments),fallback,'media-generated',None
+ # SOFTM-archive-entry-fallback END: 원본 HTML을 우선하되 없으면 안전한 MD/TXT/미디어 HTML 생성을 허용 (2026-10-15)
 
 def event_date(metadata, name):
  value=str(metadata.get('date') or metadata.get('authoredAt') or '')
@@ -126,22 +197,38 @@ def metadata_for(root: Path):
  if m.get('visibility','public')!='public': raise ValueError('Private input must use the private repository')
  return m
 
-def render(root: Path, destination: Path, meta, date, slug):
+def render(root: Path, destination: Path, meta, date, slug, item: Path):
+ # SOFTM-inbox-list-title START: 입력 이름 목록 제목과 원본 문서 제목을 분리 (2026-10-15)
+ input_raw=item.name
+ input_name=unicodedata.normalize('NFC',input_raw)
+ input_kind='folder' if item.is_dir() else 'zip'
+ explicit_list_title=str(meta.get('listTitle') or '').strip()
+ list_title=explicit_list_title or input_name
+ title_source='user-list-title' if explicit_list_title else 'inbox-name'
  chosen=choose_entry(root,meta)
- # Canonical rule: deploy the selected source HTML byte-for-byte as index.html.
- # Do not rebuild it from Markdown and do not inject archive UI into it.
- shutil.copy2(chosen,destination/'index.html')
- doc=chosen.read_text(encoding='utf-8-sig')
- soup=BeautifulSoup(doc,'html.parser')
- h1=soup.find('h1')
- title=str(meta.get('title') or (h1.get_text(' ',strip=True) if h1 else '') or chosen.stem)
- source_title=re.sub(r'\s+',' ',title).strip()
- title=re.sub(r'^\d{4}[-_.]?\d{2}[-_.]?\d{2}(?:\s*[~–-]\s*(?:\d{4}-?\d{2}-?\d{2}|\d{4}|\d{2}))?[\s_·:-]*','',source_title).strip() or source_title
- canonical=date+' '+title
+ if chosen:
+  # 정상 원본 HTML은 제목 주입 없이 바이트 그대로 배포한다.
+  shutil.copy2(chosen,destination/'index.html')
+  doc=chosen.read_text(encoding='utf-8-sig')
+  soup=BeautifulSoup(doc,'html.parser');h1=soup.find('h1');title_tag=soup.find('title')
+  source_title=str(meta.get('sourceDocumentTitle') or (h1.get_text(' ',strip=True) if h1 else '') or (title_tag.get_text(' ',strip=True) if title_tag else '') or meta.get('sourceTitle') or chosen.stem)
+  source_title=re.sub(r'\s+',' ',source_title).strip()
+  summary=subprocess.run(['pandoc','--from=html','--to=gfm'],input=doc,check=True,capture_output=True,text=True).stdout
+  entry_type='html-source';entry_policy='html-exact-v2';entry_source=chosen;generated=False
+ else:
+  document,source_title,entry_type,entry_source=generate_entry(root,meta,input_name,date)
+  (destination/'index.html').write_text(document,encoding='utf-8')
+  if entry_source and entry_source.suffix.lower() in {'.md','.markdown'}: summary=entry_source.read_text(encoding='utf-8',errors='replace')
+  elif entry_source: summary='# '+source_title+'\n\n```text\n'+entry_source.read_text(encoding='utf-8',errors='replace')+'\n```\n'
+  else: summary='# '+source_title+'\n\n본문 원자료가 없어 확보된 미디어·문서 목록으로 보기 페이지를 생성했습니다.\n'
+  entry_policy='generated-html-fallback-v1';generated=True
+ summary_path=destination/('archive-summary.md' if (root/'summary.md').is_file() else 'summary.md')
+ summary_path.write_text(summary,encoding='utf-8')
  canonical_url=HOME+'records/'+quote(slug,safe='')+'/'
- md=subprocess.run(['pandoc','--from=html','--to=gfm'],input=doc,check=True,capture_output=True,text=True).stdout
- (destination/'summary.md').write_text(md,encoding='utf-8')
- return {'id':str(meta.get('id') or slug),'slug':slug,'sourceTitle':source_title,'dateEnd':meta.get('dateEnd'),'date':date,'title':canonical,'userTitle':title,'category':meta.get('category','아카이브'),'summary':meta.get('summary',''),'visibility':'public','url':canonical_url,'repoUrl':'https://github.com/'+REPO+'/tree/main/public/records/'+quote(slug,safe=''),'directory':slug,'recordPath':'public/records/'+slug,'authoredAt':date,'dateSource':'user-specified','entrySource':chosen.relative_to(root).as_posix(),'entryPolicy':'html-exact-v2'}
+ source_sha=digest(entry_source) if entry_source else None
+ metadata={'id':str(meta.get('id') or slug),'slug':slug,'inputName':input_name,'inputNameRaw':input_raw,'inputKind':input_kind,'listTitle':list_title,'title':list_title,'label':list_title,'titleSource':title_source,'sourceTitle':source_title,'sourceDocumentTitle':source_title,'userTitle':list_title,'dateEnd':meta.get('dateEnd'),'date':date,'category':meta.get('category','아카이브'),'summary':meta.get('summary',''),'visibility':'public','url':canonical_url,'repoUrl':'https://github.com/'+REPO+'/tree/main/public/records/'+quote(slug,safe=''),'directory':slug,'recordPath':'public/records/'+slug,'authoredAt':date,'dateSource':'user-specified','entrySource':entry_source.relative_to(root).as_posix() if entry_source else 'generated','entryType':entry_type,'entryPolicy':entry_policy,'generatedHtml':generated,'sourceSha256':source_sha,'entrySha256':digest(destination/'index.html'),'rendererVersion':'archive-inbox-2026-10-15.1','summaryPath':summary_path.relative_to(destination).as_posix()}
+ return metadata
+ # SOFTM-inbox-list-title END: 입력 이름 목록 제목과 원본 문서 제목을 분리 (2026-10-15)
 
 def verify_files(target: Path, files):
  if not files: raise ValueError('Empty file proof')
@@ -182,7 +269,7 @@ def build(item: Path, root: Path):
    rel=p.relative_to(source); dst=draft/rel; dst.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(p,dst)
   # Keep a source mirror as provenance while the root tree remains directly deployable.
   shutil.copytree(source,draft/'source')
-  metadata=render(source,draft,meta,date,slug)
+  metadata=render(source,draft,meta,date,slug,item)
   jwrite(draft/'archive.json',metadata)
   files=inventory(draft);verify_files(draft,files)
   if fingerprint(item)!=before: raise ValueError('Inbox changed during build')
@@ -209,7 +296,7 @@ def build_batch(root=ROOT):
   if not data: raise ValueError('Service home catalog missing')
   catalog=json.loads(data.string);by={r['dir']:r for r in catalog}
   for task in tasks:
-   m=task['metadata'];by[m['slug']]={'date':m['date'],'kind':m['category'],'title':m['title'],'dir':m['slug'],'desc':m['summary'],'url':m['url'],'repoUrl':m['repoUrl']}
+   m=task['metadata'];by[m['slug']]={'date':m['date'],'kind':m['category'],'title':m['listTitle'],'dir':m['slug'],'desc':m['summary'],'url':m['url'],'repoUrl':m['repoUrl'],'inputName':m['inputName'],'inputKind':m['inputKind'],'listTitle':m['listTitle'],'titleSource':m['titleSource'],'sourceTitle':m['sourceTitle']}
   data.string=json.dumps(sorted(by.values(),key=lambda r:(r['date'],r['title']),reverse=True),ensure_ascii=False).replace('</','<\\/')
   page.write_text(str(soup),encoding='utf-8')
  if os.getenv('GITHUB_OUTPUT'):

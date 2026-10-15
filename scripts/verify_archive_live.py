@@ -61,12 +61,13 @@ def run(phase):
    browser=p.chromium.launch()
    context=browser.new_context(viewport={'width':1365,'height':900},service_workers='block')
    page=context.new_page()
+   # SOFTM-live-title-parity START: 상세 원본 제목과 입력명 목록 제목을 각각 검증 (2026-10-15)
    for task in plan['records']:
     m=task['metadata']
     api('repos/softm/hwagok-farm/contents/'+m['recordPath']+'?ref='+plan['sourceSha'],os.getenv('GH_TOKEN',''))
     def detail(page):
      heading=page.locator('h1').first.inner_text().strip()
-     if heading!=m['title']: raise RuntimeError('Canonical title mismatch: '+m['slug'])
+     if heading!=m['sourceTitle']: raise RuntimeError('Source document title mismatch: '+m['slug'])
     retry_page(page,m['url'],detail)
     page.locator('img').evaluate_all("nodes=>nodes.forEach(img=>{img.loading='eager';img.scrollIntoView()})")
     image_results=page.locator('img').evaluate_all("""async nodes=>Promise.all(nodes.map(async img=>{
@@ -88,7 +89,7 @@ def run(phase):
      }""")
      media_results.append(result)
     if any(not x['ok'] for x in media_results): raise RuntimeError('Media playback failed: '+m['slug']+' '+json.dumps(media_results,ensure_ascii=False))
-    report.setdefault('renderedRecords',[]).append({'slug':m['slug'],'heading':m['title'],'images':image_results,'media':media_results})
+    report.setdefault('renderedRecords',[]).append({'slug':m['slug'],'heading':m['sourceTitle'],'listTitle':m['listTitle'],'images':image_results,'media':media_results})
     report['slugs'].append(m['slug'])
     page.set_viewport_size({'width':390,'height':844})
     page.screenshot(path=str(RUN/('mobile-'+hashlib.sha256(m['slug'].encode()).hexdigest()[:12]+'.png')),full_page=False)
@@ -97,7 +98,7 @@ def run(phase):
     links=urls(page)
     for task in plan['records']:
      m=task['metadata']
-     if not contains(links,m['url'],m['title']) or not contains(links,m['repoUrl']): raise RuntimeError('Service title/detail/source directory link missing: '+m['slug'])
+     if not contains(links,m['url'],m['listTitle']) or not contains(links,m['repoUrl']): raise RuntimeError('Service list title/detail/source directory link missing: '+m['slug'])
    retry_page(page,HOME,service)
    report['checks']=['detail','service-home','media','original-bytes','source-directory-links','title-parity']
    if phase=='final':
@@ -105,7 +106,7 @@ def run(phase):
      links=urls(page)
      for task in plan['records']:
       m=task['metadata']
-      if not contains(links,m['url'],m['title']) or not contains(links,m['repoUrl']): raise RuntimeError('Central home not rendered with canonical record/source links: '+m['slug'])
+      if not contains(links,m['url'],m['listTitle']) or not contains(links,m['repoUrl']): raise RuntimeError('Central home not rendered with input-name record/source links: '+m['slug'])
     retry_page(page,CENTRAL,central)
     page.screenshot(path=str(RUN/'central-home.png'),full_page=True)
     def top(page):
@@ -118,6 +119,7 @@ def run(phase):
     retry_page(page,'https://softm.github.io/projects/',top)
     page.screenshot(path=str(RUN/'top-projects.png'),full_page=True)
     report['checks']+=['central-home','top-index']
+   # SOFTM-live-title-parity END: 상세 원본 제목과 입력명 목록 제목을 각각 검증 (2026-10-15)
    browser.close()
   report['passed']=True
  except Exception as error:

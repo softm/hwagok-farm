@@ -51,8 +51,10 @@ def central():
  by_url={item['url']:item for item in project.get('links',[])}
  changed=False
  for record in plan['records']:
-  m=record['metadata']; entry={k:m[k] for k in ('id','title','userTitle','date','authoredAt','dateSource','url','repoUrl','directory','recordPath','category','summary','visibility')}
-  entry.update(label=m['title'],chatTitle=m['title'])
+  # SOFTM-central-list-title START: 중앙 목록에도 입력 이름 제목과 원본 문서 제목을 분리해 동기화 (2026-10-15)
+  m=record['metadata']; entry={k:m[k] for k in ('id','title','userTitle','inputName','inputKind','listTitle','titleSource','sourceTitle','sourceDocumentTitle','date','authoredAt','dateSource','url','repoUrl','directory','recordPath','category','summary','visibility')}
+  entry.update(label=m['listTitle'],chatTitle=m['listTitle'])
+  # SOFTM-central-list-title END: 중앙 목록에도 입력 이름 제목과 원본 문서 제목을 분리해 동기화 (2026-10-15)
   old=by_url.get(m['url'],{})
   if any(old.get(k)!=v for k,v in entry.items()): changed=True
   by_url[m['url']]={**old,**entry}
