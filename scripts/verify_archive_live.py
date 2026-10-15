@@ -70,11 +70,15 @@ def run(phase):
      if heading!=m['sourceTitle']: raise RuntimeError('Source document title mismatch: '+m['slug'])
     retry_page(page,m['url'],detail)
     page.locator('img').evaluate_all("nodes=>nodes.forEach(img=>{img.loading='eager';img.scrollIntoView()})")
+    # SOFTM-live-empty-image-placeholder START: src 없는 모달용 img는 미사용 자리표시자로 기록하고 실제 src 이미지만 디코딩 검증 (2026-10-15)
     image_results=page.locator('img').evaluate_all("""async nodes=>Promise.all(nodes.map(async img=>{
+      const src=img.currentSrc||(img.getAttribute('src')||'').trim();
+      if(!src) return {src:'',ok:true,skipped:'empty-placeholder'};
       try { await Promise.race([img.decode(),new Promise((_,reject)=>setTimeout(()=>reject(Error('image timeout')),20000))]); }
-      catch(e) { return {src:img.currentSrc||img.src,ok:false,error:String(e)}; }
-      return {src:img.currentSrc||img.src,ok:img.naturalWidth>0};
+      catch(e) { return {src,ok:false,error:String(e)}; }
+      return {src,ok:img.naturalWidth>0};
     }))""")
+    # SOFTM-live-empty-image-placeholder END: src 없는 모달용 img는 미사용 자리표시자로 기록하고 실제 src 이미지만 디코딩 검증 (2026-10-15)
     if any(not x['ok'] for x in image_results): raise RuntimeError('Broken image: '+m['slug']+' '+json.dumps(image_results,ensure_ascii=False))
     media_results=[]
     for media in page.locator('video,audio').all():
