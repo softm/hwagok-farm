@@ -28,28 +28,30 @@ class InboxTests(unittest.TestCase):
  def test_nested_single_directory(self):
   p=self.zip(files={'outer/inner/index.html':HTML,'outer/inner/사진.png':PNG})
   r=build(p,self.root);self.assertTrue((self.root/r['recordPath']/'source/사진.png').is_file())
- def test_full_html_preserved_and_title_shared(self):
+ # SOFTM-archive-policy-tests START: 입력명 목록 제목·원본 제목 분리와 HTML 없는 입력 fallback 검증 (2026-10-15)
+ def test_full_html_preserved_and_titles_are_separate(self):
   raw='<html><head><title>Old</title></head><body><h1>일지</h1><p>세부 원문</p></body></html>'
   p=self.zip(files={'index.html':raw});r=build(p,self.root);target=self.root/r['recordPath']
   self.assertEqual((target/'source/index.html').read_text(),raw)
   self.assertEqual((target/'index.html').read_text(),raw)  # SOFTM-archive-html-exact: 배포 HTML 바이트 보존 정책 검증 (2026-10-15)
-  self.assertEqual(r['metadata']['title'],'2026-10-05 일지');self.assertIn('세부 원문',(target/'summary.md').read_text())  # SOFTM-archive-title-metadata: 정규화 제목은 메타데이터에서 검증 (2026-10-15)
+  self.assertEqual(r['metadata']['title'],'20261005_test.zip');self.assertEqual(r['metadata']['listTitle'],'20261005_test.zip')
+  self.assertEqual(r['metadata']['sourceTitle'],'일지');self.assertIn('세부 원문',(target/'summary.md').read_text())
  def test_folder_hash_changes(self):
   d=self.root/'zip/20261005_folder';d.mkdir();(d/'index.html').write_text(HTML);(d/'사진.png').write_bytes(PNG)
   before=fingerprint(d);(d/'index.html').write_text(HTML+'new text');self.assertNotEqual(before,fingerprint(d))
  def test_folder_supported_and_not_deleted(self):
   d=self.root/'zip/20261005_folder';d.mkdir();(d/'note.md').write_text(DOC);(d/'사진.png').write_bytes(PNG)
-  (d/'index.html').write_text(HTML)  # SOFTM-archive-html-fixture: HTML 원본 필수 정책에 맞춘 폴더 입력 추가 (2026-10-15)
   r=build(d,self.root);self.assertTrue(d.is_dir());self.assertEqual(r['inputHash'],fingerprint(d))
+  target=self.root/r['recordPath'];self.assertTrue(r['metadata']['generatedHtml']);self.assertIn('누락되면 안 되는 마지막 문단',(target/'index.html').read_text())
+  self.assertEqual((target/'source/note.md').read_text(),DOC)
  def test_repeated_exact_zip_keeps_canonical_slug(self):
   p=self.zip();first=build(p,self.root);second=build(p,self.root)
   self.assertEqual(first['slug'],second['slug']);self.assertTrue(second['reused']);self.assertTrue(p.exists())
  def test_changed_folder_is_not_none_equals_none(self):
   d=self.root/'zip/20261005_folder';d.mkdir();(d/'note.md').write_text(DOC);(d/'사진.png').write_bytes(PNG)
-  (d/'index.html').write_text(HTML)  # SOFTM-archive-html-fixture: 변경 감지 전 최초 HTML 원본 추가 (2026-10-15)
-  first=build(d,self.root);(d/'index.html').write_text(HTML+' changed')
+  first=build(d,self.root);target=self.root/first['recordPath'];before=(target/'index.html').read_bytes();(d/'note.md').write_text(DOC+' changed')
   with self.assertRaisesRegex(ValueError,'already exists'):build(d,self.root)
-  self.assertTrue(d.exists());self.assertEqual((self.root/first['recordPath']/'source/index.html').read_text(),HTML)
+  self.assertTrue(d.exists());self.assertEqual((target/'index.html').read_bytes(),before);self.assertEqual((target/'source/note.md').read_text(),DOC)
  def test_corrupt_existing_output_is_not_skipped(self):
   p=self.zip();r=build(p,self.root);(self.root/r['recordPath']/'source/사진.png').unlink()
   with self.assertRaisesRegex(ValueError,'Missing/changed'):build(p,self.root)
@@ -58,8 +60,8 @@ class InboxTests(unittest.TestCase):
   p=self.zip(name='20260701-0702_repair.zip',files={'index.html':'<html><body><h1>2026-07-01~02 냉동고 수리</h1><p>기록</p><p>상세 원문</p></body></html>'})
   r=build(p,self.root)
   self.assertEqual(r['metadata']['dateEnd'],'2026-07-02')
-  self.assertNotIn('2026-07-01 2026-',r['metadata']['title'])
-  self.assertNotIn('\n',r['metadata']['title'])
+  self.assertEqual(r['metadata']['listTitle'],'20260701-0702_repair.zip')
+  self.assertEqual(r['metadata']['sourceTitle'],'2026-07-01~02 냉동고 수리')
  def test_zip_traversal_rejected(self):
   p=self.zip(files={'../escape.txt':'bad'})
   with self.assertRaises(ValueError):build(p,self.root)
@@ -84,9 +86,12 @@ class InboxTests(unittest.TestCase):
  def test_sensitive_filename_is_held(self):
   p=self.zip(name='20261005_경영체.zip')
   with self.assertRaisesRegex(ValueError,'sensitive'):build(p,self.root)
- def test_no_filename_only_html(self):
+ def test_media_only_input_gets_generated_html(self):
   p=self.zip(files={'사진.png':PNG})
-  with self.assertRaisesRegex(ValueError,'No HTML source'):build(p,self.root)
+  r=build(p,self.root);target=self.root/r['recordPath']
+  self.assertEqual(r['metadata']['entryType'],'media-generated');self.assertIn('사진.png',(target/'index.html').read_text())
+  self.assertEqual((target/'source/사진.png').read_bytes(),PNG)
+ # SOFTM-archive-policy-tests END: 입력명 목록 제목·원본 제목 분리와 HTML 없는 입력 fallback 검증 (2026-10-15)
  def test_cleanup_requires_all_gates(self):
   p=self.zip();r=build(p,self.root);plan={'sourceSha':'abc','records':[r]}
   with self.assertRaises(RuntimeError):check_cleanup(self.root,plan,{'passed':True,'sourceSha':'abc','checks':['detail'],'slugs':[r['slug']]})
