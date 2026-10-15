@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: archive-zip-inbox-${{ github.ref }}
+  group: archive-inbox # SOFTM-archive-concurrency: 공개 아카이브 처리기 간 push 충돌 방지 (2026-10-15)
   cancel-in-progress: false
 
 jobs:
@@ -80,7 +80,7 @@ jobs:
               top=[p for p in xs if p.parent==root]; preferred=[p for p in xs if p.stem.lower() in {'readme','summary','index'}]
               return max(preferred or top or xs,key=lambda p:p.stat().st_size)
           def title_from(name):
-              s=re.sub(r'^(20\d{6})[_ -]*','',name); s=re.sub(r'\.(zip)$','',s,flags=re.I).replace('_',' ').strip(); return s or name
+              return unicodedata.normalize('NFC',name) # SOFTM-inbox-list-title: ZIP·폴더 입력 이름을 목록 제목으로 그대로 보존 (2026-10-15)
           def date_from(name):
               m=re.match(r'^(20\d{6})',name)
               if not m:return ''
@@ -129,7 +129,7 @@ jobs:
                           if sha(entry)!=sha(dst/'index.html'): raise ValueError('HTML byte identity check failed')
                       else:
                           content,source_type,entry_source=generated_html(src,inp.name); (dst/'index.html').write_text(content,encoding='utf-8'); generated=True
-                      mm={'schemaVersion':2,'id':slug,'slug':slug,'date':date_from(inp.name),'title':title_from(inp.name),'input':inp.name,'inputKind':kind,'inputSha256':fp,'entrySource':entry_source or 'generated','entryType':source_type,'generatedHtml':generated,'entrySha256':sha(dst/'index.html'),'files':[{'path':p.relative_to(dst).as_posix(),'size':p.stat().st_size,'sha256':sha(p)} for p in files(dst) if p.name!='archive-manifest.json']}
+                      mm={'schemaVersion':2,'id':slug,'slug':slug,'date':date_from(inp.name),'title':title_from(inp.name),'label':title_from(inp.name),'input':inp.name,'inputName':title_from(inp.name),'inputKind':kind,'listTitle':title_from(inp.name),'titleSource':'inbox-name','inputSha256':fp,'entrySource':entry_source or 'generated','entryType':source_type,'generatedHtml':generated,'entrySha256':sha(dst/'index.html'),'files':[{'path':p.relative_to(dst).as_posix(),'size':p.stat().st_size,'sha256':sha(p)} for p in files(dst) if p.name!='archive-manifest.json']} # SOFTM-inbox-list-title: legacy archive manifest에도 동일 목록 제목 메타데이터 저장 (2026-10-15)
                       manifest.write_text(json.dumps(mm,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); records.append(mm)
               except Exception as e: errors.append({'input':inp.name,'error':str(e)})
           manifests=[]
