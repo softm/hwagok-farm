@@ -32,18 +32,21 @@ class InboxTests(unittest.TestCase):
   raw='<html><head><title>Old</title></head><body><h1>일지</h1><p>세부 원문</p></body></html>'
   p=self.zip(files={'index.html':raw});r=build(p,self.root);target=self.root/r['recordPath']
   self.assertEqual((target/'source/index.html').read_text(),raw)
-  self.assertIn(r['metadata']['title'],(target/'index.html').read_text());self.assertIn('세부 원문',(target/'summary.md').read_text())
+  self.assertEqual((target/'index.html').read_text(),raw)  # SOFTM-archive-html-exact: 배포 HTML 바이트 보존 정책 검증 (2026-10-15)
+  self.assertEqual(r['metadata']['title'],'2026-10-05 일지');self.assertIn('세부 원문',(target/'summary.md').read_text())  # SOFTM-archive-title-metadata: 정규화 제목은 메타데이터에서 검증 (2026-10-15)
  def test_folder_hash_changes(self):
   d=self.root/'zip/20261005_folder';d.mkdir();(d/'index.html').write_text(HTML);(d/'사진.png').write_bytes(PNG)
   before=fingerprint(d);(d/'index.html').write_text(HTML+'new text');self.assertNotEqual(before,fingerprint(d))
  def test_folder_supported_and_not_deleted(self):
   d=self.root/'zip/20261005_folder';d.mkdir();(d/'note.md').write_text(DOC);(d/'사진.png').write_bytes(PNG)
+  (d/'index.html').write_text(HTML)  # SOFTM-archive-html-fixture: HTML 원본 필수 정책에 맞춘 폴더 입력 추가 (2026-10-15)
   r=build(d,self.root);self.assertTrue(d.is_dir());self.assertEqual(r['inputHash'],fingerprint(d))
  def test_repeated_exact_zip_keeps_canonical_slug(self):
   p=self.zip();first=build(p,self.root);second=build(p,self.root)
   self.assertEqual(first['slug'],second['slug']);self.assertTrue(second['reused']);self.assertTrue(p.exists())
  def test_changed_folder_is_not_none_equals_none(self):
   d=self.root/'zip/20261005_folder';d.mkdir();(d/'note.md').write_text(DOC);(d/'사진.png').write_bytes(PNG)
+  (d/'index.html').write_text(HTML)  # SOFTM-archive-html-fixture: 변경 감지 전 최초 HTML 원본 추가 (2026-10-15)
   first=build(d,self.root);(d/'index.html').write_text(HTML+' changed')
   with self.assertRaisesRegex(ValueError,'already exists'):build(d,self.root)
   self.assertTrue(d.exists());self.assertEqual((self.root/first['recordPath']/'source/index.html').read_text(),HTML)
