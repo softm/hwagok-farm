@@ -1,0 +1,37 @@
+[
+  {
+    "path": "index.html",
+    "size": 18047,
+    "sha256": "c9cda122d798f940ce4fbfa595eea6ddc40df3f7c12fecb5297a0f3fd9daeac7"
+  },
+  {
+    "path": "README.md",
+    "size": 4274,
+    "sha256": "a346ec9e93e4af84b082ee050e0f6b85e53b9e52c8fd9fbf19543344d5da1c69"
+  },
+  {
+    "path": "images/wintering_methods_concept.png",
+    "size": 2310359,
+    "sha256": "08ce63683262607330cc243bad2d2f04ad6e0e271dbf39f796a4a2f0b0d1173a"
+  },
+  {
+    "path": "images/photo_03.png",
+    "size": 1901997,
+    "sha256": "0eeb1662e55fb6bd3e5eaff2aae286045997c017b3ee24ba66ba62697e25d0e8"
+  },
+  {
+    "path": "images/photo_01.png",
+    "size": 1790640,
+    "sha256": "1ec72a2b02d7978f8a3bdf1c69be7c8ac936901665608fcddc74c6bffd7a1901"
+  },
+  {
+    "path": "images/photo_02.png",
+    "size": 1573057,
+    "sha256": "659db888455c376550b97584ffcaeb5b830f72ebd36bea136c16b01620de1342"
+  },
+  {
+    "path": "images/photo_04.png",
+    "size": 2162214,
+    "sha256": "7479f1dd21620e19b7f7f1493587fb27050d5b45d5c532896742c66eb4dbdb33"
+  }
+]
