@@ -110,3 +110,5 @@ jobs:
           name: hwagok-four-inbox-final-cleanup-receipt
           path: reports/20261008-hwagok-media-inbox-completion.json
           if-no-files-found: warn
+
+          retention-days: 1
