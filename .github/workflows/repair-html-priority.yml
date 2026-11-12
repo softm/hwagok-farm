@@ -92,3 +92,5 @@ jobs:
           path: .archive-run/html-priority-repair.json
           include-hidden-files: true
           if-no-files-found: warn
+
+          retention-days: 1
