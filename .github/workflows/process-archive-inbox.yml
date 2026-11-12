@@ -121,3 +121,5 @@ jobs:
             .archive-run/*.png
           include-hidden-files: true
           if-no-files-found: warn
+
+          retention-days: 1
