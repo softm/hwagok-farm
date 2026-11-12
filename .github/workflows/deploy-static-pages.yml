@@ -75,6 +75,7 @@ jobs:
           name: prepared-public-site
           path: site/
           include-hidden-files: true
+          retention-days: 1
       - uses: actions/upload-pages-artifact@v3
         if: steps.settings.outputs.build_type == 'workflow'
         with:
@@ -86,6 +87,7 @@ jobs:
           path: .archive-run/*.json
           include-hidden-files: true
           if-no-files-found: warn
+          retention-days: 1
   publish-existing-branch:
     needs: prepare
     if: needs.prepare.outputs.build_type == 'legacy'
