@@ -89,3 +89,5 @@ jobs:
           path: .archive-run/sprinkler-20260809/
           include-hidden-files: true
           if-no-files-found: warn
+
+          retention-days: 1
