@@ -45,3 +45,5 @@ jobs:
         with:
           name: sprinkler-pdf-rendering-evidence
           path: evidence/
+
+          retention-days: 1
